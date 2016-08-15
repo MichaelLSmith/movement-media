@@ -1,0 +1,30 @@
+/*
+corresonds to the alignments section of the origin style.css file
+needs to be @imported into the style.css file and processed by gulp
+*/
+/* 
+    Created on : 15-Aug-2016, 10:08:47 AM
+    Author     : michael
+*/
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

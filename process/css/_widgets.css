@@ -1,0 +1,20 @@
+/*
+corresonds to the widgets section of the origin style.css file
+needs to be @imported into the style.css file and processed by gulp
+*/
+/* 
+    Created on : 15-Aug-2016, 10:10:58 AM
+    Author     : michael
+*/
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}

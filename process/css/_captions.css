@@ -1,0 +1,30 @@
+/*
+corresonds to the Captions section of the origin style.css file
+needs to be @imported into the style.css file and processed by gulp
+*/
+/* 
+    Created on : 15-Aug-2016, 10:26:49 AM
+    Author     : michael
+*/
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
