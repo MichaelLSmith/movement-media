@@ -1,43 +1,18 @@
 /*
-Header CSS - need to @include in style.css and run gulp process
+corresonds to the navigation section of the origin style.css file
+needs to be @imported into the style.css file and processed by gulp
+
+could possible split this into other files if it grows
+
 */
-/*
-    Created on : 15-Aug-2016, 9:43:27 AM
+/* 
+    Created on : 15-Aug-2016, 10:04:22 AM
     Author     : michael
 */
 
 /*--------------------------------------------------------------
-# Header
+# Navigation
 --------------------------------------------------------------*/
-
-.site-header {
-    background-color: #FAEBD7;
-}
-
-/* Note to test postcss process*/
-
-.site-branding {
-    text-align: center;
-}
-
-.site-logo {
-    position: relative;
-}
-
-.site-log a {
-    position: absolute;
-    z-index: 10;
-    top: 1em;
-    left: 1em;
-    display: block;
-    width: 2em;
-    height: 2em;
-    background: black;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-}
-
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
