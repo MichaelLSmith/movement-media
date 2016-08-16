@@ -25,26 +25,26 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="site-logo">
+			    <a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
+			    	<div class="screen-reader-text">
+			        	<?php printf( esc_html__('Go to the home page of %1$s', 'popperscores'), $site_title ); ?>
+			      	</div>
+	      		<?php the_custom_logo(); ?>
+			</div>
+		<div class="site-branding">
+		      <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+		      <p class="site-title"><?php bloginfo( 'description'); ?></p>
+		</div><!-- .site-branding -->
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
+			</button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+
+  <!-- add mission tagline -->
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

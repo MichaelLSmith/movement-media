@@ -8,7 +8,7 @@ var gulp = require('gulp'),
   animation = require('postcss-animation'),
 
   source = 'process/css/', //source css files
-  dest = 'builds'; //build file
+  dest = '.'; //build file
 
 //gulp.task('html', function() {
 //  gulp.src(dest + '*.html');
