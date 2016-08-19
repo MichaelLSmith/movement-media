@@ -43,7 +43,7 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	align-self: flex-end;
+	/*align-self: flex-end;*/
 	/*clear: both;*/
 	/*display: block;*/
 	/*float: left;*/

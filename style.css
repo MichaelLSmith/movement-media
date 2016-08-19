@@ -799,9 +799,7 @@ a:hover, a:active {
 
 .main-navigation {
 
-    -ms-flex-item-align: end;
-
-        align-self: flex-end
+    /*align-self: flex-end;*/
 
     /*clear: both;*/
 
@@ -936,6 +934,28 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between
+}
 .site-header {
 
     background-color: #FAEBD7;
@@ -969,17 +989,13 @@ Header CSS - need to @include in style.css and run gulp process
 /* Note to test postcss process*/
 .site-branding {
 
-    text-align: center;
+    /*text-align: center;*/
 
-    -ms-flex-item-align: center;
-
-        align-self: center
+    /*align-self: center;*/
 }
 .site-logo {
 
-    -ms-flex-item-align: start;
-
-        align-self: flex-start
+    /*align-self: flex-start;*/
 }
 /*.site-logo a {
     position: absolute;
