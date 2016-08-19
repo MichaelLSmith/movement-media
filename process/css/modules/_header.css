@@ -22,16 +22,25 @@ Header CSS - need to @include in style.css and run gulp process
 
 .logo-tag-container {
     display: flex;
+    @media $small {
+        align-self: center;
+    }
 }
 
 
 .site-branding {
     /*text-align: center;*/
     /*display: inline-block;*/
+    @media $small {
+        display: none;
+    }
+
 }
 
 .site-logo {
     margin-right: 10px;
+
+
 }
 
 .site-title {

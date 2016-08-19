@@ -1,9 +1,3 @@
-@small: screen and (min-width: 600px);
-
-@medium: screen and (min-width: 900px);
-
-@large: screen and (min-width: 1200px);
-
 /*
 Normalize section in the original theme style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -978,11 +972,27 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: flex
 }
+@media screen and (max-width: 600px) {
+
+    .logo-tag-container {
+
+        -ms-flex-item-align: center;
+
+            align-self: center
+    }
+}
 .site-branding {
 
     /*text-align: center;*/
 
     /*display: inline-block;*/
+}
+@media screen and (max-width: 600px) {
+
+    .site-branding {
+
+        display: none
+    }
 }
 .site-logo {
 
