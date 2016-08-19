@@ -2,7 +2,7 @@
 corresonds to the typography section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp.
 */
-/* 
+/*
     Created on : 15-Aug-2016, 9:50:11 AM
     Author     : michael
 */
@@ -10,6 +10,11 @@ needs to be @imported into the style.css file and processed by gulp.
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+html {
+	/* setting base font size to 10px, based on most browswers' default size of 16px */
+	font-size: 62.5%;
+}
+
 body,
 button,
 input,
@@ -17,9 +22,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.5em;
 }
 
 h1,
