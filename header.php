@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
-	<div class="container">
+	<div class="site-header">
 	    <div class="left">
 			<!-- left -->
 			<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
