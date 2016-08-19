@@ -607,14 +607,14 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the clearings section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:09:47 AM
     Author     : michael
 */
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
 
     content: "";
 
@@ -622,7 +622,11 @@ needs to be @imported into the style.css file and processed by gulp
 
     table-layout: fixed
 }
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+/*.site-header:before,
+.site-header:after,*/
+/*.site-header:after,
+.site-content:after,*/
+.clear:after, .entry-content:after, .comment-content:after, .site-footer:after {
 
     clear: both
 }
@@ -934,28 +938,6 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.container {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: row;
-
-            flex-direction: row;
-
-    -webkit-box-pack: justify;
-
-        -ms-flex-pack: justify;
-
-            justify-content: space-between
-}
 .site-header {
 
     background-color: #FAEBD7;
@@ -984,29 +966,26 @@ Header CSS - need to @include in style.css and run gulp process
 
         -ms-flex-pack: justify;
 
-            justify-content: space-between
+            justify-content: space-between;
+
+    padding: 1em .5em
 }
-/* Note to test postcss process*/
+.logo-tag-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex
+}
 .site-branding {
 
     /*text-align: center;*/
 
-    /*align-self: center;*/
+    /*display: inline-block;*/
 }
 .site-logo {
 
-    /*align-self: flex-start;*/
+    margin-right: 10px
 }
-/*.site-logo a {
-    position: absolute;
-    z-index: 10;
-    top: 1em;
-    left: 1em;
-    display: block;
-    width: 2em;
-    height: 2em;
-    background: black;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-}*/
+.site-title {}

@@ -24,41 +24,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
-	<div class="site-header">
-	    <div class="left">
-			<!-- left -->
-			<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-			<div class="screen-reader-text">
-				<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
-			</div>
-			<?php the_custom_logo(); ?>
-		</div>
-	    <div class="center">
-			<!-- centre -->
-			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-			<p class="site-title"><?php bloginfo( 'description'); ?></p>
-		</div>
-	    <div class="right">
-			<!-- right -->
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
-			</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</div>
-	</div>
-
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-logo">
-			<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-	    	<div class="screen-reader-text">
-	        	<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
-	      	</div>
-      		<?php the_custom_logo(); ?>
-		</div>
-		<div class="site-branding">
-		      <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-		      <p class="site-title"><?php bloginfo( 'description'); ?></p>
-		</div><!-- .site-branding -->
+		<section class="logo-tag-container">
+			<div class="site-logo">
+				<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
+		    	<div class="screen-reader-text">
+		        	<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+		      	</div>
+	      		<?php the_custom_logo(); ?>
+			</div>
+
+			<div class="site-branding">
+			      <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			      <p class="site-title"><?php bloginfo( 'description'); ?></p>
+			</div><!-- .site-branding -->
+		</section>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>

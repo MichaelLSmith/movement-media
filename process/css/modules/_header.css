@@ -10,12 +10,6 @@ Header CSS - need to @include in style.css and run gulp process
 # Header
 --------------------------------------------------------------*/
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .site-header {
     background-color: #FAEBD7;
     display: flex;
@@ -23,31 +17,23 @@ Header CSS - need to @include in style.css and run gulp process
     flex-wrap: wrap;
     /*flex-flow: row wrap*/
     justify-content: space-between;
+    padding: 1em .5em;
 }
 
-/* Note to test postcss process*/
+.logo-tag-container {
+    display: flex;
+}
+
 
 .site-branding {
     /*text-align: center;*/
-    /*align-self: center;*/
+    /*display: inline-block;*/
 }
 
 .site-logo {
-    /*align-self: flex-start;*/
+    margin-right: 10px;
 }
 
+.site-title {
 
-
-/*.site-logo a {
-    position: absolute;
-    z-index: 10;
-    top: 1em;
-    left: 1em;
-    display: block;
-    width: 2em;
-    height: 2em;
-    background: black;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-}*/
+}
