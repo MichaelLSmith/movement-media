@@ -2,7 +2,7 @@
 corresonds to the clearings section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:09:47 AM
     Author     : michael
 */
@@ -16,8 +16,6 @@ needs to be @imported into the style.css file and processed by gulp
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
 .site-content:before,
 .site-content:after,
 .site-footer:before,
@@ -27,11 +25,16 @@ needs to be @imported into the style.css file and processed by gulp
 	table-layout: fixed;
 }
 
+/*.site-header:before,
+.site-header:after,*/
+/*.site-header:after,
+.site-content:after,*/
+
+
+
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-header:after,
-.site-content:after,
 .site-footer:after {
 	clear: both;
 }

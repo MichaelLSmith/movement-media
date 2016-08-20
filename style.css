@@ -1,9 +1,3 @@
-@small: screen and (min-width: 600px);
-
-@medium: screen and (min-width: 900px);
-
-@large: screen and (min-width: 1200px);
-
 /*
 Normalize section in the original theme style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -607,14 +601,14 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the clearings section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:09:47 AM
     Author     : michael
 */
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
 
     content: "";
 
@@ -622,7 +616,11 @@ needs to be @imported into the style.css file and processed by gulp
 
     table-layout: fixed
 }
-.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+/*.site-header:before,
+.site-header:after,*/
+/*.site-header:after,
+.site-content:after,*/
+.clear:after, .entry-content:after, .comment-content:after, .site-footer:after {
 
     clear: both
 }
@@ -799,9 +797,7 @@ a:hover, a:active {
 
 .main-navigation {
 
-    -ms-flex-item-align: end;
-
-        align-self: flex-end
+    /*align-self: flex-end;*/
 
     /*clear: both;*/
 
@@ -964,33 +960,42 @@ Header CSS - need to @include in style.css and run gulp process
 
         -ms-flex-pack: justify;
 
-            justify-content: space-between
+            justify-content: space-between;
+
+    padding: 1em .5em
 }
-/* Note to test postcss process*/
+.logo-tag-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex
+}
+@media screen and (max-width: 600px) {
+
+    .logo-tag-container {
+
+        -ms-flex-item-align: center;
+
+            align-self: center
+    }
+}
 .site-branding {
 
-    text-align: center;
+    /*text-align: center;*/
 
-    -ms-flex-item-align: center;
+    /*display: inline-block;*/
+}
+@media screen and (max-width: 600px) {
 
-        align-self: center
+    .site-branding {
+
+        display: none
+    }
 }
 .site-logo {
 
-    -ms-flex-item-align: start;
-
-        align-self: flex-start
+    margin-right: 10px
 }
-/*.site-logo a {
-    position: absolute;
-    z-index: 10;
-    top: 1em;
-    left: 1em;
-    display: block;
-    width: 2em;
-    height: 2em;
-    background: black;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-}*/
+.site-title {}
