@@ -648,13 +648,26 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the content section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:11:47 AM
     Author     : michael
 */
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site {
+
+    max-width: 80%;
+
+    margin: auto
+}
+@media screen and (min-width: 1200px) {
+
+    .site {
+
+        max-width: 1200px
+    }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -943,7 +956,7 @@ Header CSS - need to @include in style.css and run gulp process
 --------------------------------------------------------------*/
 .site-header {
 
-    background-color: #FAEBD7;
+    /*background-color: #FAEBD7;*/
 
     display: -webkit-box;
 
@@ -969,19 +982,30 @@ Header CSS - need to @include in style.css and run gulp process
 .logo-tag-container {
 
     margin: auto
+}
+@media screen and (min-width: 37.5em) {
 
-    /*@media $medium {
+    .logo-tag-container {
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
-        margin: 0;
-    }*/
+
+        margin: 0
+    }
 }
 .site-branding {
 
     display: none
+}
+@media screen and (min-width: 37.5em) {
 
-    /*@media $small {
-        display: block;
-    }*/
+    .site-branding {
+
+        display: block
+    }
 }
 .site-title {}
 .site-logo {

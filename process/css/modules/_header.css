@@ -11,10 +11,11 @@ Header CSS - need to @include in style.css and run gulp process
 --------------------------------------------------------------*/
 
 .site-header {
-    background-color: #FAEBD7;
+    /*background-color: #FAEBD7;*/
     display: flex;
     flex-direction: column;
     padding: 1em .5em;
+
 
     /*@media $medium {
         justify-content: space-between;
@@ -23,17 +24,17 @@ Header CSS - need to @include in style.css and run gulp process
 .logo-tag-container {
     margin: auto;
 
-    /*@media $medium {
+    @media $medium {
         display: flex;
         margin: 0;
-    }*/
+    }
 }
 .site-branding {
     display: none;
 
-    /*@media $small {
+    @media $medium {
         display: block;
-    }*/
+    }
 }
 
 .site-title {
