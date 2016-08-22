@@ -43,11 +43,8 @@ a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	/*align-self: flex-end;*/
-	/*clear: both;*/
-	/*display: block;*/
-	/*float: left;*/
-	/*width: 100%;*/
+	margin: 0 0 1em auto;
+	display: flex;
 }
 
 .main-navigation ul {
@@ -58,8 +55,7 @@ a:active {
 }
 
 .main-navigation li {
-	float: left;
-	position: relative;
+	display: inline-block;
 }
 
 .main-navigation a {
@@ -123,7 +119,13 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+.menu-toggle {
+	order: 2;
+	/*places the menu button to the left of the nav menu*/
+	margin: 0 0 0 .5em;
+}
+
+@media $medium {
 	.menu-toggle {
 		display: none;
 	}

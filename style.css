@@ -648,13 +648,26 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the content section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:11:47 AM
     Author     : michael
 */
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site {
+
+    max-width: 80%;
+
+    margin: auto
+}
+@media screen and (min-width: 1200px) {
+
+    .site {
+
+        max-width: 1200px
+    }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -797,15 +810,13 @@ a:hover, a:active {
 
 .main-navigation {
 
-    /*align-self: flex-end;*/
+    margin: 0 0 1em auto;
 
-    /*clear: both;*/
+    display: -webkit-box;
 
-    /*display: block;*/
+    display: -ms-flexbox;
 
-    /*float: left;*/
-
-    /*width: 100%;*/
+    display: flex
 }
 
 .main-navigation ul {
@@ -821,9 +832,7 @@ a:hover, a:active {
 
 .main-navigation li {
 
-    float: left;
-
-    position: relative
+    display: inline-block
 }
 
 .main-navigation a {
@@ -887,6 +896,19 @@ a:hover, a:active {
     display: block
 }
 
+.menu-toggle {
+
+    -webkit-box-ordinal-group: 3;
+
+        -ms-flex-order: 2;
+
+            order: 2;
+
+    /*places the menu button to the left of the nav menu*/
+
+    margin: 0 0 0 .5em
+}
+
 @media screen and (min-width: 37.5em) {
 
     .menu-toggle {
@@ -934,7 +956,7 @@ Header CSS - need to @include in style.css and run gulp process
 --------------------------------------------------------------*/
 .site-header {
 
-    background-color: #FAEBD7;
+    /*background-color: #FAEBD7;*/
 
     display: -webkit-box;
 
@@ -942,60 +964,51 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: flex;
 
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
 
     -webkit-box-direction: normal;
 
-        -ms-flex-direction: row;
+        -ms-flex-direction: column;
 
-            flex-direction: row;
-
-    -ms-flex-wrap: wrap;
-
-        flex-wrap: wrap;
-
-    /*flex-flow: row wrap*/
-
-    -webkit-box-pack: justify;
-
-        -ms-flex-pack: justify;
-
-            justify-content: space-between;
+            flex-direction: column;
 
     padding: 1em .5em
+
+    /*@media $medium {
+        justify-content: space-between;
+    }*/
 }
+/*.site-header*/
 .logo-tag-container {
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex
+    margin: auto
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 37.5em) {
 
     .logo-tag-container {
 
-        -ms-flex-item-align: center;
+        display: -webkit-box;
 
-            align-self: center
+        display: -ms-flexbox;
+
+        display: flex;
+
+        margin: 0
     }
 }
 .site-branding {
 
-    /*text-align: center;*/
-
-    /*display: inline-block;*/
+    display: none
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 37.5em) {
 
     .site-branding {
 
-        display: none
+        display: block
     }
 }
+.site-title {}
 .site-logo {
 
     margin-right: 10px
 }
-.site-title {}

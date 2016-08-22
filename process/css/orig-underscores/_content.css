@@ -2,7 +2,7 @@
 corresonds to the content section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:11:47 AM
     Author     : michael
 */
@@ -10,6 +10,17 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+.site {
+	max-width: $container-default-width;
+	margin: auto;
+
+	@media $large {
+		max-width: $container-max-width;
+	}
+}
+
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
