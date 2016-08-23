@@ -808,20 +808,17 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 
-.main-navigation, .menu-footer-menu-container {
+.main-navigation {
 
-    margin: 0 0 1em auto;
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex
+    margin: 0 0 1em auto
 }
 
 .main-navigation ul {
 
-    display: none;
+    display: none
+}
+
+.main-navigation ul, .menu-footer-menu-container ul {
 
     list-style: none;
 
@@ -830,7 +827,7 @@ a:hover, a:active {
     padding-left: 0
 }
 
-.main-navigation li {
+.main-navigation li,  {
 
     display: inline-block
 }
