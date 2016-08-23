@@ -42,7 +42,7 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
+.main-navigation, .menu-footer-menu-container {
 	margin: 0 0 1em auto;
 	display: flex;
 }
