@@ -29,6 +29,9 @@
 			<!-- want to swap these in and out. Need to use ACF to set up section to enter.
 		 	Also want to be able to enter address.-->
 		</div>
+		<div class="footer-address-container">
+			<p><?php the_field('street_address', 'option'); ?></p>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'movementmedia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'movementmedia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
