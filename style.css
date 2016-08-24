@@ -1009,3 +1009,11 @@ Header CSS - need to @include in style.css and run gulp process
 
     margin-right: 10px
 }
+.footer-address-container > ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0
+}
