@@ -14,9 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+<section class="site-footer-inside">
 		<div id="footer-sidebar" class="secondary">
 		<!-- contains: search, footer menu -->
-			<div id="footer-sidebar1">
+			<!-- <div id="footer-sidebar1"> -->
 				<?php
 				if(is_active_sidebar('footer-sidebar-1')){
 				dynamic_sidebar('footer-sidebar-1');
@@ -24,7 +25,7 @@
 				?>
 			</div>
 			<!-- need three column footer by adding the other two sidebar/widgets. Or flex box?? -->
-		</div>
+		<!-- </div> -->
 		<div class="social-media-imgs">
 			<!-- want to swap these in and out. Need to use ACF to set up section to enter.
 		 	Also want to be able to enter address.-->
@@ -39,8 +40,10 @@
 			</ul>
 		</div>
 		<div class="footer-image-container">
-			<img src="<?php the_field('footer_image', 'option'); ?>" alt=""> 
+			<img src="<?php the_field('footer_image', 'option'); ?>" alt="">
 		</div>
+	</section>
+	<!-- .site-footer-inside -->
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'movementmedia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'movementmedia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
