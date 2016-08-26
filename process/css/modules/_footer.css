@@ -10,10 +10,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        /*height: 11em;*/
-
     }
-
 }
 
 .footer-middle-container {
@@ -33,7 +30,7 @@
 }
 
 .footer-address-container {
-    /*margin: 1em;*/
+    margin: 1em;
     > ul {
         list-style: none;
         margin: 0;
@@ -43,4 +40,8 @@
 
 .footer-image-container {
     margin: .5em;
+}
+
+.footer-company-img {
+    margin: auto;
 }

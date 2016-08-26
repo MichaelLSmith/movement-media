@@ -44,7 +44,7 @@
 				</ul>
 			</div>
 			<div class="footer-image-container">
-				<img src="<?php the_field('footer_image', 'option'); ?>" alt="">
+				<img src="<?php the_field('footer_image', 'option'); ?>" class="footer-company-img" alt="">
 			</div>
 		</section>
 	<!-- .site-footer-inside -->
