@@ -1029,9 +1029,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     width: 80%;
 
-    text-align: center;
-
-    background-color: #FAEBD7
+    text-align: center
 }
 @media screen and (min-width: 37.5em) {
 
@@ -1064,8 +1062,6 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .footer-middle-container {
 
-    border: black solid;
-
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -1079,10 +1075,34 @@ Header CSS - need to @include in style.css and run gulp process
         -ms-flex-direction: column;
 
             flex-direction: column
+
+    /*background-color: $offwhite;*/
 }
 .footer-search-container {
 
     padding: 1em
+}
+.footer-social-media-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center
 }
 /*margin: 1em;*/
 .footer-address-container > ul {
@@ -1095,5 +1115,5 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .footer-image-container {
 
-    /*margin: 1em auto;*/
+    margin: .5em
 }

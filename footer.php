@@ -21,10 +21,17 @@
 				<div class="footer-search-container">
 					<?php get_search_form( ) ?>
 				</div>
-				<div class="social-media-imgs">
+				<div class="footer-social-media-container">
 					<!-- want to swap these in and out. Need to use ACF to set up section to enter.-->
-					<div class="twitter">Twitter</div>
-					<div class="facebook">Facebook</div>
+					<div class="footer-image-container">
+						<img src="<?php the_field('social_media_image_1', 'option'); ?>" alt="">
+					</div>
+					<div class="footer-image-container">
+						<img src="<?php the_field('social_media_image_2', 'option'); ?>" alt="">
+					</div>
+					<div class="footer-image-container">
+						<img src="<?php the_field('social_media_image_3', 'option'); ?>" alt="">
+					</div>
 				</div>
 			</section>
 			<div class="footer-address-container">

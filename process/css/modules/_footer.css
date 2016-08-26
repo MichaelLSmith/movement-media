@@ -4,7 +4,6 @@
     margin: auto;
     width: 80%;
     text-align: center;
-    background-color: $offwhite;
 
 
     @media $medium {
@@ -18,13 +17,19 @@
 }
 
 .footer-middle-container {
-    border: black solid;
     display: flex;
     flex-direction: column;
+    /*background-color: $offwhite;*/
 }
 
 .footer-search-container {
     padding: 1em;
+}
+
+.footer-social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .footer-address-container {
@@ -37,5 +42,5 @@
 }
 
 .footer-image-container {
-    /*margin: 1em auto;*/
+    margin: .5em;
 }
