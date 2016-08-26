@@ -45,7 +45,9 @@ function movementmedia_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'movementmedia' ),
-	) );
+		'footer-menu' => esc_html__( 'Footer Menu', 'movementmedia' )
+		)
+	);
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -65,6 +67,28 @@ function movementmedia_setup() {
 		'default-image' => '',
 	) ) );
 }
+
+// ACF theme options
+	acf_add_options_page( array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
 endif;
 add_action( 'after_setup_theme', 'movementmedia_setup' );
 
@@ -95,6 +119,15 @@ function movementmedia_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+// 	register_sidebar( array(
+// 		'name' => 'Footer Sidebar 1',
+// 		'id' => 'footer-sidebar-1',
+// 		'description' => 'Appears in the footer area',
+// 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+// 		'after_widget' => '</aside>',
+// 		'before_title' => '<h3 class="widget-title">',
+// 		'after_title' => '</h3>',
+// 	) );
 }
 add_action( 'widgets_init', 'movementmedia_widgets_init' );
 

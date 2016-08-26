@@ -18,80 +18,80 @@ html {
 
     -webkit-text-size-adjust: 100%;
 
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
 }
 
 body {
 
-    margin: 0
+    margin: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
 
-    display: block
+    display: block;
 }
 
 audio, canvas, progress, video {
 
     display: inline-block;
 
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 audio:not([controls]) {
 
     display: none;
 
-    height: 0
+    height: 0;
 }
 
 [hidden], template {
 
-    display: none
+    display: none;
 }
 
 a {
 
-    background-color: transparent
+    background-color: transparent;
 }
 
 a:active, a:hover {
 
-    outline: 0
+    outline: 0;
 }
 
 abbr[title] {
 
-    border-bottom: 1px dotted
+    border-bottom: 1px dotted;
 }
 
 b, strong {
 
-    font-weight: bold
+    font-weight: bold;
 }
 
 dfn {
 
-    font-style: italic
+    font-style: italic;
 }
 
 h1 {
 
     font-size: 2em;
 
-    margin: 0.67em 0
+    margin: 0.67em 0;
 }
 
 mark {
 
     background: #ff0;
 
-    color: #000
+    color: #000;
 }
 
 small {
 
-    font-size: 80%
+    font-size: 80%;
 }
 
 sub, sup {
@@ -102,51 +102,51 @@ sub, sup {
 
     position: relative;
 
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 sup {
 
-    top: -0.5em
+    top: -0.5em;
 }
 
 sub {
 
-    bottom: -0.25em
+    bottom: -0.25em;
 }
 
 img {
 
-    border: 0
+    border: 0;
 }
 
 svg:not(:root) {
 
-    overflow: hidden
+    overflow: hidden;
 }
 
 figure {
 
-    margin: 1em 40px
+    margin: 1em 40px;
 }
 
 hr {
 
     box-sizing: content-box;
 
-    height: 0
+    height: 0;
 }
 
 pre {
 
-    overflow: auto
+    overflow: auto;
 }
 
 code, kbd, pre, samp {
 
     font-family: monospace, monospace;
 
-    font-size: 1em
+    font-size: 1em;
 }
 
 button, input, optgroup, select, textarea {
@@ -155,58 +155,58 @@ button, input, optgroup, select, textarea {
 
     font: inherit;
 
-    margin: 0
+    margin: 0;
 }
 
 button {
 
-    overflow: visible
+    overflow: visible;
 }
 
 button, select {
 
-    text-transform: none
+    text-transform: none;
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
     -webkit-appearance: button;
 
-    cursor: pointer
+    cursor: pointer;
 }
 
 button[disabled], html input[disabled] {
 
-    cursor: default
+    cursor: default;
 }
 
 button::-moz-focus-inner, input::-moz-focus-inner {
 
     border: 0;
 
-    padding: 0
+    padding: 0;
 }
 
 input {
 
-    line-height: normal
+    line-height: normal;
 }
 
 input[type="checkbox"], input[type="radio"] {
 
     box-sizing: border-box;
 
-    padding: 0
+    padding: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
 
-    height: auto
+    height: auto;
 }
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
 
-    -webkit-appearance: none
+    -webkit-appearance: none;
 }
 
 fieldset {
@@ -215,36 +215,36 @@ fieldset {
 
     margin: 0 2px;
 
-    padding: 0.35em 0.625em 0.75em
+    padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
 
     border: 0;
 
-    padding: 0
+    padding: 0;
 }
 
 textarea {
 
-    overflow: auto
+    overflow: auto;
 }
 
 optgroup {
 
-    font-weight: bold
+    font-weight: bold;
 }
 
 table {
 
     border-collapse: collapse;
 
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 td, th {
 
-    padding: 0
+    padding: 0;
 }
 /*
 corresonds to the typography section of the origin style.css file
@@ -261,7 +261,7 @@ html {
 
     /* setting base font size to 10px, based on most browswers' default size of 16px */
 
-    font-size: 62.5%
+    font-size: 62.5%;
 }
 body, button, input, select, textarea {
 
@@ -269,27 +269,27 @@ body, button, input, select, textarea {
 
     font-family: sans-serif;
 
-    line-height: 1.5em
+    line-height: 1.5em;
 }
 h1, h2, h3, h4, h5, h6 {
 
-    clear: both
+    clear: both;
 }
 p {
 
-    margin-bottom: 1.5em
+    margin-bottom: 1.5em;
 }
 dfn, cite, em, i {
 
-    font-style: italic
+    font-style: italic;
 }
 blockquote {
 
-    margin: 0 1.5em
+    margin: 0 1.5em;
 }
 address {
 
-    margin: 0 0 1.5em
+    margin: 0 0 1.5em;
 }
 pre {
 
@@ -309,7 +309,7 @@ pre {
 
     overflow: auto;
 
-    padding: 1.6em
+    padding: 1.6em;
 }
 code, kbd, tt, var {
 
@@ -317,23 +317,23 @@ code, kbd, tt, var {
 
     font-size: 15px;
 
-    font-size: 0.9375rem
+    font-size: 0.9375rem;
 }
 abbr, acronym {
 
     border-bottom: 1px dotted #666;
 
-    cursor: help
+    cursor: help;
 }
 mark, ins {
 
     background: #fff9c0;
 
-    text-decoration: none
+    text-decoration: none;
 }
 big {
 
-    font-size: 125%
+    font-size: 125%;
 }
 /*
 corresonds to the elements section of the origin style.css file
@@ -348,27 +348,27 @@ needs to be @imported into the style.css file and processed by gulp.
 --------------------------------------------------------------*/
 html {
 
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 *, *:before, *:after {
 
     /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 body {
 
-    background: #fff
+    background: #fff;
 
     /* Fallback for when there is no custom background color defined. */
 }
 blockquote:before, blockquote:after, q:before, q:after {
 
-    content: ""
+    content: "";
 }
 blockquote, q {
 
-    quotes: "" ""
+    quotes: "" "";
 }
 hr {
 
@@ -378,33 +378,33 @@ hr {
 
     height: 1px;
 
-    margin-bottom: 1.5em
+    margin-bottom: 1.5em;
 }
 ul, ol {
 
-    margin: 0 0 1.5em 3em
+    margin: 0 0 1.5em 3em;
 }
 ul {
 
-    list-style: disc
+    list-style: disc;
 }
 ol {
 
-    list-style: decimal
+    list-style: decimal;
 }
 li > ul, li > ol {
 
     margin-bottom: 0;
 
-    margin-left: 1.5em
+    margin-left: 1.5em;
 }
 dt {
 
-    font-weight: bold
+    font-weight: bold;
 }
 dd {
 
-    margin: 0 1.5em 1.5em
+    margin: 0 1.5em 1.5em;
 }
 img {
 
@@ -416,13 +416,13 @@ img {
 
     /* Adhere to container width. */
 
-    display: block
+    display: block;
 }
 table {
 
     margin: 0 0 1.5em;
 
-    width: 100%
+    width: 100%;
 }
 /*
 corresonds to the forms section of the origin style.css file
@@ -457,19 +457,19 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 
     padding: .6em 1em .4em;
 
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8)
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
 
     border-color: #ccc #bbb #aaa;
 
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02)
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
 button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
 
     border-color: #aaa #bbb #bbb;
 
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15)
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
 
@@ -479,19 +479,19 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 
     border-radius: 3px;
 
-    padding: 3px
+    padding: 3px;
 }
 select {
 
-    border: 1px solid #ccc
+    border: 1px solid #ccc;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
 
-    color: #111
+    color: #111;
 }
 textarea {
 
-    width: 100%
+    width: 100%;
 }
 /*
 corresonds to the accessibility section of the origin style.css file
@@ -515,7 +515,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     width: 1px;
 
-    overflow: hidden
+    overflow: hidden;
 }
 .screen-reader-text:focus {
 
@@ -551,14 +551,14 @@ needs to be @imported into the style.css file and processed by gulp
 
     width: auto;
 
-    z-index: 100000
+    z-index: 100000;
 
     /* Above WP toolbar. */
 }
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
 
-    outline: 0
+    outline: 0;
 }
 /*
 corresonds to the alignments section of the origin style.css file
@@ -577,7 +577,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     float: left;
 
-    margin-right: 1.5em
+    margin-right: 1.5em;
 }
 .alignright {
 
@@ -585,7 +585,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     float: right;
 
-    margin-left: 1.5em
+    margin-left: 1.5em;
 }
 .aligncenter {
 
@@ -595,7 +595,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin-left: auto;
 
-    margin-right: auto
+    margin-right: auto;
 }
 /*
 corresonds to the clearings section of the origin style.css file
@@ -614,7 +614,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     display: table;
 
-    table-layout: fixed
+    table-layout: fixed;
 }
 /*.site-header:before,
 .site-header:after,*/
@@ -622,7 +622,7 @@ needs to be @imported into the style.css file and processed by gulp
 .site-content:after,*/
 .clear:after, .entry-content:after, .comment-content:after, .site-footer:after {
 
-    clear: both
+    clear: both;
 }
 /*
 corresonds to the widgets section of the origin style.css file
@@ -637,12 +637,12 @@ needs to be @imported into the style.css file and processed by gulp
 --------------------------------------------------------------*/
 .widget {
 
-    margin: 0 0 1.5em
+    margin: 0 0 1.5em;
 }
 /* Make sure select elements fit in widgets. */
 .widget select {
 
-    max-width: 100%
+    max-width: 100%;
 }
 /*
 corresonds to the content section of the origin style.css file
@@ -659,13 +659,13 @@ needs to be @imported into the style.css file and processed by gulp
 
     max-width: 80%;
 
-    margin: auto
+    margin: auto;
 }
 @media screen and (min-width: 1200px) {
 
     .site {
 
-        max-width: 1200px
+        max-width: 1200px;
     }
 }
 /*--------------------------------------------------------------
@@ -673,40 +673,40 @@ needs to be @imported into the style.css file and processed by gulp
 --------------------------------------------------------------*/
 .sticky {
 
-    display: block
+    display: block;
 }
 .hentry {
 
-    margin: 0 0 1.5em
+    margin: 0 0 1.5em;
 }
 .byline, .updated:not(.published) {
 
-    display: none
+    display: none;
 }
 .single .byline, .group-blog .byline {
 
-    display: inline
+    display: inline;
 }
 .page-content, .entry-content, .entry-summary {
 
-    margin: 1.5em 0 0
+    margin: 1.5em 0 0;
 }
 .page-links {
 
     clear: both;
 
-    margin: 0 0 1.5em
+    margin: 0 0 1.5em;
 }
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {
 
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 .bypostauthor {
 
-    display: block
+    display: block;
 }
 /*
 corresonds to the Infinite Scroll section of the origin style.css file
@@ -724,12 +724,12 @@ needs to be @imported into the style.css file and processed by gulp
 
     /* Theme Footer (when set to scrolling) */
 
-    display: none
+    display: none;
 }
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 
-    display: block
+    display: block;
 }
 /*
 corresonds to the Media section of the origin style.css file
@@ -750,12 +750,12 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin-top: 0;
 
-    padding: 0
+    padding: 0;
 }
 /* Make sure embeds and iframes fit their containers. */
 embed, iframe, object {
 
-    max-width: 100%
+    max-width: 100%;
 }
 
 /*
@@ -781,27 +781,27 @@ could possible split this into other files if it grows
 
 a {
 
-    color: royalblue
+    color: royalblue;
 }
 
 a:visited {
 
-    color: purple
+    color: purple;
 }
 
 a:hover, a:focus, a:active {
 
-    color: midnightblue
+    color: midnightblue;
 }
 
 a:focus {
 
-    outline: thin dotted
+    outline: thin dotted;
 }
 
 a:hover, a:active {
 
-    outline: 0
+    outline: 0;
 }
 
 /*--------------------------------------------------------------
@@ -811,35 +811,32 @@ a:hover, a:active {
 .main-navigation {
 
     margin: 0 0 1em auto;
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex
 }
 
 .main-navigation ul {
 
     display: none;
+}
+
+.main-navigation ul, .footer-menu-container ul {
 
     list-style: none;
 
     margin: 0;
 
-    padding-left: 0
+    padding-left: 0;
 }
 
 .main-navigation li {
 
-    display: inline-block
+    display: inline-block;
 }
 
 .main-navigation a {
 
     display: block;
 
-    text-decoration: none
+    text-decoration: none;
 }
 
 .main-navigation ul ul {
@@ -854,19 +851,19 @@ a:hover, a:active {
 
     left: -999em;
 
-    z-index: 99999
+    z-index: 99999;
 }
 
 .main-navigation ul ul ul {
 
     left: -999em;
 
-    top: 0
+    top: 0;
 }
 
 .main-navigation ul ul a {
 
-    width: 200px
+    width: 200px;
 }
 
 .main-navigation ul ul li {}
@@ -879,12 +876,12 @@ a:hover, a:active {
 
 .main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul {
 
-    left: auto
+    left: auto;
 }
 
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
 
-    left: 100%
+    left: 100%;
 }
 
 .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a {}
@@ -893,7 +890,7 @@ a:hover, a:active {
 
 .menu-toggle, .main-navigation.toggled ul {
 
-    display: block
+    display: block;
 }
 
 .menu-toggle {
@@ -906,19 +903,19 @@ a:hover, a:active {
 
     /*places the menu button to the left of the nav menu*/
 
-    margin: 0 0 0 .5em
+    margin: 0 0 0 .5em;
 }
 
 @media screen and (min-width: 37.5em) {
 
     .menu-toggle {
 
-        display: none
+        display: none;
     }
 
     .main-navigation ul {
 
-        display: block
+        display: block;
     }
 }
 
@@ -926,14 +923,14 @@ a:hover, a:active {
 
     margin: 0 0 1.5em;
 
-    overflow: hidden
+    overflow: hidden;
 }
 
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
 
     float: left;
 
-    width: 50%
+    width: 50%;
 }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
@@ -942,7 +939,7 @@ a:hover, a:active {
 
     text-align: right;
 
-    width: 50%
+    width: 50%;
 }
 /*
 Header CSS - need to @include in style.css and run gulp process
@@ -972,7 +969,7 @@ Header CSS - need to @include in style.css and run gulp process
 
             flex-direction: column;
 
-    padding: 1em .5em
+    padding: 1em .5em;
 
     /*@media $medium {
         justify-content: space-between;
@@ -981,7 +978,7 @@ Header CSS - need to @include in style.css and run gulp process
 /*.site-header*/
 .logo-tag-container {
 
-    margin: auto
+    margin: auto;
 }
 @media screen and (min-width: 37.5em) {
 
@@ -993,22 +990,135 @@ Header CSS - need to @include in style.css and run gulp process
 
         display: flex;
 
-        margin: 0
+        margin: 0;
     }
 }
 .site-branding {
 
-    display: none
+    display: none;
 }
 @media screen and (min-width: 37.5em) {
 
     .site-branding {
 
-        display: block
+        display: block;
     }
 }
 .site-title {}
 .site-logo {
 
-    margin-right: 10px
+    margin-right: 10px;
+}
+.site-footer-inside {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+
+    margin: auto;
+
+    width: 80%;
+
+    text-align: center;
+}
+@media screen and (min-width: 37.5em) {
+
+    .site-footer-inside {
+
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+                flex-direction: row;
+
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
+
+        -webkit-box-align: center;
+
+            -ms-flex-align: center;
+
+                    -ms-grid-row-align: center;
+
+                align-items: center;
+    }
+}
+.footer-middle-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+
+    /*background-color: $offwhite;*/
+}
+.footer-search-container {
+
+    padding: 1em;
+}
+.footer-social-media-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+}
+.footer-address-container {
+
+    margin: 1em;
+}
+.footer-address-container > ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+.footer-image-container {
+
+    margin: .5em;
+}
+.footer-company-img {
+
+    margin: auto;
 }
