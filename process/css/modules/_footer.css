@@ -5,9 +5,30 @@
     width: 80%;
     text-align: center;
     background-color: $offwhite;
+
+
+    @media $medium {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*height: 11em;*/
+
+    }
+
+}
+
+.footer-middle-container {
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-search-container {
+    padding: 1em;
 }
 
 .footer-address-container {
+    /*margin: 1em;*/
     > ul {
         list-style: none;
         margin: 0;
@@ -16,5 +37,5 @@
 }
 
 .footer-image-container {
-    margin: 1em auto;
+    /*margin: 1em auto;*/
 }

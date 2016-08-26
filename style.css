@@ -818,7 +818,7 @@ a:hover, a:active {
     display: none
 }
 
-.main-navigation ul, .menu-footer-menu-container ul {
+.main-navigation ul, .footer-menu-container ul {
 
     list-style: none;
 
@@ -1033,6 +1033,58 @@ Header CSS - need to @include in style.css and run gulp process
 
     background-color: #FAEBD7
 }
+@media screen and (min-width: 37.5em) {
+
+    .site-footer-inside {
+
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+                flex-direction: row;
+
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
+
+        -webkit-box-align: center;
+
+            -ms-flex-align: center;
+
+                    -ms-grid-row-align: center;
+
+                align-items: center
+
+        /*height: 11em;*/
+    }
+}
+.footer-middle-container {
+
+    border: black solid;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column
+}
+.footer-search-container {
+
+    padding: 1em
+}
+/*margin: 1em;*/
 .footer-address-container > ul {
 
     list-style: none;
@@ -1043,5 +1095,5 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .footer-image-container {
 
-    margin: 1em auto
+    /*margin: 1em auto;*/
 }
