@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: custom-template
+ * Template Name: custom-change
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
