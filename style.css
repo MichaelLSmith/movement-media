@@ -657,17 +657,24 @@ needs to be @imported into the style.css file and processed by gulp
 --------------------------------------------------------------*/
 .site {
 
-    max-width: 80%;
-
     margin: auto;
+
+    max-width: 80%;
 }
 @media screen and (min-width: 1200px) {
 
     .site {
 
-        max-width: 1200px;
+        max-width: 1000px;
     }
 }
+.site-content {
+
+    max-width: 80%;
+
+    margin: inherit;
+}
+.content-inner {}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

@@ -12,12 +12,20 @@ needs to be @imported into the style.css file and processed by gulp
 --------------------------------------------------------------*/
 
 .site {
-	max-width: $container-default-width;
 	margin: auto;
-
+	max-width: $container-default-width;
 	@media $large {
 		max-width: $container-max-width;
 	}
+}
+
+.site-content {
+	max-width: $container-default-width;
+	margin: inherit;
+}
+
+.content-inner {
+
 }
 
 

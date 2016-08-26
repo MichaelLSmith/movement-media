@@ -3,6 +3,6 @@ $medium: screen and (min-width: 37.5em);
 $large: screen and (min-width: 1200px);
 
 $container-default-width: 80%;
-$container-max-width: 1200px;
+$container-max-width: 1000px;
 
 $offwhite: #FAEBD7;
