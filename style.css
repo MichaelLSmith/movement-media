@@ -1131,27 +1131,15 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .about-services {
 
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: row;
-
-            flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
 }
 .service {
 
-    display: inline-block;
-}
-.service p {
+    /*display: inline-block;
 
-    font-size: .75em;
-
-    text-indent: 1em;
+    p {
+        font-size: .75em;
+        text-indent: 1em;
+    }*/
 }

@@ -1,13 +1,13 @@
 .about-services {
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
 }
 
 .service {
-    display: inline-block;
+    /*display: inline-block;
 
     p {
         font-size: .75em;
         text-indent: 1em;
-    }
+    }*/
 }
