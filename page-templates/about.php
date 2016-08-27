@@ -13,20 +13,33 @@ get_header(); ?>
 		<main class="content-inner" role="main">
 			<?php the_field('about_introduction', '13'); ?>
 
-			<div class="about-services">
-				<?php
-					// check if the repeater field has rows of data
-					if( have_rows('about_services') ):
-					 	// loop through the rows of data
-					    while ( have_rows('about_services') ) : the_row();
-					        // display a sub field value
-					        the_sub_field('service');
-					    endwhile;
-					else :
-					    // no rows found
-					endif;
-				?>
-			</div>
+			<h1>Services</h1>
+			<section class="about-services">
+				<div class="about-services-left">
+					<?php
+						$services = get_field( 'about_services_left' );
+						if($services) {
+							// echo "<div class='services-repeater-container'</div>";
+							foreach ($services as $service) {
+								echo "<span class='service'>" . $service['service'] . "</span>";
+							}
+						}
+
+						?>
+				</div>
+				<div class="about-services-right">
+					<?php
+						$services = get_field( 'about_services_right' );
+						if($services) {
+							// echo "<div class='services-repeater-container'</div>";
+							foreach ($services as $service) {
+								echo "<span class='service'>" . $service['service'] . "</span>";
+							}
+						}
+
+						?>
+				</div>
+			</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

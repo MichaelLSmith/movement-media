@@ -1129,3 +1129,29 @@ Header CSS - need to @include in style.css and run gulp process
 
     margin: auto;
 }
+.about-services {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+}
+.service {
+
+    display: inline-block;
+}
+.service p {
+
+    font-size: .75em;
+
+    text-indent: 1em;
+}
