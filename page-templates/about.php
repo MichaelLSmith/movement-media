@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About Page
+ * Template Name: About
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -15,32 +15,28 @@ get_header(); ?>
 
 			<h1>Services</h1>
 			<section class="about-services">
-				<div class="about-services-left">
-					<?php
-						$services = get_field( 'about_services_left' );
-						if($services) {
-							// echo "<div class='services-repeater-container'</div>";
-							foreach ($services as $service) {
-								echo "<span class='service'>" . $service['service'] . "</span>";
-							}
-						}
+				<dl class='services-list'>
+	            <?php
+					if ( have_rows('about_services_left') ):
+	                    while ( have_rows('about_services_left') ): the_row();
+							$service = get_sub_field('service');
+							$description = get_sub_field('service_description');
 
+					?>
+						<?php
+							if ( $service ):
+								echo "<dt>" . $service . "</dt>";
+							endif;
 						?>
-				</div>
-				<div class="about-services-right">
-					<?php
-						$services = get_field( 'about_services_right' );
-						if($services) {
-							// echo "<div class='services-repeater-container'</div>";
-							foreach ($services as $service) {
-								echo "<span class='service'>" . $service['service'] . "</span>";
-							}
-						}
-
+						<?php
+							if ( $description ):
+								echo "<dd>" . $description . "</dd>";
+							endif;
 						?>
-				</div>
-			</section>
-
+		                <?php endwhile; ?>
+	            <?php endif; ?>
+				</dl>
+    		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
