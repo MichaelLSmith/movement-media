@@ -57,6 +57,49 @@ get_header(); ?>
 	            <?php endif; ?>
 				</dl>
     		</section>
+
+			<section class="bios">
+				<h1>Who we are</h1>
+
+				<?php
+					if ( have_rows('bios') ):
+	                    while ( have_rows('bios') ): the_row();
+							$image = get_sub_field('bio_image');
+							$name = get_sub_field('bio_name');
+							$title = get_sub_field('bio_title');
+							$text = get_sub_field('bio_text');
+					?>
+
+						<article class="bio">
+						<?php
+							if ( $image ):
+								echo "<img src='$image'>";
+							endif;
+						?>
+						<?php
+							if ( $name ):
+								echo "<h3>" . $name . "<span class=title>" . $title . "</span></h3>";
+							endif;
+						?>
+						<?php
+							if ( $text ):
+								echo $text;
+							endif;
+						?>
+					</article>
+		            <?php endwhile; ?>
+	            <?php endif; ?>
+
+
+				<!-- <article class="bio">
+					<img src="" alt="" />
+					<h3>Ryan Fletcher, Director</h3>
+					<p>
+
+					</p>
+				</article>-->
+			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
