@@ -1,11 +1,16 @@
 .about-services {
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+
+    @media $medium {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     /* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
     dl {
-        list-style: none;
     }
 
     dt {

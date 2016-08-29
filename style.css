@@ -404,7 +404,7 @@ dt {
 }
 dd {
 
-    margin: 0 1.5em 1.5em;
+    margin: 0 0 0 .5em;
 }
 img {
 
@@ -1131,29 +1131,28 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .about-services {
 
+    list-style: none;
+
     display: -webkit-box;
 
     display: -ms-flexbox;
 
     display: flex;
 
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
 
     -webkit-box-direction: normal;
 
-        -ms-flex-direction: row;
+        -ms-flex-direction: column;
 
-            flex-direction: row;
+            flex-direction: column;
 
     -ms-flex-wrap: wrap;
 
         flex-wrap: wrap;
 }
 /* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
-.about-services dl {
-
-    list-style: none;
-}
+.about-services dl {}
 .about-services dt {
 
     position: relative;
@@ -1202,4 +1201,23 @@ Header CSS - need to @include in style.css and run gulp process
 .about-services .large-list {
 
     font-size: 150%;
+}
+@media screen and (min-width: 37.5em) {
+
+    .about-services {
+
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+                flex-direction: row;
+
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
+    }
 }

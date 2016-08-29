@@ -15,13 +15,12 @@ get_header(); ?>
 
 			<h1>Services</h1>
 			<section class="about-services">
-				<dl class='services-list'>
+				<dl>
 	            <?php
 					if ( have_rows('about_services_left') ):
 	                    while ( have_rows('about_services_left') ): the_row();
 							$service = get_sub_field('service');
 							$description = get_sub_field('service_description');
-
 					?>
 						<?php
 							if ( $service ):
@@ -33,7 +32,28 @@ get_header(); ?>
 								echo "<dd>" . $description . "</dd>";
 							endif;
 						?>
-		                <?php endwhile; ?>
+		            <?php endwhile; ?>
+	            <?php endif; ?>
+				</dl>
+
+				<dl>
+	            <?php
+					if ( have_rows('about_services_right') ):
+	                    while ( have_rows('about_services_right') ): the_row();
+							$service = get_sub_field('service');
+							$description = get_sub_field('service_description');
+					?>
+						<?php
+							if ( $service ):
+								echo "<dt>" . $service . "</dt>";
+							endif;
+						?>
+						<?php
+							if ( $description ):
+								echo "<dd>" . $description . "</dd>";
+							endif;
+						?>
+		            <?php endwhile; ?>
 	            <?php endif; ?>
 				</dl>
     		</section>
