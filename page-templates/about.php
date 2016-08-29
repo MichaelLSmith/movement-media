@@ -12,7 +12,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main class="content-inner" role="main">
 			<?php the_field('about_introduction', '13'); ?>
-
 			<h1>Services</h1>
 			<section class="about-services">
 				<dl>
@@ -35,7 +34,6 @@ get_header(); ?>
 		            <?php endwhile; ?>
 	            <?php endif; ?>
 				</dl>
-
 				<dl>
 	            <?php
 					if ( have_rows('about_services_right') ):
@@ -57,10 +55,8 @@ get_header(); ?>
 	            <?php endif; ?>
 				</dl>
     		</section>
-
 			<section class="bios">
 				<h1>Who we are</h1>
-
 				<?php
 					if ( have_rows('bios') ):
 	                    while ( have_rows('bios') ): the_row();
@@ -69,7 +65,6 @@ get_header(); ?>
 							$title = get_sub_field('bio_title');
 							$text = get_sub_field('bio_text');
 					?>
-
 						<article class="bio">
 						<?php
 							if ( $image ):
@@ -78,7 +73,7 @@ get_header(); ?>
 						?>
 						<?php
 							if ( $name ):
-								echo "<h3>" . $name . "<span class=title>" . $title . "</span></h3>";
+								echo "<h3>" . $name . " " . "<span class=title>" . $title . "</span></h3>";
 							endif;
 						?>
 						<?php
@@ -89,15 +84,6 @@ get_header(); ?>
 					</article>
 		            <?php endwhile; ?>
 	            <?php endif; ?>
-
-
-				<!-- <article class="bio">
-					<img src="" alt="" />
-					<h3>Ryan Fletcher, Director</h3>
-					<p>
-
-					</p>
-				</article>-->
 			</section>
 
 		</main><!-- #main -->
