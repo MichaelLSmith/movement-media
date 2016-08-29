@@ -1,11 +1,12 @@
 var gulp = require('gulp'),
-  gutil = require('gulp-util'),
+    gutil = require('gulp-util'),
 //  webserver = require('gulp-webserver'),
-  postcss = require('gulp-postcss'),
-  autoprefixer = require('autoprefixer'),
-  precss = require('precss'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    precss = require('precss'),
 //  cssnano = require('cssnano'),
-  animation = require('postcss-animation'),
+    animation = require('postcss-animation'),
+    browserSync = require('browser-sync').create();
 
   source = 'process/css/', //source css files
   dest = '.'; //build file
@@ -19,11 +20,25 @@ gulp.task('css', function() {
   .pipe(postcss([
     precss(),
     animation(),
-    autoprefixer()
+    autoprefixer(),
 //    cssnano()
   ]))
   .on('error', gutil.log)
-  .pipe(gulp.dest(dest));
+  .pipe(gulp.dest(dest))
+  .pipe(browserSync.reload({
+      stream: true
+  }))
+});
+
+gulp.task('browserSync', function(){
+    browserSync.init({
+        // server: {
+        //     baseDir: 'movementmedia'
+        //},
+        proxy: {
+                target: "http://172.18.0.2/"
+        }
+    })
 });
 
 gulp.task('watch', function() {
@@ -39,7 +54,5 @@ gulp.task('watch', function() {
 //    }));
 //});
 
-gulp.task('default', ['css', 'watch']);
+gulp.task('default', ['css', 'browserSync', 'watch']);
 //'webserver', add after css
-
-

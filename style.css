@@ -1150,6 +1150,10 @@ Header CSS - need to @include in style.css and run gulp process
     -ms-flex-wrap: wrap;
 
         flex-wrap: wrap;
+
+    /*browser sync test*/
+
+    background-color: gray;
 }
 /* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
 .about-services dl {}
@@ -1219,5 +1223,7 @@ Header CSS - need to @include in style.css and run gulp process
             -ms-flex-pack: justify;
 
                 justify-content: space-between;
+
+        background-color: gray;
     }
 }
