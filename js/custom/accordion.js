@@ -1,3 +1,5 @@
+console.log('accordion.js');
+
 jQuery(document).ready(function(){
     jQuery("button").click(function(){
         jQuery("#test").hide();

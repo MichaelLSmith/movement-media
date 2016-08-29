@@ -6,14 +6,21 @@ var gulp = require('gulp'),
     precss = require('precss'),
 //  cssnano = require('cssnano'),
     animation = require('postcss-animation'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    concat = require('gulp-concat'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
 
-  source = 'process/css/', //source css files
-  dest = '.'; //build file
+    source = 'process/css/', //source css files
+    dest = '.'; //build file
+    jsFiles = 'js/custom/**/*.js'
+    jsDest = 'js';
 
-//gulp.task('html', function() {
-//  gulp.src(dest + '*.html');
-//});
+gulp.task('scripts', function(){
+    return gulp.src(jsFiles)
+        .pipe(concat('custom_script.js'))
+        .pipe(gulp.dest(jsDest));
+})
 
 gulp.task('css', function() {
   gulp.src(source + 'style.css')
@@ -32,9 +39,6 @@ gulp.task('css', function() {
 
 gulp.task('browserSync', function(){
     browserSync.init({
-        // server: {
-        //     baseDir: 'movementmedia'
-        //},
         proxy: {
                 target: "http://172.18.0.2/"
         }
@@ -43,16 +47,8 @@ gulp.task('browserSync', function(){
 
 gulp.task('watch', function() {
   gulp.watch(source + '**/*.css', ['css']);
-//  gulp.watch(dest + '**/*.html', ['html']);
+  gulp.watch(jsFiles, ['scripts']);
 });
 
-//gulp.task('webserver', function() {
-//  gulp.src(dest)
-//    .pipe(webserver({
-//      livereload: true,
-//      open: true
-//    }));
-//});
-
-gulp.task('default', ['css', 'browserSync', 'watch']);
+gulp.task('default', ['scripts', 'css', 'browserSync', 'watch']);
 //'webserver', add after css
