@@ -1,17 +1,11 @@
 console.log('accordion.js');
 
 jQuery(document).ready(function(){
-    jQuery("button").click(function(){
-        jQuery("#test").hide();
+    jQuery( ".bio" ).accordion({
+      header: "aside",
+      collapsible: true
     });
 });
-
-
-jQuery( function() {
-   jQuery( "#accordion" ).accordion({
-     collapsible: true
-   });
- } );
 
 console.log('jqueryTest');
 

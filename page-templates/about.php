@@ -66,19 +66,25 @@ get_header(); ?>
 							$text = get_sub_field('bio_text');
 					?>
 						<article class="bio">
-						<?php
-							if ( $image ):
-								echo "<img src='$image'>";
-							endif;
-						?>
-						<?php
-							if ( $name ):
-								echo "<h3>" . $name . " " . "<span class=title>" . $title . "</span></h3>";
-							endif;
-						?>
+							<aside class="bio-bi-line">
+								<?php
+									if ( $image ):
+										echo "
+											<div class='bio-image-container'>
+												<img src='$image'>
+											 </div>
+											 ";
+									endif;
+								?>
+								<?php
+									if ( $name ):
+										echo "<h3>" . $name . " " . "<span class=title>" . $title . "</span></h3>";
+									endif;
+								?>
+							</aside>
 						<?php
 							if ( $text ):
-								echo $text;
+								echo "<aside class='bio-text'>" . $text . "</aside>";
 							endif;
 						?>
 					</article>

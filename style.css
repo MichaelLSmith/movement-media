@@ -1150,18 +1150,53 @@ Header CSS - need to @include in style.css and run gulp process
     -ms-flex-wrap: wrap;
 
         flex-wrap: wrap;
+}
+@media screen and (min-width: 37.5em) {
 
-    /*browser sync test*/
+    .about-services {
 
-    background-color: gray;
+        -webkit-box-orient: horizontal;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: row;
+
+                flex-direction: row;
+
+        -webkit-box-pack: justify;
+
+            -ms-flex-pack: justify;
+
+                justify-content: space-between;
+    }
+}
+.bio-bi-line {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+}
+.bio-bi-line h3 {
+
+    padding-left: 1.5em;
+}
+.bio-image-container img {
+
+    max-width: 12em;
+
+    width: auto;
+
+    border-radius: 50%;
 }
 /* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
-.about-services dl {}
-.about-services dt {
+dl {}
+dt {
 
     position: relative;
 }
-.about-services dt:before {
+dt:before {
 
     /*
         The desired width gets defined in two places: The element width, and background size.
@@ -1198,32 +1233,11 @@ Header CSS - need to @include in style.css and run gulp process
 
     background-position: 0 .3em;
 }
-.about-services .small-list {
+.small-list {
 
     font-size: 85%;
 }
-.about-services .large-list {
+.large-list {
 
     font-size: 150%;
-}
-@media screen and (min-width: 37.5em) {
-
-    .about-services {
-
-        -webkit-box-orient: horizontal;
-
-        -webkit-box-direction: normal;
-
-            -ms-flex-direction: row;
-
-                flex-direction: row;
-
-        -webkit-box-pack: justify;
-
-            -ms-flex-pack: justify;
-
-                justify-content: space-between;
-
-        background-color: gray;
-    }
 }
