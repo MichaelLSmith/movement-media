@@ -13,11 +13,11 @@ var gulp = require('gulp'),
 
     source = 'process/css/', //source css files
     dest = '.'; //build file
-    jsFiles = 'js/custom/**/*.js'
+    jsFiles = 'js/custom/'
     jsDest = 'js';
 
 gulp.task('scripts', function(){
-    return gulp.src(jsFiles)
+    return gulp.src(jsFiles + '**/*.js')
         .pipe(concat('custom_script.js'))
         .pipe(gulp.dest(jsDest));
 })
@@ -47,7 +47,7 @@ gulp.task('browserSync', function(){
 
 gulp.task('watch', function() {
   gulp.watch(source + '**/*.css', ['css']);
-  gulp.watch(jsFiles, ['scripts']);
+  gulp.watch(jsFiles + '**/*.js', ['scripts']);
 });
 
 gulp.task('default', ['scripts', 'css', 'browserSync', 'watch']);
