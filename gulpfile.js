@@ -37,18 +37,18 @@ gulp.task('css', function() {
   }))
 });
 
-gulp.task('browserSync', function(){
-    browserSync.init({
-        proxy: {
-                target: "http://172.18.0.2/"
-        }
-    })
-});
+// gulp.task('browserSync', function(){
+//     browserSync.init({
+//         proxy: {
+//                 target: "http://172.18.0.2/"
+//         }
+//     })
+// });
 
 gulp.task('watch', function() {
   gulp.watch(source + '**/*.css', ['css']);
   gulp.watch(jsFiles + '**/*.js', ['scripts']);
 });
 
-gulp.task('default', ['scripts', 'css', 'browserSync', 'watch']);
+gulp.task('default', ['scripts', 'css', 'watch']);
 //'webserver', add after css
