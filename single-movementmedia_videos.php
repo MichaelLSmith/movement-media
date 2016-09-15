@@ -13,10 +13,18 @@ get_header(); ?>
 		<main class="content-inner" role="main">
 
 
-			videos.php test hardcoded
+            <?php
+                if ( have_rows('video_list') ):
+                    while ( have_rows('video_list') ): $row = the_row();
 
+                    echo json_encode($row);
+                    endwhile;
+                endif;
+                ?>
 
-    
+            <script type="text/javascript">var row = "<?= $row ?>";</script>
+			<script type="text/javascript" src="file.js"></script>
+
             <!-- <iframe width="280" height="158" src="https://www.youtube.com/embed/o6pcJxFen8Y" frameborder="0" allowfullscreen></iframe> -->
 
 
