@@ -12,30 +12,16 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 
-		movementmedia videos template
-
-
-
-
-
-
-
-
-
-
+		Video Description
 		<?php
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		the_title( '<h1 class="entry-title">', '</h1>' );
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php movementmedia_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+		the_field('video_embed_url');
+		//decided to use just url and having iframe tag as part of this code so I can control the width and height of the videos.
+
+		the_field('video_description');
+		?>
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
