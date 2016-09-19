@@ -20,6 +20,9 @@
 		//decided to use just url and having iframe tag as part of this code so I can control the width and height of the videos.
 
 		the_field('video_description');
+
+		echo get_the_term_list( $post->ID, 'client-name', $before = 'Client: ', $sep = '', $after = '' );
+
 		?>
 
 	</header><!-- .entry-header -->
