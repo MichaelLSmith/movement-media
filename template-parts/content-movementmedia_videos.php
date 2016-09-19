@@ -11,14 +11,12 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-
-		Video Description
 		<?php
 		the_title( '<h1 class="entry-title">', '</h1>' );
+		?>
 
-		the_field('video_embed_url');
-		//decided to use just url and having iframe tag as part of this code so I can control the width and height of the videos.
-
+	<?php the_field('video_url') ?>
+	<?php
 		the_field('video_description');
 
 		echo get_the_term_list( $post->ID, 'client-name', $before = 'Client: ', $sep = '', $after = '' );

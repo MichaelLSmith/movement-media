@@ -21,13 +21,11 @@ get_header(); ?>
 				<?php
 					//check the query to WP Database
 					$current_term = get_queried_object();
-
-					print_r($current_term);
-
+					// print_r($current_term);
 
 					//check which taxonomy is being searched. And get the term.
 					$taxonomy = get_taxonomy($current_term->taxonomy);
-					echo $taxonomy->label . ': ' . $current_term->name;
+					echo $taxonomy->labels->singular_name . ': ' . $current_term->name;
 
 				?>
 
