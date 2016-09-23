@@ -1,5 +1,7 @@
 import smooth_scroll from 'cferdinandi/smooth-scroll';
-import accordion from './accordion';
+import accordionInit from './accordion';
 
 smooth_scroll.init();
-console.log(accordion);
+jQuery(document).ready(function(){
+        accordionInit();
+});

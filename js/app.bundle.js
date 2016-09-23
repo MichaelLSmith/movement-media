@@ -175,42 +175,43 @@ define("3", ["2"], function(main) {
 $__System.register("4", [], function (_export) {
     "use strict";
 
-    var accordion;
+    var accordionInit;
     return {
         setters: [],
         execute: function () {
             console.log('accordion.js');
 
-            accordion = jQuery(document).ready(function () {
+            accordionInit = function accordionInit() {
                 jQuery(".bio").accordion({
                     active: false,
                     header: "aside",
-                    collapsible: true,
                     heightStyle: 'content'
                 });
-            });
+            };
 
-            _export("default", accordion);
+            _export("default", accordionInit);
         }
     };
 });
 
 $__System.register('1', ['3', '4'], function (_export) {
-  'use strict';
+        'use strict';
 
-  var smooth_scroll, accordion;
-  return {
-    setters: [function (_) {
-      smooth_scroll = _['default'];
-    }, function (_2) {
-      accordion = _2['default'];
-    }],
-    execute: function () {
+        var smooth_scroll, accordionInit;
+        return {
+                setters: [function (_) {
+                        smooth_scroll = _['default'];
+                }, function (_2) {
+                        accordionInit = _2['default'];
+                }],
+                execute: function () {
 
-      smooth_scroll.init();
-      console.log(accordion);
-    }
-  };
+                        smooth_scroll.init();
+                        jQuery(document).ready(function () {
+                                accordionInit();
+                        });
+                }
+        };
 });
 
 })
