@@ -1,6 +1,6 @@
 console.log('accordion.js');
 
-jQuery(document).ready(function(){
+const accordion = jQuery(document).ready(function(){
     jQuery( ".bio" ).accordion({
         active: false,
         header: "aside",
@@ -8,3 +8,5 @@ jQuery(document).ready(function(){
         heightStyle: 'content'
     });
 });
+
+export default accordion;
