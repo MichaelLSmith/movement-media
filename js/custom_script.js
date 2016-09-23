@@ -9,6 +9,10 @@ jQuery(document).ready(function(){
     });
 });
 
+import smooth_scroll from 'cferdinandi/smooth-scroll';
+
+smooth_scroll.init();
+
 console.log('jqueryTest');
 
 

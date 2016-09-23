@@ -10,12 +10,14 @@
     "cssnano": "^3.3.2",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-jspm": "^0.5.13",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
     "install": "^0.4.0",
+    "jspm": "^0.16.45",
     "mq4-hover-shim": "^0.3.0",
     "npm": "^3.5.0",
     "postcss-animation": "0.0.6",
@@ -34,5 +36,15 @@
   "bugs": {
     "url": "https://github.com/MichaelLSmith/movement-media/issues"
   },
-  "homepage": "https://github.com/MichaelLSmith/movement-media#readme"
+  "homepage": "https://github.com/MichaelLSmith/movement-media#readme",
+  "jspm": {
+    "dependencies": {
+      "cferdinandi/smooth-scroll": "github:cferdinandi/smooth-scroll@^10.0.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }
