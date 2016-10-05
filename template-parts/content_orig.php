@@ -12,23 +12,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		$testA = a;
-		$testB = b;
-
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
-			// check if the post or page has a Featured Image assigned to it.
-			if ( has_post_thumbnail() ) :
-				the_post_thumbnail();
-			endif;
-
 		else :
-			// check if the post or page has a Featured Image assigned to it.
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			if ( has_post_thumbnail() ) :
-				the_post_thumbnail( 'thumbnail' );
-			endif;
-
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
