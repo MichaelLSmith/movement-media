@@ -1,10 +1,11 @@
 console.log('accordion.js');
 
-jQuery(document).ready(function(){
+const accordionInit = function() {
     jQuery( ".bio" ).accordion({
-        active: false,
-        header: "aside",
-        collapsible: true,
-        heightStyle: 'content'
-    });
+    active: false,
+    header: "aside",
+    heightStyle: 'content'
 });
+}
+
+export default accordionInit;

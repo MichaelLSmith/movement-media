@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
+    gulp_jspm = require('gulp-jspm'),
 
     source = 'process/css/', //source css files
     dest = '.'; //build file
@@ -20,7 +21,13 @@ gulp.task('scripts', function(){
     return gulp.src(jsFiles + '**/*.js')
         .pipe(concat('custom_script.js'))
         .pipe(gulp.dest(jsDest));
-})
+});
+
+gulp.task('jspm', function(){
+    return gulp.src(jsFiles + 'app.js')
+        .pipe(gulp_jspm({selfExecutingBundle: true}))
+        .pipe(gulp.dest(jsDest));
+});
 
 gulp.task('css', function() {
   gulp.src(source + 'style.css')
@@ -47,8 +54,10 @@ gulp.task('css', function() {
 
 gulp.task('watch', function() {
   gulp.watch(source + '**/*.css', ['css']);
-  gulp.watch(jsFiles + '**/*.js', ['scripts']);
+  // gulp.watch(jsFiles + '**/*.js', ['scripts']);
+  gulp.watch(jsFiles + '**/*.js', ['jspm']);
 });
 
-gulp.task('default', ['scripts', 'css', 'watch']);
+gulp.task('default', ['jspm', 'css', 'watch']);
 //'webserver', add after css
+//'scripts', first

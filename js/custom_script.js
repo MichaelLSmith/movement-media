@@ -1,6 +1,6 @@
 console.log('accordion.js');
 
-jQuery(document).ready(function(){
+const accordion = jQuery(document).ready(function(){
     jQuery( ".bio" ).accordion({
         active: false,
         header: "aside",
@@ -8,6 +8,14 @@ jQuery(document).ready(function(){
         heightStyle: 'content'
     });
 });
+
+export default accordion;
+
+import smooth_scroll from 'cferdinandi/smooth-scroll';
+import accordion from './accordion';
+
+smooth_scroll.init();
+console.log(accordion);
 
 console.log('jqueryTest');
 
