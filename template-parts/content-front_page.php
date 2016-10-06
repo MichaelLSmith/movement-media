@@ -14,6 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+<section>
 	<?php
 
 		//from https://www.advancedcustomfields.com/resources/post-object/
@@ -31,7 +32,26 @@
 		</div>
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>
+	</section>
+<section>
+	<!-- 3 stories here: -->
+		<?php
+			$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+			$postslist = get_posts( $args );
+			foreach ( $postslist as $post ) :
+			  setup_postdata( $post ); ?>
+				<div>
+					<?php the_date(); ?>
+					<br />
+					<?php the_title(); ?>
+					<?php the_excerpt(); ?>
+				</div>
+			<?php
+			endforeach;
+			wp_reset_postdata();
+		?>
 
+	</section>
 
 	<div class="entry-content">
 		<?php
