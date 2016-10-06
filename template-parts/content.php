@@ -12,8 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-		$testA = a;
-		$testB = b;
+
+		$post_object = get_field('video_reg_post');
 
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -22,6 +22,20 @@
 				the_post_thumbnail();
 			endif;
 
+			if($post_object) :
+				//override $post
+				$post = $post_object;
+				setup_postdata( $post );
+		?>
+				<div>
+					<?php the_field('video_url'); ?>
+				</div>
+
+				<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+				?>
+		<?php
+			endif;
+		//if - is single cont...
 		else :
 			// check if the post or page has a Featured Image assigned to it.
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
