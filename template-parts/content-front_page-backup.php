@@ -36,21 +36,54 @@
 <section>
 	<!-- 3 stories here: -->
 	<?php
-		$post_object = get_field('story_left');
+		$custom_stories = array();
 
-		if( $post_object ) :
-			$num = 2;
-			// override $post
-			$post = $post_object;
-			setup_postdata( $post );
-	?>
-		<div class="story-left">
-			<?php the_title(); ?>
-		</div>
-	<?php endif ?>
+		$left_story = get_field('story_left');
+		$centre_story = get_field('story_centre');
+		$right_story = get_field('story_right');
 
-	<!-- three most recent stories -->
-		<?php
+		if($left_story) :
+			array_push($custom_stories, $left_story);
+			echo 'in left_story if: custom stories array: ';
+			echo count($custom_stories);
+		endif;
+
+		//get all the custom stories. Check if there is a custom story left, centre, right. For each one that exists, push that story post object into the array.
+		if($centre_story) :
+			array_push($custom_stories, $centre_story);
+			echo 'in centre_story if: custom stories array: ';
+			echo count($custom_stories);
+		endif;
+
+		if($right_story) :
+			array_push($custom_stories, $right_story);
+			echo 'in right_story if: custom stories array: ';
+			// print_r($custom_stories);
+			echo count($custom_stories);
+		endif;
+
+		//print out custom stories
+		if( $custom_stories ) :
+			foreach ($custom_stories as $post) :
+				setup_postdata($post);
+				the_permalink();
+				the_title();
+			endforeach;
+		endif;
+
+		//check length of custom stories array. Use this value to determine how many recent stories to print below.
+		$custom_count = count($custom_stories);
+
+		echo "custom count";
+		echo $custom_count;
+
+		if($custom_count > 0) :
+			echo 'in custom_count if';
+			$num = 3 - $custom_count;
+			echo '$num';
+			echo $num;
+
+	//print most recent stories
 			$args = array( 'posts_per_page' => $num, 'order'=> 'DESC', 'orderby' => 'date' );
 			$postslist = get_posts( $args );
 			foreach ( $postslist as $post ) :
@@ -63,6 +96,7 @@
 				</div>
 			<?php
 			endforeach;
+		endif;
 			wp_reset_postdata();
 		?>
 

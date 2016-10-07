@@ -1,0 +1,88 @@
+<?php
+/**
+ * Template part for displaying page content in on front page.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package MovementMedia
+ */
+
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
+<section class="featured-video">
+	<?php
+
+		//from https://www.advancedcustomfields.com/resources/post-object/
+		$post_object = get_field('featured_video');
+
+		if( $post_object ):
+
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
+
+	?>
+		<div>
+			<?php the_field('video_url'); ?>
+		</div>
+		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+		<?php endif; ?>
+	</section>
+<section class="featured-stories">
+	<!-- 3 stories here: -->
+		get_template_part( 'template-parts/content', 'none' );
+	<?php
+
+		$post_object = get_field('story_left');
+
+		if( $post_object ):
+
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
+	?>
+
+	<article class="story-left">
+		<?php the_title(); ?>
+	</article>
+	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+	<?php endif; ?>
+
+
+
+
+
+	</section>
+
+	<div class="entry-content">
+		<?php
+			the_content();
+
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'movementmedia' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+
+	<?php if ( get_edit_post_link() ) : ?>
+		<footer class="entry-footer">
+			<?php
+				edit_post_link(
+					sprintf(
+						/* translators: %s: Name of current post */
+						esc_html__( 'Edit %s', 'movementmedia' ),
+						the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					),
+					'<span class="edit-link">',
+					'</span>'
+				);
+			?>
+		</footer><!-- .entry-footer -->
+	<?php endif; ?>
+</article><!-- #post-## -->
