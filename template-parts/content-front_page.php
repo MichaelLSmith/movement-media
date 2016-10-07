@@ -35,8 +35,23 @@
 	</section>
 <section>
 	<!-- 3 stories here: -->
+	<?php
+		$post_object = get_field('story_left');
+
+		if( $post_object ) :
+			$num = 2;
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
+	?>
+		<div class="story-left">
+			<?php the_title(); ?>
+		</div>
+	<?php endif ?>
+
+	<!-- three most recent stories -->
 		<?php
-			$args = array( 'posts_per_page' => 3, 'order'=> 'DESC', 'orderby' => 'date' );
+			$args = array( 'posts_per_page' => $num, 'order'=> 'DESC', 'orderby' => 'date' );
 			$postslist = get_posts( $args );
 			foreach ( $postslist as $post ) :
 			  setup_postdata( $post ); ?>
