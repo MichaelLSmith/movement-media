@@ -146,7 +146,7 @@ function print_post_obj($parent_field, $child_field, $html_out){
 		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 		endif;
 
-		?>
+		
 }
 
 ?>
