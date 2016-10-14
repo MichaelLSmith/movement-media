@@ -1,7 +1,7 @@
 <?php
 
-update_option( 'siteurl', 'http://localhost:8080/' );
-update_option( 'home', 'http://localhost:8080/' );
+// update_option( 'siteurl', 'http://localhost:8080/' );
+// update_option( 'home', 'http://localhost:8080/' );
 
 /**
  * MovementMedia functions and definitions.

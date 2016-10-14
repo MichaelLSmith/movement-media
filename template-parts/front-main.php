@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying page content in on front page.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,6 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+<section class="featured-video">
 	<?php
 
 		//from https://www.advancedcustomfields.com/resources/post-object/
@@ -31,7 +32,32 @@
 		</div>
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>
+	</section>
+<section class="featured-stories">
+	<!-- 3 stories here: -->
+		<!-- get_template_part( 'template-parts/content', 'none' ); -->
+	<?php
 
+		$post_object = get_field('story_left');
+
+		if( $post_object ):
+
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
+	?>
+
+	<article class="story-left">
+		<?php the_title(); ?>
+	</article>
+	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+	<?php endif; ?>
+
+
+
+
+
+	</section>
 
 	<div class="entry-content">
 		<?php

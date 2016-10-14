@@ -120,3 +120,33 @@ function movementmedia_category_transient_flusher() {
 }
 add_action( 'edit_category', 'movementmedia_category_transient_flusher' );
 add_action( 'save_post',     'movementmedia_category_transient_flusher' );
+
+/**
+ * Send debug code to the Javascript console
+ */
+function debug_to_console($data) {
+    if(is_array($data) || is_object($data))
+	{
+		echo("<script>console.log('PHP: ".json_encode($data)."');</script>");
+	} else {
+		echo("<script>console.log('PHP: ".$data."');</script>");
+	}
+}
+
+function print_post_obj($parent_field, $child_field, $html_out){
+	$post_object = get_field($field);
+
+	if($post_object) :
+		// override $post
+		$post = $post_object;
+		setup_postdata( $post );
+
+		echo $html_out;
+
+		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+		endif;
+
+		
+}
+
+?>
