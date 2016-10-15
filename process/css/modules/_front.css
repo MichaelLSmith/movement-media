@@ -1,0 +1,13 @@
+.home {
+    background: $marginblue;
+}
+
+.home-header {
+    background: $darkblue;
+
+    font-family: GothamBlack;
+    font-size: 14px;
+    color: #F3F4F5;
+    letter-spacing: 0.48px;
+
+}

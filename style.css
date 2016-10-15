@@ -950,15 +950,13 @@ a:hover, a:active {
 }
 /*
 Header CSS - need to @include in style.css and run gulp process
-*/
-/*
     Created on : 15-Aug-2016, 9:43:27 AM
     Author     : michael
 */
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site-header {
+.site-header, .home-header {
 
     /*background-color: #FAEBD7;*/
 
@@ -1015,6 +1013,22 @@ Header CSS - need to @include in style.css and run gulp process
 .site-logo {
 
     margin-right: 10px;
+}
+.home {
+
+    background: #006395;
+}
+.home-header {
+
+    background: #005395;
+
+    font-family: GothamBlack;
+
+    font-size: 14px;
+
+    color: #F3F4F5;
+
+    letter-spacing: 0.48px;
 }
 .site-footer-inside {
 
