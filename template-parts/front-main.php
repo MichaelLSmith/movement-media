@@ -10,11 +10,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<!-- <header class="entry-header"> -->
+		<?php
+		// the_title( '<h1 class="entry-title">', '</h1>' );
+		?>
+
+	<!-- </header> -->
 
 <section class="featured-video">
+	<h5>MOVEMENT VIDEOS</h5>
 	<?php
 
 		//from https://www.advancedcustomfields.com/resources/post-object/
@@ -52,11 +56,6 @@
 	</article>
 	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	<?php endif; ?>
-
-
-
-
-
 	</section>
 
 	<div class="entry-content">
