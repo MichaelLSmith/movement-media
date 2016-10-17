@@ -966,13 +966,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: flex;
 
-    -webkit-box-orient: vertical;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: column;
-
-            flex-direction: column;
+    /*flex-direction: column;*/
 
     padding: 1em .5em;
 
@@ -1029,6 +1023,51 @@ Header CSS - need to @include in style.css and run gulp process
     color: #F3F4F5;
 
     letter-spacing: 0.48px;
+}
+.home-masthead {
+
+    background-color: #005395;
+
+    color: white;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+}
+.home-masthead-1 {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+}
+.home-masthead-2 p {
+
+    text-align: center;
+}
+.home-masthead-3 {}
+.icon {
+
+    height: auto;
+
+    width: 60px;
 }
 .site-footer-inside {
 

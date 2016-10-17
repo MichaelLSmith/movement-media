@@ -1,0 +1,37 @@
+.home {
+    background: $marginblue;
+}
+
+.home-header {
+    background: $darkblue;
+
+    font-family: GothamBlack;
+    font-size: 14px;
+    color: #F3F4F5;
+    letter-spacing: 0.48px;
+}
+
+.home-masthead {
+    background-color: $darkblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.home-masthead-1 {
+    display: flex;
+    justify-content: center;
+}
+.home-masthead-2 {
+    p {
+        text-align: center;
+    }
+}
+
+.home-masthead-3 {
+    
+}
+
+.icon {
+    height: auto;
+    width: 60px;
+}

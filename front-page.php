@@ -27,27 +27,42 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
 	<header id="home-masthead" class="home-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<section class="logo-tag-container">
+			<div class="site-logo">
+				<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
+				<div class="screen-reader-text">
+					<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+				</div>
+				<img src="<?php the_field('front_header_image'); ?>" alt="">
+			</div>
+		</section>
+		<nav id="front-site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
 			</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		<section class="logo-tag-container">
-			<div class="site-logo">
-				<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-		    	<div class="screen-reader-text">
-		        	<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
-		      	</div>
-	      		<?php the_custom_logo(); ?>
-			</div>
-
-			<div class="site-branding">
-			      <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-			      <p class="site-title"><?php bloginfo( 'description'); ?></p>
-			</div><!-- .site-branding -->
-		</section>
 	</header><!-- #masthead -->
+
+	<header class="home-masthead">
+		<section class="home-masthead-1">
+			<p><?php the_field('front_header_text_left'); ?></p>
+			<div class="front-icon">
+				<img class="icon" src="<?php the_field('front_header_icon');?>" alt="">
+			</div>
+			<p><?php the_field('front_header_text_right'); ?></p>
+		</section>
+		<section class="home-masthead-2">
+			<p><?php the_field('front_header_paragraph'); ?></p>
+		</section>
+		<section class="home-masthead-3">
+			<div class="action-button">
+				<a href="<?php the_field('front_header_action_button'); ?>">
+					<?php the_field('front_header_button_text'); ?>
+				</a>
+			</div>
+		</section>
+	</header>
 
 	<div id="content" class="site-content">
 
