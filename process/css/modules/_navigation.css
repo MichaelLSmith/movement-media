@@ -17,17 +17,18 @@ could possible split this into other files if it grows
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	/*color: $white;*/
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	/*color: purple;*/
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	/*color: midnightblue;*/
 }
 
 a:focus {

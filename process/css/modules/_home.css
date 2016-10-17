@@ -1,37 +1,54 @@
 .home {
-    background: $marginblue;
+    background: $marginBlue;
 }
 
 .home-header {
-    background: $darkblue;
-
-    font-family: GothamBlack;
-    font-size: 14px;
-    color: #F3F4F5;
-    letter-spacing: 0.48px;
-}
-
-.home-masthead {
-    background-color: $darkblue;
-    color: white;
+    background: $darkBlue;
     display: flex;
     flex-direction: column;
+    color: $white;
+    a {
+        color: inherit;
+        text-decoration: none;
+
+    }
+
+}
+.home-nav {
+    display: flex;
+    font-family: GothamBlack;
+    font-size: 14px;
+    color: offWhite;
+    letter-spacing: 0.48px;
+
+    li {
+        /*need relative spacing between li. margin %??*/
+    }
 }
 .home-masthead-1 {
     display: flex;
     justify-content: center;
-}
-.home-masthead-2 {
     p {
         text-align: center;
     }
 }
-
-.home-masthead-3 {
-    
-}
-
 .icon {
     height: auto;
     width: 60px;
+}
+
+.action-btn {
+  background: $green;
+  /*I tried 8px border radius, but 5 looks more like the design*/
+  border-radius: 5px;
+  font-family: Arial;
+  /*color: $white;*/
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid $borderGrey 1px;
+  text-decoration: none;
+}
+
+.action-btn:hover {
+  text-decoration: none;
 }

@@ -27,24 +27,23 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
 	<header id="home-masthead" class="home-header" role="banner">
-		<section class="logo-tag-container">
-			<div class="site-logo">
-				<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-				<div class="screen-reader-text">
-					<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+		<section class="home-nav">
+			<article class="logo-tag-container">
+				<div class="site-logo">
+					<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
+					<div class="screen-reader-text">
+						<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+					</div>
+					<img src="<?php the_field('front_header_image'); ?>" alt="">
 				</div>
-				<img src="<?php the_field('front_header_image'); ?>" alt="">
-			</div>
+			</article>
+			<nav id="front-site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
+				</button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 		</section>
-		<nav id="front-site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
-			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<header class="home-masthead">
 		<section class="home-masthead-1">
 			<p><?php the_field('front_header_text_left'); ?></p>
 			<div class="front-icon">
@@ -52,17 +51,17 @@
 			</div>
 			<p><?php the_field('front_header_text_right'); ?></p>
 		</section>
-		<section class="home-masthead-2">
+		<section class="home-masthead-1">
 			<p><?php the_field('front_header_paragraph'); ?></p>
 		</section>
-		<section class="home-masthead-3">
-			<div class="action-button">
+		<section class="home-masthead-1">
+			<div class="action-btn">
 				<a href="<?php the_field('front_header_action_button'); ?>">
 					<?php the_field('front_header_button_text'); ?>
 				</a>
 			</div>
 		</section>
-	</header>
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 

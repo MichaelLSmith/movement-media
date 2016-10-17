@@ -5,7 +5,10 @@ $large: screen and (min-width: 1200px);
 $container-default-width: 80%;
 $container-max-width: 1000px;
 
-$offwhite: #FAEBD7;
-$marginblue: #006395;
-$darkblue: #005395;
-$lightblue: #4A90E2;
+$offWhite: #F3F4F5;
+$borderGrey: #979797;
+$white: #ffffff;
+$marginBlue: #006395;
+$darkBlue: #005395;
+$lightBlue: #4A90E2;
+$green: #85C51F
