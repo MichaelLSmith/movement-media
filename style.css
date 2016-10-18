@@ -1,3 +1,5 @@
+/*testing one, two, three*/
+
 /*
 Normalize section in the original theme style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -1009,6 +1011,8 @@ Header CSS - need to @include in style.css and run gulp process
 .home {
 
     background: #006395;
+
+    CHANGE: purple;
 }
 .home-header {
 
