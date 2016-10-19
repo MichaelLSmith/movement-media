@@ -30,33 +30,73 @@
 			$post = $post_object;
 			setup_postdata( $post );
 
+
 	?>
-		<div>
-			<?php the_field('video_url'); ?>
+		<div class="embed-container">
+			<?php
+			the_field('video_url'); ?>
 		</div>
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>
 	</section>
+	<p class="front-more-link"><a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a></p>
 <section class="featured-stories">
 	<!-- 3 stories here: -->
-		<!-- get_template_part( 'template-parts/content', 'none' ); -->
 	<?php
 
 		$post_object = get_field('story_left');
+
+		// echo "post obj \n";
+		// print_r($post_object);
 
 		if( $post_object ):
 
 			// override $post
 			$post = $post_object;
 			setup_postdata( $post );
+
 	?>
 
+
 	<article class="story-left">
-		<?php the_title(); ?>
+		<?php the_title();
+		the_post_thumbnail();
+		 ?>
+		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	</article>
 	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	<?php endif; ?>
-	</section>
+
+	<!-- centre story here: -->
+	<?php
+
+	$post_object = get_field('story_centre');
+
+	// echo "post obj \n";
+	// print_r($post_object);
+
+	if( $post_object ):
+
+		// override $post
+		$post = $post_object;
+		setup_postdata( $post );
+
+	?>
+
+	<article class="story-centre">
+		<?php the_title();
+		// if post-thumbnail etc...
+		the_post_thumbnail();
+
+		 ?>
+		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+	</article>
+	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+	<?php endif; ?>
+
+</section>
 
 	<div class="entry-content">
 		<?php

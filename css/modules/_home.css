@@ -1,27 +1,28 @@
 .home {
-    background: $marginBlue;
-    CHANGE FOR PROCESS
-    color: purple;
-    
+    /*background: $marginBlue;*/
 }
 
 .home-header {
     background: $darkBlue;
-    display: flex;
-    flex-direction: column;
     color: $white;
+    max-width: $outer-max-width;
     a {
         color: inherit;
         text-decoration: none;
-
     }
-
 }
-.home-nav {
+
+.home-nav, .home-masthead-1 {
+    max-width: $container-max-width;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
+}
+
+.home-nav {
     font-family: GothamBlack;
     font-size: 14px;
-    color: offWhite;
+    color: $offWhite;
     letter-spacing: 0.48px;
 
     li {
@@ -30,7 +31,7 @@
 }
 .home-masthead-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     p {
         text-align: center;
     }
@@ -41,17 +42,39 @@
 }
 
 .action-btn {
-  background: $green;
-  /*I tried 8px border radius, but 5 looks more like the design*/
-  border-radius: 5px;
-  font-family: Arial;
-  /*color: $white;*/
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid $borderGrey 1px;
-  text-decoration: none;
+    margin: auto;
+    background: $green;
+    /*I tried 8px border radius, but 5 looks more like the design*/
+    border-radius: 5px;
+    font-family: Arial;
+    /*color: $white;*/
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid $borderGrey 1px;
+    text-decoration: none;
 }
 
 .action-btn:hover {
   text-decoration: none;
+}
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.front-more-link {
+    text-align: right;
 }

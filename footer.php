@@ -55,6 +55,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<!-- </div> #outer-container --> 
 
 <?php wp_footer(); ?>
 

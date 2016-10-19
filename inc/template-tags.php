@@ -133,20 +133,30 @@ function debug_to_console($data) {
 	}
 }
 
-function print_post_obj($parent_field, $child_field, $html_out){
+function featured_story($field,$location){
+	echo "in featured_story()";
+	echo $field;
+	echo $location;
+
 	$post_object = get_field($field);
 
+	// print_r($post_object);
+
 	if($post_object) :
+		echo "in if post_object";
 		// override $post
 		$post = $post_object;
+		print_r($post);
 		setup_postdata( $post );
 
-		echo $html_out;
+		echo "<article class='story-" . $location . "'>in article";
+			the_title();
+		echo "</article>";
 
 		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		endif;
+	endif;
 
-		
+
 }
 
 ?>

@@ -23,6 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!-- <div id="outer-container" class="outer" role="container"> -->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
@@ -64,7 +65,6 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

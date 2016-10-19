@@ -9,7 +9,7 @@ Header CSS - need to @include in style.css and run gulp process
 --------------------------------------------------------------*/
 
 .site-header, .home-header {
-    display: flex;
+    /*display: flex;*/
     padding: 1em .5em;
     /*@media $medium {
         justify-content: space-between;
