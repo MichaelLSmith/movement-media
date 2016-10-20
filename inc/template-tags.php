@@ -133,36 +133,24 @@ function debug_to_console($data) {
 	}
 }
 
-function featured_story($field,$location){
+function featured_story($story_location){
 	echo "in featured_story()";
-	echo $field;
-	echo $location;
+	echo $story_location;
 
-	$post_object = get_field($field);
+	get_template_part( 'template-parts/front', 'story' );
+}
 
-	// print_r($post_object);
-
-	if($post_object) :
-		echo "in if post_object";
-		// override $post
-		$post = $post_object;
-		print_r($post);
-		setup_postdata( $post );
-
-		echo "<article class='story-" . $location . "'>in article";
-			the_title();
-		echo "</article>";
-
-		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-	endif;
-
+/*
+* Customize the get_template_part function to add $story_location
+*/
+function movementmedia_get_template_part($story_location){
 
 }
 
 /*
 * Customize the excerpt read-more indicator
 */
-function movementmedia_excerpt_more ( $more) {
+function movementmedia_excerpt_more ($more) {
 	return " ...";
 }
 

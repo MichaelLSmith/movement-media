@@ -1165,9 +1165,14 @@ Header CSS - need to @include in style.css and run gulp process
 
             justify-content: space-between;
 }
-/*.featured-story {
-    flex-basis: 75%;
-}*/
+.story-grey {
+
+    background-color: #EBEBE8;
+}
+.story-blue {
+
+    background-color: #4A90E2;
+}
 .story-inner-container {
 
     max-width: 90%;

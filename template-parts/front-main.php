@@ -20,17 +20,13 @@
 <section class="featured-video">
 	<h5>MOVEMENT VIDEOS</h5>
 	<?php
-
 		//from https://www.advancedcustomfields.com/resources/post-object/
 		$post_object = get_field('featured_video');
-
 		if( $post_object ):
 
 			// override $post
 			$post = $post_object;
 			setup_postdata( $post );
-
-
 	?>
 		<div class="embed-container">
 			<?php
@@ -49,88 +45,21 @@
 	ultimate question: do we want videos in the featured stories section?
  -->
 	<!-- Left story here: -->
+	<!-- change -->
 	<?php
-
-		$post_object = get_field('story_left');
-		if( $post_object ):
-			// override $post
-			$post = $post_object;
-			setup_postdata( $post );
+		$story_location = 'story_left';
+		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
+		require(locate_template('template-parts/front-story.php', $load));
 	?>
-	<article class="featured-story">
-		<?php
-			if (has_post_thumbnail() ) :
-				?>
-				<div class="story-inner-container">
-					<?php the_post_thumbnail(); ?>
-				</div>
-		<?php
-			endif;
-		 ?>
-		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
-		 <div class="story-inner-container">
- 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
- 			<?php the_field('excerpt_front_page') ?>
-		 </div>
-	</article>
-	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	<?php endif; ?>
-
 	<!-- centre story here: -->
 	<?php
-		$post_object = get_field('story_centre');
-		if( $post_object ):
-			// override $post
-			$post = $post_object;
-			setup_postdata( $post );
+		$story_location = 'story_centre';
+		require(locate_template('template-parts/front-story.php', $load));
 	?>
-	<article class="featured-story">
-		<?php
-			if (has_post_thumbnail() ) :
-		?>
-			<div class="story-inner-container">
-				<?php the_post_thumbnail(); ?>
-			</div>
-		<?php
-			endif;
-		 ?>
-		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
-		<div class="story-inner-container">
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<?php the_field('excerpt_front_page') ?>
-		</div>
-
-	</article>
-	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	<?php endif; ?>
-
-	<!-- Right Story -->
 	<?php
-		$post_object = get_field('story_right');
-		if( $post_object ):
-			// override $post
-			$post = $post_object;
-			setup_postdata( $post );
+		$story_location = 'story_right';
+		require(locate_template('template-parts/front-story.php', $load));
 	?>
-	<article class="featured-story">
-		<?php
-			if (has_post_thumbnail() ) :
-		?>
-			<div class="story-inner-container">
-				<?php the_post_thumbnail(); ?>
-			</div>
-		<?php
-			endif;
-		 ?>
-		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
-		<div class="story-inner-container">
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-			<?php the_field('excerpt_front_page') ?>
-		</div>
-	</article>
-	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	<?php endif; ?>
-
 </section> <!-- Stories End -->
 
 	<div class="entry-content">

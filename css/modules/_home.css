@@ -83,9 +83,12 @@
     display: flex;
     justify-content: space-between;
 }
-/*.featured-story {
-    flex-basis: 75%;
-}*/
+.story-grey {
+    background-color: $backgroundGrey;
+}
+.story-blue {
+    background-color: $lightBlue;
+}
 .story-inner-container {
     max-width: 90%;
 }
