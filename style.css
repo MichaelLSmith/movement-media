@@ -290,7 +290,7 @@ p {
 
     font-size: 1.4rem;
 
-    color: #fff;
+    color: #000;
 
     /*letter-spacing: */
 }
@@ -1086,6 +1086,8 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p {
 
     text-align: center;
+
+    color: #fff;
 }
 .icon {
 

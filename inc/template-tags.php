@@ -159,4 +159,13 @@ function featured_story($field,$location){
 
 }
 
+/*
+* Customize the excerpt read-more indicator
+*/
+function movementmedia_excerpt_more ( $more) {
+	return " ...";
+}
+
+add_filter( 'excerpt_more', 'movementmedia_excerpt_more');
+
 ?>

@@ -85,12 +85,19 @@
 	?>
 
 	<article class="story-centre">
+		story centre
 		<?php the_title();
 		// if post-thumbnail etc...
 		the_post_thumbnail();
+		?>
+		<div><?php the_excerpt();?></div>
+		<!-- probably need to have a custom field with restricted char length for excerpt to fit design. -->
 
-		 ?>
-		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
+		 <!--
+		 What if it's post with a video or without an image? Probably always going to have an image
+		 If it's a post with a video in it, I don't know how to get the video to be a preview here. It's a post embedded in the post. We could have an image (screencapture or a better quality image associated with the film) similar to a reg post with a featured image.
+		 ultimate question: do we want videos in the featured stories section?
+	  -->
 		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	</article>
 	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
