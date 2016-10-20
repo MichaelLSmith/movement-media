@@ -1151,6 +1151,27 @@ Header CSS - need to @include in style.css and run gulp process
 
     text-align: right;
 }
+.featured-stories {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+}
+/*.featured-story {
+    flex-basis: 75%;
+}*/
+.story-inner-container {
+
+    max-width: 90%;
+}
 .site-footer-inside {
 
     display: -webkit-box;

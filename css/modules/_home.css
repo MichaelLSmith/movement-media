@@ -79,3 +79,13 @@
 .front-more-link {
     text-align: right;
 }
+.featured-stories {
+    display: flex;
+    justify-content: space-between;
+}
+/*.featured-story {
+    flex-basis: 75%;
+}*/
+.story-inner-container {
+    max-width: 90%;
+}

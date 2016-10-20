@@ -40,70 +40,98 @@
 		<?php endif; ?>
 	</section>
 	<p class="front-more-link"><a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a></p>
+<h5>MOVEMENT STORIES</h5>
+<!-- change -->
 <section class="featured-stories">
-	<!-- 3 stories here: -->
+	<!--
+	What if it's post with a video or without an image? Probably always going to have an image
+	If it's a post with a video in it, I don't know how to get the video to be a preview here. It's a post embedded in the post. We could have an image (screencapture or a better quality image associated with the film) similar to a reg post with a featured image.
+	ultimate question: do we want videos in the featured stories section?
+ -->
+	<!-- Left story here: -->
 	<?php
 
 		$post_object = get_field('story_left');
-
-		// echo "post obj \n";
-		// print_r($post_object);
-
 		if( $post_object ):
-
 			// override $post
 			$post = $post_object;
 			setup_postdata( $post );
-
 	?>
-
-
-	<article class="story-left">
-		<?php the_title();
-		the_post_thumbnail();
+	<article class="featured-story">
+		<?php
+			if (has_post_thumbnail() ) :
+				?>
+				<div class="story-inner-container">
+					<?php the_post_thumbnail(); ?>
+				</div>
+		<?php
+			endif;
 		 ?>
 		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		 <div class="story-inner-container">
+ 			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+ 			<?php the_field('excerpt_front_page') ?>
+		 </div>
 	</article>
 	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	<?php endif; ?>
 
 	<!-- centre story here: -->
 	<?php
-
-	$post_object = get_field('story_centre');
-
-	// echo "post obj \n";
-	// print_r($post_object);
-
-	if( $post_object ):
-
-		// override $post
-		$post = $post_object;
-		setup_postdata( $post );
-
+		$post_object = get_field('story_centre');
+		if( $post_object ):
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
 	?>
-
-	<article class="story-centre">
-		story centre
-		<?php the_title();
-		// if post-thumbnail etc...
-		the_post_thumbnail();
+	<article class="featured-story">
+		<?php
+			if (has_post_thumbnail() ) :
 		?>
-		<div><?php the_excerpt();?></div>
-		<!-- probably need to have a custom field with restricted char length for excerpt to fit design. -->
+			<div class="story-inner-container">
+				<?php the_post_thumbnail(); ?>
+			</div>
+		<?php
+			endif;
+		 ?>
+		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
+		<div class="story-inner-container">
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<?php the_field('excerpt_front_page') ?>
+		</div>
 
-		 <!--
-		 What if it's post with a video or without an image? Probably always going to have an image
-		 If it's a post with a video in it, I don't know how to get the video to be a preview here. It's a post embedded in the post. We could have an image (screencapture or a better quality image associated with the film) similar to a reg post with a featured image.
-		 ultimate question: do we want videos in the featured stories section?
-	  -->
-		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 	</article>
 	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	<?php endif; ?>
 
-</section>
+	<!-- Right Story -->
+	<?php
+		$post_object = get_field('story_right');
+		if( $post_object ):
+			// override $post
+			$post = $post_object;
+			setup_postdata( $post );
+	?>
+	<article class="featured-story">
+		<?php
+			if (has_post_thumbnail() ) :
+		?>
+			<div class="story-inner-container">
+				<?php the_post_thumbnail(); ?>
+			</div>
+		<?php
+			endif;
+		 ?>
+		 <!-- What if it's post with a video or without an image? Probably always going to have an image -->
+		<div class="story-inner-container">
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<?php the_field('excerpt_front_page') ?>
+		</div>
+	</article>
+	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+	<?php endif; ?>
+
+</section> <!-- Stories End -->
 
 	<div class="entry-content">
 		<?php
