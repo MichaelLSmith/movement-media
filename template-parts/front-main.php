@@ -61,7 +61,25 @@
 		require(locate_template('template-parts/front-story.php', $load));
 	?>
 </section> <!-- Stories End -->
-
+<h5>MOVEMENT HIGHLIGHTS</h5>
+<!-- change -->
+<?php
+	//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
+	$highlight = 'highlight_page_up_left';
+	require(locate_template('template-parts/front-highlight.php', $load));
+?>
+<?php
+	$highlight = 'highlight_page_up_right';
+	require(locate_template('template-parts/front-highlight.php', $load));
+?>
+<?php
+	$highlight = 'highlight_page_lower_left';
+	require(locate_template('template-parts/front-highlight.php', $load));
+?>
+<?php
+	$highlight = 'highlight_page_lower_right';
+	require(locate_template('template-parts/front-highlight.php', $load));
+?>
 	<div class="entry-content">
 		<?php
 			the_content();
