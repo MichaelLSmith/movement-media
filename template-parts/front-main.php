@@ -80,6 +80,10 @@
 	$highlight = 'highlight_page_lower_right';
 	require(locate_template('template-parts/front-highlight.php', $load));
 ?>
+<?php
+ wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+ print_r($post) ?>
+
 	<div class="entry-content">
 		<?php
 			the_content();
