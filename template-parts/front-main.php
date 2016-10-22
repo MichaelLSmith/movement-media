@@ -41,16 +41,22 @@
 <section class="featured-stories">
 	<?php
 		$story_location = 'story_left';
+		$background_color = '-grey';
+		$text_color = '$baseTextColour';
 		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
 		require(locate_template('template-parts/front-story.php', $load));
 	?>
 	<!-- centre story here: -->
 	<?php
 		$story_location = 'story_centre';
+		$background_color = '-blue';
+		$text_color = '$offWhite';
 		require(locate_template('template-parts/front-story.php', $load));
 	?>
 	<?php
 		$story_location = 'story_right';
+		$background_color = '-grey';
+		$text_color = '$baseTextColour';
 		require(locate_template('template-parts/front-story.php', $load));
 	?>
 </section> <!-- Stories End -->

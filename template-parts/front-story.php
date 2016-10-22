@@ -5,7 +5,9 @@
         $post = $post_object;
         setup_postdata( $post );
 ?>
-<article class="featured-story story-grey">
+<!-- change -->
+
+<article class="featured-story story<?php echo $background_color ?>">
     <!-- <div class="story-inner-container "> -->
         <?php if (has_post_thumbnail() ) : ?>
         <div class="thumb-container">
@@ -13,11 +15,11 @@
         </div>
         <?php endif; ?>
         <section class="story-text">
-            <span>
+            <h6>
                 <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
                 </a>
-            </span>
+            </h6>
                 <?php the_field('excerpt_front_page') ?>
             <div class="action-btn">
                  <a href="<?php the_permalink(); ?>">READ MORE</a>

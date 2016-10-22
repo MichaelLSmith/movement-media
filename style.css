@@ -304,6 +304,10 @@ h5 {
 
     letter-spacing: 0.1rem;
 }
+h6 {
+
+    font-size: 1.6rem;
+}
 p {
 
     margin-bottom: 1.5em;
@@ -1253,7 +1257,6 @@ Header CSS - need to @include in style.css and run gulp process
 
     width: 25%;
 }
-.story-inner-container {}
 .thumb-container img {
 
     width: 100%;

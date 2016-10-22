@@ -101,15 +101,12 @@
     flex-direction: column;
     width: 25%;
 }
-.story-inner-container {
-
-}
 .thumb-container img {
     width: 100%;
     /*may not need this.*/
 }
 .story-text {
-    padding: 1rem; 
+    padding: 1rem;
 }
 .story-grey {
     background-color: $backgroundGrey;
