@@ -1235,15 +1235,34 @@ Header CSS - need to @include in style.css and run gulp process
 
             justify-content: space-between;
 }
-.story-inner-container {
+.featured-story {
 
-    max-width: 90%;
+    display: -webkit-box;
 
-    margin: auto;
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+
+    width: 25%;
+}
+.story-inner-container {}
+.thumb-container img {
+
+    width: 100%;
+
+    /*may not need this.*/
 }
 .story-text {
 
-    /*padding: */
+    padding: 1rem;
 }
 .story-grey {
 

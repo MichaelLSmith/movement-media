@@ -5,12 +5,12 @@
         $post = $post_object;
         setup_postdata( $post );
 ?>
-<article class="featured-story ">
-    <div class="story-inner-container story-grey">
+<article class="featured-story story-grey">
+    <!-- <div class="story-inner-container "> -->
         <?php if (has_post_thumbnail() ) : ?>
-        <!-- <div class="thumb-container flex-item"> -->
+        <div class="thumb-container">
             <?php the_post_thumbnail(); ?>
-        <!-- </div> -->
+        </div>
         <?php endif; ?>
         <section class="story-text">
             <span>
@@ -23,7 +23,7 @@
                  <a href="<?php the_permalink(); ?>">READ MORE</a>
             </div>
         </section>
-    </div>
+    <!-- </div> -->
 </article>
 <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 <?php endif; ?>
