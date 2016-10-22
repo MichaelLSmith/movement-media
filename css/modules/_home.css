@@ -1,7 +1,6 @@
 .home {
     /*background: $marginBlue;*/
 }
-
 .home-header {
     background: $darkBlue;
     color: $white;
@@ -11,20 +10,17 @@
         text-decoration: none;
     }
 }
-
 .home-nav, .home-masthead-1 {
     max-width: $container-max-width;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-
 .home-nav {
-    font-family: GothamBlack;
+    font-family: Gotham SSm A;
     font-size: 14px;
     color: $offWhite;
     letter-spacing: 0.48px;
-
     li {
         /*need relative spacing between li. margin %??*/
     }
@@ -36,13 +32,32 @@
         text-align: center;
         color: $white;
     }
+    p.large-text {
+        font-family: Gotham SSm A;
+        font-size: 64px;
+        letter-spacing: 2.55px;
+        line-height: 57px;
+        margin: 0;
+    }
+    p.text {
+        font-family: Sentinel SSm A;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+.front-icon-container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon {
-    height: auto;
-    width: 60px;
+    height: 110px;
+    width: auto;
 }
-
 .action-btn {
+    display: inline-block;
     margin: auto;
     background: $green;
     /*I tried 8px border radius, but 5 looks more like the design*/
@@ -54,7 +69,6 @@
     border: solid $borderGrey 1px;
     text-decoration: none;
 }
-
 .action-btn:hover {
   text-decoration: none;
 }
@@ -66,7 +80,6 @@
 	max-width: 100%;
 	height: auto;
 }
-
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -83,12 +96,27 @@
     display: flex;
     justify-content: space-between;
 }
+.story-inner-container {
+    max-width: 90%;
+    margin: auto;
+}
+.story-text {
+    /*padding: */
+}
 .story-grey {
     background-color: $backgroundGrey;
 }
 .story-blue {
     background-color: $lightBlue;
 }
-.story-inner-container {
-    max-width: 90%;
+
+
+
+
+
+.movement-highlights {
+    display: flex;
+}
+.highlight-vid-container {
+    /*width: 200px;*/
 }

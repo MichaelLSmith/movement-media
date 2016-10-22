@@ -39,13 +39,6 @@
 <h5>MOVEMENT STORIES</h5>
 <!-- change -->
 <section class="featured-stories">
-	<!--
-	What if it's post with a video or without an image? Probably always going to have an image
-	If it's a post with a video in it, I don't know how to get the video to be a preview here. It's a post embedded in the post. We could have an image (screencapture or a better quality image associated with the film) similar to a reg post with a featured image.
-	ultimate question: do we want videos in the featured stories section?
- -->
-	<!-- Left story here: -->
-	<!-- change -->
 	<?php
 		$story_location = 'story_left';
 		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
@@ -62,8 +55,8 @@
 	?>
 </section> <!-- Stories End -->
 <h5>MOVEMENT HIGHLIGHTS</h5>
-change
-<div id="hightlights">
+<!-- change -->
+<section id="hightlights" class="movement-highlights">
 	<?php
 		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
 		$highlight = 'highlight_page_up_left';
@@ -81,7 +74,7 @@ change
 		$highlight = 'highlight_page_lower_right';
 		require(locate_template('template-parts/front-highlight.php', $load));
 	?>
-</div>
+</section>
 <?php
  wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
  // print_r($post) ?>

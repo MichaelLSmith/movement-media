@@ -46,14 +46,14 @@
 			</nav><!-- #site-navigation -->
 		</section>
 		<section class="home-masthead-1">
-			<p><?php the_field('front_header_text_left'); ?></p>
-			<div class="front-icon">
+			<p class="large-text"><?php the_field('front_header_text_left'); ?></p>
+			<div class="front-icon-container">
 				<img class="icon" src="<?php the_field('front_header_icon');?>" alt="">
 			</div>
-			<p><?php the_field('front_header_text_right'); ?></p>
+			<p class="large-text"><?php the_field('front_header_text_right'); ?></p>
 		</section>
 		<section class="home-masthead-1">
-			<p><?php the_field('front_header_paragraph'); ?></p>
+			<p class="text"><?php the_field('front_header_paragraph'); ?></p>
 		</section>
 		<section class="home-masthead-1">
 			<div class="action-btn">

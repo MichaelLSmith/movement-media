@@ -20,9 +20,9 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
-	line-height: 1.5em;
+	color: $baseTextColour;
+	font-family: Sentinel SSm A;
+	line-height: 1.5rem;
 }
 
 h1,
@@ -32,11 +32,23 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: Gotham SSm A;
 }
 
+h1 {
+	font-style: italic;
+	font-size: 5.4rem;
+}
+h2 {}
+h3 {
+	font-weight: 700;
+	font-size: 3rem;
+}
+h4 {}
 h5 {
-	Gotham Black
+	color: $lightBlue;
 	font-size: 2.4rem;
+	letter-spacing: 0.1rem;
 }
 
 p {

@@ -5,24 +5,25 @@
         $post = $post_object;
         setup_postdata( $post );
 ?>
-<article class="featured-story">
+<article class="featured-story ">
     <div class="story-inner-container story-grey">
-    <?php
-        if (has_post_thumbnail() ) :
-            ?>
-        <?php the_post_thumbnail(); ?>
+        <?php if (has_post_thumbnail() ) : ?>
+        <!-- <div class="thumb-container flex-item"> -->
+            <?php the_post_thumbnail(); ?>
+        <!-- </div> -->
         <?php endif; ?>
-         <!-- What if it's post with a video or without an image? Probably always going to have an image -->
-        <h3>
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-        </h3>
-        <?php the_field('excerpt_front_page') ?>
-        <div class="action-btn">
-             <a href="<?php the_permalink(); ?>">READ MORE</a>
-        </div>
-     </div>
+        <section class="story-text">
+            <span>
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                </a>
+            </span>
+                <?php the_field('excerpt_front_page') ?>
+            <div class="action-btn">
+                 <a href="<?php the_permalink(); ?>">READ MORE</a>
+            </div>
+        </section>
+    </div>
 </article>
 <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 <?php endif; ?>
