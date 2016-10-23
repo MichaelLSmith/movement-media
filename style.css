@@ -407,6 +407,10 @@ blockquote, q {
 
     quotes: "" "";
 }
+section {
+
+    margin-bottom: 1.6rem;
+}
 hr {
 
     background-color: #ccc;
@@ -832,6 +836,11 @@ a {
     /*color: $white;*/
 
     text-decoration: none;
+}
+
+a:link {
+
+    color: inherit;
 }
 
 a:visited {
@@ -1271,9 +1280,45 @@ Header CSS - need to @include in style.css and run gulp process
 
     background-color: #EBEBE8;
 }
+.story-grey h6, .story-grey a {
+
+    color: #005395;
+}
+.story-grey p {
+
+    color: #34343F;
+}
 .story-blue {
 
     background-color: #4A90E2;
+}
+.story-blue h6, .story-blue a {
+
+    color: #fff;
+}
+.story-blue p {
+
+    color: #fff;
+}
+.front-quote {
+
+    border-top: 1px solid #979797;
+
+    border-bottom: 1px solid #979797;
+
+    padding: 8 0 8 0;
+
+    max-width: 98%;
+
+    margin: auto;
+}
+.front-quote p {
+
+    font-size: 3.6rem;
+
+    line-height: 4.8rem;
+
+    text-align: justify;
 }
 .movement-highlights {
 

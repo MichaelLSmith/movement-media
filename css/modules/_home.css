@@ -110,9 +110,33 @@
 }
 .story-grey {
     background-color: $backgroundGrey;
+    h6,a {
+        color: $darkBlue;
+    }
+    p {
+        color: $textGrey;
+    }
 }
 .story-blue {
     background-color: $lightBlue;
+    h6,a {
+        color: $white;
+    }
+    p {
+        color: $white;
+    }
+}
+.front-quote {
+    border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
+    padding: 8 0 8 0;
+    max-width: 98%;
+    margin: auto;
+    p {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+        text-align: justify;
+    }
 }
 
 

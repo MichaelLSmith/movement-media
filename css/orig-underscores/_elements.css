@@ -35,6 +35,9 @@ blockquote,
 q {
 	quotes: "" "";
 }
+section {
+	margin-bottom: 1.6rem;
+}
 
 hr {
 	background-color: #ccc;
