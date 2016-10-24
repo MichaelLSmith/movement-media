@@ -133,20 +133,27 @@ function debug_to_console($data) {
 	}
 }
 
-function print_post_obj($parent_field, $child_field, $html_out){
-	$post_object = get_field($field);
+function featured_story($story_location){
+	echo "in featured_story()";
+	echo $story_location;
 
-	if($post_object) :
-		// override $post
-		$post = $post_object;
-		setup_postdata( $post );
-
-		echo $html_out;
-
-		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		endif;
-
-		
+	get_template_part( 'template-parts/front', 'story' );
 }
+
+/*
+* Customize the get_template_part function to add $story_location
+*/
+function movementmedia_get_template_part($story_location){
+
+}
+
+/*
+* Customize the excerpt read-more indicator
+*/
+function movementmedia_excerpt_more ($more) {
+	return " ...";
+}
+
+add_filter( 'excerpt_more', 'movementmedia_excerpt_more');
 
 ?>

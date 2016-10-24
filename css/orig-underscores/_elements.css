@@ -21,7 +21,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: $marginBlue;
 }
 
 blockquote:before,
@@ -35,9 +35,13 @@ blockquote,
 q {
 	quotes: "" "";
 }
+section {
+	margin-bottom: 1.6rem;
+}
 
 hr {
-	background-color: #ccc;
+	width: 65%;
+	background-color: $borderGrey;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;

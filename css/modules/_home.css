@@ -1,0 +1,205 @@
+.home {
+    /*background: $marginBlue;*/
+}
+.home-header {
+    background: $darkBlue;
+    color: $white;
+    max-width: $outer-max-width;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+.home-nav, .home-masthead-1 {
+    max-width: $container-max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.home-nav {
+    font-family: Gotham SSm A;
+    font-size: 14px;
+    color: $offWhite;
+    letter-spacing: 0.48px;
+    li {
+        /*need relative spacing between li. margin %??*/
+    }
+}
+.home-masthead-1 {
+    display: flex;
+    justify-content: space-between;
+    p {
+        text-align: center;
+        color: $white;
+    }
+    p.large-text {
+        font-family: Gotham SSm A;
+        font-size: 64px;
+        letter-spacing: 2.55px;
+        line-height: 57px;
+        margin: 0;
+    }
+    p.text {
+        font-family: Sentinel SSm A;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+.front-icon-container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    height: 110px;
+    width: auto;
+}
+.action-btn {
+    display: inline-block;
+    margin: auto;
+    background: $green;
+    /*I tried 8px border radius, but 5 looks more like the design*/
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid $borderGrey 1px;
+    text-decoration: none;
+}
+.action-btn:hover {
+  text-decoration: none;
+}
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.front-more-link {
+    text-align: right;
+    color: $green;
+    font-size: 2.4rem;
+    letter-spacing: 0px;
+    font-family: Gotham SSm A;
+    font-weight: 700;
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+.featured-stories {
+    display: flex;
+    justify-content: space-between;
+}
+.featured-story {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.thumb-container img, .thumb-container iframe {
+    width: 100%;
+    height: auto;
+}
+.story-text {
+    padding: 1rem;
+}
+.story-grey {
+    background-color: $backgroundGrey;
+    h6,a {
+        color: $darkBlue;
+    }
+    p {
+        color: $textGrey;
+    }
+}
+.story-blue {
+    background-color: $lightBlue;
+    h6,a {
+        color: $white;
+    }
+    p {
+        color: $white;
+    }
+}
+.front-quote {
+    /*border-top: 1px solid $borderGrey;*/
+    /*border-bottom: 1px solid $borderGrey;*/
+    padding: .8rem 0 .8rem 0;
+    max-width: 85%;
+    margin: auto;
+    p {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+        text-align: justify;
+    }
+}
+.front-highlights-upper, .front-highlights-lower {
+    display: flex;
+    font-size: 10px;
+}
+.front-highlights-upper {
+    border-bottom: solid black .5px;
+}
+.front-highlights-lower {
+    border-top: solid black .5px;
+}
+.front-item-left, .front-item-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+}
+.front-item-left {
+    border-right: solid black .5px;
+}
+.front-item-right {
+    border-left: solid black .5px;
+    justify-content: flex-end;
+}
+.inner-box-upper-left, .inner-box-upper-right, .inner-box-lower-left, .inner-box-lower-right {
+    /*background-color: brown;*/
+    width: 75%;
+    h4 {
+        text-align: center;
+    }
+}
+.inner-box-upper-left, .inner-box-upper-right {
+    margin-bottom: 1rem;
+}
+.inner-box-lower-left, .inner-box-lower-right {
+    margin-top: 1rem;
+}
+.inner-box-upper-left, .inner-box-lower-right {
+    background-color: $lightBlue;
+    h4,a {
+        color: $white;
+    }
+}
+.inner-box-upper-right, .inner-box-lower-left {
+    background-color: $backgroundGrey;
+    h4,a {
+        color: $darkBlue;
+    }
+}
+.highlight-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    padding: 0 .8rem 0 .8rem;
+}
+.highlight-text > .action-btn a {
+    color: $white;
+}

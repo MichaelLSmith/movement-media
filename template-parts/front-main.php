@@ -10,54 +10,100 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
 <section class="featured-video">
+	<h5>MOVEMENT VIDEOS</h5>
 	<?php
-
 		//from https://www.advancedcustomfields.com/resources/post-object/
 		$post_object = get_field('featured_video');
-
 		if( $post_object ):
 
 			// override $post
 			$post = $post_object;
 			setup_postdata( $post );
-
 	?>
-		<div>
-			<?php the_field('video_url'); ?>
+		<div class="embed-container">
+			<?php
+			the_field('video_url'); ?>
 		</div>
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>
 	</section>
+	<p class="front-more-link">
+		<a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a>
+	</p>
+<h5>MOVEMENT STORIES</h5>
+<!-- change -->
 <section class="featured-stories">
-	<!-- 3 stories here: -->
-		<!-- get_template_part( 'template-parts/content', 'none' ); -->
 	<?php
-
-		$post_object = get_field('story_left');
-
-		if( $post_object ):
-
-			// override $post
-			$post = $post_object;
-			setup_postdata( $post );
+		$story_location = 'story_left';
+		$background_color = '-grey';
+		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
+		require(locate_template('template-parts/front-story.php', $load));
 	?>
+	<!-- centre story here: -->
+	<?php
+		$story_location = 'story_centre';
+		$background_color = '-blue';
+		require(locate_template('template-parts/front-story.php', $load));
+	?>
+	<?php
+		$story_location = 'story_right';
+		$background_color = '-grey';
+		require(locate_template('template-parts/front-story.php', $load));
+	?>
+</section> <!-- Stories End -->
+<p class="front-more-link">
+	<a href="http://localhost:8080/stories/">ALL STORIES</a>
+</p>
 
-	<article class="story-left">
-		<?php the_title(); ?>
-	</article>
-	<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	<?php endif; ?>
+<hr>
+<section class="front-quote">
+	<?php the_field('front_quote_1') ?>
+</section>
+<hr>
 
-
-
-
-
-	</section>
+<h5>MOVEMENT HIGHLIGHTS</h5>
+<!-- change -->
+<section id="hightlights" class="movement-highlights">
+	<div class="front-highlights-upper">
+		<?php
+			//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
+			$highlight = 'highlight_page_up_left';//control which acf field to pull in;
+			//control which sector html lands in:
+			$x_axis = 'left';
+			$y_axis = 'upper';
+			require(locate_template('template-parts/front-highlight.php', $load));
+		?>
+		<?php
+			$highlight = 'highlight_page_up_right';
+			$x_axis = 'right';
+			$y_axis = 'upper';
+			require(locate_template('template-parts/front-highlight.php', $load));
+		?>
+	</div>
+	<div class="front-highlights-lower">
+		<?php
+			$highlight = 'highlight_page_lower_left';
+			$x_axis = 'left';
+			$y_axis = 'lower';
+			require(locate_template('template-parts/front-highlight.php', $load));
+		?>
+		<?php
+			$highlight = 'highlight_page_lower_right';
+			$x_axis = 'right';
+			$y_axis = 'lower';
+			require(locate_template('template-parts/front-highlight.php', $load));
+		?>
+	</div>
+</section>
+<?php
+ wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+ // print_r($post) ?>
+<hr>
+<section class="front-quote">
+	<?php the_field('front_quote_2') ?>
+</section>
+<hr>
 
 	<div class="entry-content">
 		<?php

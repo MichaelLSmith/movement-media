@@ -16,7 +16,7 @@ get_header(); ?>
 			videos.php test hardcoded
 
 
-    
+
             <!-- <iframe width="280" height="158" src="https://www.youtube.com/embed/o6pcJxFen8Y" frameborder="0" allowfullscreen></iframe> -->
 
 
@@ -28,7 +28,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div><!-- #content -->
 <?php
 get_sidebar();
 get_footer();

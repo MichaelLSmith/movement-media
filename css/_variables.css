@@ -1,0 +1,26 @@
+$small: screen and (min-width: 600px);
+$medium: screen and (min-width: 37.5em);
+$large: screen and (min-width: 1200px);
+
+
+/*
+    inner max width is 1020
+    outer max width is 1200
+*/
+
+$outer-max-width: 1200px;
+$container-default-width: 80%;
+$container-max-width: 1020px;
+
+$backgroundGrey: #EBEBE8;
+$offWhite: #F3F4F5;
+$textGrey: #34343F;
+$borderGrey: #979797;
+$white: #fff;
+$marginBlue: #006395;
+$darkBlue: #005395;
+$lightBlue: #4A90E2;
+$green: #85C51F;
+$baseTextColour: #000;
+
+$textMargin: 65%;

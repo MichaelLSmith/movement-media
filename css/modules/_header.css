@@ -1,7 +1,5 @@
 /*
 Header CSS - need to @include in style.css and run gulp process
-*/
-/*
     Created on : 15-Aug-2016, 9:43:27 AM
     Author     : michael
 */
@@ -10,13 +8,9 @@ Header CSS - need to @include in style.css and run gulp process
 # Header
 --------------------------------------------------------------*/
 
-.site-header {
-    /*background-color: #FAEBD7;*/
-    display: flex;
-    flex-direction: column;
+.site-header, .home-header {
+    /*display: flex;*/
     padding: 1em .5em;
-
-
     /*@media $medium {
         justify-content: space-between;
     }*/

@@ -9,10 +9,7 @@
  * @package MovementMedia
  */
 
-?>
-
-	</div><!-- #content -->
-
+ ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<section class="site-footer-inside">
 			<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-menu-container' ) ); ?>
@@ -55,6 +52,7 @@
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<!-- </div> #outer-container -->
 
 <?php wp_footer(); ?>
 

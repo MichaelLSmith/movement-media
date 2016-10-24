@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     gulp_jspm = require('gulp-jspm'),
 
-    source = 'process/css/', //source css files
+    source = 'css/', //source css files
     dest = '.'; //build file
     jsFiles = 'js/custom/'
     jsDest = 'js';
