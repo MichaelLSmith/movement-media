@@ -1,5 +1,5 @@
-<div class="flex-item-<?php echo $y_axis ?>">
-    <div class="inner-box-<?php echo $x_axis ?>">
+<div class="front-item-<?php echo $x_axis ?>">
+    <div class="inner-box-<?php echo $y_axis ?>">
         <?php $post_object = NULL; ?>
         <?php
             $post = get_field($highlight);
@@ -12,11 +12,8 @@
                 $post = $post_object;
                 setup_postdata( $post );
             ?>
-        <!-- <div class="thumb-container"> -->
-            <!-- change -->
                <?php
                 the_field('video_url'); ?>
-        <!-- </div> -->
         <?php
          wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
         <?php endif;?>
@@ -27,9 +24,7 @@
         <?php
         if($post_object):
         elseif (has_post_thumbnail() ) : ?>
-        <!-- <div class="thumb-container"> -->
-            <?php the_post_thumbnail('thumbnail');?>
-        <!-- </div> -->
+            <?php the_post_thumbnail();?>
         <?php endif; ?>
             <div id="link">
                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>

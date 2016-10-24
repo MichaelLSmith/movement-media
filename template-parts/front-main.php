@@ -70,28 +70,28 @@
 			//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
 			$highlight = 'highlight_page_up_left';//control which acf field to pull in;
 			//control which sector html lands in:
-			$x_axis = 'upper';
-			$y_axis = 'left';
+			$x_axis = 'left';
+			$y_axis = 'upper';
 			require(locate_template('template-parts/front-highlight.php', $load));
 		?>
 		<?php
 			$highlight = 'highlight_page_up_right';
-			$x_axis = 'upper';
-			$y_axis = 'right';
+			$x_axis = 'right';
+			$y_axis = 'upper';
 			require(locate_template('template-parts/front-highlight.php', $load));
 		?>
 	</div>
 	<div class="front-highlights-lower">
 		<?php
 			$highlight = 'highlight_page_lower_left';
-			$x_axis = 'lower';
-			$y_axis = 'left';
+			$x_axis = 'left';
+			$y_axis = 'lower';
 			require(locate_template('template-parts/front-highlight.php', $load));
 		?>
 		<?php
 			$highlight = 'highlight_page_lower_right';
-			$x_axis = 'lower';
-			$y_axis = 'right';
+			$x_axis = 'right';
+			$y_axis = 'lower';
 			require(locate_template('template-parts/front-highlight.php', $load));
 		?>
 	</div>

@@ -1331,68 +1331,16 @@ Header CSS - need to @include in style.css and run gulp process
     display: -ms-flexbox;
 
     display: flex;
+
+    background-color: orange;
 }
-.front-highlights-upper {
+.front-item-left, .front-item-right {
 
-    border-bottom: solid black .5px;
-}
-.front-highlights-lower {
-
-    border-top: solid black .5px;
-}
-.flex-item-left, .flex-item-right {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: row;
-
-            flex-direction: row;
-
-    -webkit-box-pack: start;
-
-        -ms-flex-pack: start;
-
-            justify-content: flex-start;
-}
-.flex-item-left {
-
-    border-right: solid black .5px;
-}
-.flex-item-right {
-
-    border-left: solid black .5px;
-
-    -webkit-box-pack: end;
-
-        -ms-flex-pack: end;
-
-            justify-content: flex-end;
+    background-color: red;
 }
 .inner-box-upper, .inner-box-lower {
 
-    background-color: brown;
-
-    width: 75%;
-}
-.inner-box-upper img, .inner-box-upper iframe, .inner-box-lower img, .inner-box-lower iframe {
-
-    width: 100%;
-}
-.inner-box-upper {
-
-    margin-bottom: 10px;
-}
-.inner-box-lower {
-
-    margin-top: 10px;
+    border: solid black 1px;
 }
 .site-footer-inside {
 
