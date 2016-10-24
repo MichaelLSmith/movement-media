@@ -295,7 +295,14 @@ h3 {
 
     font-size: 3rem;
 }
-h4 {}
+h4 {
+
+    font-size: 2.8rem;
+
+    letter-spacing: .97px;
+
+    line-height: 3rem;
+}
 h5 {
 
     color: #4A90E2;
@@ -1188,10 +1195,6 @@ Header CSS - need to @include in style.css and run gulp process
 
     border-radius: 5px;
 
-    font-family: Arial;
-
-    /*color: $white;*/
-
     font-size: 20px;
 
     padding: 10px 20px 10px 20px;
@@ -1266,15 +1269,11 @@ Header CSS - need to @include in style.css and run gulp process
 
     width: 25%;
 }
-.thumb-container {
-
-    /*width: 100%;*/
-}
 .thumb-container img, .thumb-container iframe {
 
     width: 100%;
 
-    /*may not need this.*/
+    height: auto;
 }
 .story-text {
 
@@ -1363,6 +1362,8 @@ Header CSS - need to @include in style.css and run gulp process
         -ms-flex-pack: start;
 
             justify-content: flex-start;
+
+    width: 50%;
 }
 .front-item-left {
 
@@ -1378,23 +1379,69 @@ Header CSS - need to @include in style.css and run gulp process
 
             justify-content: flex-end;
 }
-.inner-box-upper, .inner-box-lower {
+.inner-box-upper-left, .inner-box-upper-right, .inner-box-lower-left, .inner-box-lower-right {
 
-    background-color: brown;
+    /*background-color: brown;*/
 
     width: 75%;
 }
-.inner-box-upper {
+.inner-box-upper-left h4, .inner-box-upper-right h4, .inner-box-lower-left h4, .inner-box-lower-right h4 {
 
-    margin-bottom: 10px;
+    text-align: center;
 }
-.inner-box-lower {
+.inner-box-upper-left, .inner-box-upper-right {
 
-    margin-top: 10px;
+    margin-bottom: 1rem;
 }
-.front-item-left img, .front-item-right img {
+.inner-box-lower-left, .inner-box-lower-right {
 
-    width: 100%;
+    margin-top: 1rem;
+}
+.inner-box-upper-left, .inner-box-lower-right {
+
+    background-color: #4A90E2;
+}
+.inner-box-upper-left h4, .inner-box-upper-left a, .inner-box-lower-right h4, .inner-box-lower-right a {
+
+    color: #fff;
+}
+.inner-box-upper-right, .inner-box-lower-left {
+
+    background-color: #EBEBE8;
+}
+.inner-box-upper-right h4, .inner-box-upper-right a, .inner-box-lower-left h4, .inner-box-lower-left a {
+
+    color: #005395;
+}
+.highlight-text {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+            flex-direction: column;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+
+    margin: 1rem 0 1rem 0;
+
+    padding: 0 .8rem 0 .8rem;
+}
+.highlight-text > .action-btn a {
+
+    color: #fff;
 }
 .site-footer-inside {
 

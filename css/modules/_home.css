@@ -62,8 +62,6 @@
     background: $green;
     /*I tried 8px border radius, but 5 looks more like the design*/
     border-radius: 5px;
-    font-family: Arial;
-    /*color: $white;*/
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     border: solid $borderGrey 1px;
@@ -101,12 +99,9 @@
     flex-direction: column;
     width: 25%;
 }
-.thumb-container {
-    /*width: 100%;*/
-}
 .thumb-container img, .thumb-container iframe {
     width: 100%;
-    /*may not need this.*/
+    height: auto;
 }
 .story-text {
     padding: 1rem;
@@ -155,6 +150,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: 50%;
 }
 .front-item-left {
     border-right: solid black .5px;
@@ -163,16 +159,38 @@
     border-left: solid black .5px;
     justify-content: flex-end;
 }
-.inner-box-upper, .inner-box-lower {
-    background-color: brown;
+.inner-box-upper-left, .inner-box-upper-right, .inner-box-lower-left, .inner-box-lower-right {
+    /*background-color: brown;*/
     width: 75%;
+    h4 {
+        text-align: center;
+    }
 }
-.inner-box-upper {
-    margin-bottom: 10px;
+.inner-box-upper-left, .inner-box-upper-right {
+    margin-bottom: 1rem;
 }
-.inner-box-lower {
-    margin-top: 10px;
+.inner-box-lower-left, .inner-box-lower-right {
+    margin-top: 1rem;
 }
-.front-item-left img, .front-item-right img {
-    width: 100%;
+.inner-box-upper-left, .inner-box-lower-right {
+    background-color: $lightBlue;
+    h4,a {
+        color: $white;
+    }
+}
+.inner-box-upper-right, .inner-box-lower-left {
+    background-color: $backgroundGrey;
+    h4,a {
+        color: $darkBlue;
+    }
+}
+.highlight-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    padding: 0 .8rem 0 .8rem;
+}
+.highlight-text > .action-btn a {
+    color: $white;
 }
