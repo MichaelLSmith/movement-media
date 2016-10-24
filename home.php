@@ -23,7 +23,7 @@ get_header(); ?>
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					
+
 
 				</header>
 
@@ -52,7 +52,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div><!-- #content -->
 <?php
 get_sidebar();
 get_footer();

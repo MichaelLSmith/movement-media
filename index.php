@@ -50,7 +50,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div><!-- #content -->
 <?php
 get_sidebar();
 get_footer();

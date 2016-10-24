@@ -82,7 +82,7 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div><!-- #content -->
 <?php
 get_sidebar();
 get_template_part( 'template-parts/news', 'signup' );
