@@ -1,5 +1,4 @@
 <section class="news-signup">
-    change
     <div class="news-text">
         <h3>KEEP UP-TO-DATE WITH US!</h3>
         <p>
@@ -7,3 +6,6 @@
         </p>
     </div>
 </section>
+<span class="hr-news">
+    <hr>
+</span>
