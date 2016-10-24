@@ -10,13 +10,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<!-- <header class="entry-header"> -->
-		<?php
-		// the_title( '<h1 class="entry-title">', '</h1>' );
-		?>
-
-	<!-- </header> -->
-
 <section class="featured-video">
 	<h5>MOVEMENT VIDEOS</h5>
 	<?php
@@ -35,7 +28,9 @@
 		    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		<?php endif; ?>
 	</section>
-	<p class="front-more-link"><a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a></p>
+	<p class="front-more-link">
+		<a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a>
+	</p>
 <h5>MOVEMENT STORIES</h5>
 <!-- change -->
 <section class="featured-stories">
@@ -57,10 +52,15 @@
 		require(locate_template('template-parts/front-story.php', $load));
 	?>
 </section> <!-- Stories End -->
+<p class="front-more-link">
+	<a href="http://localhost:8080/stories/">ALL STORIES</a>
+</p>
 
+<hr>
 <section class="front-quote">
 	<?php the_field('front_quote_1') ?>
 </section>
+<hr>
 
 <h5>MOVEMENT HIGHLIGHTS</h5>
 <!-- change -->
@@ -99,10 +99,12 @@
 <?php
  wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
  // print_r($post) ?>
+<hr>
+<section class="front-quote">
+	<?php the_field('front_quote_2') ?>
+</section>
+<hr>
 
- <section class="front-quote">
-	 <?php the_field('front_quote_2') ?>
- </section>
 	<div class="entry-content">
 		<?php
 			the_content();

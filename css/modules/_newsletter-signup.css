@@ -1,0 +1,20 @@
+.news-signup {
+    max-width: 1200px;
+    background-color: $darkBlue;
+    color: $white;
+    h3 {
+        line-height: 3.6rem;
+        font-weight: normal;
+    }
+    p {
+        color: inherit;
+        font-family: Gotham SSm A;
+        font-size: 1.8rem;
+        letter-spacing: 0px;
+        line-height: 2.4rem;
+    }
+}
+.news-text {
+    max-width: $textMargin;
+    margin: auto;
+}

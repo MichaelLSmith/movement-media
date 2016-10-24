@@ -420,7 +420,9 @@ section {
 }
 hr {
 
-    background-color: #ccc;
+    width: 65%;
+
+    background-color: #979797;
 
     border: 0;
 
@@ -1236,6 +1238,22 @@ Header CSS - need to @include in style.css and run gulp process
 .front-more-link {
 
     text-align: right;
+
+    color: #85C51F;
+
+    font-size: 2.4rem;
+
+    letter-spacing: 0px;
+
+    font-family: Gotham SSm A;
+
+    font-weight: 700;
+}
+.front-more-link a {
+
+    color: inherit;
+
+    text-decoration: underline;
 }
 .featured-stories {
 
@@ -1305,13 +1323,13 @@ Header CSS - need to @include in style.css and run gulp process
 }
 .front-quote {
 
-    border-top: 1px solid #979797;
+    /*border-top: 1px solid $borderGrey;*/
 
-    border-bottom: 1px solid #979797;
+    /*border-bottom: 1px solid $borderGrey;*/
 
-    padding: 8 0 8 0;
+    padding: .8rem 0 .8rem 0;
 
-    max-width: 98%;
+    max-width: 85%;
 
     margin: auto;
 }
@@ -1695,4 +1713,36 @@ dt:before {
     height: 350px;
 
     background-color: red;
+}
+.news-signup {
+
+    max-width: 1200px;
+
+    background-color: #005395;
+
+    color: #fff;
+}
+.news-signup h3 {
+
+    line-height: 3.6rem;
+
+    font-weight: normal;
+}
+.news-signup p {
+
+    color: inherit;
+
+    font-family: Gotham SSm A;
+
+    font-size: 1.8rem;
+
+    letter-spacing: 0px;
+
+    line-height: 2.4rem;
+}
+.news-text {
+
+    max-width: 65%;
+
+    margin: auto;
 }

@@ -57,9 +57,7 @@
 		</section>
 		<section class="home-masthead-1">
 			<div class="action-btn">
-				<a href="<?php the_field('front_header_action_button'); ?>">
-					<?php the_field('front_header_button_text'); ?>
-				</a>
+				<a href="<?php the_field('front_header_action_button'); ?>">LEARN MORE</a>
 			</div>
 		</section>
 	</header><!-- #masthead -->
@@ -87,4 +85,5 @@
 
 <?php
 get_sidebar();
+get_template_part( 'template-parts/news', 'signup' );
 get_footer();
