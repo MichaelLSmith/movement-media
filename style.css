@@ -1332,15 +1332,69 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: flex;
 
-    background-color: orange;
+    font-size: 10px;
+}
+.front-highlights-upper {
+
+    border-bottom: solid black .5px;
+}
+.front-highlights-lower {
+
+    border-top: solid black .5px;
 }
 .front-item-left, .front-item-right {
 
-    background-color: red;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+
+    -webkit-box-direction: normal;
+
+        -ms-flex-direction: row;
+
+            flex-direction: row;
+
+    -webkit-box-pack: start;
+
+        -ms-flex-pack: start;
+
+            justify-content: flex-start;
+}
+.front-item-left {
+
+    border-right: solid black .5px;
+}
+.front-item-right {
+
+    border-left: solid black .5px;
+
+    -webkit-box-pack: end;
+
+        -ms-flex-pack: end;
+
+            justify-content: flex-end;
 }
 .inner-box-upper, .inner-box-lower {
 
-    border: solid black 1px;
+    background-color: brown;
+
+    width: 75%;
+}
+.inner-box-upper {
+
+    margin-bottom: 10px;
+}
+.inner-box-lower {
+
+    margin-top: 10px;
+}
+.front-item-left img, .front-item-right img {
+
+    width: 100%;
 }
 .site-footer-inside {
 
