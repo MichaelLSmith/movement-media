@@ -26,23 +26,23 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 	<header id="home-masthead" class="home-header" role="banner">
-		<!-- <section class="home-nav"> -->
-			<div class="logo-tag-container">
+		<section class="home-nav">
+			<section class="logo-tag-container">
 				<div class="site-logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-					<div class="screen-reader-text">
-						<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+						<div class="screen-reader-text">
+							<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+						</div>
+						<?php the_custom_logo(); ?>
 					</div>
-					<img src="<?php the_field('front_header_image'); ?>" alt="">
-				</div>
-			</div>
+				</section>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
 				</button>
-				<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
-		<!-- </section> -->
+		</section>
 		<section class="home-masthead-1">
 			<p class="large-text"><?php the_field('front_header_text_left'); ?></p>
 			<div class="front-icon-container">
