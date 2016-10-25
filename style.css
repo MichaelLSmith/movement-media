@@ -1,4 +1,13 @@
 /*
+Breakpoints:
+* 0 - 375 is covered by normal setting
+* 375 - 600 is covered by @small
+* 600 - 1000 is covered by @medium
+* 1000 - 1200 is covered by @large
+*/
+
+
+/*
     inner max width is 1020
     outer max width is 1200
 */
@@ -928,22 +937,6 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site {
-
-
-    margin: auto;
-
-
-    max-width: 1200px;
-
-
-    background-color: #fff;
-
-
-    /*@media $large {
-		max-width: $container-max-width;
-	}*/
-}
 .site-content {
 
 
@@ -1269,7 +1262,7 @@ a:hover, a:active {
 }
 
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
 
 
     .menu-toggle {
@@ -1326,38 +1319,115 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site-header, .home-header {
+.site {
 
 
-    /*display: flex;*/
+    margin: auto;
+
+
+    max-width: 1200px;
+
+
+    background-color: #fff;
+
+
+    /*@media $large {
+		max-width: $container-max-width;
+	}*/
+}
+.site-header {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+            align-items: center;
 
 
     padding: 1em .5em;
 
 
-    /*@media $medium {
-        justify-content: space-between;
-    }*/
-}
-/*.site-header*/
-.logo-tag-container {
+    max-width: 1020px;
 
 
     margin: auto;
+
+
+    border-bottom: #005395 solid 1px;
+
+
+    padding-bottom: 2.1rem;
+
+
+    font-family: Gotham SSm A;
+
+
+    font-size: 14px;
+
+
+    color: #005395;
+
+
+    letter-spacing: 0.48px;
 }
-@media screen and (min-width: 37.5em) {
+.site-header a {
+
+
+    color: #005395;
+}
+@media screen and (min-width: 600px) {
+
+
+    .site-header {
+
+
+        -webkit-box-pack: justify;
+
+
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
+
+
+        -webkit-box-align: center;
+
+
+            -ms-flex-align: center;
+
+
+                    -ms-grid-row-align: center;
+
+
+                align-items: center;
+    }
+}
+.logo-tag-container {}
+@media screen and (min-width: 600px) {
 
 
     .logo-tag-container {
-
-
-        display: -webkit-box;
-
-
-        display: -ms-flexbox;
-
-
-        display: flex;
 
 
         margin: 0;
@@ -1368,7 +1438,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: none;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
 
 
     .site-branding {
@@ -1389,6 +1459,9 @@ Header CSS - need to @include in style.css and run gulp process
     /*background: $marginBlue;*/
 }
 .home-header {
+
+
+    padding: 1em .5em;
 
 
     background: #005395;
@@ -1446,11 +1519,6 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     letter-spacing: 0.48px;
-}
-.home-nav li {
-
-
-    /*need relative spacing between li. margin %??*/
 }
 .home-masthead-1 {
 
@@ -2007,7 +2075,7 @@ Header CSS - need to @include in style.css and run gulp process
 
         flex-wrap: wrap;
 }
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
 
 
     .about-services {

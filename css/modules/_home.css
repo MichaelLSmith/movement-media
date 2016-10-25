@@ -2,6 +2,7 @@
     /*background: $marginBlue;*/
 }
 .home-header {
+    padding: 1em .5em;
     background: $darkBlue;
     color: $white;
     max-width: $outer-max-width;
@@ -21,9 +22,6 @@
     font-size: 14px;
     color: $offWhite;
     letter-spacing: 0.48px;
-    li {
-        /*need relative spacing between li. margin %??*/
-    }
 }
 .home-masthead-1 {
     display: flex;
