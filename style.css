@@ -1461,119 +1461,82 @@ Header CSS - need to @include in style.css and run gulp process
 
     color: #fff;
 }
-.site-footer-inside {
+.site-footer {
 
-    display: -webkit-box;
+    background-color: #005395;
+}
+.footer-inner {
 
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: vertical;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: column;
-
-            flex-direction: column;
-
-    margin: auto;
+    max-width: 1020px;
 
     width: 80%;
 
-    text-align: center;
-}
-@media screen and (min-width: 37.5em) {
-
-    .site-footer-inside {
-
-        -webkit-box-orient: horizontal;
-
-        -webkit-box-direction: normal;
-
-            -ms-flex-direction: row;
-
-                flex-direction: row;
-
-        -webkit-box-pack: justify;
-
-            -ms-flex-pack: justify;
-
-                justify-content: space-between;
-
-        -webkit-box-align: center;
-
-            -ms-flex-align: center;
-
-                    -ms-grid-row-align: center;
-
-                align-items: center;
-    }
-}
-.footer-middle-container {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: vertical;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: column;
-
-            flex-direction: column;
-
-    /*background-color: $offwhite;*/
-}
-.footer-search-container {
-
-    padding: 1em;
-}
-.footer-social-media-container {
-
-    display: -webkit-box;
-
-    display: -ms-flexbox;
-
-    display: flex;
-
-    -webkit-box-orient: horizontal;
-
-    -webkit-box-direction: normal;
-
-        -ms-flex-direction: row;
-
-            flex-direction: row;
-
-    -webkit-box-pack: center;
-
-        -ms-flex-pack: center;
-
-            justify-content: center;
-}
-.footer-address-container {
-
-    margin: 1em;
-}
-.footer-address-container > ul {
-
-    list-style: none;
-
-    margin: 0;
-
-    padding: 0;
-}
-.footer-image-container {
-
-    margin: .5em;
-}
-.footer-company-img {
-
     margin: auto;
 }
+.footer-logo-section {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    -webkit-box-pack: start;
+
+        -ms-flex-pack: start;
+
+            justify-content: flex-start;
+}
+.tag-line p {
+
+    color: #fff;
+
+    font-size: 2.8rem;
+
+    line-height: 3rem;
+
+    margin: 0 0 0 1rem;
+}
+.tag-line p:nth-last-child(1) {
+
+    font-family: Gotham SSm A;
+
+    font-weight: 800;
+}
+.footer-menu-container {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+
+    /: wrap;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+}
+.footer-menu {
+
+    color: #fff;
+
+    font-size: 1.8rem;
+}
+/*line-height: 2.3rem;*/
+.footer-menu a {
+
+    color: #fff;
+
+    text-decoration: underline;
+}
+.footer-menu li {
+
+    margin: 0 0 2.9rem 0;
+}
+.footer-search-container {}
 .about-services {
 
     list-style: none;
