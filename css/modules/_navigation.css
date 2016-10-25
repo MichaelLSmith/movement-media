@@ -17,7 +17,6 @@ could possible split this into other files if it grows
 ## Links
 --------------------------------------------------------------*/
 a {
-	/*color: $white;*/
 	text-decoration: none;
 }
 a:link {
@@ -25,13 +24,11 @@ a:link {
 }
 
 a:visited {
-	/*color: purple;*/
 }
 
 a:hover,
 a:focus,
 a:active {
-	/*color: midnightblue;*/
 }
 
 a:focus {
@@ -46,10 +43,6 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	margin: 0 0 1em auto;
-}
-
 .main-navigation ul {
 	display: none;
 }
@@ -62,6 +55,7 @@ a:active {
 
 .main-navigation li {
 	display: inline-block;
+	margin: 0 1rem 0 1rem;
 }
 
 .main-navigation a {

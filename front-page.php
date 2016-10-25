@@ -23,13 +23,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-<!-- <div id="outer-container" class="outer" role="container"> -->
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
-
 	<header id="home-masthead" class="home-header" role="banner">
 		<section class="home-nav">
-			<article class="logo-tag-container">
+			<div class="logo-tag-container">
 				<div class="site-logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
 					<div class="screen-reader-text">
@@ -37,12 +35,12 @@
 					</div>
 					<img src="<?php the_field('front_header_image'); ?>" alt="">
 				</div>
-			</article>
+			</div>
 			<nav id="front-site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
+					<?php esc_html_e( 'MENU', 'movementmedia' ); ?>
 				</button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array('theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		</section>
 		<section class="home-masthead-1">
