@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+
 @import 'orig-underscores/normalize';
 @import 'orig-underscores/typography';
 @import 'orig-underscores/elements';
@@ -13,6 +14,7 @@
 @import 'orig-underscores/infinite-scroll';
 @import 'orig-underscores/media';
 
+
 @import 'modules/navigation';
 @import 'modules/header';
 @import 'modules/home';
@@ -20,4 +22,7 @@
 @import 'modules/about';
 @import 'modules/videos';
 @import 'modules/clients';
-@import 'modules/newsletter-signup'
+@import 'modules/newsletter-signup';
+@import 'modules/searchform';
+
+@import 'shared-assets';

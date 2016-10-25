@@ -56,37 +56,6 @@
     height: 110px;
     width: auto;
 }
-.action-btn {
-    display: inline-block;
-    margin: auto;
-    background: $green;
-    /*I tried 8px border radius, but 5 looks more like the design*/
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    border: solid $borderGrey 1px;
-    text-decoration: none;
-}
-.action-btn:hover {
-  text-decoration: none;
-}
-.embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 .front-more-link {
     text-align: right;
     color: $green;
@@ -122,6 +91,9 @@
     }
     p {
         color: $textGrey;
+    }
+    .action-btn a {
+        color: $white;
     }
 }
 .story-blue {
