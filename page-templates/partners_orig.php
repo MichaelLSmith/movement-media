@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Partners
+* Template Name: Orig Partners
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
