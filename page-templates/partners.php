@@ -41,7 +41,27 @@ get_header(); ?>
 				<p id="bottom"><a data-scroll data-options=
 					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 			</section> -->
-			change
+			<!-- change -->
+			<?php
+			// $favcolor = "red";
+			//
+			// switch ($favcolor) {
+			//     case "red":
+			//         echo "Your favorite color is red!";
+			//         break;
+			//     case "blue":
+			//         echo "Your favorite color is blue!";
+			//         break;
+			//     case "green":
+			//         echo "Your favorite color is green!";
+			//         break;
+			//     default:
+			//         echo "Your favorite color is neither red, blue, nor green!";
+			// }
+			?>
+
+
+
 			<?php
 
 			// check if the flexible content field has rows of data
@@ -50,21 +70,19 @@ get_header(); ?>
 			 	// loop through the rows of data
 			    while ( have_rows('flex_partners') ) : the_row();
 					echo "<p>in flex partners while</p>";
-					// check if the flexible content field has rows of data
-					if ( have_rows('partner_inner_flex') ):
-						echo "<p>in partner_inner_flex if</p>";
+					if( get_row_layout() == 'partner_inner_flex'):
+						echo "<p>in flex partners while</p>";
+
+						if ( get_row_layout() == 'partner_content'):
 
 
 
 
 
-						while ( have_rows('partner_inner_flex') ) : the_row();
-							echo "<p>in partners_inner_flex while</p>";
 							if( have_rows('partner_content') ):
 								// loop through the rows of data
 								echo "<p>in partner_content if</p>";
 							    while ( have_rows('partner_content') ) : the_row();
-
 									echo "<p>in partners content while</p>";//this repeats 4 times
 									// check if the flexible content field has rows of data
 									if( have_rows('partner_name_group') ):
@@ -135,8 +153,7 @@ get_header(); ?>
 									endif;//have_rows('work_for_partner')
 								endwhile;//have_rows('partner content')
 							endif;//have_rows('partner content')
-						endwhile;//have_rows(partner_inner_flex)
-					endif;//have_rows('partner_inner_flex')
+						endif;//get_row_layout() == 'partner_inner_flex'):
 				endwhile;//have_rows('flex_partners')
 			endif;//have_rows('flex_partners')
 ?>
