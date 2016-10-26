@@ -33,17 +33,12 @@
 					</div>
 					<?php the_custom_logo(); ?>
 				</div>
-
-				<div class="site-branding">
-					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					<p class="site-title"><?php bloginfo( 'description'); ?></p>
-				</div><!-- .site-branding -->
 			</section>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
 			</button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

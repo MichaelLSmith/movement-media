@@ -10,15 +10,6 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.site {
-	margin: auto;
-	max-width: $outer-max-width;
-	background-color: $white;
-	/*@media $large {
-		max-width: $container-max-width;
-	}*/
-}
-
 .site-content {
 	max-width: $container-max-width;
 	margin: inherit;

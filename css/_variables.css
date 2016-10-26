@@ -1,6 +1,14 @@
-$small: screen and (min-width: 600px);
-$medium: screen and (min-width: 37.5em);
-$large: screen and (min-width: 1200px);
+/*
+Breakpoints:
+* 0 - 375 is covered by normal setting
+* 375 - 600 is covered by @small
+* 600 - 1000 is covered by @medium
+* 1000 - 1200 is covered by @large
+*/
+
+$small: screen and (min-width: 375px);
+$medium: screen and (min-width: 600px);
+$large: screen and (min-width: 1000px);
 
 
 /*

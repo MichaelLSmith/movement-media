@@ -29,7 +29,7 @@ get_header(); ?>
 			<main id="top">
 
 				<nav class="clients-nav">
-					<h1>Clients</h1>
+					<h1>Clients Menu</h1>
 					<ul>
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#vote-hemp">Vote Hemp</a></li>
