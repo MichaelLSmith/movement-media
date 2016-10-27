@@ -110,7 +110,7 @@ get_header(); ?>
 				<p><a data-scroll data-options=
 					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 			</div>
-			<div id="vote-hemp">Vote Hemp
+			<!-- <div id="vote-hemp">Vote Hemp
 				<p><a data-scroll data-options=
 					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 			</div>
@@ -119,7 +119,7 @@ get_header(); ?>
 					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 				</div>
 			<p id="bottom"><a data-scroll data-options=
-				'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+				'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p> -->
 		</section>
 			<!-- change -->
 
