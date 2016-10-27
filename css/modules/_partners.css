@@ -1,10 +1,13 @@
 .clients-nav {
     list-style: none;
+    border: solid purple 2px;
     li {
         display: inline-block;
     }
 }
-
+#top {
+    background-color: grey;
+}
 
 #dr-bronner {
     color: black;
@@ -20,4 +23,8 @@
 #fair-world {
     height: 350px;
     background-color: red;
+}
+
+div {
+    border: solid black 2px;
 }

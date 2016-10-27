@@ -2203,11 +2203,19 @@ dt:before {
 
 
     list-style: none;
+
+
+    border: solid purple 2px;
 }
 .clients-nav li {
 
 
     display: inline-block;
+}
+#top {
+
+
+    background-color: grey;
 }
 #dr-bronner {
 
@@ -2235,6 +2243,11 @@ dt:before {
 
 
     background-color: red;
+}
+div {
+
+
+    border: solid black 2px;
 }
 .news-signup {
 
