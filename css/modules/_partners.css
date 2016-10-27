@@ -1,30 +1,28 @@
 .clients-nav {
     list-style: none;
-    border: solid purple 2px;
     li {
         display: inline-block;
     }
 }
+
+.partner-title-image {
+    width: 25%;
+}
+.partner-content-group {
+
+}
+
 #top {
-    background-color: grey;
+    /*background-color: grey;*/
 }
 
 #dr-bronner {
-    color: black;
-    height: 350px;
-    background-color: blue;
 }
 
 #vote-hemp {
-    height: 350px;
-    background-color: yellow;
+
 }
 
 #fair-world {
-    height: 350px;
-    background-color: red;
-}
 
-div {
-    border: solid black 2px;
 }

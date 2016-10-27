@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Flex Partners
+* Template Name: Partners
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -17,15 +17,14 @@ get_header(); ?>
 			<?php
 				the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="partners-image">
-					<p style="color:yellow;"> large image here </p>
-					<img src="<?php
-					//  the_field('full_sized_image'); ?>" />
+					<!-- <p style="color:yellow;"> large image here </p> -->
+					<img src="<?php the_field('full_sized_image'); ?>" />
 				</div>
-				<section class="partners-mission">
+				<div class="partners-mission">
 					<?php the_field('partners_mission') ?>
-				</section>
+				</div>
 				<nav class="clients-nav">
-					<h1>Clients Menu</h1>
+					<h6>Clients Menu</h6>
 					<ul>
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#vote-hemp">Hemp Industry</a></li>
@@ -34,8 +33,133 @@ get_header(); ?>
 		<!-- href="https://github.com/cferdinandi/smooth-scroll">GitHub</a></p> -->
 					<hr>
 				</nav>
-				end of main
-		</main>
+				<div id="dr-bronner">
+					<div class="partner-title-group">
+						<div class="partner-title-image">
+							<img src="<?php the_field('title_image') ?>" alt="" />
+						</div>
+					<h3><?php the_field('bronner_partner_name') ?></h3>
+					<p> <?php the_field('bronner_partner_description') ?> </p>
+					</div>
+					<div class="partner-content-group">
+						<h3><?php the_field('bronner_do_title') ?></h3>
+						<?php the_field('bronner_description_what') ?>
+					</div>
+					<div class="partner-gallery">
+						<!-- <p style="color:yellow;"> change </p> -->
+						<?php
+							$images = get_field('bronner_image_gallery');
+							if( $images ):
+						?>
+							<ul>
+								<?php
+									foreach( $images as $image ): ?>
+									<li>
+										<a href="<?php echo $image['url']; ?>">
+											 <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php
+											 echo $image['alt']; ?>" />
+										</a>
+										<p><?php echo $image['caption']; ?> </p>
+									</li>
+								<?php
+										endforeach; ?>
+							</ul>
+						<?php endif; ?>
+					</div>
+					<div class="partner-media-placement">
+						<ul>
+							<?php
+								if ( have_rows('bronner_media_placements') ):
+									while ( have_rows('bronner_media_placements') ): the_row();
+										$placement = get_sub_field('bronner_media_placement');
+
+										if ( $placement ):
+											echo "<li>" . $placement . "</li>";
+										endif;
+									endwhile;
+								endif;
+							?>
+						</ul>
+					</div>
+					<div class="partner-media-placement">
+						<ul>
+							<?php
+								if ( have_rows('bronner_services_provided') ):
+									while ( have_rows('bronner_services_provided') ): the_row();
+										$service = get_sub_field('bronner_service_provided');
+
+										if ( $service ):
+											echo "<li>" . $service . "</li>";
+										endif;
+									endwhile;
+								endif;
+							?>
+						</ul>
+					</div>
+					<div class="partner-media-placement">
+						<ul>
+							<?php
+								if ( have_rows('bronner_supported_campaigns') ):
+									while ( have_rows('bronner_supported_campaigns') ): the_row();
+										$camapaign = get_sub_field('bronner_supported_campaign');
+
+										if ( $camapaign ):
+											echo "<li>" . $camapaign . "</li>";
+										endif;
+									endwhile;
+								endif;
+							?>
+						</ul>
+					</div>
+					<p><a data-scroll data-options=
+						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+
+
+					<p style="color:purple">change</p>
+				</div><!-- #dr bronner -->
+				<div id="vote-hemp"><p>Vote Hemp hardcoded</p>
+					<?php
+						if( have_rows('other_partners') ):
+							while ( have_rows ('other_partners') ): the_row();
+								if(get_row_layout() == 'partner_name_group'):
+									the_sub_field('partner_name');//text to print
+										while(has_sub_field('partner_content_group_flex')):
+											if(get_row_layout() == "partner_content_group"):
+												the_sub_field('partner_image');
+												the_sub_field('partner_heading');
+												the_sub_field('partner_description');
+											endif;//get_row_layout partner_content_group
+										endwhile;//have_rows(partner_content_group_flex)
+								endif;//get_row_layout(partner_name_group)
+							endwhile;//have_rows('other_partners')
+						endif;//have_rows('other_partners')
+					?>
+
+
+
+
+
+
+
+					<p><a data-scroll data-options=
+						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+
+
+
+
+				</div>
+
+
+
+
+				<div id="fair-world">Fairworld Project
+					<p><a data-scroll data-options=
+						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+					</div>
+				<p id="bottom"><a data-scroll data-options=
+					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+
+		</main><!-- #top -->
 	</div><!-- #primary -->
 </div><!-- #content -->
 <?php
