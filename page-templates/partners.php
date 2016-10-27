@@ -35,8 +35,6 @@ get_header(); ?>
 					<hr>
 				</nav>
 				end of main
-
-
 		</main>
 	</div><!-- #primary -->
 </div><!-- #content -->
