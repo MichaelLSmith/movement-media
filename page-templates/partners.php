@@ -65,24 +65,23 @@ get_header(); ?>
 									endforeach; ?>
 							</ul>
 						<?php endif; ?>
-						<p style="color:purple">change</p>
 					</div>
 					<?php
 					$repeater = 'bronner_media_placements';
 					$sub_field = 'bronner_media_placement';
-					require(locate_template('template-parts/partner-media-placement.php', $load));
+					require(locate_template('template-parts/bronner-media-placement.php', $load));
 					?>
 
 					<?php
 					$repeater = 'bronner_services_provided';
 					$sub_field = 'bronner_services_provided';
-					require(locate_template('template-parts/partner-media-placement.php', $load));
+					require(locate_template('template-parts/bronner-media-placement.php', $load));
 					?>
 
 					<?php
 					$repeater = 'bronner_supported_campaigns';
 					$sub_field = 'bronner_supported_campaign';
-					require(locate_template('template-parts/partner-media-placement.php', $load));
+					require(locate_template('template-parts/bronner-media-placement.php', $load));
 					?>
 					<p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
@@ -96,6 +95,9 @@ get_header(); ?>
 								$count = $count + 1;
 								?><div id="partner-<?php echo $count?>">
 									<p>div in while starts</p>
+
+									<!-- <p style="color:purple">change</p> -->
+									
 								<?php
 								if(get_row_layout() == 'partner_name_group'):
 									?>
@@ -124,9 +126,9 @@ get_header(); ?>
 										require(locate_template('template-parts/partner-media-placement.php', $load));
 
 										$repeater = 'partner_supported_campaigns';
-										$sub_field = 'partner_supported_campaign';
+										$sub_field = 'partner_campaign_supported';
 										require(locate_template('template-parts/partner-media-placement.php', $load));
-										
+
 
 
 								endif;//get_row_layout(partner_name_group)
