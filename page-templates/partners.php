@@ -65,59 +65,28 @@ get_header(); ?>
 									endforeach; ?>
 							</ul>
 						<?php endif; ?>
+						<p style="color:purple">change</p>
 					</div>
 					<?php
 					$repeater = 'bronner_media_placements';
-					require(locate_template('template-parts/partner-media-placements.php', $load));
+					$sub_field = 'bronner_media_placement';
+					require(locate_template('template-parts/partner-media-placement.php', $load));
 					?>
-					<div class="partner-media-placement">
-						<ul>
-							<?php
-								if ( have_rows('bronner_media_placements') ):
-									while ( have_rows('bronner_media_placements') ): the_row();
-										$placement = get_sub_field('bronner_media_placement');
 
-										if ( $placement ):
-											echo "<li>" . $placement . "</li>";
-										endif;
-									endwhile;
-								endif;
-							?>
-						</ul>
-					</div>
-					<div class="partner-media-placement">
-						<ul>
-							<?php
-								if ( have_rows('bronner_services_provided') ):
-									while ( have_rows('bronner_services_provided') ): the_row();
-										$service = get_sub_field('bronner_service_provided');
+					<?php
+					$repeater = 'bronner_services_provided';
+					$sub_field = 'bronner_services_provided';
+					require(locate_template('template-parts/partner-media-placement.php', $load));
+					?>
 
-										if ( $service ):
-											echo "<li>" . $service . "</li>";
-										endif;
-									endwhile;
-								endif;
-							?>
-						</ul>
-					</div>
-					<div class="partner-media-placement">
-						<ul>
-							<?php
-								if ( have_rows('bronner_supported_campaigns') ):
-									while ( have_rows('bronner_supported_campaigns') ): the_row();
-										$camapaign = get_sub_field('bronner_supported_campaign');
-
-										if ( $camapaign ):
-											echo "<li>" . $camapaign . "</li>";
-										endif;
-									endwhile;
-								endif;
-							?>
-						</ul>
-					</div>
+					<?php
+					$repeater = 'bronner_supported_campaigns';
+					$sub_field = 'bronner_supported_campaign';
+					require(locate_template('template-parts/partner-media-placement.php', $load));
+					?>
 					<p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
-					<p style="color:purple">change</p>
+
 				</div><!-- #dr bronner -->
 				<!-- <div id="vote-hemp"> -->
 					<?php
@@ -144,9 +113,20 @@ get_header(); ?>
 										endwhile;//have_rows(partner_content_group_flex)
 										?>
 										<h3><?php the_sub_field('do_partner')?></h3>
-										<?php the_sub_field('description_what');?>
-										<?php
+										<?php the_sub_field('description_what');
 
+										$repeater = 'partner_media_placements';
+										$sub_field = 'partner_media_placement';
+										require(locate_template('template-parts/partner-media-placement.php', $load));
+
+										$repeater = 'partner_services_provided';
+										$sub_field = 'partner_service_provided';
+										require(locate_template('template-parts/partner-media-placement.php', $load));
+
+										$repeater = 'partner_supported_campaigns';
+										$sub_field = 'partner_supported_campaign';
+										require(locate_template('template-parts/partner-media-placement.php', $load));
+										
 
 
 								endif;//get_row_layout(partner_name_group)
