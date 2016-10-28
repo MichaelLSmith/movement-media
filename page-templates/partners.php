@@ -62,10 +62,14 @@ get_header(); ?>
 										<p><?php echo $image['caption']; ?> </p>
 									</li>
 								<?php
-										endforeach; ?>
+									endforeach; ?>
 							</ul>
 						<?php endif; ?>
 					</div>
+					<?php
+					$repeater = 'bronner_media_placements';
+					require(locate_template('template-parts/partner-media-placements.php', $load));
+					?>
 					<div class="partner-media-placement">
 						<ul>
 							<?php
@@ -113,42 +117,50 @@ get_header(); ?>
 					</div>
 					<p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
-
-
 					<p style="color:purple">change</p>
 				</div><!-- #dr bronner -->
-				<div id="vote-hemp"><p>Vote Hemp hardcoded</p>
+				<!-- <div id="vote-hemp"> -->
 					<?php
+						$count = 0;
 						if( have_rows('other_partners') ):
 							while ( have_rows ('other_partners') ): the_row();
+								$count = $count + 1;
+								?><div id="partner-<?php echo $count?>">
+									<p>div in while starts</p>
+								<?php
 								if(get_row_layout() == 'partner_name_group'):
-									the_sub_field('partner_name');//text to print
+									?>
+									<h3><?php the_sub_field('partner_name');?></h3>
+									<?php
 										while(has_sub_field('partner_content_group_flex')):
 											if(get_row_layout() == "partner_content_group"):
-												the_sub_field('partner_image');
-												the_sub_field('partner_heading');
-												the_sub_field('partner_description');
+
+												?>
+												<img
+													src="<?php the_sub_field('partner_image');?>" alt="" />
+												<h3><?php the_sub_field('partner_heading');?></h3>
+												<?php the_sub_field('partner_description');
 											endif;//get_row_layout partner_content_group
 										endwhile;//have_rows(partner_content_group_flex)
+										?>
+										<h3><?php the_sub_field('do_partner')?></h3>
+										<?php the_sub_field('description_what');?>
+										<?php
+
+
+
 								endif;//get_row_layout(partner_name_group)
+
+								?>	<p>div in while ends here</p>
+								</div><!-- #section end -->
+								<?php
 							endwhile;//have_rows('other_partners')
 						endif;//have_rows('other_partners')
 					?>
-
-
-
-
-
-
-
-					<p><a data-scroll data-options=
+					<!-- <p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
-
-
-
-
-				</div>
-
+				 -->
+<!--
 
 
 
@@ -157,7 +169,7 @@ get_header(); ?>
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 					</div>
 				<p id="bottom"><a data-scroll data-options=
-					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+					'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p> -->
 
 		</main><!-- #top -->
 	</div><!-- #primary -->
