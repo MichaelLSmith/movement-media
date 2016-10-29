@@ -12,7 +12,6 @@ Text Domain: _s
 Tags:
 This theme, like WordPress, is licensed under the GPL.
 
-
 Breakpoints:
 * 0 - 375 is covered by normal setting
 * 375 - 600 is covered by @small
@@ -467,9 +466,6 @@ p {
 
 
     color: #000;
-
-
-    /*letter-spacing: */
 }
 dfn, cite, em, i {
 
@@ -2223,33 +2219,20 @@ dt:before {
 
     display: inline-block;
 }
-#dr-bronner {
+.partner-title-image {
 
 
-    color: black;
-
-
-    height: 350px;
-
-
-    background-color: blue;
+    width: 25%;
 }
-#vote-hemp {
+.partner-content-group {}
+#top {
 
 
-    height: 350px;
-
-
-    background-color: yellow;
+    /*background-color: grey;*/
 }
-#fair-world {
-
-
-    height: 350px;
-
-
-    background-color: red;
-}
+#dr-bronner {}
+#vote-hemp {}
+#fair-world {}
 .news-signup {
 
 

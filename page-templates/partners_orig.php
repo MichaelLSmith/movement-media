@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Clients
+* Template Name: Orig Partners
  *
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
@@ -26,7 +26,7 @@ get_header(); ?>
 			// endwhile; // End of the loop.
 			?>
 
-			<main id="top">
+			<article id="top">
 
 				<nav class="clients-nav">
 					<h1>Clients Menu</h1>
@@ -104,7 +104,7 @@ get_header(); ?>
 					<p id="bottom"><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 				</section>
-
+			</article>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- #content -->
