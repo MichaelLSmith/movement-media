@@ -57,9 +57,11 @@
 </p>
 
 <hr>
-<section class="front-quote">
-	<?php the_field('front_quote_1') ?>
-</section>
+<?php if( get_field('front_quote_1') ): ?>
+	<section class="front-quote">
+		<?php the_field('front_quote_1') ?>
+	</section>
+<?php endif;?>
 <hr>
 
 <h5>MOVEMENT HIGHLIGHTS</h5>
@@ -100,9 +102,11 @@
  wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
  // print_r($post) ?>
 <hr>
-<section class="front-quote">
-	<?php the_field('front_quote_2') ?>
-</section>
+<?php if( get_field('front_quote_2') ): ?>
+	<section class="front-quote">
+		<?php the_field('front_quote_2') ?>
+	</section>
+<?php endif;?>
 <hr>
 
 	<div class="entry-content">

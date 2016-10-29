@@ -18,11 +18,15 @@ get_header(); ?>
 				the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="partners-image">
 					<!-- <p style="color:yellow;"> large image here </p> -->
-					<img src="<?php the_field('full_sized_image'); ?>" />
+					<?php if( get_field('full_sized_image') ): ?>
+						<img src="<?php the_field('full_sized_image'); ?>" />
+					<? endif;?>
 				</div>
-				<div class="partners-mission">
-					<?php the_field('partners_mission') ?>
-				</div>
+				<?php if( get_field('partners_mission') ): ?>
+					<div class="partners-mission">
+						<?php the_field('partners_mission') ?>
+					</div>
+				<? endif;?>
 				<nav class="clients-nav">
 					<h6>Clients Menu</h6>
 					<ul>
@@ -33,17 +37,27 @@ get_header(); ?>
 		<!-- href="https://github.com/cferdinandi/smooth-scroll">GitHub</a></p> -->
 					<hr>
 				</nav>
-				<div id="dr-bronner">
+				<section id="dr-bronner">
 					<div class="partner-title-group">
+					<?php if( get_field('bronner_title_image') ): ?>
 						<div class="partner-title-image">
-							<img src="<?php the_field('title_image') ?>" alt="" />
+							<img src="<?php the_field('bronner_title_image') ?>" alt="" />
 						</div>
-					<h3><?php the_field('bronner_partner_name') ?></h3>
-					<p> <?php the_field('bronner_partner_description') ?> </p>
+					<?php endif;?>
+					<?php if( get_field('bronner_partner_name') ): ?>
+						<h3><?php the_field('bronner_partner_name') ?></h3>
+					<?php endif;?>
+					<?php if( get_field('bronner_partner_description') ): ?>
+						<p><?php the_field('bronner_partner_description') ?> </p>
+					<?php endif;?>
 					</div>
 					<div class="partner-content-group">
-						<h3><?php the_field('bronner_do_title') ?></h3>
-						<?php the_field('bronner_description_what') ?>
+						<?php if( get_field('bronner_do_title') ): ?>
+							<h3><?php the_field('bronner_do_title') ?></h3>
+						<?php endif;?>
+						<?php if( get_field('bronner_description_what') ): ?>
+							<?php the_field('bronner_description_what') ?>
+						<?php endif;?>
 					</div>
 					<div class="partner-gallery">
 						<!-- <p style="color:yellow;"> change </p> -->
@@ -86,18 +100,18 @@ get_header(); ?>
 					<p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 
-				</div><!-- #dr bronner -->
+				</section><!-- #dr bronner -->
 				<!-- <div id="vote-hemp"> -->
 					<?php
 						$count = 0;
 						if( have_rows('other_partners') ):
 							while ( have_rows ('other_partners') ): the_row();
 								$count = $count + 1;
-								?><div id="partner-<?php echo $count?>">
+								?><section id="partner-<?php echo $count?>">
 									<p>div in while starts</p>
 
 									<!-- <p style="color:purple">change</p> -->
-									
+
 								<?php
 								if(get_row_layout() == 'partner_name_group'):
 									?>
@@ -134,7 +148,7 @@ get_header(); ?>
 								endif;//get_row_layout(partner_name_group)
 
 								?>	<p>div in while ends here</p>
-								</div><!-- #section end -->
+							</section><!-- #partner end -->
 								<?php
 							endwhile;//have_rows('other_partners')
 						endif;//have_rows('other_partners')

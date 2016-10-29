@@ -27,6 +27,11 @@ needs to be @imported into the style.css file and processed by gulp
 .entry-title {
 	text-transform: capitalize;
 	color: $darkBlue;
+	text-align: center;
+	display: inline-block;
+	padding: 0 3.8rem;
+
+
 	@media $medium {
 		background-color: $darkBlue;
 		color: $white;

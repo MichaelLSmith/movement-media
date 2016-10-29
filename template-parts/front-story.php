@@ -20,7 +20,9 @@
                     <?php the_title(); ?>
                 </a>
             </h6>
+            <?php if( get_field('excerpt_front_page') ): ?>
                 <?php the_field('excerpt_front_page') ?>
+            <?php endif; ?>
             <div class="action-btn">
                  <a href="<?php the_permalink(); ?>">READ MORE</a>
             </div>

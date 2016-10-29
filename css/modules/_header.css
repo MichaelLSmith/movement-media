@@ -24,7 +24,7 @@ Header CSS - need to @include in style.css and run gulp process
     margin: auto;
     border-bottom: $darkBlue solid 1px;
     padding-bottom: 2.1rem;
-    font-family: Gotham SSm A;
+    font-family: $gotham;
     font-size: 14px;
     color: $darkBlue;
     letter-spacing: 0.48px;

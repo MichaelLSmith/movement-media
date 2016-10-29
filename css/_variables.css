@@ -33,6 +33,7 @@ $outer-max-width: 1200px;
 $container-default-width: 80%;
 $container-max-width: 1020px;
 
+/*Colours*/
 $backgroundGrey: #EBEBE8;
 $offWhite: #F3F4F5;
 $textGrey: #34343F;
@@ -44,4 +45,7 @@ $lightBlue: #4A90E2;
 $green: #85C51F;
 $baseTextColour: #000;
 
+/*Text Related*/
 $textMargin: 65%;
+$gotham: "Gotham SSm A", "Gotham SSm B";
+$sentinel: "Sentinel SSm A", "Sentinel SSm B";

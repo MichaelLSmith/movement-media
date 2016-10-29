@@ -44,20 +44,31 @@
 			</nav><!-- #site-navigation -->
 		</section>
 		<section class="home-masthead-1">
-			<p class="large-text"><?php the_field('front_header_text_left'); ?></p>
-			<div class="front-icon-container">
-				<img class="icon" src="<?php the_field('front_header_icon');?>" alt="">
-			</div>
-			<p class="large-text"><?php the_field('front_header_text_right'); ?></p>
+			<p class="large-text">
+				<?php if( get_field('front_header_text_left') ): ?>
+					<?php the_field('front_header_text_left'); ?></p>
+				<?php endif; ?>
+			<?php if( get_field('front_header_icon') ): ?>
+				<div class="front-icon-container">
+					<img class="icon" src="<?php the_field('front_header_icon');?>" alt="">
+				</div>
+			<?php endif; ?>
+			<?php if( get_field('front_header_text_right') ): ?>
+				<p class="large-text"><?php the_field('front_header_text_right'); ?></p>
+			<?php endif;?>
 		</section>
-		<section class="home-masthead-1">
-			<p class="text"><?php the_field('front_header_paragraph'); ?></p>
-		</section>
-		<section class="home-masthead-1">
-			<div class="action-btn">
-				<a href="<?php the_field('front_header_action_button'); ?>">LEARN MORE</a>
-			</div>
-		</section>
+		<?php if( get_field('front_header_paragraph') ): ?>
+			<section class="home-masthead-1">
+				<p class="text"><?php the_field('front_header_paragraph'); ?></p>
+			</section>
+		<?php endif;?>
+		<?php if( get_field('front_header_action_button') ): ?>
+			<section class="home-masthead-1">
+				<div class="action-btn">
+					<a href="<?php the_field('front_header_action_button'); ?>">LEARN MORE</a>
+				</div>
+			</section>
+		<?php endif;?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

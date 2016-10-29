@@ -26,6 +26,12 @@ Breakpoints:
 */
 
 
+/*Colours*/
+
+
+/*Text Related*/
+
+
 /*
 Normalize section in the original theme style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -399,7 +405,7 @@ body, button, input, select, textarea {
     color: #000;
 
 
-    font-family: Sentinel SSm A;
+    font-family: "Sentinel SSm A","Sentinel SSm B";
 
 
     line-height: 1.5;
@@ -410,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 }
 h1 {
 
@@ -973,6 +979,15 @@ needs to be @imported into the style.css file and processed by gulp
 
 
     color: #005395;
+
+
+    text-align: center;
+
+
+    display: inline-block;
+
+
+    padding: 0 3.8rem;
 }
 @media screen and (min-width: 600px) {
 
@@ -1410,7 +1425,7 @@ Header CSS - need to @include in style.css and run gulp process
     padding-bottom: 2.1rem;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 14px;
@@ -1539,7 +1554,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-nav {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 14px;
@@ -1581,7 +1596,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p.large-text {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 64px;
@@ -1598,7 +1613,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p.text {
 
 
-    font-family: Sentinel SSm A;
+    font-family: "Sentinel SSm A","Sentinel SSm B";
 
 
     font-weight: 600;
@@ -1670,7 +1685,7 @@ Header CSS - need to @include in style.css and run gulp process
     letter-spacing: 0px;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 700;
@@ -2022,7 +2037,7 @@ Header CSS - need to @include in style.css and run gulp process
 .tag-line p:nth-last-child(1) {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 800;
@@ -2073,6 +2088,19 @@ Header CSS - need to @include in style.css and run gulp process
     margin: 0 0 2.9rem 0;
 }
 .footer-search-container {}
+.about-mission {
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    max-width: 85%;
+}
+.about-mission p {
+
+
+    font-size: 2.5rem;
+}
 .about-services {
 
 
@@ -2281,7 +2309,7 @@ dt:before {
     color: inherit;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 1.8rem;

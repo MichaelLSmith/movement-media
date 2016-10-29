@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 .home-nav {
-    font-family: Gotham SSm A;
+    font-family: $gotham;
     font-size: 14px;
     color: $offWhite;
     letter-spacing: 0.48px;
@@ -31,14 +31,14 @@
         color: $white;
     }
     p.large-text {
-        font-family: Gotham SSm A;
+        font-family: $gotham;
         font-size: 64px;
         letter-spacing: 2.55px;
         line-height: 57px;
         margin: 0;
     }
     p.text {
-        font-family: Sentinel SSm A;
+        font-family: $sentinel;
         font-weight: 600;
         font-size: 24px;
         line-height: 30px;
@@ -59,7 +59,7 @@
     color: $green;
     font-size: 2.4rem;
     letter-spacing: 0px;
-    font-family: Gotham SSm A;
+    font-family: $gotham;
     font-weight: 700;
     a {
         color: inherit;
