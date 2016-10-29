@@ -38,18 +38,18 @@
 		$story_location = 'story_left';
 		$background_color = '-grey';
 		//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
-		require(locate_template('template-parts/front-story.php', $load));
+		require(locate_template('template-parts/front-story.php'));
 	?>
 	<!-- centre story here: -->
 	<?php
 		$story_location = 'story_centre';
 		$background_color = '-blue';
-		require(locate_template('template-parts/front-story.php', $load));
+		require(locate_template('template-parts/front-story.php'));
 	?>
 	<?php
 		$story_location = 'story_right';
 		$background_color = '-grey';
-		require(locate_template('template-parts/front-story.php', $load));
+		require(locate_template('template-parts/front-story.php'));
 	?>
 </section> <!-- Stories End -->
 <p class="front-more-link">
@@ -72,13 +72,13 @@
 			//control which sector html lands in:
 			$x_axis = 'left';
 			$y_axis = 'upper';
-			require(locate_template('template-parts/front-highlight.php', $load));
+			require(locate_template('template-parts/front-highlight.php'));
 		?>
 		<?php
 			$highlight = 'highlight_page_up_right';
 			$x_axis = 'right';
 			$y_axis = 'upper';
-			require(locate_template('template-parts/front-highlight.php', $load));
+			require(locate_template('template-parts/front-highlight.php'));
 		?>
 	</div>
 	<div class="front-highlights-lower">
@@ -86,13 +86,13 @@
 			$highlight = 'highlight_page_lower_left';
 			$x_axis = 'left';
 			$y_axis = 'lower';
-			require(locate_template('template-parts/front-highlight.php', $load));
+			require(locate_template('template-parts/front-highlight.php'));
 		?>
 		<?php
 			$highlight = 'highlight_page_lower_right';
 			$x_axis = 'right';
 			$y_axis = 'lower';
-			require(locate_template('template-parts/front-highlight.php', $load));
+			require(locate_template('template-parts/front-highlight.php'));
 		?>
 	</div>
 </section>

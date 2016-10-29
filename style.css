@@ -966,6 +966,26 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.entry-title {
+
+
+    text-transform: capitalize;
+
+
+    color: #005395;
+}
+@media screen and (min-width: 600px) {
+
+
+    .entry-title {
+
+
+        background-color: #005395;
+
+
+        color: #fff;
+    }
+}
 .sticky {
 
 

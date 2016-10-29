@@ -24,6 +24,15 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.entry-title {
+	text-transform: capitalize;
+	color: $darkBlue;
+	@media $medium {
+		background-color: $darkBlue;
+		color: $white;
+	}
+}
+
 .sticky {
 	display: block;
 }

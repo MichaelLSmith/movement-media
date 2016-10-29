@@ -11,6 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main class="content-inner" role="main">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			<?php the_field('about_introduction', '13'); ?>
 			<h1>Services</h1>
 			<section class="about-services">
