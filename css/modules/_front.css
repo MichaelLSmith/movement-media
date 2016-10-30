@@ -11,6 +11,11 @@
         text-decoration: none;
     }
 }
+
+.home-header-content {
+    
+}
+
 .home-nav, .home-masthead-1 {
     max-width: $container-max-width;
     margin: auto;

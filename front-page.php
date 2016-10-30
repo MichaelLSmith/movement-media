@@ -26,7 +26,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 	<header id="home-masthead" class="home-header" role="banner">
-		<div id="header-inner" class="header-content">
+		<div id="header-inner" class="home-header-content">
 			<section class="home-nav">
 				<section class="logo-tag-container">
 					<div class="site-logo">

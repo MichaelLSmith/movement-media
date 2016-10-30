@@ -1559,6 +1559,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     text-decoration: none;
 }
+.home-header-content {}
 .home-nav, .home-masthead-1 {
 
 
