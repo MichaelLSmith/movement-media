@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <section class="featured-video">
-	<h5>MOVEMENT VIDEOS</h5>
+	<h5 class="blue-heading">MOVEMENT VIDEOS</h5>
 	<?php
 		//from https://www.advancedcustomfields.com/resources/post-object/
 		$post_object = get_field('featured_video');
@@ -31,7 +31,7 @@
 	<p class="front-more-link">
 		<a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a>
 	</p>
-<h5>MOVEMENT STORIES</h5>
+<h5 class="blue-heading">MOVEMENT STORIES</h5>
 <!-- change -->
 <section class="featured-stories">
 	<?php
@@ -64,7 +64,7 @@
 <?php endif;?>
 <hr>
 
-<h5>MOVEMENT HIGHLIGHTS</h5>
+<h5 class="blue-heading">MOVEMENT HIGHLIGHTS</h5>
 <!-- change -->
 <section id="hightlights" class="movement-highlights">
 	<div class="front-highlights-upper">
