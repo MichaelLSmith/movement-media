@@ -57,6 +57,10 @@ h5 {
 h6 {
 	font-size: 1.6rem;
 }
+}
+.blue-heading {
+	color: $lightBlue;
+}
 
 p {
 	margin-bottom: 1.5em;
