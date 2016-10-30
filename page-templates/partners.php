@@ -11,11 +11,11 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<p style="color:red;">start of div primary</p>
-		<main id="top">
+		<!-- <p style="color:red;">start of div primary</p> -->
+		<main id="main" class="site-main" role="main">
 		<!-- Content Starts -->
-			<?php
-				the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="partners-image">
 					<!-- <p style="color:yellow;"> large image here </p> -->
 					<?php if( get_field('full_sized_image') ): ?>

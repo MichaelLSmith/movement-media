@@ -7,21 +7,13 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site {
-	margin: auto;
-	max-width: $outer-max-width;
-	background-color: $white;
-	/*@media $large {
-		max-width: $container-max-width;
-	}*/
-}
-.site-header {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em .5em;
-    max-width: $container-max-width;
-    margin: auto;
+	max-width: $container-default-width;
+	margin: auto;
     border-bottom: $darkBlue solid 1px;
     padding-bottom: 2.1rem;
     font-family: $gotham;
@@ -36,6 +28,10 @@ Header CSS - need to @include in style.css and run gulp process
         align-items: center;
     }
 }
+.site-header {
+	max-width: $container-max-width;
+    margin: auto;
+}
 .logo-tag-container {
     @media $medium {
         margin: 0;
@@ -48,11 +44,6 @@ Header CSS - need to @include in style.css and run gulp process
         display: block;
     }
 }
-
-.site-title {
-
-}
-
 .site-logo {
     margin-right: 10px;
 }

@@ -17,6 +17,9 @@ Breakpoints:
 * 375 - 600 is covered by @small
 * 600 - 1000 is covered by @medium
 * 1000 - 1200 is covered by @large
+* narrower than 1020, we need a white gutter
+
+
 */
 
 
@@ -953,6 +956,17 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site {
+
+
+    margin: auto;
+
+
+    max-width: 1200px;
+
+
+    background-color: #fff;
+}
 .site-content {
 
 
@@ -961,13 +975,13 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: inherit;
 }
-.full-content-width {
+.content-area {
 
 
     margin: auto;
 
 
-    max-width: 1020px;
+    max-width: 85%;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -979,6 +993,9 @@ needs to be @imported into the style.css file and processed by gulp
 
 
     color: #005395;
+
+
+    font-size: 5vw;
 
 
     text-align: center;
@@ -999,6 +1016,9 @@ needs to be @imported into the style.css file and processed by gulp
 
 
         color: #fff;
+
+
+        font-size: 2.5rem;
     }
 }
 .sticky {
@@ -1364,23 +1384,7 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site {
-
-
-    margin: auto;
-
-
-    max-width: 1200px;
-
-
-    background-color: #fff;
-
-
-    /*@media $large {
-		max-width: $container-max-width;
-	}*/
-}
-.site-header {
+.header-content {
 
 
     display: -webkit-box;
@@ -1413,7 +1417,7 @@ Header CSS - need to @include in style.css and run gulp process
     padding: 1em .5em;
 
 
-    max-width: 1020px;
+    max-width: 85%;
 
 
     margin: auto;
@@ -1436,7 +1440,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     letter-spacing: 0.48px;
 }
-.site-header a {
+.header-content a {
 
 
     color: #005395;
@@ -1444,7 +1448,7 @@ Header CSS - need to @include in style.css and run gulp process
 @media screen and (min-width: 600px) {
 
 
-    .site-header {
+    .header-content {
 
 
         -webkit-box-pack: justify;
@@ -1467,6 +1471,14 @@ Header CSS - need to @include in style.css and run gulp process
 
                 align-items: center;
     }
+}
+.site-header {
+
+
+    max-width: 1020px;
+
+
+    margin: auto;
 }
 .logo-tag-container {}
 @media screen and (min-width: 600px) {
@@ -1492,7 +1504,6 @@ Header CSS - need to @include in style.css and run gulp process
         display: block;
     }
 }
-.site-title {}
 .site-logo {
 
 
@@ -1995,7 +2006,7 @@ Header CSS - need to @include in style.css and run gulp process
     max-width: 1020px;
 
 
-    width: 80%;
+    width: 85%;
 
 
     margin: auto;
@@ -2257,6 +2268,17 @@ dt:before {
 
     font-size: 150%;
 }
+.partner-title-image {
+
+
+    width: 25%;
+}
+.partners-mission {
+
+
+    /*max-width: */
+}
+.partner-content-group {}
 .clients-nav {
 
 
@@ -2267,12 +2289,6 @@ dt:before {
 
     display: inline-block;
 }
-.partner-title-image {
-
-
-    width: 25%;
-}
-.partner-content-group {}
 #top {
 
 
