@@ -11,8 +11,53 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main class="content-inner" role="main">
-			<?php the_field('about_introduction', '13'); ?>
+
+			<div class="entry-title-container">
+				<?php the_title('<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+			<section class="about-mission">
+				<?php the_field('about_mission'); ?>
+			</section>
+			<section class="about-gallery">
+				<?php
+					$images = get_field('about_image_gallery');
+					if( $images ):
+				?>
+					<ul>
+						<?php
+							foreach( $images as $image ): ?>
+							<li>
+								<a href="<?php echo $image['url']; ?>">
+									 <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php
+									 echo $image['alt']; ?>" />
+								</a>
+								<p><?php echo $image['caption']; ?> </p>
+							</li>
+						<?php
+							endforeach; ?>
+					</ul>
+				<?php endif; ?>
+			</section>
+			<section>
+				<?php if( get_field('about_mission_second') ): ?>
+					<?php the_field('about_mission_second'); ?>
+				<?php endif; ?>
+			</section>
+			<section>
+				<h4>What We Do</h4>
+				<?php if( get_field('about_what_we_do') ): ?>
+					<?php the_field('about_what_we_do'); ?>
+				<?php endif; ?>
+			</section>
+			<?php if( get_field('about_main_image') ): ?>
+				<section>
+					<img src="<?php the_field('about_main_image');?>" alt="" />
+				</section>
+			<? endif;?>
+
+
 			<h1>Services</h1>
+<!-- <p style="color:purple;"> change </p> -->
 			<section class="about-services">
 				<dl>
 	            <?php

@@ -17,6 +17,9 @@ Breakpoints:
 * 375 - 600 is covered by @small
 * 600 - 1000 is covered by @medium
 * 1000 - 1200 is covered by @large
+* narrower than 1020, we need a white gutter
+
+
 */
 
 
@@ -24,6 +27,12 @@ Breakpoints:
     inner max width is 1020
     outer max width is 1200
 */
+
+
+/*Colours*/
+
+
+/*Text Related*/
 
 
 /*
@@ -399,7 +408,7 @@ body, button, input, select, textarea {
     color: #000;
 
 
-    font-family: Sentinel SSm A;
+    font-family: "Sentinel SSm A","Sentinel SSm B";
 
 
     line-height: 1.5;
@@ -410,7 +419,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 }
 h1 {
 
@@ -947,6 +956,17 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site {
+
+
+    margin: auto;
+
+
+    max-width: 1200px;
+
+
+    background-color: #fff;
+}
 .site-content {
 
 
@@ -955,17 +975,75 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: inherit;
 }
-.full-content-width {
+.content-area {
 
 
     margin: auto;
+}
+@media screen and (min-width: 600px) {
 
 
-    max-width: 1020px;
+    .content-area {
+
+
+        max-width: 85%;
+    }
 }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.entry-title-container, .partners-lower-content {
+
+
+    max-width: 85%;
+
+
+    margin: auto;
+}
+@media screen and (min-width: 600px) {
+
+
+    .entry-title-container, .partners-lower-content {
+
+
+        max-width: 1020px;
+    }
+}
+.entry-title {
+
+
+    text-transform: capitalize;
+
+
+    color: #005395;
+
+
+    font-size: 5vw;
+
+
+    text-align: center;
+
+
+    display: inline-block;
+
+
+    /*padding: 0 3.8rem;*/
+}
+@media screen and (min-width: 600px) {
+
+
+    .entry-title {
+
+
+        background-color: #005395;
+
+
+        color: #fff;
+
+
+        font-size: 2.5rem;
+    }
+}
 .sticky {
 
 
@@ -1329,23 +1407,7 @@ Header CSS - need to @include in style.css and run gulp process
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.site {
-
-
-    margin: auto;
-
-
-    max-width: 1200px;
-
-
-    background-color: #fff;
-
-
-    /*@media $large {
-		max-width: $container-max-width;
-	}*/
-}
-.site-header {
+.header-content {
 
 
     display: -webkit-box;
@@ -1378,7 +1440,7 @@ Header CSS - need to @include in style.css and run gulp process
     padding: 1em .5em;
 
 
-    max-width: 1020px;
+    max-width: 85%;
 
 
     margin: auto;
@@ -1390,7 +1452,7 @@ Header CSS - need to @include in style.css and run gulp process
     padding-bottom: 2.1rem;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 14px;
@@ -1401,7 +1463,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     letter-spacing: 0.48px;
 }
-.site-header a {
+.header-content a {
 
 
     color: #005395;
@@ -1409,7 +1471,7 @@ Header CSS - need to @include in style.css and run gulp process
 @media screen and (min-width: 600px) {
 
 
-    .site-header {
+    .header-content {
 
 
         -webkit-box-pack: justify;
@@ -1432,6 +1494,14 @@ Header CSS - need to @include in style.css and run gulp process
 
                 align-items: center;
     }
+}
+.site-header {
+
+
+    max-width: 1020px;
+
+
+    margin: auto;
 }
 .logo-tag-container {}
 @media screen and (min-width: 600px) {
@@ -1457,7 +1527,6 @@ Header CSS - need to @include in style.css and run gulp process
         display: block;
     }
 }
-.site-title {}
 .site-logo {
 
 
@@ -1490,6 +1559,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     text-decoration: none;
 }
+.home-header-content {}
 .home-nav, .home-masthead-1 {
 
 
@@ -1519,7 +1589,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-nav {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 14px;
@@ -1561,7 +1631,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p.large-text {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 64px;
@@ -1578,7 +1648,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p.text {
 
 
-    font-family: Sentinel SSm A;
+    font-family: "Sentinel SSm A","Sentinel SSm B";
 
 
     font-weight: 600;
@@ -1650,7 +1720,7 @@ Header CSS - need to @include in style.css and run gulp process
     letter-spacing: 0px;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 700;
@@ -1960,7 +2030,7 @@ Header CSS - need to @include in style.css and run gulp process
     max-width: 1020px;
 
 
-    width: 80%;
+    width: 85%;
 
 
     margin: auto;
@@ -2002,7 +2072,7 @@ Header CSS - need to @include in style.css and run gulp process
 .tag-line p:nth-last-child(1) {
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 800;
@@ -2053,6 +2123,19 @@ Header CSS - need to @include in style.css and run gulp process
     margin: 0 0 2.9rem 0;
 }
 .footer-search-container {}
+.about-mission {
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    max-width: 85%;
+}
+.about-mission p {
+
+
+    font-size: 2.5rem;
+}
 .about-services {
 
 
@@ -2209,6 +2292,17 @@ dt:before {
 
     font-size: 150%;
 }
+.partner-title-image {
+
+
+    width: 25%;
+}
+.partners-mission {
+
+
+    /*max-width: */
+}
+.partner-content-group {}
 .clients-nav {
 
 
@@ -2219,12 +2313,6 @@ dt:before {
 
     display: inline-block;
 }
-.partner-title-image {
-
-
-    width: 25%;
-}
-.partner-content-group {}
 #top {
 
 
@@ -2261,7 +2349,7 @@ dt:before {
     color: inherit;
 
 
-    font-family: Gotham SSm A;
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-size: 1.8rem;

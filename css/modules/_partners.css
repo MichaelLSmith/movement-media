@@ -1,15 +1,20 @@
+.partner-title-image {
+    width: 25%;
+}
+.partners-mission {
+    /*max-width: */
+}
+
+
+.partner-content-group {
+
+}
+
 .clients-nav {
     list-style: none;
     li {
         display: inline-block;
     }
-}
-
-.partner-title-image {
-    width: 25%;
-}
-.partner-content-group {
-
 }
 
 #top {

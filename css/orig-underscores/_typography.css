@@ -21,7 +21,7 @@ input,
 select,
 textarea {
 	color: $baseTextColour;
-	font-family: Sentinel SSm A;
+	font-family: $sentinel;
 	line-height: 1.5;
 }
 
@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: Gotham SSm A;
+	font-family: $gotham;
 }
 
 h1 {
