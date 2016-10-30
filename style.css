@@ -465,6 +465,11 @@ h6 {
 
     font-size: 1.6rem;
 }
+.blue-heading {
+
+
+    color: #4A90E2;
+}
 p {
 
 
@@ -2292,6 +2297,9 @@ dt:before {
 
     font-size: 150%;
 }
+/*
+note: partners-lower content width area controlled in _content.css as part of .entry-title-container declaration.
+*/
 .partner-title-image {
 
 
@@ -2312,6 +2320,157 @@ dt:before {
 
 
     display: inline-block;
+}
+/*Flex Gallery*/
+.bronner-flex-container-upper, .bronner-flex-container-lower {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    font-size: 10px;
+}
+.bronner-flex-container-upper {
+
+
+    border-bottom: solid black .5px;
+}
+.bronner-flex-container-lower {
+
+
+    border-top: solid black .5px;
+}
+.bronner-flex-item-left, .bronner-flex-item-right {}
+.bronner-flex-item-left {
+
+
+    border-right: solid black .5px;
+}
+.bronner-flex-item-right {
+
+
+    border-left: solid black .5px;
+
+
+    -webkit-box-pack: end;
+
+
+        -ms-flex-pack: end;
+
+
+            justify-content: flex-end;
+}
+.bronner-inner-box-upper, .bronner-inner-box-lower {}
+.bronner-inner-box-upper {
+
+
+    margin-bottom: 10px;
+}
+.bronner-inner-box-lower {
+
+
+    margin-top: 10px;
+}
+.bronner-flex-item-left img, .bronner-flex-item-right img {
+
+
+    width: 55%;
+}
+.partner-services-container {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    color: #fff;
+
+
+    border: black solid 1px;
+}
+.partner-services-container ul {
+
+
+    margin: 0;
+}
+@media screen and (min-width: 600px) {
+
+
+    .partner-services-container {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+}
+.partner-media-placement {
+
+
+    background-color: #4A90E2;
+
+
+    -webkit-box-flex: 0;
+
+
+        -ms-flex: 0 0 200px;
+
+
+            flex: 0 0 200px;
+}
+/*width: 100%;*/
+.partner-media-placement ul {
+
+
+    /*border: black solid 1px;*/
+
+
+    background-color: #fff;
+
+
+    width: 85%;
+
+
+    margin: auto;
 }
 #top {
 

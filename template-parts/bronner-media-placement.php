@@ -1,4 +1,8 @@
 <div class="partner-media-placement">
+    <span class="media-placement-icon">
+        <?php echo $icon ?>
+    </span>
+    <h4><?php echo $title ?></h4>
     <ul>
         <?php
             if ( have_rows($repeater) ):

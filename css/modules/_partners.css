@@ -1,3 +1,8 @@
+/*
+note: partners-lower content width area controlled in _content.css as part of .entry-title-container declaration.
+*/
+
+
 .partner-title-image {
     width: 25%;
 }
@@ -16,6 +21,70 @@
         display: inline-block;
     }
 }
+
+/*Flex Gallery*/
+.bronner-flex-container-upper, .bronner-flex-container-lower {
+    display: flex;
+    font-size: 10px;
+}
+.bronner-flex-container-upper {
+    border-bottom: solid black .5px;
+}
+.bronner-flex-container-lower {
+    border-top: solid black .5px;
+}
+.bronner-flex-item-left, .bronner-flex-item-right {
+
+}
+.bronner-flex-item-left {
+    border-right: solid black .5px;
+}
+.bronner-flex-item-right {
+    border-left: solid black .5px;
+    justify-content: flex-end;
+}
+.bronner-inner-box-upper, .bronner-inner-box-lower {
+}
+.bronner-inner-box-upper {
+    margin-bottom: 10px;
+}
+.bronner-inner-box-lower {
+    margin-top: 10px;
+}
+.bronner-flex-item-left img, .bronner-flex-item-right img {
+    width: 55%;
+}
+
+.partner-services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+    border: black solid 1px;
+
+    ul {
+        margin: 0;
+    }
+
+    @media $medium {
+        flex-direction: row;
+    }
+}
+
+.partner-media-placement {
+    background-color: $lightBlue;
+    flex: 0 0 200px;
+    /*width: 100%;*/
+    ul {
+        /*border: black solid 1px;*/
+        background-color: $white;
+        width: 85%;
+        margin: auto;
+    }
+}
+
+
+
 
 #top {
     /*background-color: grey;*/
