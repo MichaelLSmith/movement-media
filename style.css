@@ -979,13 +979,36 @@ needs to be @imported into the style.css file and processed by gulp
 
 
     margin: auto;
+}
+@media screen and (min-width: 600px) {
 
 
-    max-width: 85%;
+    .content-area {
+
+
+        max-width: 85%;
+    }
 }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.entry-title-container, .partners-lower-content {
+
+
+    max-width: 85%;
+
+
+    margin: auto;
+}
+@media screen and (min-width: 600px) {
+
+
+    .entry-title-container, .partners-lower-content {
+
+
+        max-width: 1020px;
+    }
+}
 .entry-title {
 
 
@@ -1004,7 +1027,7 @@ needs to be @imported into the style.css file and processed by gulp
     display: inline-block;
 
 
-    padding: 0 3.8rem;
+    /*padding: 0 3.8rem;*/
 }
 @media screen and (min-width: 600px) {
 

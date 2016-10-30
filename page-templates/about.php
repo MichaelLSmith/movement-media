@@ -11,14 +11,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main class="content-inner" role="main">
-			<!-- <div class="entry-title"> -->
+
+			<div class="entry-title-container">
 				<?php the_title('<h1 class="entry-title">', '</h1>' ); ?>
-			<!-- </div> -->
+			</div>
 			<section class="about-mission">
 				<?php the_field('about_mission'); ?>
 			</section>
 			<section class="about-gallery">
-				<!-- <p style="color:yellow;"> change </p> -->
 				<?php
 					$images = get_field('about_image_gallery');
 					if( $images ):

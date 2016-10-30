@@ -21,18 +21,28 @@ needs to be @imported into the style.css file and processed by gulp
 }
 .content-area {
 	margin: auto;
-	max-width: $container-default-width;
+	@media $medium {
+		max-width: $container-default-width;
+	}
 }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.entry-title-container, .partners-lower-content {
+	max-width: $container-default-width;
+	margin: auto;
+
+	@media $medium {
+		max-width: $container-max-width;
+	}
+}
 .entry-title {
 	text-transform: capitalize;
 	color: $darkBlue;
 	font-size: 5vw;
 	text-align: center;
 	display: inline-block;
-	padding: 0 3.8rem;
+	/*padding: 0 3.8rem;*/
 
 
 	@media $medium {
