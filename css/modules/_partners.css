@@ -4,26 +4,42 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .partners-outer-container {
     p {
         font-size: $largeParaText;
-        /*max-width: $textMargin;*/
         margin: 0 auto 3.9rem auto;
     }
 }
 .partner-outer-container {
     background-color: $backgroundGrey;
+    padding-top: 20px;
 }
-.partner-title-group, .partner-content-group, .partner-gallery {
+.bronner-title-group, .partner-title-group, .partner-content-group, .partner-gallery {
     max-width: $textMargin;
     margin: auto;
 }
 .partner-gallery {
-    margin-bottom: 3.9rem; 
+    margin-bottom: 3.9rem;
 }
-
+.bronner-title-group {
+    display: flex;
+    flex-direction: column;
+}
+.partner-title-group {
+    display: flex;
+    flex-direction: column;
+}
 .partner-title-image {
-    width: 25%;
+    width: 50%;
+    height: auto;
+    margin: auto;
 }
 .partners-mission {
-    /*max-width: */
+    @media $medium {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }
+    @media $large {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }
 }
 .partner-content-group {
 

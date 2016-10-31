@@ -43,7 +43,7 @@ get_header(); ?>
 					</nav>
 				</section>
 				<section id="dr-bronner" class="partner-outer-container">
-					<div class="partner-title-group">
+					<div class="bronner-title-group">
 					<?php if( get_field('bronner_title_image') ): ?>
 						<div class="partner-title-image">
 							<img src="<?php the_field('bronner_title_image') ?>" alt="" />
@@ -56,7 +56,7 @@ get_header(); ?>
 						<p><?php the_field('bronner_partner_description') ?> </p>
 					<?php endif;?>
 					</div>
-					<div class="partner-content-group">
+					<div class="partner-what-group">
 						<?php if( get_field('bronner_do_title') ): ?>
 							<h6 class="blue-heading"><?php the_field('bronner_do_title') ?></h6>
 						<?php endif;?>
@@ -130,12 +130,10 @@ get_header(); ?>
 					if( have_rows('other_partners') ):
 						while ( have_rows ('other_partners') ): the_row();
 							$count = $count + 1;
-							?>
+				?>
 				<section id="partner-<?php echo $count?>" class="partner-outer-container">
-
-<!-- <p style="color:purple">change</p> -->
-
-				<div class="partner-title-group">
+					<!-- <p style="color:purple">change</p> -->
+					<div class="partner-title-group">
 					<?php if(get_row_layout() == 'partner_name_group'): ?>
 						<h6><?php the_sub_field('partner_name');?></h6>
 						<?php
@@ -152,7 +150,7 @@ get_header(); ?>
 							endwhile;//have_rows(partner_content_group_flex)
 						?>
 				</div>
-				<div class="partner-title-group">
+				<div class="partner-content-group">
 					<h6 class="blue-heading">
 						<?php the_sub_field('do_partner')?>
 					</h6>
@@ -181,7 +179,6 @@ get_header(); ?>
 						endif;//get_row_layout(partner_name_group)
 					?>
 					</div>
-						<p>div in while ends here</p>
 				</section><!-- #partner end -->
 					<?php
 							endwhile;//have_rows('other_partners')
@@ -191,9 +188,6 @@ get_header(); ?>
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 				 -->
 				<!--
-
-
-
 				<div id="fair-world">Fairworld Project
 					<p><a data-scroll data-options=
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
