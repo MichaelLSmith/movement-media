@@ -49,6 +49,7 @@ $green: #85C51F;
 $baseTextColour: #000;
 
 /*Text Related*/
-$textMargin: 65%;
+$textMargin: 75%;
+$largeParaText: 1.8rem;
 $gotham: "Gotham SSm A", "Gotham SSm B";
 $sentinel: "Sentinel SSm A", "Sentinel SSm B";

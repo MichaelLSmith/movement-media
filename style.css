@@ -994,7 +994,7 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-lower-content {
+.entry-title-container, .partners-upper-content {
 
 
     max-width: 85%;
@@ -1005,7 +1005,7 @@ needs to be @imported into the style.css file and processed by gulp
 @media screen and (min-width: 600px) {
 
 
-    .entry-title-container, .partners-lower-content {
+    .entry-title-container, .partners-upper-content {
 
 
         max-width: 1020px;
@@ -2295,8 +2295,37 @@ dt:before {
     font-size: 150%;
 }
 /*
-note: partners-lower content width area controlled in _content.css as part of .entry-title-container declaration.
+note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */
+.partners-outer-container p {
+
+
+    font-size: 1.8rem;
+
+
+    /*max-width: $textMargin;*/
+
+
+    margin: 0 auto 3.9rem auto;
+}
+.partner-outer-container {
+
+
+    background-color: #EBEBE8;
+}
+.partner-title-group, .partner-content-group, .partner-gallery {
+
+
+    max-width: 75%;
+
+
+    margin: auto;
+}
+.partner-gallery {
+
+
+    margin-bottom: 3.9rem;
+}
 .partner-title-image {
 
 
@@ -2415,14 +2444,26 @@ note: partners-lower content width area controlled in _content.css as part of .e
     color: #fff;
 
 
-    border: black solid 1px;
+    min-height: 200px;
+
+
+    max-width: 350px;
+
+
+    margin: auto;
 }
 .partner-services-container ul {
 
 
     margin: 0;
+
+
+    font-size: 1.6rem;
+
+
+    min-height: 130px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
 
 
     .partner-services-container {
@@ -2438,6 +2479,12 @@ note: partners-lower content width area controlled in _content.css as part of .e
 
 
                 flex-direction: row;
+
+
+        margin: none;
+
+
+        max-width: none;
     }
 }
 .partner-media-placement {
@@ -2449,25 +2496,79 @@ note: partners-lower content width area controlled in _content.css as part of .e
     -webkit-box-flex: 0;
 
 
-        -ms-flex: 0 0 200px;
+        -ms-flex: 0 0 275px;
 
 
-            flex: 0 0 200px;
+            flex: 0 0 275px;
+
+
+    margin-bottom: 25px;
 }
-/*width: 100%;*/
 .partner-media-placement ul {
-
-
-    /*border: black solid 1px;*/
 
 
     background-color: #fff;
 
 
+    color: #000;
+
+
     width: 85%;
 
 
-    margin: auto;
+    margin: 5px auto;
+
+
+    padding-top: 1.1rem;
+}
+.partner-inner-flex {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+}
+.media-placement-title {
+
+
+    max-width: 40%;
+}
+.service-provided-title, .campaign-supported-title {
+
+
+    max-width: 83%;
+}
+.service-provided-title, .campaign-supported-title, .media-placement-title {
+
+
+    margin: 0;
+}
+.media-placement-icon {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+            align-items: center;
+
+
+    border: solid red 1px;
 }
 #top {
 
@@ -2553,7 +2654,7 @@ note: partners-lower content width area controlled in _content.css as part of .e
 .news-text {
 
 
-    max-width: 65%;
+    max-width: 75%;
 
 
     margin: auto;

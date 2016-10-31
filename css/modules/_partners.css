@@ -1,7 +1,23 @@
 /*
-note: partners-lower content width area controlled in _content.css as part of .entry-title-container declaration.
+note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */
-
+.partners-outer-container {
+    p {
+        font-size: $largeParaText;
+        /*max-width: $textMargin;*/
+        margin: 0 auto 3.9rem auto;
+    }
+}
+.partner-outer-container {
+    background-color: $backgroundGrey;
+}
+.partner-title-group, .partner-content-group, .partner-gallery {
+    max-width: $textMargin;
+    margin: auto;
+}
+.partner-gallery {
+    margin-bottom: 3.9rem; 
+}
 
 .partner-title-image {
     width: 25%;
@@ -9,19 +25,15 @@ note: partners-lower content width area controlled in _content.css as part of .e
 .partners-mission {
     /*max-width: */
 }
-
-
 .partner-content-group {
 
 }
-
 .clients-nav {
     list-style: none;
     li {
         display: inline-block;
     }
 }
-
 /*Flex Gallery*/
 .bronner-flex-container-upper, .bronner-flex-container-lower {
     display: flex;
@@ -54,37 +66,56 @@ note: partners-lower content width area controlled in _content.css as part of .e
 .bronner-flex-item-left img, .bronner-flex-item-right img {
     width: 55%;
 }
-
 .partner-services-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: $white;
-    border: black solid 1px;
+    min-height: 200px;
+    max-width: 350px;
+    margin: auto;
 
     ul {
         margin: 0;
+        font-size: 1.6rem;
+        min-height: 130px;
     }
 
-    @media $medium {
+    @media $large {
         flex-direction: row;
+        margin: none;
+        max-width: none;
     }
 }
-
 .partner-media-placement {
     background-color: $lightBlue;
-    flex: 0 0 200px;
-    /*width: 100%;*/
+    flex: 0 0 275px;
+    margin-bottom: 25px;
     ul {
-        /*border: black solid 1px;*/
         background-color: $white;
+        color: $baseTextColour;
         width: 85%;
-        margin: auto;
+        margin: 5px auto;
+        padding-top: 1.1rem;
     }
 }
-
-
-
+.partner-inner-flex {
+    display: flex;
+}
+.media-placement-title {
+    max-width: 40%;
+}
+.service-provided-title, .campaign-supported-title {
+    max-width: 83%;
+}
+.service-provided-title, .campaign-supported-title, .media-placement-title {
+    margin: 0;
+}
+.media-placement-icon {
+    display: flex;
+    align-items: center;
+    border: solid red 1px;
+}
 
 #top {
     /*background-color: grey;*/
