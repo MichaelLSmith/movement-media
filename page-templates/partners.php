@@ -125,54 +125,65 @@ get_header(); ?>
 						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
 
 				</section><!-- #dr bronner -->
+				<?php
+					$count = 0;
+					if( have_rows('other_partners') ):
+						while ( have_rows ('other_partners') ): the_row();
+							$count = $count + 1;
+							?>
+				<section id="partner-<?php echo $count?>" class="partner-outer-container">
+
+<!-- <p style="color:purple">change</p> -->
+
+				<div class="partner-title-group">
+					<?php if(get_row_layout() == 'partner_name_group'): ?>
+						<h6><?php the_sub_field('partner_name');?></h6>
+						<?php
+							while(has_sub_field('partner_content_group_flex')):
+								if(get_row_layout() == "partner_content_group"):
+						?>
+						<div class="partner-title-image">
+							<img src="<?php the_sub_field('partner_image');?>" alt="" />
+						</div>
+						<h6><?php the_sub_field('partner_heading');?></h6>
+						<?php the_sub_field('partner_description');
+
+								endif;//get_row_layout partner_content_group
+							endwhile;//have_rows(partner_content_group_flex)
+						?>
+				</div>
+				<div class="partner-title-group">
+					<h6 class="blue-heading">
+						<?php the_sub_field('do_partner')?>
+					</h6>
+					<?php the_sub_field('description_what');?>
+				</div>
+				<div class="partner-services-container">
 					<?php
-						$count = 0;
-						if( have_rows('other_partners') ):
-							while ( have_rows ('other_partners') ): the_row();
-								$count = $count + 1;
-								?><section id="partner-<?php echo $count?>" class="partner-outer-container">
+						$title = 'Media Placements';
+						$titleClass = 'media-placement-title';
+						$repeater = 'partner_media_placements';
+						$sub_field = 'partner_media_placement';
+						require(locate_template('template-parts/partner-media-placement.php'));
 
-									<!-- <p style="color:purple">change</p> -->
+						$title = 'Services Provided to Partner';
+						$titleClass = 'media-placement-title';
+						$repeater = 'partner_services_provided';
+						$sub_field = 'partner_service_provided';
+						require(locate_template('template-parts/partner-media-placement.php'));
 
-								<?php
-								if(get_row_layout() == 'partner_name_group'):
-									?>
-									<h6><?php the_sub_field('partner_name');?></h6>
-									<?php
-										while(has_sub_field('partner_content_group_flex')):
-											if(get_row_layout() == "partner_content_group"):
+						$title = "Support for Partner's campaigns";
+						$titleClass = 'media-placement-title';
+						$repeater = 'partner_supported_campaigns';
+						$sub_field = 'partner_campaign_supported';
+						require(locate_template('template-parts/partner-media-placement.php'));
 
-												?>
-												<div class="partner-title-image">
-													<img src="<?php the_sub_field('partner_image');?>" alt="" />
-												</div>
-												<h6><?php the_sub_field('partner_heading');?></h6>
-												<?php the_sub_field('partner_description');
-											endif;//get_row_layout partner_content_group
-										endwhile;//have_rows(partner_content_group_flex)
-										?>
-										<h6 class="blue-heading"><?php the_sub_field('do_partner')?></h6>
-										<?php the_sub_field('description_what');
-
-										$repeater = 'partner_media_placements';
-										$sub_field = 'partner_media_placement';
-										require(locate_template('template-parts/partner-media-placement.php'));
-
-										$repeater = 'partner_services_provided';
-										$sub_field = 'partner_service_provided';
-										require(locate_template('template-parts/partner-media-placement.php'));
-
-										$repeater = 'partner_supported_campaigns';
-										$sub_field = 'partner_campaign_supported';
-										require(locate_template('template-parts/partner-media-placement.php'));
-
-
-
-								endif;//get_row_layout(partner_name_group)
-
-								?>	<p>div in while ends here</p>
-							</section><!-- #partner end -->
-								<?php
+						endif;//get_row_layout(partner_name_group)
+					?>
+					</div>
+						<p>div in while ends here</p>
+				</section><!-- #partner end -->
+					<?php
 							endwhile;//have_rows('other_partners')
 						endif;//have_rows('other_partners')
 					?>
