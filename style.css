@@ -2326,7 +2326,15 @@ note: partners-upper content width area controlled in _content.css as part of .e
     font-size: 1.8rem;
 
 
-    margin: 0 auto 3.9rem auto;
+    /*margin: 0 auto 3.9rem auto;*/
+
+
+    margin: 0;
+}
+.partners-outer-container h6 {
+
+
+    margin: 0;
 }
 .partner-outer-container {
 
@@ -2336,13 +2344,62 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     padding-top: 20px;
 }
-.bronner-title-group, .partner-title-group, .partner-content-group, .partner-gallery {
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partner-outer-container {
+
+
+        border: #000 solid 1px;
+
+
+        background-color: #fff;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-outer-container {
+
+
+        border: #000 solid 1px;
+
+
+        background-color: #fff;
+    }
+}
+.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
 
 
     max-width: 75%;
 
 
-    margin: auto;
+    margin: 0 0 3rem 0;
+}
+.partners-mission {}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partners-mission {
+
+
+        margin: 45px auto;
+
+
+        max-width: 85%;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partners-mission {
+
+
+        margin: 45px auto;
+
+
+        max-width: 85%;
+    }
 }
 .partner-gallery {
 
@@ -2372,6 +2429,60 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
             flex-direction: column;
 }
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .bronner-title-group {
+
+
+        max-width: 100%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -ms-flex-pack: distribute;
+
+
+            justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .bronner-title-group {
+
+
+        max-width: 100%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -ms-flex-pack: distribute;
+
+
+            justify-content: space-around;
+    }
+}
 .partner-title-group {
 
 
@@ -2398,7 +2509,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .partner-title-image {
 
 
-    width: 50%;
+    max-width: 100%;
 
 
     height: auto;
@@ -2406,32 +2517,133 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     margin: auto;
 }
-.partners-mission {}
 @media screen and (min-width: 800px) and (max-width: 999px) {
 
 
-    .partners-mission {
+    .partner-title-image {
 
 
-        margin: 45px auto;
+        -webkit-box-flex: 0;
 
 
-        max-width: 85%;
+            -ms-flex: 0 2 auto;
+
+
+                flex: 0 2 auto;
+
+
+        margin: 0;
+
+
+        max-width: 275px;
     }
 }
 @media screen and (min-width: 1000px) {
 
 
-    .partners-mission {
+    .partner-title-image {
 
 
-        margin: 45px auto;
+        -webkit-box-flex: 0;
 
 
-        max-width: 85%;
+            -ms-flex: 0 2 auto;
+
+
+                flex: 0 2 auto;
+
+
+        margin: 0;
+
+
+        max-width: 275px;
     }
 }
-.partner-content-group {}
+.partner-description {}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partner-description {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 560px;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-description {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 560px;
+    }
+}
+.partner-what-group {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+}
+.partner-what-group h6 {
+
+
+    -webkit-box-flex: 0;
+
+
+        -ms-flex: 0 0 5px;
+
+
+            flex: 0 0 5px;
+
+
+    /*max-width: 5px;*/
+}
+.partner-what-group p {
+
+
+    -webkit-box-flex: 1;
+
+
+        -ms-flex: 1 1 100px;
+
+
+            flex: 1 1 100px;
+
+
+    /*max-width: 500px;*/
+}
 .clients-nav {
 
 
@@ -2441,6 +2653,14 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     display: inline-block;
+}
+.partner-gallery {
+
+
+    max-width: 75%;
+
+
+    margin: 0 auto 3rem auto;
 }
 /*Flex Gallery*/
 .bronner-flex-container-upper, .bronner-flex-container-lower {

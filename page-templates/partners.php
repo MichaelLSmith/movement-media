@@ -49,12 +49,14 @@ get_header(); ?>
 							<img src="<?php the_field('bronner_title_image') ?>" alt="" />
 						</div>
 					<?php endif;?>
-					<?php if( get_field('bronner_partner_name') ): ?>
-						<h6><?php the_field('bronner_partner_name') ?></h6>
-					<?php endif;?>
-					<?php if( get_field('bronner_partner_description') ): ?>
-						<p><?php the_field('bronner_partner_description') ?> </p>
-					<?php endif;?>
+						<div class="partner-description">
+							<?php if( get_field('bronner_partner_name') ): ?>
+								<h6><?php the_field('bronner_partner_name') ?></h6>
+							<?php endif;?>
+							<?php if( get_field('bronner_partner_description') ): ?>
+								<p><?php the_field('bronner_partner_description') ?> </p>
+							<?php endif;?>
+						</div>
 					</div>
 					<div class="partner-what-group">
 						<?php if( get_field('bronner_do_title') ): ?>

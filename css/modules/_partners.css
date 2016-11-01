@@ -4,32 +4,30 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .partners-outer-container {
     p {
         font-size: $largeParaText;
-        margin: 0 auto 3.9rem auto;
+        /*margin: 0 auto 3.9rem auto;*/
+        margin: 0;
+    }
+    h6 {
+        margin: 0;
     }
 }
 .partner-outer-container {
     background-color: $backgroundGrey;
     padding-top: 20px;
+
+    @media $medium {
+        border: $baseTextColour solid 1px;
+        background-color: $white;
+    }
+
+    @media $large {
+        border: $baseTextColour solid 1px;
+        background-color: $white;
+    }
 }
-.bronner-title-group, .partner-title-group, .partner-content-group, .partner-gallery {
+.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
     max-width: $textMargin;
-    margin: auto;
-}
-.partner-gallery {
-    margin-bottom: 3.9rem;
-}
-.bronner-title-group {
-    display: flex;
-    flex-direction: column;
-}
-.partner-title-group {
-    display: flex;
-    flex-direction: column;
-}
-.partner-title-image {
-    width: 50%;
-    height: auto;
-    margin: auto;
+    margin: 0 0 3rem 0;
 }
 .partners-mission {
     @media $medium {
@@ -41,14 +39,77 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: $container-default-width;
     }
 }
-.partner-content-group {
+.partner-gallery {
+    margin-bottom: 3.9rem;
+}
+.bronner-title-group {
+    display: flex;
+    flex-direction: column;
 
+    @media $medium {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @media $large {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.partner-title-group {
+    display: flex;
+    flex-direction: column;
+}
+.partner-title-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+
+    @media $medium {
+        flex: 0 2 auto;
+        margin: 0;
+        max-width: 275px;
+
+    }
+    @media $large {
+        flex: 0 2 auto;
+        margin: 0;
+        max-width: 275px;
+    }
+}
+.partner-description {
+    @media $medium {
+        flex: 1 1 auto;
+        max-width: 560px;
+    }
+    @media $large {
+        flex: 1 1 auto;
+        max-width: 560px;
+    }
+}
+.partner-what-group {
+    display: flex;
+    justify-content: space-between;
+    h6 {
+        flex: 0 0 5px;
+        /*max-width: 5px;*/
+    }
+    p {
+        flex: 1 1 100px;
+        /*max-width: 500px;*/
+    }
 }
 .clients-nav {
     list-style: none;
     li {
         display: inline-block;
     }
+}
+.partner-gallery {
+    max-width: $textMargin;
+    margin: 0 auto 3rem auto;
 }
 /*Flex Gallery*/
 .bronner-flex-container-upper, .bronner-flex-container-lower {
