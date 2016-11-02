@@ -14,12 +14,11 @@ This theme, like WordPress, is licensed under the GPL.
 
 Breakpoints:
 * 0 - 375 is covered by normal setting
-* 375 - 600 is covered by @small
-* 600 - 1000 is covered by @medium
+* 375 - 600 is covered by @ex-small
+* 600 - 800 is covered by @small
+* 800 - 1000 is covered by @medium
 * 1000 - 1200 is covered by @large
 * narrower than 1020, we need a white gutter
-
-
 */
 
 
@@ -452,9 +451,6 @@ h4 {
 h5 {
 
 
-    color: #4A90E2;
-
-
     font-size: 2.4rem;
 
 
@@ -464,6 +460,11 @@ h6 {
 
 
     font-size: 1.6rem;
+}
+.blue-heading {
+
+
+    color: #4A90E2;
 }
 p {
 
@@ -980,7 +981,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: auto;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .content-area {
@@ -992,7 +993,7 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-lower-content {
+.entry-title-container, .partners-upper-content {
 
 
     max-width: 85%;
@@ -1000,10 +1001,10 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: auto;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
-    .entry-title-container, .partners-lower-content {
+    .entry-title-container, .partners-upper-content {
 
 
         max-width: 1020px;
@@ -1012,7 +1013,7 @@ needs to be @imported into the style.css file and processed by gulp
 .entry-title {
 
 
-    text-transform: capitalize;
+    text-transform: uppercase;
 
 
     color: #005395;
@@ -1021,18 +1022,24 @@ needs to be @imported into the style.css file and processed by gulp
     font-size: 5vw;
 
 
+    font-weight: 800;
+
+
+    letter-spacing: .3rem;
+
+
     text-align: center;
 
 
-    display: inline-block;
-
-
-    /*padding: 0 3.8rem;*/
+    width: 100%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .entry-title {
+
+
+        width: 85%;
 
 
         background-color: #005395;
@@ -1041,7 +1048,25 @@ needs to be @imported into the style.css file and processed by gulp
         color: #fff;
 
 
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .entry-title {
+
+
+        width: 85%;
+
+
+        background-color: #005395;
+
+
+        color: #fff;
+
+
+        font-size: 4rem;
     }
 }
 .sticky {
@@ -1350,7 +1375,7 @@ a:hover, a:active {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .menu-toggle {
@@ -1468,7 +1493,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     color: #005395;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .header-content {
@@ -1504,7 +1529,7 @@ Header CSS - need to @include in style.css and run gulp process
     margin: auto;
 }
 .logo-tag-container {}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .logo-tag-container {
@@ -1518,7 +1543,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: none;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .site-branding {
@@ -2168,7 +2193,7 @@ Header CSS - need to @include in style.css and run gulp process
 
         flex-wrap: wrap;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) and (max-width: 999px) {
 
 
     .about-services {
@@ -2292,17 +2317,333 @@ dt:before {
 
     font-size: 150%;
 }
+/*
+note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
+*/
+.partners-outer-container p {
+
+
+    font-size: 1.8rem;
+
+
+    /*margin: 0 auto 3.9rem auto;*/
+
+
+    margin: 0;
+}
+.partners-outer-container h6 {
+
+
+    margin: 0;
+}
+.partner-outer-container {
+
+
+    background-color: #EBEBE8;
+
+
+    padding-top: 20px;
+}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partner-outer-container {
+
+
+        border: #000 solid 1px;
+
+
+        background-color: #fff;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-outer-container {
+
+
+        border: #000 solid 1px;
+
+
+        background-color: #fff;
+    }
+}
+.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
+
+
+    max-width: 75%;
+
+
+    margin: 0 0 3rem 0;
+}
+.partners-mission {}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partners-mission {
+
+
+        margin: 45px auto;
+
+
+        max-width: 85%;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partners-mission {
+
+
+        margin: 45px auto;
+
+
+        max-width: 85%;
+    }
+}
+.partner-gallery {
+
+
+    margin-bottom: 3.9rem;
+}
+.bronner-title-group {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .bronner-title-group {
+
+
+        max-width: 100%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -ms-flex-pack: distribute;
+
+
+            justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .bronner-title-group {
+
+
+        max-width: 100%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -ms-flex-pack: distribute;
+
+
+            justify-content: space-around;
+    }
+}
+.partner-title-group {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+}
 .partner-title-image {
 
 
-    width: 25%;
-}
-.partners-mission {
+    max-width: 100%;
 
 
-    /*max-width: */
+    height: auto;
+
+
+    margin: auto;
 }
-.partner-content-group {}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partner-title-image {
+
+
+        -webkit-box-flex: 0;
+
+
+            -ms-flex: 0 2 auto;
+
+
+                flex: 0 2 auto;
+
+
+        margin: 0;
+
+
+        max-width: 275px;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-title-image {
+
+
+        -webkit-box-flex: 0;
+
+
+            -ms-flex: 0 2 auto;
+
+
+                flex: 0 2 auto;
+
+
+        margin: 0;
+
+
+        max-width: 275px;
+    }
+}
+.partner-description {}
+@media screen and (min-width: 800px) and (max-width: 999px) {
+
+
+    .partner-description {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 560px;
+    }
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-description {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 560px;
+    }
+}
+.partner-what-group {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+}
+.partner-what-group h6 {
+
+
+    -webkit-box-flex: 0;
+
+
+        -ms-flex: 0 0 5px;
+
+
+            flex: 0 0 5px;
+
+
+    /*max-width: 5px;*/
+}
+.partner-what-group p {
+
+
+    -webkit-box-flex: 1;
+
+
+        -ms-flex: 1 1 100px;
+
+
+            flex: 1 1 100px;
+
+
+    /*max-width: 500px;*/
+}
 .clients-nav {
 
 
@@ -2312,6 +2653,237 @@ dt:before {
 
 
     display: inline-block;
+}
+.partner-gallery {
+
+
+    max-width: 75%;
+
+
+    margin: 0 auto 3rem auto;
+}
+/*Flex Gallery*/
+.bronner-flex-container-upper, .bronner-flex-container-lower {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    font-size: 10px;
+}
+.bronner-flex-container-upper {
+
+
+    border-bottom: solid black .5px;
+}
+.bronner-flex-container-lower {
+
+
+    border-top: solid black .5px;
+}
+.bronner-flex-item-left, .bronner-flex-item-right {}
+.bronner-flex-item-left {
+
+
+    border-right: solid black .5px;
+}
+.bronner-flex-item-right {
+
+
+    border-left: solid black .5px;
+
+
+    -webkit-box-pack: end;
+
+
+        -ms-flex-pack: end;
+
+
+            justify-content: flex-end;
+}
+.bronner-inner-box-upper, .bronner-inner-box-lower {}
+.bronner-inner-box-upper {
+
+
+    margin-bottom: 10px;
+}
+.bronner-inner-box-lower {
+
+
+    margin-top: 10px;
+}
+.bronner-flex-item-left img, .bronner-flex-item-right img {
+
+
+    width: 55%;
+}
+.partner-services-container {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    color: #fff;
+
+
+    min-height: 200px;
+
+
+    max-width: 350px;
+
+
+    margin: auto;
+}
+.partner-services-container ul {
+
+
+    margin: 0;
+
+
+    font-size: 1.6rem;
+
+
+    min-height: 130px;
+}
+@media screen and (min-width: 1000px) {
+
+
+    .partner-services-container {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        margin: none;
+
+
+        max-width: none;
+    }
+}
+.partner-media-placement {
+
+
+    background-color: #4A90E2;
+
+
+    -webkit-box-flex: 0;
+
+
+        -ms-flex: 0 0 275px;
+
+
+            flex: 0 0 275px;
+
+
+    margin-bottom: 25px;
+}
+.partner-media-placement ul {
+
+
+    background-color: #fff;
+
+
+    color: #000;
+
+
+    width: 85%;
+
+
+    margin: 5px auto;
+
+
+    padding-top: 1.1rem;
+}
+.partner-inner-flex {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+}
+.media-placement-title {
+
+
+    max-width: 40%;
+}
+.service-provided-title, .campaign-supported-title {
+
+
+    max-width: 83%;
+}
+.service-provided-title, .campaign-supported-title, .media-placement-title {
+
+
+    margin: 0;
+}
+.media-placement-icon {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+            align-items: center;
+
+
+    border: solid red 1px;
 }
 #top {
 
@@ -2397,7 +2969,7 @@ dt:before {
 .news-text {
 
 
-    max-width: 65%;
+    max-width: 75%;
 
 
     margin: auto;

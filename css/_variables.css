@@ -14,16 +14,16 @@ This theme, like WordPress, is licensed under the GPL.
 
 Breakpoints:
 * 0 - 375 is covered by normal setting
-* 375 - 600 is covered by @small
-* 600 - 1000 is covered by @medium
+* 375 - 600 is covered by @ex-small
+* 600 - 800 is covered by @small
+* 800 - 1000 is covered by @medium
 * 1000 - 1200 is covered by @large
 * narrower than 1020, we need a white gutter
-
-
 */
 
-$small: screen and (min-width: 375px);
-$medium: screen and (min-width: 600px);
+$ex-small: screen and (min-width: 375px) and (max-width: 599px);
+$small: screen and (min-width: 600px) and (max-width: 799px);
+$medium: screen and (min-width: 800px) and (max-width: 999px);
 $large: screen and (min-width: 1000px);
 
 
@@ -49,6 +49,7 @@ $green: #85C51F;
 $baseTextColour: #000;
 
 /*Text Related*/
-$textMargin: 65%;
+$textMargin: 75%;
+$largeParaText: 1.8rem;
 $gotham: "Gotham SSm A", "Gotham SSm B";
 $sentinel: "Sentinel SSm A", "Sentinel SSm B";

@@ -28,7 +28,7 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-lower-content {
+.entry-title-container, .partners-upper-content {
 	max-width: $container-default-width;
 	margin: auto;
 
@@ -37,18 +37,25 @@ needs to be @imported into the style.css file and processed by gulp
 	}
 }
 .entry-title {
-	text-transform: capitalize;
+	text-transform: uppercase;
 	color: $darkBlue;
 	font-size: 5vw;
+	font-weight: 800;
+	letter-spacing: .3rem;
 	text-align: center;
-	display: inline-block;
-	/*padding: 0 3.8rem;*/
-
+	width: 100%;
 
 	@media $medium {
+		width: 85%;
 		background-color: $darkBlue;
 		color: $white;
-		font-size: 2.5rem;
+		font-size: 4rem;
+	}
+	@media $large {
+		width: 85%;
+		background-color: $darkBlue;
+		color: $white;
+		font-size: 4rem;
 	}
 }
 

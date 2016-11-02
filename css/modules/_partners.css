@@ -1,20 +1,197 @@
-.partner-title-image {
-    width: 25%;
+/*
+note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
+*/
+.partners-outer-container {
+    p {
+        font-size: $largeParaText;
+        /*margin: 0 auto 3.9rem auto;*/
+        margin: 0;
+    }
+    h6 {
+        margin: 0;
+    }
+}
+.partner-outer-container {
+    background-color: $backgroundGrey;
+    padding-top: 20px;
+
+    @media $medium {
+        border: $baseTextColour solid 1px;
+        background-color: $white;
+    }
+
+    @media $large {
+        border: $baseTextColour solid 1px;
+        background-color: $white;
+    }
+}
+.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
+    max-width: $textMargin;
+    margin: 0 0 3rem 0;
 }
 .partners-mission {
-    /*max-width: */
+    @media $medium {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }
+    @media $large {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }
 }
-
-
-.partner-content-group {
-
+.partner-gallery {
+    margin-bottom: 3.9rem;
 }
+.bronner-title-group {
+    display: flex;
+    flex-direction: column;
 
+    @media $medium {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @media $large {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.partner-title-group {
+    display: flex;
+    flex-direction: column;
+}
+.partner-title-image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+
+    @media $medium {
+        flex: 0 2 auto;
+        margin: 0;
+        max-width: 275px;
+
+    }
+    @media $large {
+        flex: 0 2 auto;
+        margin: 0;
+        max-width: 275px;
+    }
+}
+.partner-description {
+    @media $medium {
+        flex: 1 1 auto;
+        max-width: 560px;
+    }
+    @media $large {
+        flex: 1 1 auto;
+        max-width: 560px;
+    }
+}
+.partner-what-group {
+    display: flex;
+    justify-content: space-between;
+    h6 {
+        flex: 0 0 5px;
+        /*max-width: 5px;*/
+    }
+    p {
+        flex: 1 1 100px;
+        /*max-width: 500px;*/
+    }
+}
 .clients-nav {
     list-style: none;
     li {
         display: inline-block;
     }
+}
+.partner-gallery {
+    max-width: $textMargin;
+    margin: 0 auto 3rem auto;
+}
+/*Flex Gallery*/
+.bronner-flex-container-upper, .bronner-flex-container-lower {
+    display: flex;
+    font-size: 10px;
+}
+.bronner-flex-container-upper {
+    border-bottom: solid black .5px;
+}
+.bronner-flex-container-lower {
+    border-top: solid black .5px;
+}
+.bronner-flex-item-left, .bronner-flex-item-right {
+
+}
+.bronner-flex-item-left {
+    border-right: solid black .5px;
+}
+.bronner-flex-item-right {
+    border-left: solid black .5px;
+    justify-content: flex-end;
+}
+.bronner-inner-box-upper, .bronner-inner-box-lower {
+}
+.bronner-inner-box-upper {
+    margin-bottom: 10px;
+}
+.bronner-inner-box-lower {
+    margin-top: 10px;
+}
+.bronner-flex-item-left img, .bronner-flex-item-right img {
+    width: 55%;
+}
+.partner-services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+    min-height: 200px;
+    max-width: 350px;
+    margin: auto;
+
+    ul {
+        margin: 0;
+        font-size: 1.6rem;
+        min-height: 130px;
+    }
+
+    @media $large {
+        flex-direction: row;
+        margin: none;
+        max-width: none;
+    }
+}
+.partner-media-placement {
+    background-color: $lightBlue;
+    flex: 0 0 275px;
+    margin-bottom: 25px;
+    ul {
+        background-color: $white;
+        color: $baseTextColour;
+        width: 85%;
+        margin: 5px auto;
+        padding-top: 1.1rem;
+    }
+}
+.partner-inner-flex {
+    display: flex;
+}
+.media-placement-title {
+    max-width: 40%;
+}
+.service-provided-title, .campaign-supported-title {
+    max-width: 83%;
+}
+.service-provided-title, .campaign-supported-title, .media-placement-title {
+    margin: 0;
+}
+.media-placement-icon {
+    display: flex;
+    align-items: center;
+    border: solid red 1px;
 }
 
 #top {
