@@ -1514,9 +1514,6 @@ Header CSS - need to @include in style.css and run gulp process
             -ms-flex-align: center;
 
 
-                    -ms-grid-row-align: center;
-
-
                 align-items: center;
     }
 }
