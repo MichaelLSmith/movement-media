@@ -18,13 +18,15 @@ input[type="submit"],
 	display: inline-block;
 	margin: auto;
 	background: $green;
-	/*I tried 8px border radius, but 5 looks more like the design*/
-	border-radius: 5px;
-	font-size: 2rem;
+	font-family: $gotham;
+	border-radius: 8px;
+	font-size: 1.2rem;
 	padding: 10px 20px 10px 20px;
-	border: solid $borderGrey 1px;
 	text-decoration: none;
 	color: $white;
+}
+.action-btn-large {
+	font-size: 2rem;
 }
 
 button:hover,

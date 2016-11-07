@@ -39,7 +39,10 @@ h1 {
 	font-style: italic;
 	font-size: 5.4rem;
 }
-h2 {}
+h2 {
+	font-weight: 700;
+	font-size: 3.6rem;
+}
 h3 {
 	font-weight: 700;
 	font-size: 3rem;
@@ -58,7 +61,10 @@ h6 {
 }
 
 .blue-heading {
+	color: $nearBlack;
+	font-weight: 500;
 	color: $lightBlue;
+	letter-spacing: 0;
 }
 
 p {

@@ -1,4 +1,4 @@
-<div class="front-item-<?php echo $x_axis ?>">
+<div class="highlight-item">
     <div class="inner-box-<?php echo $y_axis ?>-<?php echo $x_axis ?>">
         <?php $post_object = NULL; ?>
         <?php
@@ -27,9 +27,9 @@
              the_post_thumbnail();?>
         <?php endif; ?>
         <div class="highlight-text">
-            <h4 id="link">
+            <h6 id="link">
                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </h4>
+            </h6>
             <div class="action-btn">
                  <a href="<?php the_permalink(); ?>">LEARN MORE</a>
             </div>

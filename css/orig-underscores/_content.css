@@ -12,18 +12,24 @@ needs to be @imported into the style.css file and processed by gulp
 --------------------------------------------------------------*/
 .site {
 	margin: auto;
-	max-width: $outer-max-width;
-	background-color: $white;
+	/* removed so backgrounds can go full length -- max-width: $outer-max-width;*/
 }
-.site-content {
-	max-width: $container-max-width;
+.site-content, .home-header-content {
+
+
+
 	margin: inherit;
 }
 .content-area {
-	margin: auto;
+	margin: 0 auto;
 	@media $medium {
 		max-width: $container-default-width;
 	}
+	@media $large {
+	}
+}
+.full-width-content {
+
 }
 /*--------------------------------------------------------------
 ## Posts and pages

@@ -24,5 +24,6 @@
 @import 'modules/partners';
 @import 'modules/newsletter-signup';
 @import 'modules/searchform';
+@import 'modules/grid';
 
 @import 'shared-assets';
