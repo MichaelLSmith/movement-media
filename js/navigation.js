@@ -5,6 +5,7 @@
  * navigation support for dropdown menus.
  */
 ( function() {
+	console.log('navigation.js');
 	var container, button, menu, links, subMenus, i, len;
 
 	container = document.getElementById( 'site-navigation' );

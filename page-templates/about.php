@@ -53,11 +53,8 @@ get_header(); ?>
 				<section>
 					<img src="<?php the_field('about_main_image');?>" alt="" />
 				</section>
-			<? endif;?>
-
-
+			<?php endif;?>
 			<h1>Services</h1>
-<!-- <p style="color:purple;"> change </p> -->
 			<section class="about-services">
 				<dl>
 	            <?php
