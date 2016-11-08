@@ -26,18 +26,18 @@ note: partners-upper content width area controlled in _content.css as part of .e
     }
 }
 .bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
-    max-width: $textMargin;
-    margin: 0 0 3rem 0;
+    /*max-width: $textMargin;
+    margin: 0 auto 3rem auto;*/
 }
 .partners-mission {
-    @media $medium {
+    /*@media $medium {
         margin: 45px auto;
         max-width: $container-default-width;
     }
     @media $large {
         margin: 45px auto;
         max-width: $container-default-width;
-    }
+    }*/
 }
 .partner-gallery {
     margin-bottom: 3.9rem;
@@ -101,10 +101,19 @@ note: partners-upper content width area controlled in _content.css as part of .e
         /*max-width: 500px;*/
     }
 }
-.clients-nav {
+.partners-nav {
+}
+.partners-nav-list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+
     li {
-        display: inline-block;
+        font-size: 2rem;
+    }
+
+    @media $medium {
+        flex-direction: row;
     }
 }
 .partner-gallery {

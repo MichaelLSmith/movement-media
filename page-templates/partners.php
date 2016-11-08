@@ -30,14 +30,14 @@ get_header(); ?>
 			<section class="partners-upper-content full-content-area">
 				<?php
 				 if( get_field('partners_mission') ): ?>
-					<div class="partners-mission">
+					<div class="partners-mission text-content-area">
 						<?php the_field('partners_mission') ?>
 					</div>
 				<?php endif;?>
 				<?php if( have_rows('partners_menu_items') ): ?>
-				<nav class="clients-nav full-content-area">
-					<h6>Clients Menu</h6>
-					<ul>
+				<nav class="partners-nav full-content-area">
+					<!-- <h6>Clients Menu</h6> -->
+					<ul class="partners-nav-list text-content-area">
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
 					<?php
 						$menuCount = 0;
@@ -50,7 +50,6 @@ get_header(); ?>
 								<?php the_sub_field('partner_menu_item'); ?>
 							</a>
 						</li>
-						<!-- href="https://github.com/cferdinandi/smooth-scroll">GitHub</a></p> -->
 						<?php endwhile; ?>
 					</ul>
 					<?php
@@ -62,13 +61,13 @@ get_header(); ?>
 				</nav>
 			</section>
 			<section id="dr-bronner" class="partner-outer-container full-content-area">
-				<div class="bronner-title-group">
+				<div class="bronner-title-group text-content-area">
 				<?php if( get_field('bronner_title_image') ): ?>
 					<div class="partner-title-image">
 						<img src="<?php the_field('bronner_title_image') ?>" alt="" />
 					</div>
 				<?php endif; ?>
-					<div class="partner-description">
+					<div class="partner-description text-content-area">
 						<?php if( get_field('bronner_partner_name') ): ?>
 							<h6><?php the_field('bronner_partner_name') ?></h6>
 						<?php endif; ?>
@@ -77,7 +76,7 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="partner-what-group">
+				<div class="partner-what-group text-content-area">
 					<?php if( get_field('bronner_do_title') ): ?>
 						<h6 class="blue-heading"><?php the_field('bronner_do_title') ?></h6>
 					<?php endif; ?>
