@@ -25,22 +25,27 @@ get_header(); ?>
 					<?php
 						$images = get_field('about_image_gallery');
 						if( $images ):
-							echo '<pre>';
-							var_dump( $images );
-							echo '</pre>';
 					?>
-						<ul class="about-gallery-list">
-							<?php
-								foreach( $images as $image ): ?>
-								<li>
-									<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php
-										 echo $image['alt']; ?>" />
+					<div class="about-gallery-row">
+						<img src="<?php echo $images[0]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[1]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[2]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[3]['sizes']['thumbnail'];?>" alt="">
+					</div>
+					<div class="about-gallery-row">
+						<img src="<?php echo $images[4]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[5]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[6]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[7]['sizes']['thumbnail'];?>" alt="">
+					</div>
+					<div class="about-gallery-row">
+						<img src="<?php echo $images[8]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[9]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[10]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[11]['sizes']['thumbnail'];?>" alt="">
+					</div>
+				<?php endif;?>
 
-								</li>
-							<?php
-								endforeach; ?>
-						</ul>
-					<?php endif; ?>
 				</section>
 				<section class="about_description full-content-area">
 					<?php if( get_field('about_description') ): ?>
@@ -135,7 +140,7 @@ get_header(); ?>
 								            <?php endif; ?></div>
 				</section><!-- .bios full-content-area -->
 				<section class="about-action-btn full-width-area">
-					<div class="action-btn action-btn-large">
+					<div class="action-btn action-btn-large quote-content-area">
 						<a href="<?php the_field('front_header_action_button'); ?>">contact movement media</a>
 					</div>
 				</section>

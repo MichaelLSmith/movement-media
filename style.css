@@ -2248,16 +2248,10 @@ Header CSS - need to @include in style.css and run gulp process
 
     font-size: 2.5rem;
 }
-.about-gallery-list {
+.about-gallery-row {
 
 
     list-style: none;
-
-
-    padding: 0;
-
-
-    margin: 0;
 
 
     display: -webkit-box;
@@ -2267,6 +2261,18 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    margin-bottom: 25px;
 }
 .about-services {
 
@@ -2334,6 +2340,11 @@ Header CSS - need to @include in style.css and run gulp process
 
     margin: auto;
 }
+.bio {
+
+
+    margin-bottom: 25px;
+}
 .bio-bi-line {
 
 
@@ -2385,6 +2396,14 @@ ul.about-services-left span, ul.about-services-right span {
 
 
     font-size: 150%;
+}
+.about-action-btn {
+
+
+    text-align: center;
+
+
+    color: #fff;
 }
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
