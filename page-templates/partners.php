@@ -33,16 +33,32 @@ get_header(); ?>
 							<?php the_field('partners_mission') ?>
 						</div>
 					<?php endif;?>
-					<nav class="clients-nav">
-						<h6>Clients Menu</h6>
-						<ul>
-							<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
-							<li><a data-scroll data-options='{ "easing": "linear" }' href="#vote-hemp">Hemp Industry</a></li>
-							<li><a data-scroll data-options='{ "easing": "linear" }' href="#fair-world">Fairworld Project</a></li>
-						</ul>
-							<!-- href="https://github.com/cferdinandi/smooth-scroll">GitHub</a></p> -->
-						<hr>
-					</nav>
+					<?php if( have_rows('partners_menu_items') ): ?>
+						<nav class="clients-nav">
+							<h6>Clients Menu</h6>
+							<ul>
+								<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
+							<?php
+								$menuCount = 0;
+							    while ( have_rows('partners_menu_items') ) : the_row();
+								$menuCount = $menuCount + 1;
+							?>
+								<li><a
+										data-scroll data-options='{ "easing": "linear" }'
+										href="#partner-<?php echo $menuCount ?>">
+										<?php the_sub_field('partner_menu_item'); ?>
+									</a>
+								</li>
+								<!-- href="https://github.com/cferdinandi/smooth-scroll">GitHub</a></p> -->
+								<?php endwhile; ?>
+							</ul>
+							<?php
+								else :
+								    echo "<p>Please add menu items corresponding to the partners listed on this page.</p>";
+								endif;
+								?>
+							<hr>
+						</nav>
 				</section>
 				<section id="dr-bronner" class="partner-outer-container">
 					<div class="bronner-title-group">
@@ -125,8 +141,12 @@ get_header(); ?>
 						require(locate_template('template-parts/bronner-media-placement.php' ));
 						?>
 					</section>
-					<p><a data-scroll data-options=
-						'{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
+					<p><a
+							data-scroll
+							data-options='{ "easing": "easeOutCubic" }'
+							href="#">Back to the top
+						</a>
+					</p>
 
 				</section><!-- #dr bronner -->
 				<?php
@@ -181,25 +201,19 @@ get_header(); ?>
 				        $sub_field = 'partner_campaign_supported';
 				        require(locate_template('template-parts/partner-media-placement.php'));
 
-				endif;//get_row_layout(partner_name_group)
-				    ?>
-				    </div>
-				</section><!-- #partner end -->
-				    <?php
-				endwhile;//have_rows('other_partners')
-				endif;//have_rows('other_partners')
-				    ?>
-				    <!-- <p><a data-scroll data-options=
-				        '{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
-				 -->
-				<!--
-				<div id="fair-world">Fairworld Project
-				    <p><a data-scroll data-options=
-				        '{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p>
-				    </div>
-				<p id="bottom"><a data-scroll data-options=
-				    '{ "easing": "easeOutCubic" }' href="#">Back to the top</a></p> -->
-
+				endif;//get_row_layout(partner_name_group)?>
+				</div><!-- .partner-services-container -->
+				<p><a
+						data-scroll
+						data-options='{ "easing": "easeOutCubic" }'
+						href="#">Back to the top
+					</a>
+				</p>
+			</section><!-- #partner end -->
+			    <?php
+					endwhile;//have_rows('other_partners')
+					endif;//have_rows('other_partners')
+			    ?>
 
 			</article><!-- .partners-outer-container -->
 		</main><!-- #main -->
