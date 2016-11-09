@@ -26,7 +26,23 @@ input[type="submit"],
 	color: $white;
 }
 .action-btn-large {
-	font-size: 2rem;
+	font-size: 1.3rem;
+	@media $medium {
+		font-size: 2rem;
+	}
+	@media $large {
+		font-size: 2rem;
+	}
+	@media $ex-large {
+		font-size: 2rem;
+	}
+}
+
+@media $medium {
+}
+@media $large {
+}
+@media $ex-large {
 }
 
 button:hover,
@@ -68,7 +84,7 @@ input[type="color"],
 textarea {
 	border: 1px solid #ccc;
 	/*border-radius: 3px;*/
-	padding: 3px;
+	padding: 12px 18px;
 }
 
 select {

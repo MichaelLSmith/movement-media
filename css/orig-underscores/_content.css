@@ -15,22 +15,87 @@ needs to be @imported into the style.css file and processed by gulp
 	/* removed so backgrounds can go full length -- max-width: $outer-max-width;*/
 }
 .site-content, .home-header-content {
-
-
-
 	margin: inherit;
 }
 .content-area {
 	margin: 0 auto;
 	@media $medium {
-		max-width: $container-default-width;
 	}
 	@media $large {
 	}
 }
-.full-width-content {
-
+.full-content-area {
+		margin: 0 auto;
+		width: 92%;
+		@media $medium {
+			width: 94%;
+			max-width: 1000px;
+		}
+		@media $large {
+			 width: 92%;
+			 max-width: 1080px;
+		}
+		@media $ex-large {
+			 width: 97%;
+			 max-width: 1080px;
+		}
 }
+
+/* *********************************************************************************************************************
+ * Section containers / grids / padding options
+ */
+
+   .row-top-pad {
+     padding: 5% 0 0;
+   }
+   .row-bottom-pad {
+     padding: 0 0 5%;
+   }
+   .row-tb-pad {
+     padding: 5% 0;
+   }
+
+	.quote-content-area {
+			margin: 0 auto;
+			width: 83.33%;
+		@media $medium {
+			width: 66.66%;
+		}
+		@media $large {
+			width: 66.67%;
+		}
+		@media $ex-large {
+			width: 66.67%;
+		}
+		/* on large/ex-large, based on 8 column size, but centered*/
+	}
+   .text-content-area {
+     margin: 0 auto;
+     width: 83.3%;
+		 @media $medium {
+			 width: 66.66%;
+		 }
+		 @media $large {
+			 width: 66.67%;
+		 }
+		 @media $ex-large {
+			 width: 66.67%;
+		 }
+
+		 @media $medium {
+		 }
+		 @media $large {
+		 }
+		 @media $ex-large {
+		 }
+     /* based on 8 column size, but centered*/
+   }
+   .image-content-area {
+		 margin: 0 auto;
+		 width: 83.33%;
+     /* based on 10 column size, but centered*/
+   }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

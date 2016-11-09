@@ -142,6 +142,14 @@ a:active {
 		display: block;
 	}
 }
+@media $ex-large {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,

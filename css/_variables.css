@@ -19,8 +19,9 @@ Breakpoints:
 * narrower than 1020, we need a white gutter
 */
 
-$medium: screen and (mitn-width: 768px) and (max-width: 1024px);
-$large: screen and (min-width: 1025px);
+$medium: screen and (min-width: 768px) and (max-width: 1024px);
+$large: screen and (min-width: 1025px) and (max-width: 1320px);
+$ex-large: screen and (min-width: 1321px);
 
 
 /*
@@ -28,7 +29,7 @@ $large: screen and (min-width: 1025px);
     outer max width is 1400
 */
 
-$outer-max-width: 1200px;
+$outer-max-width: 1280px;
 $container-default-width: 90%;
 
 /*Colours*/

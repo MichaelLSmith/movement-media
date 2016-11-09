@@ -37,7 +37,7 @@
 
 
 
-		<section class="featured-stories clear">
+		<section class="featured-stories row-tb-pad clear">
 			<div class="inner-featured-stories full-content-area">
 				<h3 class="blue-heading">Movement Stories</h3>
 				<div class="home-flex-container">
@@ -71,7 +71,7 @@
 		<?php if( get_field('front_quote_1') ): ?>
 			<section class="front-quote row-tb-pad">
 				<div class="inner-front-quote full-content-area">
-					<div class="quote-content-area">
+					<div class="quote-content-area row-tb-pad">
 						<?php the_field('front_quote_1') ?>
 					</div>
 			</div>
@@ -82,7 +82,7 @@
 
 
 
-		<section id="highlights" class="movement-highlights full-content-area row-bottom-pad">
+		<section id="highlights" class="movement-highlights row-tb-pad">
 			<div class="inner-highlights full-content-area">
 				<h3 class="blue-heading">Movement Highlights</h3>
 				<div class="home-flex-container">
@@ -125,7 +125,7 @@
 		 <?php if( get_field('front_quote_2') ): ?>
  			<section class="front-quote row-tb-pad">
  				<div class="inner-front-quote full-content-area">
- 					<div class="quote-content-area">
+ 					<div class="quote-content-area row-tb-pad">
  						<?php the_field('front_quote_2') ?>
  					</div>
  			</div>

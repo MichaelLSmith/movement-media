@@ -1,5 +1,9 @@
+.home .news-signup {
+  background-color: $white;
+  color: $darkBlue;
+}
+
 .news-signup {
-    max-width: 1200px;
     background-color: $darkBlue;
     color: $white;
     margin-bottom: 0;
@@ -28,6 +32,5 @@
     }
 }
 .news-text {
-    max-width: $textMargin;
     margin: auto;
 }

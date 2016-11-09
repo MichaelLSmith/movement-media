@@ -1,14 +1,17 @@
 .site-footer {
     background-color: $darkBlue;
+    border-top: 3px solid $white;
 }
 .footer-inner {
     max-width: $container-max-width;
     width: $container-default-width;
     margin: auto;
+    font-family: $gotham;
 }
 .footer-logo-section {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 6.5em;
 }
 .tag-line {
     p {
@@ -23,20 +26,48 @@
     }
 }
 .footer-menu-container {
-    display: flex;*/
-    flex-wrap: wrap;
-    justify-content: space-between;
+     display: -webkit-flex;
+     display: flex;
+     -webkit-justify-content: space-between;
+     justify-content: space-between;
+     /* Set flex-wrap and flex-direction all in one line with flex flow */
+     -webkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+     -webkit-align-content: space-between;
+     align-content: space-between;
+     width:50%;
+     margin: 0 auto;
+
+    @media $medium {
+      width:100%;
+    }
+    @media $large {
+      width:100%;
+    }
+    @media $ex-large {
+      width:100%;
+    }
 }
 .footer-menu {
     color: $white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    @media $medium {
+      font-size: 1.4rem;
+    }
+    @media $large {
+      font-size: 1.8rem;
+    }
+    @media $ex-large {
+      font-size: 1.8rem;
+    }
     /*line-height: 2.3rem;*/
     a {
         color: $white;
-        text-decoration: underline;
     }
     li {
-        margin: 0 0 2.9rem 0;
+        margin: 0 0 2.2rem 0;
     }
 }
 .footer-search-container {

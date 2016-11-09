@@ -48,17 +48,17 @@
 			</section>
 
 			<section class="home-masthead-1">
-				<p class="large-text col5">
+				<p class="large-text">
 					<?php if( get_field('front_header_text_left') ): ?>
 						<?php the_field('front_header_text_left'); ?></p>
 					<?php endif; ?>
 				<?php if( get_field('front_header_icon') ): ?>
-					<div class="front-icon-container col2">
+					<div class="front-icon-container">
 						<img class="icon" src="<?php the_field('front_header_icon');?>" alt="">
 					</div>
 				<?php endif; ?>
 				<?php if( get_field('front_header_text_right') ): ?>
-					<p class="large-text col5"><?php the_field('front_header_text_right'); ?></p>
+					<p class="large-text"><?php the_field('front_header_text_right'); ?></p>
 				<?php endif;?>
 			</section>
 			<?php if( get_field('front_header_paragraph') ): ?>
@@ -101,6 +101,5 @@
 	</div><!-- #primary -->
 </div><!-- #content -->
 <?php
-get_sidebar();
 get_template_part( 'template-parts/news', 'signup' );
 get_footer();

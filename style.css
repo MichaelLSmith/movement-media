@@ -426,6 +426,21 @@ h1 {
 
     font-size: 5.4rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h1 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h1 {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    h1 {}
+}
 h2 {
 
 
@@ -434,13 +449,55 @@ h2 {
 
     font-size: 3.6rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h2 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h2 {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    h2 {}
+}
 h3 {
 
 
     font-weight: 700;
 
 
-    font-size: 3rem;
+    font-size: 2.4rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h3 {
+
+
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h3 {
+
+
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    h3 {
+
+
+        font-size: 3rem;
+    }
 }
 h4 {
 
@@ -453,6 +510,21 @@ h4 {
 
     line-height: 3rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h4 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h4 {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    h4 {}
+}
 h5 {
 
 
@@ -461,15 +533,42 @@ h5 {
 
     letter-spacing: 0.1rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h5 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h5 {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    h5 {}
+}
 h6 {
 
 
     font-size: 1.6rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    h6 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    h6 {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    h6 {}
+}
 .blue-heading {
-
-
-    color: #222;
 
 
     font-weight: 500;
@@ -479,6 +578,21 @@ h6 {
 
 
     letter-spacing: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .blue-heading {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .blue-heading {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    .blue-heading {}
 }
 p {
 
@@ -725,8 +839,38 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .action
 .action-btn-large {
 
 
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {}
+@media screen and (min-width: 1321px) {}
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .action-btn:hover {
 
 
@@ -750,7 +894,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
     /*border-radius: 3px;*/
 
 
-    padding: 3px;
+    padding: 12px 18px;
 }
 select {
 
@@ -987,21 +1131,180 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: 0 auto;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
-
-
-    .content-area {
-
-
-        max-width: 90%;
-    }
-}
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .content-area {}
 }
-.full-width-content {}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .content-area {}
+}
+.full-content-area {
+
+
+    margin: 0 auto;
+
+
+    width: 92%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .full-content-area {
+
+
+        width: 94%;
+
+
+        max-width: 1000px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .full-content-area {
+
+
+        width: 92%;
+
+
+        max-width: 1080px;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .full-content-area {
+
+
+        width: 97%;
+
+
+        max-width: 1080px;
+    }
+}
+/* *********************************************************************************************************************
+ * Section containers / grids / padding options
+ */
+.row-top-pad {
+
+
+    padding: 5% 0 0;
+}
+.row-bottom-pad {
+
+
+    padding: 0 0 5%;
+}
+.row-tb-pad {
+
+
+    padding: 5% 0;
+}
+.quote-content-area {
+
+
+    margin: 0 auto;
+
+
+    width: 83.33%;
+
+
+    /* on large/ex-large, based on 8 column size, but centered*/
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .quote-content-area {
+
+
+        width: 66.66%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .quote-content-area {
+
+
+        width: 66.67%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .quote-content-area {
+
+
+        width: 66.67%;
+    }
+}
+.text-content-area {
+
+
+    margin: 0 auto;
+
+
+    width: 83.3%;
+
+
+    /* based on 8 column size, but centered*/
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .text-content-area {
+
+
+        width: 66.66%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .text-content-area {
+
+
+        width: 66.67%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .text-content-area {
+
+
+        width: 66.67%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .text-content-area {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .text-content-area {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    .text-content-area {}
+}
+.image-content-area {
+
+
+    margin: 0 auto;
+
+
+    width: 83.33%;
+
+
+    /* based on 10 column size, but centered*/
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1013,7 +1316,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     margin: auto;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .entry-title-container, .partners-upper-content {
@@ -1045,7 +1348,7 @@ needs to be @imported into the style.css file and processed by gulp
 
     width: 100%;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .entry-title {
@@ -1063,7 +1366,7 @@ needs to be @imported into the style.css file and processed by gulp
         font-size: 4rem;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .entry-title {
@@ -1387,7 +1690,7 @@ a:hover, a:active {
 }
 
 
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .menu-toggle {
@@ -1405,7 +1708,25 @@ a:hover, a:active {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .menu-toggle {
+
+
+        display: none;
+    }
+
+
+    .main-navigation ul {
+
+
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 1321px) {
 
 
     .menu-toggle {
@@ -1523,7 +1844,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     color: #005395;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .header-content {
@@ -1556,7 +1877,7 @@ Header CSS - need to @include in style.css and run gulp process
     margin: auto;
 }
 .logo-tag-container {}
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .logo-tag-container {
@@ -1570,7 +1891,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     display: none;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .site-branding {
@@ -1601,7 +1922,7 @@ Header CSS - need to @include in style.css and run gulp process
     margin: 0 auto;
 
 
-    padding: 4% 0em;
+    padding: 4% 0em 5em;
 }
 .home-header a {
 
@@ -1610,6 +1931,33 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     text-decoration: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .home-header {
+
+
+        padding: 4% 0em 6em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .home-header {
+
+
+        padding: 3% 0em 6%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .home-header {
+
+
+        padding: 6% 0em 6%;
+    }
 }
 .home-header-content {}
 .home-nav, .home-masthead-1 {
@@ -1653,7 +2001,7 @@ Header CSS - need to @include in style.css and run gulp process
     font-size: 14px;
 
 
-    padding: 0em 1.5% 6em;
+    padding: 0em 1.5% 1em;
 
 
     color: #F3F4F5;
@@ -1661,7 +2009,37 @@ Header CSS - need to @include in style.css and run gulp process
 
     letter-spacing: 0.48px;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .home-nav {
+
+
+        padding: 0em 1.5% 1em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .home-nav {
+
+
+        padding: 0em 1.5% 1em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .home-nav {
+
+
+        padding: 0em 1.5% 1em;
+    }
+}
 .home-masthead-1, .home-masthead-2, .home-masthead-3 {
+
+
+    margin: 0 auto;
 
 
     display: -webkit-box;
@@ -1682,7 +2060,19 @@ Header CSS - need to @include in style.css and run gulp process
             justify-content: space-between;
 
 
-    margin: 0 auto;
+    /* Set flex-wrap and flex-direction all in one line with flex flow */
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
 }
 .home-masthead-1 p, .home-masthead-2 p, .home-masthead-3 p {
 
@@ -1692,27 +2082,96 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-1 p.large-text {
 
 
+    padding: 0.4em 0;
+
+
     font-family: "Gotham SSm A","Gotham SSm B";
 
 
-    font-size: 64px;
+    font-size: 28px;
 
 
-    font-weight: 800;
+    font-weight: 700;
 
 
-    letter-spacing: 2.55px;
+    letter-spacing: 0.5px;
 
 
-    line-height: 72px;
+    line-height: 34px;
 
 
     text-align: center;
+
+
+    width: 53%;
+
+
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .home-masthead-1 p.large-text {
+
+
+        font-size: 40px;
+
+
+        font-weight: 800;
+
+
+        letter-spacing: 1.5px;
+
+
+        line-height: 44px;
+
+
+        width: 42%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .home-masthead-1 p.large-text {
+
+
+        font-size: 56px;
+
+
+        font-weight: 800;
+
+
+        letter-spacing: 1.5px;
+
+
+        line-height: 62px;
+
+
+        width: 42%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .home-masthead-1 p.large-text {
+
+
+        font-size: 64px;
+
+
+        font-weight: 800;
+
+
+        letter-spacing: 1.5px;
+
+
+        line-height: 72px;
+
+
+        width: 42%;
+    }
 }
 .home-masthead-2 p.text {
-
-
-    padding: 0.7em 0 0;
 
 
     font-family: "Sentinel SSm A","Sentinel SSm B";
@@ -1721,18 +2180,61 @@ Header CSS - need to @include in style.css and run gulp process
     font-weight: 300;
 
 
-    font-size: 24px;
+    font-size: 15px;
 
 
-    line-height: 30px;
+    line-height: 18px;
 
 
     text-align: center;
+
+
+    margin: 0.4em 0 1.2em;
 }
-.ccccc {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    margin: 0 auto;
+    .home-masthead-2 p.text {
+
+
+        font-size: 20px;
+
+
+        line-height: 24px;
+
+
+        margin: 1.2em 0 1.2em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .home-masthead-2 p.text {
+
+
+        font-size: 24px;
+
+
+        line-height: 30px;
+
+
+        margin: 0.4em 0 1.2em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .home-masthead-2 p.text {
+
+
+        font-size: 24px;
+
+
+        line-height: 30px;
+
+
+        margin: 0.4em 0 1.2em;
+    }
 }
 .front-icon-container {
 
@@ -1774,14 +2276,71 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     padding: 0 3em;
+
+
+    width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .front-icon-container {
+
+
+        width: 16%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .front-icon-container {
+
+
+        width: 16%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .front-icon-container {
+
+
+        width: 16%;
+    }
 }
 .icon {
 
 
-    height: 110px;
+    height: 45px;
 
 
     width: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .icon {
+
+
+        height: 110px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .icon {
+
+
+        height: 110px;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .icon {
+
+
+        height: 110px;
+    }
 }
 .front-more-link {
 
@@ -1815,31 +2374,45 @@ Header CSS - need to @include in style.css and run gulp process
     text-decoration: underline;
 }
 .featured-stories {}
-.home-flex-container {
+.featured-video {
 
 
-    display: -webkit-box;
-
-
-    display: -ms-flexbox;
-
-
-    display: flex;
-
-
-    -webkit-box-pack: justify;
-
-
-        -ms-flex-pack: justify;
-
-
-            justify-content: space-between;
+    border-bottom: 1px solid #222222;
 }
-.featured-video {}
 .featured-story {
 
 
-    width: 32%;
+    width: 100%;
+
+
+    margin-bottom: 1.8em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .featured-story {
+
+
+        width: 31.5%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .featured-story {
+
+
+        width: 31.5%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .featured-story {
+
+
+        width: 31.5%;
+    }
 }
 .thumb-container img, .thumb-container iframe {
 
@@ -1849,7 +2422,7 @@ Header CSS - need to @include in style.css and run gulp process
 .story-text {
 
 
-    padding: 1rem 3.2rem;
+    padding: 1.4rem 4rem 1.4rem;
 }
 .story-text p {
 
@@ -1860,18 +2433,72 @@ Header CSS - need to @include in style.css and run gulp process
     font-weight: 300;
 
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 
     line-height: 1.3;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .story-text {
+
+
+        padding: 1.4rem 2rem 1.4rem;
+    }
+
+
+    .story-text p {
+
+
+        font-size: 1.3rem;
+
+
+        line-height: 1.3;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .story-text {
+
+
+        padding: 2rem 3rem 1.4rem;
+    }
+
+
+    .story-text p {
+
+
+        font-size: 1.4rem;
+
+
+        line-height: 1.3;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .story-text {
+
+
+        padding: 2rem 3rem 1.4rem;
+    }
+
+
+    .story-text p {
+
+
+        font-size: 1.4rem;
+
+
+        line-height: 1.3;
+    }
 }
 .story-grey {
 
 
     background-color: #fff;
-
-
-    border: 0.5px solid #797979;
 }
 .story-grey h6, .story-grey a {
 
@@ -1879,7 +2506,10 @@ Header CSS - need to @include in style.css and run gulp process
     color: #005395;
 
 
-    margin: 0.8em 0 0.4em;
+    margin: 0.8em 0 0.6em;
+
+
+    line-height: 1.3;
 }
 .story-grey p {
 
@@ -1902,7 +2532,10 @@ Header CSS - need to @include in style.css and run gulp process
     color: #fff;
 
 
-    margin: 0.8em 0 0.4em;
+    margin: 0.8em 0 0.6em;
+
+
+    line-height: 1.3;
 }
 .story-blue p {
 
@@ -1922,11 +2555,17 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     margin: auto;
+
+
+    background-color: #005395;
 }
 .front-quote p {
 
 
-    font-size: 27px;
+    font-size: 18px;
+
+
+    color: #fff;
 
 
     font-weight: 300;
@@ -1937,15 +2576,106 @@ Header CSS - need to @include in style.css and run gulp process
 
     text-align: justify;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .front-quote p {
+
+
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .front-quote p {
+
+
+        font-size: 21px;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .front-quote p {
+
+
+        font-size: 27px;
+    }
+}
 .highlight-item {
 
 
-    width: 23%;
+    width: 100%;
 }
-#highlights .embed-container {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    height: 10%;
+    .highlight-item {
+
+
+        width: 48%;
+
+
+        -ms-flex-flow: row wrap;
+
+
+            flex-flow: row wrap;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .highlight-item {
+
+
+        width: 46%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .highlight-item {
+
+
+        width: 23%;
+    }
+}
+#highlights .embed-container {}
+.home-flex-container {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    /* Set flex-wrap and flex-direction all in one line with flex flow */
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
 }
 .front-highlights-upper, .front-highlights-lower {
 
@@ -2119,24 +2849,13 @@ Header CSS - need to @include in style.css and run gulp process
 
     color: #fff;
 }
-.home-masthead-1 p.text {
-
-
-    font-size: 24px;
-}
-@media screen and (min-width: 1025px) {
-
-
-    .home-masthead-1 p.text {
-
-
-        font-size: 24px;
-    }
-}
 .site-footer {
 
 
     background-color: #005395;
+
+
+    border-top: 3px solid #fff;
 }
 .footer-inner {
 
@@ -2148,6 +2867,9 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     margin: auto;
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
 }
 .footer-logo-section {
 
@@ -2168,6 +2890,9 @@ Header CSS - need to @include in style.css and run gulp process
 
 
             justify-content: flex-start;
+
+
+    margin-bottom: 6.5em;
 }
 .tag-line p {
 
@@ -2203,9 +2928,6 @@ Header CSS - need to @include in style.css and run gulp process
     display: flex;
 
 
-    /: wrap;
-
-
     -webkit-box-pack: justify;
 
 
@@ -2213,6 +2935,54 @@ Header CSS - need to @include in style.css and run gulp process
 
 
             justify-content: space-between;
+
+
+    /* Set flex-wrap and flex-direction all in one line with flex flow */
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
+
+
+    width: 50%;
+
+
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .footer-menu-container {
+
+
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .footer-menu-container {
+
+
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .footer-menu-container {
+
+
+        width: 100%;
+    }
 }
 .footer-menu {
 
@@ -2220,21 +2990,51 @@ Header CSS - need to @include in style.css and run gulp process
     color: #fff;
 
 
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+
+
+    letter-spacing: 1px;
+
+
+    font-weight: 300;
 }
 /*line-height: 2.3rem;*/
 .footer-menu a {
 
 
     color: #fff;
-
-
-    text-decoration: underline;
 }
 .footer-menu li {
 
 
-    margin: 0 0 2.9rem 0;
+    margin: 0 0 2.2rem 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .footer-menu {
+
+
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .footer-menu {
+
+
+        font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .footer-menu {
+
+
+        font-size: 1.8rem;
+    }
 }
 .footer-search-container {}
 .about-mission {
@@ -2282,7 +3082,7 @@ Header CSS - need to @include in style.css and run gulp process
 
         flex-wrap: wrap;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .about-services {
@@ -2433,7 +3233,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     padding-top: 20px;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .partner-outer-container {
@@ -2445,7 +3245,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
         background-color: #fff;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .partner-outer-container {
@@ -2466,7 +3266,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     margin: 0 0 3rem 0;
 }
 .partners-mission {}
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .partners-mission {
@@ -2478,7 +3278,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: 90%;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .partners-mission {
@@ -2518,7 +3318,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
             flex-direction: column;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .bronner-title-group {
@@ -2545,7 +3345,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
             justify-content: space-around;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .bronner-title-group {
@@ -2606,7 +3406,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     margin: auto;
 }
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .partner-title-image {
@@ -2627,7 +3427,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: 275px;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .partner-title-image {
@@ -2649,7 +3449,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     }
 }
 .partner-description {}
-@media screen and (mitn-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .partner-description {
@@ -2667,7 +3467,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: 560px;
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .partner-description {
@@ -2867,7 +3667,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     min-height: 130px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
     .partner-services-container {
@@ -2982,10 +3782,15 @@ note: partners-upper content width area controlled in _content.css as part of .e
 #dr-bronner {}
 #vote-hemp {}
 #fair-world {}
+.home .news-signup {
+
+
+    background-color: #fff;
+
+
+    color: #005395;
+}
 .news-signup {
-
-
-    max-width: 1200px;
 
 
     background-color: #005395;
@@ -3056,9 +3861,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
         -webkit-margin-end: 0;*/
 }
 .news-text {
-
-
-    max-width: 75%;
 
 
     margin: auto;
@@ -3215,79 +4017,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
  * Large Devices
  */
 @media all and (min-width: 1025px) {
-
-
-    .row-top-pad {
-
-
-        padding: 5% 0 0;
-    }
-
-
-    .row-bottom-pad {
-
-
-        padding: 0 0 5%;
-    }
-
-
-    .row-tb-pad {
-
-
-        padding: 5% 0;
-    }
-
-
-    .quote-content-area {
-
-
-        margin: 0 auto;
-
-
-        width: 50%;
-
-
-        /* based on 6 column size, but centered*/
-    }
-
-
-    .text-content-area {
-
-
-        margin: 0 auto;
-
-
-        width: 66.67%;
-
-
-        /* based on 8 column size, but centered*/
-    }
-
-
-    .image-content-area {
-
-
-        margin: 0 auto;
-
-
-        width: 83.33%;
-
-
-        /* based on 10 column size, but centered*/
-    }
-
-
-    .full-content-area {
-
-
-        margin: 0 auto;
-
-
-        max-width: 1280px;
-
-
-        /* based on 10 column size, but centered*/
-    }
 
 
     .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {

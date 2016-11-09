@@ -38,33 +38,95 @@ h6 {
 h1 {
 	font-style: italic;
 	font-size: 5.4rem;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 h2 {
 	font-weight: 700;
 	font-size: 3.6rem;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 h3 {
 	font-weight: 700;
+	font-size: 2.4rem;
+	@media $medium {
 	font-size: 3rem;
+	}
+	@media $large {
+	font-size: 3rem;
+	}
+	@media $ex-large {
+	font-size: 3rem;
+	}
 }
 h4 {
 	font-size: 2.8rem;
 	letter-spacing: .97px;
 	line-height: 3rem;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 h5 {
 	font-size: 2.4rem;
 	letter-spacing: 0.1rem;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 h6 {
 	font-size: 1.6rem;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 
 .blue-heading {
-	color: $nearBlack;
 	font-weight: 500;
 	color: $lightBlue;
 	letter-spacing: 0;
+	@media $medium {
+
+	}
+	@media $large {
+
+	}
+	@media $ex-large {
+
+	}
 }
 
 p {

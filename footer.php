@@ -10,8 +10,8 @@
  */
 
  ?>
-	<footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="footer-inner">
+	<footer id="colophon" class="site-footer row-tb-pad" role="contentinfo">
+        <div class="footer-inner full-content-area">
             <!-- change -->
             <section class="footer-logo-section">
                 <div class="footer-image-container">
@@ -35,14 +35,8 @@
                     <?php get_search_form() ?>
                 </section>
         </div>
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'movementmedia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'movementmedia' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'movementmedia' ), 'movementmedia', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
-
 </body>
 </html>
