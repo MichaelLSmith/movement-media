@@ -99,7 +99,7 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-upper-content {
+.entry-title-container {
 	max-width: $container-default-width;
 	margin: auto;
 

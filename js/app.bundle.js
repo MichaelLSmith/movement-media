@@ -184,6 +184,7 @@ $__System.register("4", [], function (_export) {
             accordionInit = function accordionInit() {
                 jQuery(".bio").accordion({
                     active: false,
+                    collapsible: true,
                     header: "aside",
                     heightStyle: 'content'
                 });
