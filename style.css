@@ -1308,7 +1308,7 @@ needs to be @imported into the style.css file and processed by gulp
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-upper-content {
+.entry-title-container {
 
 
     max-width: 90%;
@@ -1319,7 +1319,7 @@ needs to be @imported into the style.css file and processed by gulp
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    .entry-title-container, .partners-upper-content {
+    .entry-title-container {
 
 
         max-width: $container-max-width;
@@ -3041,19 +3041,45 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     font-family: "Gotham SSm A","Gotham SSm B";
-
-
-    max-width: 85%;
 }
+/*max-width: 85%;*/
 .about-mission p {
 
 
     font-size: 2.5rem;
 }
-.about-services {
+.about-gallery-row {
 
 
     list-style: none;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    margin-bottom: 25px;
+}
+.about-services {
+
+
+    background-color: #EBEBE8;
+}
+.about-services-flex {
 
 
     display: -webkit-box;
@@ -3085,7 +3111,7 @@ Header CSS - need to @include in style.css and run gulp process
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    .about-services {
+    .about-services-flex {
 
 
         -webkit-box-orient: horizontal;
@@ -3108,6 +3134,16 @@ Header CSS - need to @include in style.css and run gulp process
 
                 justify-content: space-between;
     }
+}
+.about-main-image img {
+
+
+    margin: auto;
+}
+.bio {
+
+
+    margin-bottom: 25px;
 }
 .bio-bi-line {
 
@@ -3136,65 +3172,20 @@ Header CSS - need to @include in style.css and run gulp process
 
     border-radius: 50%;
 }
-/* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
-dl {}
-dt {
+ul.about-services-left, ul.about-services-right {
 
 
-    position: relative;
+    font-size: 1.7rem;
 }
-dt:before {
+ul.about-services-left li, ul.about-services-right li {
 
 
-    /*
-        The desired width gets defined in two places: The element width, and background size.
-        The height only gets defined once, in background size.
-        */
+    color: #4A90E2;
+}
+ul.about-services-left span, ul.about-services-right span {
 
 
-    position: absolute;
-
-
-    display: block;
-
-
-    content: '\2022';
-
-
-    /* bullet point, for screen readers */
-
-
-    text-indent: -999999px;
-
-
-    /* move the bullet point out of sight */
-
-
-    left: -.75em;
-
-
-    width: .4em;
-
-
-    /* desired width of the image */
-
-
-    height: 1em;
-
-
-    /* unrelated to image height; this is so it gets snipped */
-
-
-    background-repeat: no-repeat;
-
-
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI4cHgiIGhlaWdodD0iMTRweCIgdmlld0JveD0iMCAwIDggMTQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDggMTQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM2NjY2NjYiIGQ9Ik0wLjM3LDEyLjYzOGw1LjcyNi01LjU2NUwwLjUzMSwxLjM0N0MwLjI1MiwxLjA1OSwwLjI2MSwwLjYwMSwwLjU0NywwLjMyMWMwLjI4OS0wLjI3OSwwLjc0Ni0wLjI3MiwxLjAyNiwwLjAxNmw2LjA2Miw2LjI0YzAsMC4wMDIsMC4wMDYsMC4wMDQsMC4wMDgsMC4wMDZjMC4wNjgsMC4wNywwLjExOSwwLjE1NiwwLjE1NiwwLjI0NEM3LjkwMiw3LjA4OCw3Ljg0Niw3LjM5OSw3LjYzMSw3LjYxYy0wLjAwMiwwLjAwNC0wLjAwNiwwLjAwNC0wLjAxLDAuMDA2bC02LjIzOCw2LjA2M2MtMC4xNDMsMC4xNDEtMC4zMzEsMC4yMDktMC41MTQsMC4yMDVjLTAuMTg3LTAuMDA2LTAuMzcyLTAuMDc4LTAuNTExLTAuMjIxQzAuMDc2LDEzLjM3NiwwLjA4MywxMi45MTksMC4zNywxMi42MzgiLz48L3N2Zz4=');
-
-
-    background-size: .4em .7em;
-
-
-    background-position: 0 .3em;
+    color: #222;
 }
 .small-list {
 
@@ -3205,6 +3196,14 @@ dt:before {
 
 
     font-size: 150%;
+}
+.about-action-btn {
+
+
+    text-align: center;
+
+
+    color: #fff;
 }
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
@@ -3260,35 +3259,20 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
 
 
-    max-width: 75%;
-
-
-    margin: 0 0 3rem 0;
+    /*max-width: $textMargin;
+    margin: 0 auto 3rem auto;*/
 }
-.partners-mission {}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+.partners-mission {
 
 
-    .partners-mission {
-
-
+    /*@media $medium {
         margin: 45px auto;
-
-
-        max-width: 90%;
+        max-width: $container-default-width;
     }
-}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-
-
-    .partners-mission {
-
-
+    @media $large {
         margin: 45px auto;
-
-
-        max-width: 90%;
-    }
+        max-width: $container-default-width;
+    }*/
 }
 .partner-gallery {
 
@@ -3533,15 +3517,55 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     /*max-width: 500px;*/
 }
-.clients-nav {
+.partners-nav {}
+.partners-nav-list {
 
 
     list-style: none;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
 }
-.clients-nav li {
+.partners-nav-list li {
 
 
-    display: inline-block;
+    font-size: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partners-nav-list {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
 }
 .partner-gallery {
 
@@ -4143,6 +4167,32 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
         padding: 0;
     }
+}
+.stories-title h6 {
+
+
+    color: #005395;
+
+
+    margin: 0;
+}
+.stories-title a:visited {
+
+
+    color: inherit;
+}
+.story-title {
+
+
+    color: #005395;
+
+
+    text-align: center;
+}
+.story-posted-on {
+
+
+    text-align: center;
 }
 
 .embed-container {

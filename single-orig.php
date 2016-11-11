@@ -15,17 +15,7 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-
-		if(in_category('Press Release')){
-			get_template_part('template-parts/content','press_release');
-		}
-		elseif(in_category('Newsletter')){
-			echo "in else if newsletter";
-			get_template_part('template-parts/content','newsletter');
-		}
-		else{
-			get_template_part('template-parts/content');
-		}
+			get_template_part( 'template-parts/content', get_post_format() );
 
 			the_post_navigation();
 
