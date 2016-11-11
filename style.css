@@ -39,7 +39,7 @@ needs to be @imported into the style.css file and processed by gulp
 */
 
 
-/* 
+/*
     Created on : 15-Aug-2016, 9:47:21 AM
     Author     : michael
 */
@@ -952,7 +952,7 @@ textarea {
 corresonds to the accessibility section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:07:09 AM
     Author     : michael
 */
@@ -1043,7 +1043,7 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the alignments section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:08:47 AM
     Author     : michael
 */
@@ -1121,7 +1121,7 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the widgets section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:10:58 AM
     Author     : michael
 */
@@ -1594,7 +1594,7 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the Infinite Scroll section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:21:42 AM
     Author     : michael
 */
@@ -1620,7 +1620,7 @@ needs to be @imported into the style.css file and processed by gulp
 corresonds to the Media section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
 */
-/* 
+/*
     Created on : 15-Aug-2016, 10:22:59 AM
     Author     : michael
 */
@@ -3342,7 +3342,11 @@ ul.about-services-left li, ul.about-services-right li {
 ul.about-services-left span, ul.about-services-right span {
 
 
+<<<<<<< HEAD
     color: #232323;
+=======
+    color: #222;
+>>>>>>> stories
 }
 .small-list {
 
@@ -3420,7 +3424,8 @@ note: partners-upper content width area controlled in _content.css as part of .e
 }
 @media screen and (min-width: 1321px) {
 
-
+ 
+<<<<<<< HEAD
     .partner-container {
 
 
@@ -3437,6 +3442,12 @@ note: partners-upper content width area controlled in _content.css as part of .e
 }
 .bronner-title-group, .partner-content-group, .partner-what-group {
 
+=======
+    /*max-width: $textMargin;
+    margin: 0 auto 3rem auto;*/
+}
+.partners-mission {
+>>>>>>> stories
 
     max-width: 83%;
 
@@ -3450,6 +3461,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+<<<<<<< HEAD
 
     .partners-mission {
 
@@ -3474,6 +3486,16 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
         margin: 60px auto 60px;
     }
+=======
+    /*@media $medium {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }
+    @media $large {
+        margin: 45px auto;
+        max-width: $container-default-width;
+    }*/
+>>>>>>> stories
 }
 .partner-gallery {
 
@@ -4044,20 +4066,26 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
             flex-direction: column;
+<<<<<<< HEAD
 
 
     color: #005295;
+=======
+>>>>>>> stories
 }
 .partners-nav-list li {
 
 
     font-size: 2rem;
+<<<<<<< HEAD
 
 
     font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 700;
+=======
+>>>>>>> stories
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -4076,6 +4104,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
                 flex-direction: row;
     }
+<<<<<<< HEAD
 
 
     .partners-nav-list li {
@@ -4152,6 +4181,8 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
         padding: 0 24px 0 0;
     }
+=======
+>>>>>>> stories
 }
 .partner-gallery {
 
@@ -4785,6 +4816,32 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
         padding: 0;
     }
+}
+.stories-title h6 {
+
+
+    color: #005395;
+
+
+    margin: 0;
+}
+.stories-title a:visited {
+
+
+    color: inherit;
+}
+.story-title {
+
+
+    color: #005395;
+
+
+    text-align: center;
+}
+.story-posted-on {
+
+
+    text-align: center;
 }
 
 .embed-container {

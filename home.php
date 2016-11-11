@@ -22,24 +22,33 @@ get_header(); ?>
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-
-
+					<h6 class="page-title screen-reader-text"><?php single_post_title(); ?></h6>
 				</header>
 
+			<?php endif; ?>
+			<h3 class="entry-title">Movement Stories</h3>
 			<?php
-			endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
+			?>
+			<section class="full-content-area">
+				<div class="stories-title text-content-area">
+					<?php the_title('<h6><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h6>' );
+					the_category(' ');
+					the_author();
+					echo get_the_date();
+					?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+					<?php
+					if ( has_post_thumbnail() ) :
+						the_post_thumbnail('thumbnail');
+					endif;
+					?>
+				</div>
 
+			</section>
+			<?php
 			endwhile;
 
 			the_posts_navigation();

@@ -25,5 +25,7 @@
 @import 'modules/newsletter-signup';
 @import 'modules/searchform';
 @import 'modules/grid';
+@import 'modules/stories';
+@import 'modules/contact';
 
 @import 'shared-assets';
