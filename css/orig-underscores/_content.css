@@ -14,8 +14,21 @@ needs to be @imported into the style.css file and processed by gulp
 	margin: auto;
 	/* removed so backgrounds can go full length -- max-width: $outer-max-width;*/
 }
-.site-content, .home-header-content {
+.home-header-content {
 	margin: inherit;
+}
+.site-content {
+		margin-top: 3.4em;
+	@media $medium {
+		margin-top: 3.4em;
+	}
+	@media $large {
+		margin-top: 3.4em;
+	}
+
+	@media $ex-large {
+		margin-top: 3.4em;
+	}
 }
 .content-area {
 	margin: 0 auto;
@@ -28,11 +41,11 @@ needs to be @imported into the style.css file and processed by gulp
 		margin: 0 auto;
 		width: 92%;
 		@media $medium {
-			width: 94%;
+			width: 90%;
 			max-width: 1000px;
 		}
 		@media $large {
-			 width: 92%;
+			 width: 90%;
 			 max-width: 1080px;
 		}
 		@media $ex-large {
@@ -73,7 +86,7 @@ needs to be @imported into the style.css file and processed by gulp
      margin: 0 auto;
      width: 83.3%;
 		 @media $medium {
-			 width: 66.66%;
+			 width: 66.67%;
 		 }
 		 @media $large {
 			 width: 66.67%;
@@ -94,6 +107,15 @@ needs to be @imported into the style.css file and processed by gulp
 		 margin: 0 auto;
 		 width: 83.33%;
      /* based on 10 column size, but centered*/
+		 @media $medium {
+			 		 width: 83.33%;
+		 }
+		 @media $large {
+			 		 width: 83.33%;
+		 }
+		 @media $ex-large {
+			 		 width: 83.33%;
+		 }
    }
 
 /*--------------------------------------------------------------
@@ -109,26 +131,53 @@ needs to be @imported into the style.css file and processed by gulp
 }
 .entry-title {
 	text-transform: uppercase;
-	color: $darkBlue;
-	font-size: 5vw;
-	font-weight: 800;
-	letter-spacing: .3rem;
-	text-align: center;
-	width: 100%;
+	background-color: $darkBlue;
+	color: $white;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	padding: 12px 1.1em;
+	width: auto;
+	float: left;
+	margin-bottom: 0.7em;
 
 	@media $medium {
-		width: 85%;
 		background-color: $darkBlue;
 		color: $white;
-		font-size: 4rem;
+		font-size: 36px;
+		line-height: 44px;
+		letter-spacing: 0.75px;
+		padding: 12px 1.1em;
+		width: auto;
+		float: left;
 	}
 	@media $large {
-		width: 85%;
 		background-color: $darkBlue;
 		color: $white;
-		font-size: 4rem;
+		font-size: 48px;
+		line-height: 57px;
+		letter-spacing: 0.75px;
+		padding: 12px 1.1em;
+		width: auto;
+		float: left;
+	}
+	@media $ex-large {
+		background-color: $darkBlue;
+		color: $white;
+		font-size: 48px;
+		line-height: 57px;
+		letter-spacing: 0.75px;
+		padding: 12px 1.1em;
+		width: auto;
+		float: left;
+
 	}
 }
+
+/* MOVEMENT PARTNERS: */
+
+
+
 
 .sticky {
 	display: block;

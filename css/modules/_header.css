@@ -12,7 +12,6 @@ Header CSS - need to @include in style.css and run gulp process
     justify-content: space-between;
     align-items: center;
     padding: 1em .5em;
-	max-width: $container-default-width;
 	margin: auto;
     border-bottom: $darkBlue solid 1px;
     padding-bottom: 2.1rem;

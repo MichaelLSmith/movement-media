@@ -23,6 +23,7 @@ Breakpoints:
 /*
     inner max width is 1020
     outer max width is 1400
+    $container-default-width: 90%;
 */
 
 
@@ -402,7 +403,7 @@ html {
 body, button, input, select, textarea {
 
 
-    color: #222;
+    color: #232323;
 
 
     font-family: "Sentinel SSm A","Sentinel SSm B";
@@ -603,7 +604,43 @@ p {
     font-size: 1.4rem;
 
 
-    color: #222;
+    color: #232323;
+
+
+    font-weight: 300;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    p {
+
+
+        font-size: 1.9rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    p {
+
+
+        font-size: 1.9rem;
+
+
+        line-height: 1.6;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    p {
+
+
+        font-size: 2.1rem;
+
+
+        line-height: 1.75;
+    }
 }
 dfn, cite, em, i {
 
@@ -1121,10 +1158,42 @@ needs to be @imported into the style.css file and processed by gulp
 
     /* removed so backgrounds can go full length -- max-width: $outer-max-width;*/
 }
-.site-content, .home-header-content {
+.home-header-content {
 
 
     margin: inherit;
+}
+.site-content {
+
+
+    margin-top: 3.4em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .site-content {
+
+
+        margin-top: 3.4em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .site-content {
+
+
+        margin-top: 3.4em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .site-content {
+
+
+        margin-top: 3.4em;
+    }
 }
 .content-area {
 
@@ -1155,7 +1224,7 @@ needs to be @imported into the style.css file and processed by gulp
     .full-content-area {
 
 
-        width: 94%;
+        width: 90%;
 
 
         max-width: 1000px;
@@ -1167,7 +1236,7 @@ needs to be @imported into the style.css file and processed by gulp
     .full-content-area {
 
 
-        width: 92%;
+        width: 90%;
 
 
         max-width: 1080px;
@@ -1258,7 +1327,7 @@ needs to be @imported into the style.css file and processed by gulp
     .text-content-area {
 
 
-        width: 66.66%;
+        width: 66.67%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -1305,13 +1374,40 @@ needs to be @imported into the style.css file and processed by gulp
 
     /* based on 10 column size, but centered*/
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .image-content-area {
+
+
+        width: 83.33%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .image-content-area {
+
+
+        width: 83.33%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .image-content-area {
+
+
+        width: 83.33%;
+    }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-.entry-title-container, .partners-upper-content {
+.entry-title-container {
 
 
-    max-width: 90%;
+    max-width: $container-default-width;
 
 
     margin: auto;
@@ -1319,7 +1415,7 @@ needs to be @imported into the style.css file and processed by gulp
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    .entry-title-container, .partners-upper-content {
+    .entry-title-container {
 
 
         max-width: $container-max-width;
@@ -1331,30 +1427,36 @@ needs to be @imported into the style.css file and processed by gulp
     text-transform: uppercase;
 
 
-    color: #005395;
+    background-color: #005395;
 
 
-    font-size: 5vw;
+    color: #fff;
 
 
-    font-weight: 800;
+    font-size: 20px;
 
 
-    letter-spacing: .3rem;
+    line-height: 24px;
 
 
-    text-align: center;
+    letter-spacing: 1px;
 
 
-    width: 100%;
+    padding: 12px 1.1em;
+
+
+    width: auto;
+
+
+    float: left;
+
+
+    margin-bottom: 0.7em;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .entry-title {
-
-
-        width: 85%;
 
 
         background-color: #005395;
@@ -1363,7 +1465,22 @@ needs to be @imported into the style.css file and processed by gulp
         color: #fff;
 
 
-        font-size: 4rem;
+        font-size: 36px;
+
+
+        line-height: 44px;
+
+
+        letter-spacing: 0.75px;
+
+
+        padding: 12px 1.1em;
+
+
+        width: auto;
+
+
+        float: left;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -1372,7 +1489,34 @@ needs to be @imported into the style.css file and processed by gulp
     .entry-title {
 
 
-        width: 85%;
+        background-color: #005395;
+
+
+        color: #fff;
+
+
+        font-size: 48px;
+
+
+        line-height: 57px;
+
+
+        letter-spacing: 0.75px;
+
+
+        padding: 12px 1.1em;
+
+
+        width: auto;
+
+
+        float: left;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .entry-title {
 
 
         background-color: #005395;
@@ -1381,9 +1525,25 @@ needs to be @imported into the style.css file and processed by gulp
         color: #fff;
 
 
-        font-size: 4rem;
+        font-size: 48px;
+
+
+        line-height: 57px;
+
+
+        letter-spacing: 0.75px;
+
+
+        padding: 12px 1.1em;
+
+
+        width: auto;
+
+
+        float: left;
     }
 }
+/* MOVEMENT PARTNERS: */
 .sticky {
 
 
@@ -1814,9 +1974,6 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     padding: 1em .5em;
-
-
-    max-width: 90%;
 
 
     margin: auto;
@@ -2863,7 +3020,7 @@ Header CSS - need to @include in style.css and run gulp process
     max-width: $container-max-width;
 
 
-    width: 90%;
+    width: $container-default-width;
 
 
     margin: auto;
@@ -3041,19 +3198,45 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     font-family: "Gotham SSm A","Gotham SSm B";
-
-
-    max-width: 85%;
 }
+/*max-width: 85%;*/
 .about-mission p {
 
 
     font-size: 2.5rem;
 }
-.about-services {
+.about-gallery-row {
 
 
     list-style: none;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    margin-bottom: 25px;
+}
+.about-services {
+
+
+    background-color: #EBEBE8;
+}
+.about-services-flex {
 
 
     display: -webkit-box;
@@ -3085,7 +3268,7 @@ Header CSS - need to @include in style.css and run gulp process
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    .about-services {
+    .about-services-flex {
 
 
         -webkit-box-orient: horizontal;
@@ -3108,6 +3291,16 @@ Header CSS - need to @include in style.css and run gulp process
 
                 justify-content: space-between;
     }
+}
+.about-main-image img {
+
+
+    margin: auto;
+}
+.bio {
+
+
+    margin-bottom: 25px;
 }
 .bio-bi-line {
 
@@ -3136,65 +3329,20 @@ Header CSS - need to @include in style.css and run gulp process
 
     border-radius: 50%;
 }
-/* Adding SVG as list bullet From: http://stackoverflow.com/questions/29932657/how-can-i-make-a-list-style-image-scale-with-the-lists-font-size-when-we-cant*/
-dl {}
-dt {
+ul.about-services-left, ul.about-services-right {
 
 
-    position: relative;
+    font-size: 1.7rem;
 }
-dt:before {
+ul.about-services-left li, ul.about-services-right li {
 
 
-    /*
-        The desired width gets defined in two places: The element width, and background size.
-        The height only gets defined once, in background size.
-        */
+    color: #4A90E2;
+}
+ul.about-services-left span, ul.about-services-right span {
 
 
-    position: absolute;
-
-
-    display: block;
-
-
-    content: '\2022';
-
-
-    /* bullet point, for screen readers */
-
-
-    text-indent: -999999px;
-
-
-    /* move the bullet point out of sight */
-
-
-    left: -.75em;
-
-
-    width: .4em;
-
-
-    /* desired width of the image */
-
-
-    height: 1em;
-
-
-    /* unrelated to image height; this is so it gets snipped */
-
-
-    background-repeat: no-repeat;
-
-
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI4cHgiIGhlaWdodD0iMTRweCIgdmlld0JveD0iMCAwIDggMTQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDggMTQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiM2NjY2NjYiIGQ9Ik0wLjM3LDEyLjYzOGw1LjcyNi01LjU2NUwwLjUzMSwxLjM0N0MwLjI1MiwxLjA1OSwwLjI2MSwwLjYwMSwwLjU0NywwLjMyMWMwLjI4OS0wLjI3OSwwLjc0Ni0wLjI3MiwxLjAyNiwwLjAxNmw2LjA2Miw2LjI0YzAsMC4wMDIsMC4wMDYsMC4wMDQsMC4wMDgsMC4wMDZjMC4wNjgsMC4wNywwLjExOSwwLjE1NiwwLjE1NiwwLjI0NEM3LjkwMiw3LjA4OCw3Ljg0Niw3LjM5OSw3LjYzMSw3LjYxYy0wLjAwMiwwLjAwNC0wLjAwNiwwLjAwNC0wLjAxLDAuMDA2bC02LjIzOCw2LjA2M2MtMC4xNDMsMC4xNDEtMC4zMzEsMC4yMDktMC41MTQsMC4yMDVjLTAuMTg3LTAuMDA2LTAuMzcyLTAuMDc4LTAuNTExLTAuMjIxQzAuMDc2LDEzLjM3NiwwLjA4MywxMi45MTksMC4zNywxMi42MzgiLz48L3N2Zz4=');
-
-
-    background-size: .4em .7em;
-
-
-    background-position: 0 .3em;
+    color: #232323;
 }
 .small-list {
 
@@ -3206,10 +3354,23 @@ dt:before {
 
     font-size: 150%;
 }
+.about-action-btn {
+
+
+    text-align: center;
+
+
+    color: #fff;
+}
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */
-.partners-outer-container p {
+.partner-outer-container {
+
+
+    background-color: #EBEBE8;
+}
+.partner-container p {
 
 
     font-size: 1.8rem;
@@ -3220,26 +3381,26 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     margin: 0;
 }
-.partners-outer-container h6 {
+.partner-container h6 {
 
 
     margin: 0;
 }
-.partner-outer-container {
-
-
-    background-color: #EBEBE8;
+.partner-container {
 
 
     padding-top: 20px;
+
+
+    background-color: #fff;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    .partner-outer-container {
+    .partner-container {
 
 
-        border: #222 solid 1px;
+        border: #232323 solid 1px;
 
 
         background-color: #fff;
@@ -3248,34 +3409,52 @@ note: partners-upper content width area controlled in _content.css as part of .e
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
-    .partner-outer-container {
+    .partner-container {
 
 
-        border: #222 solid 1px;
+        border: #232323 solid 1px;
 
 
         background-color: #fff;
     }
 }
-.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
+@media screen and (min-width: 1321px) {
 
 
-    max-width: 75%;
+    .partner-container {
 
 
-    margin: 0 0 3rem 0;
+        border: #232323 solid 1px;
+
+
+        background-color: #fff;
+    }
 }
-.partners-mission {}
+.additional-partners h4 {
+
+
+    text-align: center;
+}
+.bronner-title-group, .partner-content-group, .partner-what-group {
+
+
+    max-width: 83%;
+
+
+    margin: 0 auto 3rem;
+}
+.partners-mission {
+
+
+    margin: 45px auto;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .partners-mission {
 
 
-        margin: 45px auto;
-
-
-        max-width: 90%;
+        margin: 70px auto 45px;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3284,10 +3463,16 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partners-mission {
 
 
-        margin: 45px auto;
+        margin: 60px auto 60px;
+    }
+}
+@media screen and (min-width: 1321px) {
 
 
-        max-width: 90%;
+    .partners-mission {
+
+
+        margin: 60px auto 60px;
     }
 }
 .partner-gallery {
@@ -3307,16 +3492,31 @@ note: partners-upper content width area controlled in _content.css as part of .e
     display: flex;
 
 
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
 
 
     -webkit-box-direction: normal;
 
 
-        -ms-flex-direction: column;
+        -ms-flex-direction: row;
 
 
-            flex-direction: column;
+            flex-direction: row;
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
+
+
+    width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3324,7 +3524,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .bronner-title-group {
 
 
-        max-width: 100%;
+        max-width: 83.33%;
 
 
         -webkit-box-orient: horizontal;
@@ -3339,10 +3539,13 @@ note: partners-upper content width area controlled in _content.css as part of .e
                 flex-direction: row;
 
 
-        -ms-flex-pack: distribute;
+        -webkit-box-pack: justify;
 
 
-            justify-content: space-around;
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3351,7 +3554,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .bronner-title-group {
 
 
-        max-width: 100%;
+        max-width: 83.33%;
 
 
         -webkit-box-orient: horizontal;
@@ -3366,10 +3569,43 @@ note: partners-upper content width area controlled in _content.css as part of .e
                 flex-direction: row;
 
 
-        -ms-flex-pack: distribute;
+        -webkit-box-pack: justify;
 
 
-            justify-content: space-around;
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .bronner-title-group {
+
+
+        max-width: 83.33%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -webkit-box-pack: justify;
+
+
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
     }
 }
 .partner-title-group {
@@ -3384,16 +3620,124 @@ note: partners-upper content width area controlled in _content.css as part of .e
     display: flex;
 
 
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
 
 
     -webkit-box-direction: normal;
 
 
-        -ms-flex-direction: column;
+        -ms-flex-direction: row;
 
 
-            flex-direction: column;
+            flex-direction: row;
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
+
+
+    width: 100%;
+
+
+    margin: 0 auto 3rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-title-group {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -webkit-box-pack: justify;
+
+
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
+
+
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partner-title-group {
+
+
+        max-width: 83.33%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -webkit-box-pack: justify;
+
+
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-title-group {
+
+
+        max-width: 83.33%;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        -webkit-box-pack: justify;
+
+
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
+    }
 }
 .partner-title-image {
 
@@ -3402,9 +3746,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     height: auto;
-
-
-    margin: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3412,19 +3753,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-title-image {
 
 
-        -webkit-box-flex: 0;
-
-
-            -ms-flex: 0 2 auto;
-
-
-                flex: 0 2 auto;
-
-
-        margin: 0;
-
-
-        max-width: 275px;
+        max-width: 30%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3433,19 +3762,22 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-title-image {
 
 
-        -webkit-box-flex: 0;
+        margin: 0;
 
 
-            -ms-flex: 0 2 auto;
+        max-width: 250px;
+    }
+}
+@media screen and (min-width: 1321px) {
 
 
-                flex: 0 2 auto;
+    .partner-title-image {
 
 
         margin: 0;
 
 
-        max-width: 275px;
+        max-width: 250px;
     }
 }
 .partner-description {}
@@ -3455,16 +3787,17 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-description {
 
 
-        -webkit-box-flex: 1;
+        max-width: 60%;
+    }
 
 
-            -ms-flex: 1 1 auto;
+    .partner-description h4 {
 
 
-                flex: 1 1 auto;
+        margin-top: 0.5em;
 
 
-        max-width: 560px;
+        margin-bottom: 0.5em;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3473,16 +3806,36 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-description {
 
 
-        -webkit-box-flex: 1;
+        max-width: 540px;
+    }
 
 
-            -ms-flex: 1 1 auto;
+    .partner-description h4 {
 
 
-                flex: 1 1 auto;
+        margin-top: 1em;
 
 
-        max-width: 560px;
+        margin-bottom: 0.5em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-description {
+
+
+        max-width: 540px;
+    }
+
+
+    .partner-description h4 {
+
+
+        margin-top: 1em;
+
+
+        margin-bottom: 0.5em;
     }
 }
 .partner-what-group {
@@ -3504,44 +3857,301 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
             justify-content: space-between;
+
+
+    margin: 0 auto 3em;
+
+
+    -webkit-box-orient: horizontal;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: row;
+
+
+            flex-direction: row;
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -ms-flex-line-pack: justify;
+
+
+        align-content: space-between;
 }
-.partner-what-group h6 {
+.partner-what-group h5 {
 
 
-    -webkit-box-flex: 0;
+    line-height: 1.3;
 
 
-        -ms-flex: 0 0 5px;
+    color: #005395;
 
 
-            flex: 0 0 5px;
+    margin-top: 0;
 
 
-    /*max-width: 5px;*/
+    width: 100%;
+
+
+    margin-bottom: 0.6em;
 }
 .partner-what-group p {
 
 
-    -webkit-box-flex: 1;
-
-
-        -ms-flex: 1 1 100px;
-
-
-            flex: 1 1 100px;
-
-
-    /*max-width: 500px;*/
+    width: 100%;
 }
-.clients-nav {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-what-group h5 {
+
+
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partner-what-group h5 {
+
+
+        max-width: 250px;
+
+
+        text-align: right;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-what-group h5 {
+
+
+        max-width: 250px;
+
+
+        text-align: right;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-what-group p {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partner-what-group p {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 540px;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-what-group p {
+
+
+        -webkit-box-flex: 1;
+
+
+            -ms-flex: 1 1 auto;
+
+
+                flex: 1 1 auto;
+
+
+        max-width: 540px;
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+}
+.partners-nav {}
+.partners-nav-list {
 
 
     list-style: none;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+
+
+    color: #005295;
 }
-.clients-nav li {
+.partners-nav-list li {
 
 
-    display: inline-block;
+    font-size: 2rem;
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    font-weight: 700;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partners-nav-list {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+
+
+    .partners-nav-list li {
+
+
+        font-size: 18px;
+
+
+        letter-spacing: 0.62px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partners-nav-list {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+
+
+    .partners-nav-list li {
+
+
+        font-size: 18px;
+
+
+        letter-spacing: 0.62px;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partners-nav-list {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+    }
+
+
+    .partners-nav-list ul {
+
+
+        padding: 0;
+    }
+
+
+    .partners-nav-list li {
+
+
+        font-size: 18px;
+
+
+        letter-spacing: 0.62px;
+
+
+        padding: 0 24px 0 0;
+    }
 }
 .partner-gallery {
 
@@ -3566,11 +4176,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     font-size: 10px;
 }
-.bronner-flex-container-upper {
-
-
-    border-bottom: solid black .5px;
-}
+.bronner-flex-container-upper {}
 .bronner-flex-container-lower {
 
 
@@ -3581,6 +4187,12 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     border-right: solid black .5px;
+
+
+    padding-top: 3em;
+
+
+    border-bottom: solid black .5px;
 }
 .bronner-flex-item-right {
 
@@ -3595,6 +4207,12 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
             justify-content: flex-end;
+
+
+    padding-left: 12px;
+
+
+    border-bottom: solid black .5px;
 }
 .bronner-inner-box-upper, .bronner-inner-box-lower {}
 .bronner-inner-box-upper {
@@ -3610,7 +4228,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .bronner-flex-item-left img, .bronner-flex-item-right img {
 
 
-    width: 55%;
+    width: 97%;
 }
 .partner-services-container {
 
@@ -3651,7 +4269,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     min-height: 200px;
 
 
-    max-width: 350px;
+    max-width: 83.33%;
 
 
     margin: auto;
@@ -3688,7 +4306,31 @@ note: partners-upper content width area controlled in _content.css as part of .e
         margin: none;
 
 
-        max-width: none;
+        max-width: 83.333%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-services-container {
+
+
+        -webkit-box-orient: horizontal;
+
+
+        -webkit-box-direction: normal;
+
+
+            -ms-flex-direction: row;
+
+
+                flex-direction: row;
+
+
+        margin: none;
+
+
+        max-width: 83.333%;
     }
 }
 .partner-media-placement {
@@ -3700,10 +4342,10 @@ note: partners-upper content width area controlled in _content.css as part of .e
     -webkit-box-flex: 0;
 
 
-        -ms-flex: 0 0 275px;
+        -ms-flex: 0 0 32%;
 
 
-            flex: 0 0 275px;
+            flex: 0 0 32%;
 
 
     margin-bottom: 25px;
@@ -3714,7 +4356,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     background-color: #fff;
 
 
-    color: #222;
+    color: #232323;
 
 
     width: 85%;
@@ -3739,7 +4381,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .media-placement-title {
 
 
-    max-width: 40%;
+    max-width: 100%;
 }
 .service-provided-title, .campaign-supported-title {
 

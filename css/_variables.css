@@ -27,10 +27,11 @@ $ex-large: screen and (min-width: 1321px);
 /*
     inner max width is 1020
     outer max width is 1400
+    $container-default-width: 90%;
 */
 
+
 $outer-max-width: 1280px;
-$container-default-width: 90%;
 
 /*Colours*/
 $backgroundGrey: #EBEBE8;
@@ -44,7 +45,7 @@ $darkBlue: #005395;
 $lightBlue: #4A90E2;
 $green: #85C51F;
 $nearBlack: #222;
-$baseTextColour: #222;
+$baseTextColour: #232323;
 
 /*Text Related*/
 $textMargin: 75%;

@@ -3,9 +3,9 @@
         <div class="media-placement-icon">
             <?php echo $icon ?>
         </div>
-        <h5 class="<?php echo $titleClass?>">
+        <h6 class="<?php echo $titleClass?>">
             <?php echo $title ?>
-        </h5>
+        </h6>
     </div>
     <ul>
         <?php

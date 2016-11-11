@@ -1,4 +1,4 @@
-<?php
+	<?php
 /**
 * Template Name: Partners
  *
@@ -22,12 +22,14 @@ get_header(); ?>
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</section>
 			<section class="partners-image full-content-area">
+				<div class="image-content-are">
 				<?php
 				 if( get_field('full_sized_image') ): ?>
 					<img src="<?php the_field('full_sized_image'); ?>" />
 				<?php endif;?>
+			</div>
 			</section>
-			<section class="partners-upper-content full-content-area">
+			<section class="partners-upper-content full-content-area row-bottom-pad">
 				<?php
 				 if( get_field('partners_mission') ): ?>
 					<div class="partners-mission text-content-area">
@@ -35,7 +37,7 @@ get_header(); ?>
 					</div>
 				<?php endif;?>
 				<?php if( have_rows('partners_menu_items') ): ?>
-				<nav class="partners-nav full-content-area">
+				<nav class="partners-nav">
 					<!-- <h6>Clients Menu</h6> -->
 					<ul class="partners-nav-list text-content-area">
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
@@ -57,28 +59,28 @@ get_header(); ?>
 						    echo "<p>Please add menu items corresponding to the partners listed on this page.</p>";
 						endif;
 						?>
-					<hr>
 				</nav>
 			</section>
-			<section id="dr-bronner" class="partner-outer-container full-content-area">
-				<div class="bronner-title-group text-content-area">
+			<section id="dr-bronner" class="partner-outer-container row-tb-pad">
+				<div class="partner-container full-content-area">
+				<div class="bronner-title-group row-top-pad">
 				<?php if( get_field('bronner_title_image') ): ?>
 					<div class="partner-title-image">
 						<img src="<?php the_field('bronner_title_image') ?>" alt="" />
 					</div>
 				<?php endif; ?>
-					<div class="partner-description text-content-area">
+					<div class="partner-description">
 						<?php if( get_field('bronner_partner_name') ): ?>
-							<h6><?php the_field('bronner_partner_name') ?></h6>
+							<h4><?php the_field('bronner_partner_name') ?></h4>
 						<?php endif; ?>
 						<?php if( get_field('bronner_partner_description') ): ?>
 							<p><?php the_field('bronner_partner_description') ?> </p>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="partner-what-group text-content-area">
+				<div class="partner-what-group row-tb-pad">
 					<?php if( get_field('bronner_do_title') ): ?>
-						<h6 class="blue-heading"><?php the_field('bronner_do_title') ?></h6>
+						<h5 class="partner-what-heading"><?php the_field('bronner_do_title') ?></h5>
 					<?php endif; ?>
 					<?php if( get_field('bronner_description_what') ): ?>
 						<?php the_field('bronner_description_what') ?>
@@ -112,7 +114,7 @@ get_header(); ?>
 				        </div>
 				    </aside>
 				</div><!-- .partner-gallery -->
-				<div class="partner-services-container">
+				<div class="partner-services-container row-tb-pad">
 					<?php
 					$title = 'Media Placements';
 					$titleClass = 'media-placement-title';
@@ -146,7 +148,7 @@ get_header(); ?>
 						href="#">Back to the top
 					</a>
 				</p>
-
+				</div>
 			</section><!-- #dr bronner -->
 			<?php
 			    $count = 0;
@@ -154,11 +156,15 @@ get_header(); ?>
 			while ( have_rows ('other_partners') ): the_row();
 			            $count = $count + 1;
 			?>
-			<section id="partner-<?php echo $count?>" class="partner-outer-container full-content-area">
-				<div class="partner-title-group">
+			<section id="partner-<?php echo $count?>" class="partner-outer-container row-tb-pad">
+				<div class="partner-container additional-partners full-content-area">
+
+						<h4><?php the_sub_field('partner_name');?></h4>
+				<div class="partner-title-group row-top-pad">
+
+
 				<?php
 					if(get_row_layout() == 'partner_name_group'): ?>
-					        <h6><?php the_sub_field('partner_name');?></h6>
 					        <?php
 					while(has_sub_field('partner_content_group_flex')):
 					if(get_row_layout() == "partner_content_group"):
@@ -166,12 +172,17 @@ get_header(); ?>
 					        <div class="partner-title-image">
 					            <img src="<?php the_sub_field('partner_image');?>" alt="" />
 					        </div>
-					        <h6><?php the_sub_field('partner_heading');?></h6>
-					        <?php the_sub_field('partner_description');
+									<div class="partner-description">
+												        <h6><?php the_sub_field('partner_heading');?></h6>
+																<?php the_sub_field('partner_description');
 
-					endif;//get_row_layout partner_content_group
-					endwhile;//have_rows(partner_content_group_flex)
-				?>
+												endif;//get_row_layout partner_content_group
+												endwhile;//have_rows(partner_content_group_flex)
+											?>
+									</div>
+
+
+
 				</div>
 				<div class="partner-content-group">
 				    <h6 class="blue-heading">
@@ -179,7 +190,7 @@ get_header(); ?>
 				    </h6>
 				    <?php the_sub_field('description_what');?>
 				</div>
-				<div class="partner-services-container">
+				<div class="partner-services-container ">
 				    <?php
 				        $title = 'Media Placements';
 				        $titleClass = 'media-placement-title';
@@ -207,6 +218,7 @@ get_header(); ?>
 						href="#">Back to the top
 					</a>
 				</p>
+			</div>
 			</section><!-- #partner end -->
 			    <?php
 					endwhile;//have_rows('other_partners')

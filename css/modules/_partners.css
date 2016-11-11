@@ -1,7 +1,11 @@
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */
-.partners-outer-container {
+
+.partner-outer-container {
+  background-color: $backgroundGrey;
+}
+.partner-container {
     p {
         font-size: $largeParaText;
         /*margin: 0 auto 3.9rem auto;*/
@@ -11,95 +15,184 @@ note: partners-upper content width area controlled in _content.css as part of .e
         margin: 0;
     }
 }
-.partner-outer-container {
-    background-color: $backgroundGrey;
+.partner-container {
     padding-top: 20px;
+      background-color: $white;
 
     @media $medium {
-        border: $baseTextColour solid 1px;
+      border: $baseTextColour solid 1px;
         background-color: $white;
     }
 
     @media $large {
         border: $baseTextColour solid 1px;
-        background-color: $white;
+        background-color: $white
+    }
+    @media $ex-large {
+        border: $baseTextColour solid 1px;
+        background-color: $white
     }
 }
-.bronner-title-group, .partner-title-group, .partner-content-group, .partner-what-group {
-    /*max-width: $textMargin;
-    margin: 0 auto 3rem auto;*/
+.additional-partners h4 {
+  text-align: center;
+}
+.bronner-title-group, .partner-content-group, .partner-what-group {
+    max-width: 83%;
+    margin: 0 auto 3rem;
 }
 .partners-mission {
-    /*@media $medium {
-        margin: 45px auto;
-        max-width: $container-default-width;
+  margin: 45px auto;
+    @media $medium {
+        margin: 70px auto 45px;
     }
     @media $large {
-        margin: 45px auto;
-        max-width: $container-default-width;
-    }*/
+        margin: 60px auto 60px;
+    }
+    @media $ex-large {
+        margin: 60px auto 60px;
+    }
 }
+
+
 .partner-gallery {
     margin-bottom: 3.9rem;
 }
 .bronner-title-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  width: 100%;
 
     @media $medium {
-        max-width: 100%;
+        max-width: 83.33%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     @media $large {
-        max-width: 100%;
+        max-width: 83.33%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+      @media $ex-large {
+        max-width: 83.33%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
 }
 .partner-title-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    margin: 0 auto 3rem;
+    @media $medium {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media $large {
+      max-width: 83.33%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media $ex-large {
+      max-width: 83.33%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 }
 .partner-title-image {
     max-width: 100%;
     height: auto;
-    margin: auto;
 
     @media $medium {
-        flex: 0 2 auto;
-        margin: 0;
-        max-width: 275px;
-
+      max-width: 30%;
     }
     @media $large {
-        flex: 0 2 auto;
         margin: 0;
-        max-width: 275px;
+        max-width: 250px;
+    }
+    @media $ex-large {
+        margin: 0;
+        max-width: 250px;
     }
 }
 .partner-description {
     @media $medium {
-        flex: 1 1 auto;
-        max-width: 560px;
+      max-width: 60%;
+      h4 {
+          margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
     }
     @media $large {
-        flex: 1 1 auto;
-        max-width: 560px;
+        max-width: 540px;
+        h4 {
+            margin-top: 1em;
+          margin-bottom: 0.5em;
+        }
+    }
+    @media $ex-large {
+        max-width: 540px;
+        h4 {
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+        }
     }
 }
 .partner-what-group {
     display: flex;
     justify-content: space-between;
-    h6 {
-        flex: 0 0 5px;
-        /*max-width: 5px;*/
+    margin: 0 auto 3em;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+    h5 {
+        line-height: 1.3;
+        color: $darkBlue;
+        margin-top: 0;
+        width: 100%;
+        margin-bottom: 0.6em;
+        @media $medium {
+          width: 100%;
+        }
+        @media $large {
+          max-width: 250px;
+          text-align: right;
+        }
+        @media $ex-large {
+          max-width: 250px;
+          text-align: right;
+        }
     }
     p {
-        flex: 1 1 100px;
-        /*max-width: 500px;*/
+            width: 100%;
+        @media $medium {
+            flex: 1 1 auto;
+              width: 100%;
+        }
+        @media $large {
+            flex: 1 1 auto;
+            max-width: 540px;
+            flex-direction: row;
+
+        }
+        @media $ex-large {
+            flex: 1 1 auto;
+            max-width: 540px;
+            flex-direction: row;
+        }
     }
+
 }
 .partners-nav {
 }
@@ -107,15 +200,41 @@ note: partners-upper content width area controlled in _content.css as part of .e
     list-style: none;
     display: flex;
     flex-direction: column;
-
+    color: #005295;
     li {
         font-size: 2rem;
+        font-family: $gotham;
+        font-weight: 700;
     }
 
     @media $medium {
         flex-direction: row;
+        li {
+          font-size: 18px;
+          letter-spacing: 0.62px;
+        }
+    }
+    @media $large {
+        flex-direction: row;
+        li {
+          font-size: 18px;
+          letter-spacing: 0.62px;
+        }
+    }
+    @media $ex-large {
+        flex-direction: row;
+        ul{
+          padding: 0;
+        }
+      li {
+        font-size: 18px;
+        letter-spacing: 0.62px;
+        padding: 0 24px 0 0;
+
+      }
     }
 }
+
 .partner-gallery {
     max-width: $textMargin;
     margin: 0 auto 3rem auto;
@@ -126,7 +245,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     font-size: 10px;
 }
 .bronner-flex-container-upper {
-    border-bottom: solid black .5px;
+
 }
 .bronner-flex-container-lower {
     border-top: solid black .5px;
@@ -136,10 +255,14 @@ note: partners-upper content width area controlled in _content.css as part of .e
 }
 .bronner-flex-item-left {
     border-right: solid black .5px;
+        padding-top: 3em;
+          border-bottom: solid black .5px;
 }
 .bronner-flex-item-right {
     border-left: solid black .5px;
     justify-content: flex-end;
+    padding-left: 12px;
+      border-bottom: solid black .5px;
 }
 .bronner-inner-box-upper, .bronner-inner-box-lower {
 }
@@ -150,7 +273,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     margin-top: 10px;
 }
 .bronner-flex-item-left img, .bronner-flex-item-right img {
-    width: 55%;
+    width: 97%;
 }
 .partner-services-container {
     display: flex;
@@ -158,24 +281,30 @@ note: partners-upper content width area controlled in _content.css as part of .e
     justify-content: space-between;
     color: $white;
     min-height: 200px;
-    max-width: 350px;
+    max-width: 83.33%;
     margin: auto;
 
     ul {
         margin: 0;
         font-size: 1.6rem;
         min-height: 130px;
+
     }
 
     @media $large {
         flex-direction: row;
         margin: none;
-        max-width: none;
+        max-width: 83.333%;
+    }
+    @media $ex-large {
+        flex-direction: row;
+        margin: none;
+        max-width: 83.333%;
     }
 }
 .partner-media-placement {
     background-color: $lightBlue;
-    flex: 0 0 275px;
+    flex: 0 0 32%;
     margin-bottom: 25px;
     ul {
         background-color: $white;
@@ -189,7 +318,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     display: flex;
 }
 .media-placement-title {
-    max-width: 40%;
+    max-width: 100%;
 }
 .service-provided-title, .campaign-supported-title {
     max-width: 83%;

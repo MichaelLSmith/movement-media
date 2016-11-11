@@ -1,4 +1,4 @@
-/*
+	/*
 corresonds to the elements section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp.
 */
@@ -12,6 +12,7 @@ needs to be @imported into the style.css file and processed by gulp.
 --------------------------------------------------------------*/
 html {
 	box-sizing: border-box;
+	
 }
 
 *,
@@ -21,6 +22,7 @@ html {
 }
 
 body {
+
 }
 
 blockquote:before,
