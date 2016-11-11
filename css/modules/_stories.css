@@ -7,12 +7,19 @@
         color: inherit;
     }
 }
-
+.story-container {
+    a {
+        color: $lightBlue;
+    }
+}
 .story-title {
     color: $darkBlue;
-    text-align: center;
+    margin: 0;
+    /*text-align: center;*/
 }
-.story-posted-on {
-    text-align: center;
+.posted-on {
+    font-size: 1.5rem;
+    a {
+        color: $baseTextColour;
+    }
 }
-.story

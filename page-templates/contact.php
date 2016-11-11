@@ -12,6 +12,10 @@ get_header(); ?>
 	<!-- <div id="primary" class="content-area"> -->
 		<main class="content-inner" role="main">
 			<article class="contact-outer-container full-content-area">
+				<section class="entry-title-container full-content-area">
+					<!-- might need to add a div here to help control width of title -->
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</section>
 
 				<section class="contact-group">
 					<div class="content-address">
