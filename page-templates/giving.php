@@ -69,6 +69,7 @@ get_header(); ?>
 							<?php the_field('social_giving_introduction'); ?>
 						<?php endif;?>
 					</div>
+				<section class="full-content-area">
 
 					<?php
 					if( have_rows('partner_row') ):// repeater
@@ -78,21 +79,38 @@ get_header(); ?>
 					        while (has_sub_field('social_giving_partners'))://flex content
 					            // echo "<p>in while social_giving_partners</p>";
 					            if (get_row_layout() == 'year_heading')://layout - year
-					                    the_sub_field('row_year');
+										?>
+										<h5><?php the_sub_field('row_year'); ?> </h5>
+										<?php
 					            endif;//year_heading
 					            if(get_row_layout('social_giving_partner')):
-					                $image = get_sub_field('giving_image');?>
-					                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					                <?php
-					                the_sub_field('giving_name');
-					                the_sub_field('giving_partner_description');
+									?>
+									<article class="giving-partner-row">
+										<div class="giving-partner-inner">
+											<?php
+											$image = get_sub_field('giving_image');?>
+											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+											<div class="giving-name">
+												<?php the_sub_field('giving_name'); ?>
+											</div>
+											<div class="giving_partner_description">
+											    <?php  the_sub_field('giving_partner_description'); ?>
+											</div>
+											<div class="learn">
+												Learn More
+											</div>
+										</div>
+									<?php
 					            endif;//social giving partner
 					        endwhile;//social_giving_partners
-
+							?>
+								</article>
+					<?php
 					    endwhile;//partner_row
 					endif;//have_rows (partner_row)
 					?>
 
+					</section>
 <!-- There’s no more faith in thee than a stewed prune. Thou art a boil, a plague sore, an embossed carbunkle in my corrupted blood. Away you three inch fool! Thou art a natural coward without instinct. You, minion, are too saucy. Thou art the best of cutthroats. A weasel has not such a spleen as you are toss’d with. Your virginity breeds mites, much like a cheese. Thou leathern-jerkin, crystal button, knot-pated, agatering, puke-stocking, caddis-garter, smooth tongue, Spanish pouch. Thou art the son and heir of a mongrel bitch. -->
 
 
