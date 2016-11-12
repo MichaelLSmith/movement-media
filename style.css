@@ -5385,6 +5385,56 @@ note: partners-upper content width area controlled in _content.css as part of .e
         padding: 0;
     }
 }
+.stories-title h6 {
+
+
+    color: #005395;
+
+
+    margin: 0;
+}
+.stories-title a:visited {
+
+
+    color: inherit;
+}
+.story-container a {
+
+
+    color: #4A90E2;
+}
+.story-title {
+
+
+    color: #005395;
+
+
+    margin: 0;
+
+
+    /*text-align: center;*/
+}
+.posted-on {
+
+
+    font-size: 1.5rem;
+}
+.posted-on a {
+
+
+    color: #232323;
+}
+.giving-partner-row {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+}
 
 .embed-container {
 

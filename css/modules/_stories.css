@@ -1,0 +1,25 @@
+.stories-title {
+    h6 {
+        color: $darkBlue;
+        margin: 0;
+    }
+    a:visited {
+        color: inherit;
+    }
+}
+.story-container {
+    a {
+        color: $lightBlue;
+    }
+}
+.story-title {
+    color: $darkBlue;
+    margin: 0;
+    /*text-align: center;*/
+}
+.posted-on {
+    font-size: 1.5rem;
+    a {
+        color: $baseTextColour;
+    }
+}
