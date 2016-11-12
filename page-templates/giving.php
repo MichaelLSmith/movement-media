@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About
+ * Template Name: Giving
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -18,107 +18,85 @@ get_header(); ?>
 				</section>
 				<section class="mission full-content-area">
 					<div class="mission-inner col8">
-						<?php the_field('about_mission'); ?>
+						<?php the_field('social_intro'); ?>
 					</div>
 				</section>
-				
-				<section class="about_description full-content-area">
-					<?php if( get_field('about_description') ): ?>
-					<div class="about-description text-content-area">
-							<?php the_field('about_description'); ?>
-						<?php endif; ?>
-					</div>
-				</section>
-				<section class="about-what full-content-area">
-					<div class="about-what text-content-area">
-						<h4>What We Do</h4>
-						<?php if( get_field('about_what_we_do') ): ?>
-							<?php the_field('about_what_we_do'); ?>
-						<?php endif; ?>
-					</div>
-				</section>
-				<?php if( get_field('about_main_image') ): ?>
-					<section class="about-main-image full-content-area">
+				<?php if( get_field('main_image') ): ?>
+					<section class="main-image full-content-area">
 						<div class="image-content-area">
-							<img src="<?php the_field('about_main_image');?>" alt="" />
+							<img src="<?php the_field('social_main_image');?>" alt="" />
 						</div>
-					</section>
 				<?php endif;?>
-				<section class="about-services full-content-area">
-					<div class="about-services-flex text-content-area">
-						<h4>Services</h4>
-						<ul class="about-services-left">
-								            <?php
-							if ( have_rows('about_services_left') ):
-			                    while ( have_rows('about_services_left') ): the_row();
-									$service = get_sub_field('service');
-							?>
+					</section>
+				<section class="description full-content-area">
+					<?php if( get_field('giving_second_paragraph') ): ?>
+					<div class="description text-content-area">
+							<?php the_field('giving_second_paragraph'); ?>
+					<?php endif; ?>
+					</div>
+				</section>
+				<section class="what full-content-area">
+					<div class="exist text-content-area">
+						<h4>We Exist To:</h4>
+							<?php if( have_rows('we_exist_list') ): ?>
+								<ul>
+								<?php while ( have_rows('we_exist_list') ) : the_row(); ?>
+								<li>
+							        <?php the_sub_field('exist_bullet_point'); ?>
+								</li>
 								<?php
-									if ( $service ):
-										echo "<li><span>" . $service . "</span></li>";
-									endif;
-								?>
-								<?php endwhile; ?>
-							<?php endif; ?>
-						</ul>
-						<ul class="about-services-right">
-						<?php
-							if ( have_rows('about_services_right') ):
-								while ( have_rows('about_services_right') ): the_row();
-									$service = get_sub_field('service');
+							    endwhile;
+							endif;
 							?>
-								<?php
-									if ( $service ):
-										echo "<li><span>" . $service . "</span></li>";
-									endif;
-								?>
-					            <?php endwhile; ?>
-				            <?php endif; ?>
-						</dl>
+
+					</div><!-- exist -->
+				</section>
+				<section class="full-content-area">
+					<div class="text-content-area">
+						<h4>Social Balance</h4>
+						<?php if( have_rows('social_balance_list') ): ?>
+							<ul>
+							<?php while ( have_rows('social_balance_list') ) : the_row(); ?>
+							<li>
+								<?php the_sub_field('social_balance_bullet'); ?>
+							</li>
+							<?php endwhile; endif; ?>
 					</div>
 	    		</section>
-				<section class="bios full-content-area">
-					<div class="about-bios-inner text-content-area">
-						<h4>Who we are</h4>
-						<?php
-							if ( have_rows('bios') ):
-								                    while ( have_rows('bios') ): the_row();
-									$image = get_sub_field('bio_image');
-									$name = get_sub_field('bio_name');
-									$title = get_sub_field('bio_title');
-									$text = get_sub_field('bio_text');
-							?>
-								<article class="bio">
-									<aside class="bio-bi-line">
-										<?php
-											if ( $image ):
-												echo "
-													<div class='bio-image-container'>
-														<img src='$image'>
-													 </div>
-													 ";
-											endif;
-										?>
-										<?php
-											if ( $name ):
-												echo "<h3>" . $name . " " . "<span class=title>" . $title . "</span></h3>";
-											endif;
-										?>
-									</aside>
-								<?php
-									if ( $text ):
-										echo "<aside class='bio-text'>" . $text . "</aside>";
-									endif;
-								?>
-							</article>
-									            <?php endwhile; ?>
-								            <?php endif; ?></div>
-				</section><!-- .bios full-content-area -->
-				<section class="about-action-btn full-width-area">
-					<div class="action-btn action-btn-large quote-content-area">
-						<a href="<?php the_field('front_header_action_button'); ?>">contact movement media</a>
+				<section class="full-content-area">
+					<div class="text-content-area">
+						<?php if( get_field('social_giving_introduction') ): ?>
+							<?php the_field('social_giving_introduction'); ?>
+						<?php endif;?>
 					</div>
-				</section>
+
+					<?php
+					if( have_rows('partner_row') ):// repeater
+					    // echo "<p>in if partner row</p>";
+					    while ( have_rows('partner_row') ) : the_row();
+					        // echo "<p>in while partner row</p>";
+					        while (has_sub_field('social_giving_partners'))://flex content
+					            // echo "<p>in while social_giving_partners</p>";
+					            if (get_row_layout() == 'year_heading')://layout - year
+					                    the_sub_field('row_year');
+					            endif;//year_heading
+					            if(get_row_layout('social_giving_partner')):
+					                $image = get_sub_field('giving_image');?>
+					                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					                <?php
+					                the_sub_field('giving_name');
+					                the_sub_field('giving_partner_description');
+					            endif;//social giving partner
+					        endwhile;//social_giving_partners
+
+					    endwhile;//partner_row
+					endif;//have_rows (partner_row)
+					?>
+
+<!-- There’s no more faith in thee than a stewed prune. Thou art a boil, a plague sore, an embossed carbunkle in my corrupted blood. Away you three inch fool! Thou art a natural coward without instinct. You, minion, are too saucy. Thou art the best of cutthroats. A weasel has not such a spleen as you are toss’d with. Your virginity breeds mites, much like a cheese. Thou leathern-jerkin, crystal button, knot-pated, agatering, puke-stocking, caddis-garter, smooth tongue, Spanish pouch. Thou art the son and heir of a mongrel bitch. -->
+
+
+
 			</article>
 		</main><!-- #main -->
 	<!-- </div><! #primary -->
