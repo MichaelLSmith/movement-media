@@ -1,30 +1,4 @@
-.about-mission {
-    font-family: $gotham;
-    /*max-width: 85%;*/
-    p {
-        font-size: 2.5rem;
-    }
-}
-.about-gallery-row {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
-.about-services {
-    background-color: $backgroundGrey;
-}
-.about-services-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-    @media $medium {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-}
 .about-main-image {
     img {
         margin: auto;
@@ -32,18 +6,73 @@
 }
 .bio {
     margin-bottom: 25px;
+    border-bottom: 1px solid $borderGrey;
+    padding: 0 0 15px;
 }
 .bio-bi-line {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5.2em 0 3em;
+
+  @media $medium {
+    flex-direction: row;
+
+  }
+  @media $large {
+    flex-direction: row;
+
+  }
+  @media $ex-large {
+    flex-direction: row;
+
+  }
     h3 {
-        padding-left: 1.5em;
+        margin: 0;
+        font-weight: 300;
+        padding-left: 0em;
+        padding-top: 1em;
+        text-align: center;
+              line-height: 1.25;
+                font-size: 2.8rem;
+        @media $medium {
+          padding-top: 0.4em;
+          padding-left: 1.5em;
+              text-align: left;
+              line-height: 1.35;
+                font-size: 2.55rem;
+        }
+        @media $large {
+          text-align: left;
+          padding-top: 0.35em;
+          padding-left: 1.2em;
+          line-height: 1.3;
+          font-size: 2.75rem;
+        }
+        @media $ex-large {
+            text-align: left;
+            padding-top: 0.25em;
+            padding-left: 1.2em;
+            line-height: 1.2;
+            font-size: 3.3rem;
+
+        }
     }
+
 }
+
 .bio-image-container {
     img {
         max-width: 12em;
         width: auto;
         border-radius: 50%;
+        margin: 0 auto;
+        @media $medium {
+        }
+        @media $large {
+        }
+        @media $ex-large {
+        }
     }
 }
 ul.about-services-left, ul.about-services-right {

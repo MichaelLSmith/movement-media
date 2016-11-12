@@ -1,3 +1,13 @@
+.about-gallery-row {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+/*
+NOTE: brought from ABOUT.CSS - need to change for partners gallery....
+*/
+
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */

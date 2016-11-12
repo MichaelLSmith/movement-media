@@ -212,6 +212,34 @@ get_header(); ?>
 
 				endif;//get_row_layout(partner_name_group)?>
 				</div><!-- .partner-services-container -->
+
+				<section class="partners-gallery gallery full-content-area">
+					<?php
+						$images = get_field('partners_image_gallery');
+						if( $images ):
+					?>
+					<div class="partners-gallery-row gallery-row">
+						<img src="<?php echo $images[0]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[1]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[2]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[3]['sizes']['thumbnail'];?>" alt="">
+					</div>
+					<div class="partners-gallery-row gallery-row">
+						<img src="<?php echo $images[4]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[5]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[6]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[7]['sizes']['thumbnail'];?>" alt="">
+					</div>
+					<div class="partners-gallery-row gallery-row">
+						<img src="<?php echo $images[8]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[9]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[10]['sizes']['thumbnail'];?>" alt="">
+						<img src="<?php echo $images[11]['sizes']['thumbnail'];?>" alt="">
+					</div>
+				<?php endif;?>
+
+				</section>
+				
 				<p><a
 						data-scroll
 						data-options='{ "easing": "easeOutCubic" }'
@@ -219,6 +247,7 @@ get_header(); ?>
 					</a>
 				</p>
 			</div>
+
 			</section><!-- #partner end -->
 			    <?php
 					endwhile;//have_rows('other_partners')

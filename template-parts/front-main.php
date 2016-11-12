@@ -24,8 +24,7 @@
 						setup_postdata( $post );
 				?>
 					<div class="embed-container">
-						<?php
-						the_field('video_url'); ?>
+						<?php	the_field('video_url'); ?>
 					</div>
 					    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 					<?php endif; ?>

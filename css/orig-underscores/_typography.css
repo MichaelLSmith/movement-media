@@ -51,19 +51,21 @@ h1 {
 h2 {
 	font-weight: 700;
 	font-size: 3.6rem;
+		margin-bottom: 0em;
 	@media $medium {
-
+		font-size: 3.8rem;
 	}
 	@media $large {
-
+		font-size: 3.8rem;
 	}
 	@media $ex-large {
-
+		font-size: 3.8rem;
 	}
 }
 h3 {
 	font-weight: 700;
-	font-size: 2.4rem;
+	font-size: 3rem;
+		margin-bottom: 0.2em;
 	@media $medium {
 	font-size: 3rem;
 	}
@@ -71,13 +73,13 @@ h3 {
 	font-size: 3rem;
 	}
 	@media $ex-large {
-	font-size: 3rem;
+	font-size: 3.3rem;
 	}
 }
 h4 {
-	font-size: 2.8rem;
-	letter-spacing: .97px;
+	font-size: 3rem;
 	line-height: 3rem;
+	margin-bottom: 0.4em;
 	@media $medium {
 
 	}
@@ -131,9 +133,10 @@ h6 {
 
 p {
 	margin-bottom: 1.5em;
-	font-size: 1.4rem;
+	font-size: 1.7rem;
 	color: $baseTextColour;
 	font-weight: 300;
+	line-height: 1.7;
 	@media $medium {
 			font-size: 1.9rem;
 	}
@@ -142,8 +145,8 @@ p {
 			line-height: 1.6;
 	}
 	@media $ex-large {
-			font-size: 2.1rem;
-			line-height: 1.75;
+			font-size: 2.05rem;
+			line-height: 1.6;
 	}
 }
 

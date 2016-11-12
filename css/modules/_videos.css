@@ -1,0 +1,58 @@
+.video-title {
+font-family: GothamBlack;
+font-size: 18px;
+color: #005395;
+letter-spacing: 0.62px;
+line-height: 24px;
+text-transform: uppercase;
+  @media $medium {
+  }
+  @media $large {
+  }
+  @media $ex-large {
+  }
+}
+
+
+.video-wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  clear: both;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+    @media $medium {
+
+    }
+    @media $large {
+
+    }
+      @media $ex-large {
+
+      }
+}
+.movementmedia_videos {
+    width: 100%;
+    @media $medium {
+      width: 48%;
+    }
+    @media $large {
+          width: 48%;
+    }
+      @media $ex-large {
+          width: 48%;
+      }
+    p {
+      font-family: $gotham;
+      font-size: 1.45rem;
+    }
+}
+.video-indiv {
+  width: 100%;
+  height: auto;
+}
+.html5-video-player .ytp-chrome-top {
+  display: none;
+}
