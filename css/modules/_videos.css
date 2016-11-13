@@ -53,6 +53,20 @@ text-transform: uppercase;
   width: 100%;
   height: auto;
 }
-.html5-video-player .ytp-chrome-top {
-  display: none;
+.video-indiv .post_tags a {
+  display: inline-block;
+	margin: 6px 8px 6px 0;
+	background: $green;
+	font-family: $gotham;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	padding: 7px 20px 7px 20px;
+	text-decoration: none;
+	color: $white;
+  text-transform: uppercase;
+}
+.video-credits p {
+  font-weight: 700;
+  font-size: 1.1em;
+  font-style: italic;
 }

@@ -234,7 +234,7 @@ needs to be @imported into the style.css file and processed by gulp
 }
 .bold-lead-paragraph-inner {
 			width: 91.67%;
-	
+
 		}
 
 
@@ -313,6 +313,26 @@ needs to be @imported into the style.css file and processed by gulp
 @media $ex-large {
 }
 
+.social-share {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0.3em;
+	@media $medium {
+			flex-direction: row;
+
+	}
+	@media $large {
+			flex-direction: row;
+
+	}
+	@media $ex-large {
+			flex-direction: row;
+	}
+}
+.social-share-group {
+	padding: 0.4em 0.8em 0.4em 0;
+}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/

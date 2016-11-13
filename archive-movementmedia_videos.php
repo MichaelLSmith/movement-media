@@ -17,15 +17,15 @@ get_header(); ?>
 
 			<header class="page-header">
 				<h1 class="entry-title">Video Projects</h1>
-
 			</header><!-- .page-header -->
-
-			<section class="videos-intro bold-lead-paragraph full-content-area">
+			<section class="videos-intro bold-lead-paragraph">
 				<div class="videos-intro-inner bold-lead-paragraph-inner">
 					<?php the_field('videos_intro'); ?>
+					<p>Movement Media produces high-impact videos and movies to educate, inspire, and engage audiences on critical issues. We’ve filmed projects all over the world, including in small villages in Ghana, on coconut farms in Sri Lanka, at organic cotton fields in Nicaragua, and around the United States. </p>
 				</div>
 			</section>
-				<div class="video-wrap">
+
+		<div class="video-wrap">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
