@@ -24,8 +24,8 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'movementmedia' ); ?></a>
 
-	<header id="masthead" class="site-header " role="banner">
-		<div id="header-inner" class="header-content full-content-area">
+	<header id="masthead" class="site-header" role="banner">
+		<div id="header-inner" class="header-content">
 			<section class="logo-tag-container">
 				<div class="site-logo">
 					<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">

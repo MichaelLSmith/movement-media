@@ -1,4 +1,4 @@
-console.log('accordion.js');
+console.log('accordion.js in the house');
 
 const accordionInit = function() {
     jQuery( ".bio" ).accordion({

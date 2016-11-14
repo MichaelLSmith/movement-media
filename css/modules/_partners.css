@@ -28,18 +28,19 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .partner-container {
     padding-top: 20px;
       background-color: $white;
+      border-top: $darkBlue solid 30px;
 
     @media $medium {
-      border: $baseTextColour solid 1px;
+      border-top: $darkBlue solid 30px;
         background-color: $white;
     }
 
     @media $large {
-        border: $baseTextColour solid 1px;
+        border-top: $darkBlue solid 40px;
         background-color: $white
     }
     @media $ex-large {
-        border: $baseTextColour solid 1px;
+        border-top: $darkBlue solid 40px;
         background-color: $white
     }
 }
@@ -117,6 +118,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
       flex-direction: row;
       justify-content: space-between;
     }
+}
+.partner-heading {
+  text-align: center;
 }
 .partner-title-image {
     max-width: 100%;

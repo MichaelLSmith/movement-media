@@ -42,7 +42,7 @@ get_header(); ?>
 				<?php endif;?>
 				<section class="about-what full-content-area">
 					<div class="about-what text-content-area row-bottom-pad">
-						<h2>What We Do</h2>
+						<h2 class="blue-heading">What We Do</h2>
 						<?php if( get_field('about_what_we_do') ): ?>
 							<?php the_field('about_what_we_do'); ?>
 						<?php endif; ?>
@@ -50,7 +50,7 @@ get_header(); ?>
 				</section>
 				<section class="about-services boxlist-2col">
 					<div class="full-content-area">
-						<h2 class="boxlist-2col-title text-content-area">Our Services Include:</h2>
+						<h2 class="boxlist-2col-title blue-heading text-content-area">Our Services Include:</h2>
 					<div class="about-services-flex boxlist-2col-flex">
 						<ul class="about-services-left ">
 								            <?php
@@ -85,7 +85,7 @@ get_header(); ?>
 	    		</section>
 				<section class="bios full-content-area row-top-pad">
 					<div class="about-bios-inner text-content-area">
-						<h2>Who we are</h2>
+						<h2 class="blue-heading">Who we are</h2>
 						<?php
 							if ( have_rows('bios') ):
 								                    while ( have_rows('bios') ): the_row();

@@ -116,21 +116,6 @@ h6 {
 	}
 }
 
-.blue-heading {
-	font-weight: 500;
-	color: $lightBlue;
-	letter-spacing: 0;
-	@media $medium {
-
-	}
-	@media $large {
-
-	}
-	@media $ex-large {
-
-	}
-}
-
 p {
 	margin-bottom: 1.5em;
 	font-size: 1.7rem;

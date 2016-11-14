@@ -14,15 +14,20 @@
 		<?php
 
 		$post_object = get_field('video_reg_post');
-
-		if ( is_single() ) :
+		if ( is_single() ) : ?>
+			<div class="story-heading">
+				<?php
 			the_title( '<h5 class="story-title text-content-area">', '</h5>' );
 			// check if the post or page has a Featured Image assigned to it.
 			if ( has_post_thumbnail() ) :
 				the_post_thumbnail();
 			endif;
+			?>
+			</div>
+			<?php
 		//if - is single cont...
 		else :
+
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			if ( has_post_thumbnail() ) :
 				the_post_thumbnail( 'thumbnail' );
@@ -30,10 +35,24 @@
 
 		endif;
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta full-content-area">
-			<div class="story-posted-on text-content-area">
-				<?php movementmedia_posted_on(); ?>
+		<div class="entry-meta text-content-area">
+
+			<div class="story-meta">
+				<span class="story-author">
+			<?php
+				the_author();
+				?>,
+			</span>
+
+				<span class="story-date">
+					<?php
+					echo get_the_date();
+					?>
+				</span>
 			</div>
+
+
+
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -45,9 +64,7 @@
 			$post = $post_object;
 			setup_postdata( $post );
 		?>
-		<div class="embed-container story-video">
-			<?php the_field('video_url'); ?>
-		</div>
+	
 		<?php
 			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 		 endif;
@@ -61,7 +78,32 @@
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 		?>
+		<div class="post-social-media social-share">
+			<?php if( have_rows('post_social_media') ): ?>
+				<?php while( have_rows('post_social_media') ): the_row();
+
+				// vars
+				$image = get_sub_field('post_social_image');
+				$link = get_sub_field('post_media_share');
+
+				?>
+				<div class="post-social-group social-share-group">
+					<?php if( $link ): ?>
+						<a href="<?php echo $link; ?>">
+					<?php endif; ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+					<?php if( $link ): ?>
+						</a>
+					<?php endif; ?>
+				</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
+
 		</section>
+
+
+
 
 		<?php
 			wp_link_pages( array(
@@ -71,7 +113,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php movementmedia_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

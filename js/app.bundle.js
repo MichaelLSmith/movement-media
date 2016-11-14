@@ -179,7 +179,7 @@ $__System.register("4", [], function (_export) {
     return {
         setters: [],
         execute: function () {
-            console.log('accordion.js');
+            console.log('accordion.js in the house');
 
             accordionInit = function accordionInit() {
                 jQuery(".bio").accordion({

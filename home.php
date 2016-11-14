@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area full-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -27,30 +27,46 @@ get_header(); ?>
 
 			<?php endif; ?>
 			<h3 class="entry-title">Movement Stories</h3>
+
+			<div class="stories-container boxlist-2col-flex">
+				<?php
+
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
+				?>
+
+
+
+					<section class="stories-list row-bottom-pad">
+						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+					<div class="stories-image">
+						<?php
+						if ( has_post_thumbnail() ) :
+							the_post_thumbnail();
+						endif;
+						?>
+					</div>
+						<h5 class="stories-title">
+							<?php the_title();
+							?>
+						</h5>
+						</a>
+						<div class="stories-date">
+						<?php
+							echo get_the_date();
+							?>
+						</div>
+							<div class="stories-category">
+							<?php
+							the_category(' ');
+							?>
+						</div>
+						</section>
+				<?php
+				endwhile;
+				?>
+			</div>
 			<?php
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-			?>
-			<section class="full-content-area">
-				<div class="stories-title text-content-area">
-					<?php the_title('<h6><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h6>' );
-					the_category(' ');
-					the_author();
-					echo get_the_date();
-					?>
-
-					<?php
-					if ( has_post_thumbnail() ) :
-						the_post_thumbnail('thumbnail');
-					endif;
-					?>
-				</div>
-
-			</section>
-			<?php
-			endwhile;
-
 			the_posts_navigation();
 
 		else :

@@ -11,9 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<section class="featured-video row-bottom-pad">
+		<section class="featured-video row-tb-pad">
 			<div class="inner-featured-video full-content-area">
-				<h3 class="blue-heading">Movement Videos</h3>
+				<h2 class="blue-heading front-subheader">Movement Videos</h2>
 				<?php
 					//from https://www.advancedcustomfields.com/resources/post-object/
 					$post_object = get_field('featured_video');
@@ -23,13 +23,15 @@
 						$post = $post_object;
 						setup_postdata( $post );
 				?>
-					<div class="embed-container">
-						<?php	the_field('video_url'); ?>
+					<div class="">
+						<?php
+						the_content();
+						?>
 					</div>
 					    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 					<?php endif; ?>
 					<p class="front-more-link">
-						<a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">SEE ALL OUR VIDEOS</a>
+						<a href="<?php echo get_post_type_archive_link( 'movementmedia_videos' ); ?>">See all our videos</a>
 					</p>
 			</div><!-- .inner-featured-video -->
 		</section>
@@ -38,7 +40,7 @@
 
 		<section class="featured-stories row-tb-pad clear">
 			<div class="inner-featured-stories full-content-area">
-				<h3 class="blue-heading">Movement Stories</h3>
+					<h2 class="blue-heading front-subheader">Movement Stories</h2>
 				<div class="home-flex-container">
 						<?php
 							$story_location = 'story_left';
@@ -59,7 +61,7 @@
 						?>
 					</div><!-- .home-flex-container -->
 				<p class="front-more-link full-content-area">
-					<a href="http://localhost:8080/stories/">ALL STORIES</a>
+					<a href="http://localhost:8080/stories/">All Stories</a>
 				</p>
 			</div><!-- .inner-featured-stories -->
 		</section> <!-- Stories End -->
@@ -68,9 +70,9 @@
 
 
 		<?php if( get_field('front_quote_1') ): ?>
-			<section class="front-quote row-tb-pad">
+			<section class="front-quote front-quote1 row-tb-pad">
 				<div class="inner-front-quote full-content-area">
-					<div class="quote-content-area row-tb-pad">
+					<div class="quote-content-area row-tb-pad text-content-area">
 						<?php the_field('front_quote_1') ?>
 					</div>
 			</div>
@@ -83,7 +85,7 @@
 
 		<section id="highlights" class="movement-highlights row-tb-pad">
 			<div class="inner-highlights full-content-area">
-				<h3 class="blue-heading">Movement Highlights</h3>
+				<h2 class="blue-heading front-subheader">Movement Highlights</h2>
 				<div class="home-flex-container">
 					<?php
 						//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1
@@ -122,9 +124,9 @@
 
 
 		 <?php if( get_field('front_quote_2') ): ?>
- 			<section class="front-quote row-tb-pad">
+ 			<section class="front-quote front-quote2 row-tb-pad">
  				<div class="inner-front-quote full-content-area">
- 					<div class="quote-content-area row-tb-pad">
+ 					<div class="quote-content-area row-tb-pad text-content-area">
  						<?php the_field('front_quote_2') ?>
  					</div>
  			</div>

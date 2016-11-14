@@ -1,25 +1,189 @@
+
+.stories-title, .video-title {
+font-family: Gotham;
+font-size: 18px;
+color: $darkBlue;
+letter-spacing: 0.62px;
+line-height: 24px;
+text-transform: uppercase;
+color: $darkBlue;
+margin: 0;
+font-weight: 400;
+a:visited {
+    color: inherit;
+}
+  @media $medium {
+      font-size: 21px;
+          padding-top: 0.2em;
+  }
+  @media $large {
+        font-size: 21px;
+            padding-top: 0.2em;
+  }
+  @media $ex-large {
+    font-size: 21px;
+    padding-top: 0.2em;
+  }
+
+}
+
+/*--------------------------------------------------------------
+## All stories page
+--------------------------------------------------------------*/
+
+.stories-container {
+  clear: both;
+}
+.stories-list {
+  width: 100%;
+
+  @media $medium {
+      width: 100%;
+        margin-bottom: 5em;
+  }
+  @media $large {
+    width: 47.5%;
+      margin-bottom: 5em;
+  }
+  @media $ex-large {
+    width: 46%;
+    margin-bottom: 6em;
+  }
+}
 .stories-title {
-    h6 {
-        color: $darkBlue;
-        margin: 0;
+
+}
+.stories-image {
+  margin-bottom: 1.5em;
+}
+.stories-date, .stories-category {
+  font-family: $gotham;
+}
+.stories-date {
+  font-size: 1.5rem;
+}
+.stories-category {
+  a {
+  font-size: 1.5rem;
+}
+}
+
+
+/*--------------------------------------------------------------
+## Individual Video
+--------------------------------------------------------------*/
+
+.video-wrap {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  clear: both;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+    @media $medium {
+
     }
-    a:visited {
-        color: inherit;
+    @media $large {
+
+    }
+      @media $ex-large {
+
+      }
+}
+.movementmedia_videos {
+    width: 100%;
+    @media $medium {
+      width: 48%;
+    }
+    @media $large {
+          width: 48%;
+    }
+      @media $ex-large {
+          width: 48%;
+      }
+    p {
+      font-family: $gotham;
+      font-size: 1.45rem;
     }
 }
-.story-container {
-    a {
-        color: $lightBlue;
-    }
+.video-indiv {
+  width: 100%;
+  height: auto;
+}
+.video-indiv .post_tags a {
+  display: inline-block;
+	margin: 6px 8px 6px 0;
+	background: $green;
+	font-family: $gotham;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	padding: 7px 20px 7px 20px;
+	text-decoration: none;
+	color: $white;
+  text-transform: uppercase;
+}
+.video-credits p {
+  font-weight: 700;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+
+/*--------------------------------------------------------------
+## Individual Story
+--------------------------------------------------------------*/
+.story-heading {
+  position: relative;
+ width: 100%;
 }
 .story-title {
-    color: $darkBlue;
-    margin: 0;
-    /*text-align: center;*/
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 85%;
+  font-family: $gotham;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 24px;
+  color: $white;
+  padding: 12px 1.2em;
+  background-color: $darkBlue;
+  letter-spacing: 0.75px;
+  @media $medium {
+    width: 85%;
+    font-size: 42px;
+      line-height: 48px;
+    top:45%;
+  }
+  @media $large {
+    width: 65%;
+    font-size: 54px;
+      line-height: 60px;
+      top: 40%;
+  }
+    @media $ex-large {
+      width: 75%;
+      font-size: 54px;
+        line-height: 60px;
+      top: 310px;
+    }
 }
+.pr-story-title {
+    color: $darkBlue;
+  }
 .posted-on {
     font-size: 1.5rem;
     a {
         color: $baseTextColour;
     }
+}
+.story-meta {
+  font-family: Gotham;
+  font-size: 20px;
+  color: $darkBlue;
+  letter-spacing: 0.28px;
+  line-height: 57px;
+  padding-top: 1em;
 }

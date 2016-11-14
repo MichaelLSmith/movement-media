@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php the_title('<h1 class="entry-title">', '</h1>' ); ?>
 				</section>
 				<section class="mission full-content-area">
-					<div class="mission-inner col8">
+					<div class="mission-inner bold-lead-paragraph">
 						<?php the_field('social_intro'); ?>
 					</div>
 				</section>
@@ -37,7 +37,7 @@ get_header(); ?>
 				</section>
 				<section class="what full-content-area">
 					<div class="exist text-content-area">
-						<h4>We Exist To:</h4>
+						<h2>We Exist To:</h2>
 							<?php if( have_rows('we_exist_list') ): ?>
 								<ul>
 								<?php while ( have_rows('we_exist_list') ) : the_row(); ?>
@@ -53,18 +53,15 @@ get_header(); ?>
 				</section>
 				<section class="full-content-area">
 					<div class="text-content-area">
-						<h4>Social Balance</h4>
-						<?php if( have_rows('social_balance_list') ): ?>
-							<ul>
-							<?php while ( have_rows('social_balance_list') ) : the_row(); ?>
-							<li>
-								<?php the_sub_field('social_balance_bullet'); ?>
-							</li>
-							<?php endwhile; endif; ?>
+						<h2>Social Balance</h2>
+						<?php if( get_field('social_balance_text') ): ?>
+							<?php the_field('social_balance_text'); ?>
+						<?php endif;?>
 					</div>
 	    		</section>
 				<section class="full-content-area">
 					<div class="text-content-area">
+						<h2>Social Giving</h2>
 						<?php if( get_field('social_giving_introduction') ): ?>
 							<?php the_field('social_giving_introduction'); ?>
 						<?php endif;?>
@@ -74,37 +71,42 @@ get_header(); ?>
 					<?php
 					if( have_rows('partner_row') ):// repeater
 					    // echo "<p>in if partner row</p>";
-					    while ( have_rows('partner_row') ) : the_row();
-					        // echo "<p>in while partner row</p>";
-					        while (has_sub_field('social_giving_partners'))://flex content
+					    while ( have_rows('partner_row') ) : the_row(); ?>
+
+
+					        <?php while (has_sub_field('social_giving_partners'))://flex content
 					            // echo "<p>in while social_giving_partners</p>";
 					            if (get_row_layout() == 'year_heading')://layout - year
 										?>
-										<h5><?php the_sub_field('row_year'); ?> </h5>
+											<h5><?php the_sub_field('row_year'); ?> </h5>
+											<article class="giving-partner-row">
 										<?php
 					            endif;//year_heading
 					            if(get_row_layout('social_giving_partner')):
 									?>
-									<article class="giving-partner-row">
+
 										<div class="giving-partner-inner">
 											<?php
 											$image = get_sub_field('giving_image');?>
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 											<div class="giving-name">
-												<?php the_sub_field('giving_name'); ?>
+												<?php
+												the_sub_field('giving_name'); ?>
 											</div>
 											<div class="giving_partner_description">
-											    <?php  the_sub_field('giving_partner_description'); ?>
+											    <?php
+													the_sub_field('giving_partner_description'); ?>
 											</div>
 											<div class="learn">
-												Learn More
+													<?php
+													the_sub_field('giving_learn_more'); ?>
 											</div>
-										</div>
-									<?php
-					            endif;//social giving partner
-					        endwhile;//social_giving_partners
-							?>
-								</article>
+	 									</div>
+											<?php
+													endif;//social giving partner
+											endwhile;//social_giving_partners
+											?>
+										</article>
 					<?php
 					    endwhile;//partner_row
 					endif;//have_rows (partner_row)

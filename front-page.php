@@ -28,7 +28,7 @@
 
 
 	<header id="home-masthead" class="home-header" role="banner">
-		<div id="header-inner" class="home-header-content full-content-area clear">
+		<div id="header-inner" class="home-header-content clear">
 			<section class="home-nav">
 				<section class="logo-tag-container">
 					<div class="site-logo">
@@ -46,8 +46,8 @@
 					<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</section>
-
-			<section class="home-masthead-1">
+<div class="home-masthead">
+			<section class="home-masthead-1 full-content-area">
 				<p class="large-text">
 					<?php if( get_field('front_header_text_left') ): ?>
 						<?php the_field('front_header_text_left'); ?></p>
@@ -62,16 +62,17 @@
 				<?php endif;?>
 			</section>
 			<?php if( get_field('front_header_paragraph') ): ?>
-				<section class="home-masthead-2 text-content-area">
-					<p class="text"><?php the_field('front_header_paragraph'); ?></p>
+				<section class="home-masthead-2 full-content-area">
+					<p class="text text-content-area"><?php the_field('front_header_paragraph'); ?></p>
 				</section>
 			<?php endif;?>
 			<?php if( get_field('front_header_action_button') ): ?>
 				<section class="home-masthead-3">
 					<div class="action-btn action-btn-large">
-						<a href="<?php the_field('front_header_action_button'); ?>">LEARN MORE</a>
+						<a href="<?php the_field('front_header_action_button'); ?>">Learn more</a>
 					</div>
 				</section>
+</div>
 			<?php endif;?>
 		</div><!-- #header-inner -->
 	</header><!-- #masthead -->
@@ -79,9 +80,9 @@
 
 
 
-	<div id="content" class="site-content">
+	<div id="content" class="">
 
-	<div id="primary" class="content-area row-top-pad">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php

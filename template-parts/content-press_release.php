@@ -13,7 +13,7 @@
 	<section class="story-container full-content-area">
 		<header class="entry-header">
 			<?php
-				the_title( '<h5 class="story-title">', '</h5>' );
+				the_title( '<h5 class="pr-story-title">', '</h5>' );
 			?>
 			<div class="story-sub">
 				<?php the_field('story_sub'); ?>
@@ -43,7 +43,5 @@
 			</div><!-- .entry-content -->
 		</section>
 
-	<footer class="entry-footer">
-		<?php movementmedia_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->

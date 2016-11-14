@@ -1,28 +1,32 @@
 .home {
     /*background: $marginBlue;*/
+
 }
 .home-header {
     background: $darkBlue;
     color: $white;
     margin: 0 auto;
     padding: 4% 0em 5em;
+    /*height: 100vh;*/
+
     a {
         color: inherit;
         text-decoration: none;
     }
     @media $medium {
-      padding: 4% 0em 6em;
+      padding: 0% 0em 6em;
     }
     @media $large {
-      padding: 3% 0em 6%;
+      padding: 0% 0em 6%;
     }
     @media $ex-large {
-      padding: 6% 0em 6%;
+      padding: 0% 0em 12%;
 
     }
 }
 
 .home-header-content {
+
 }
 
 .home-nav, .home-masthead-1 {
@@ -38,13 +42,13 @@
     color: $offWhite;
     letter-spacing: 0.48px;
     @media $medium {
-      padding: 0em 1.5% 1em;
+           padding: 1.3% 5% 5%;
     }
     @media $large {
-      padding: 0em 1.5% 1em;
+            padding: 1.7% 5% 8%;
     }
     @media $ex-large {
-      padding: 0em 1.5% 1em;
+            padding: 2% 2% 7%;
     }
 }
 .home-masthead-1, .home-masthead-2, .home-masthead-3 {
@@ -58,10 +62,15 @@
     flex-flow: row wrap;
     -webkit-align-content: space-between;
     align-content: space-between;
+    -webkit-align-items: center;
+   align-items: center;
 
   p {
       color: $white;
   }
+
+}
+.home-masthead {
 
 }
 .home-masthead-1 {
@@ -105,21 +114,21 @@
         font-size: 15px;
         line-height: 18px;
         text-align: center;
-        margin: 0.4em 0 1.2em;
+        margin: 0.4em auto 1.2em;
         @media $medium {
           font-size: 20px;
           line-height: 24px;
-          margin: 1.2em 0 1.2em;
+          margin: 1.2em auto 1.2em;
         }
         @media $large {
           font-size: 24px;
           line-height: 30px;
-          margin: 0.4em 0 1.2em;
+          margin: 0.4em auto 1.2em;
         }
         @media $ex-large {
-          font-size: 24px;
-          line-height: 30px;
-          margin: 0.4em 0 1.2em;
+          font-size: 32px;
+          line-height: 36px;
+          margin: 0.4em auto 1.2em;
         }
 
     }
@@ -172,7 +181,8 @@
 
 }
 .featured-video {
-  border-bottom: 1px solid #222222;
+  border-bottom: 0px solid #222222;
+  background-color: $backgroundGrey;
 }
 .featured-story {
 width: 100%;
@@ -188,7 +198,39 @@ margin-bottom: 1.8em;
       width: 31.5%;
   }
 }
+.front-subheader {
+  margin-top: 0;
+  margin-bottom: 1.8em;
 
+    @media $medium {
+          margin-bottom: 0.8em;
+    }
+    @media $large {
+        margin-bottom: 0.8em;
+    }
+    @media $ex-large {
+          margin-bottom: 0.8em;
+    }
+}
+.blue-heading {
+	font-weight: 800;
+	color: $darkBlue;
+	letter-spacing: 0;
+  text-transform: uppercase;
+    font-size: 5em;
+	@media $medium {
+  font-size: 3.6em;
+  line-height: 1.2;
+	}
+	@media $large {
+  font-size: 5em;
+    line-height: 1.2;
+	}
+	@media $ex-large {
+  font-size: 5em;
+      line-height: 1.2;
+	}
+}
 .thumb-container img, .thumb-container iframe {
     height: auto;
 }
@@ -250,14 +292,14 @@ margin-bottom: 1.8em;
     }
 }
 .front-quote {
-    /*border-top: 1px solid $borderGrey;*/
-    /*border-bottom: 1px solid $borderGrey;*/
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
     padding: .8rem 0 .8rem 0;
     margin: auto;
-    background-color: $darkBlue;
+
     p {
         font-size: 18px;
-        color: $white;
+
         font-weight: 300;
         line-height: 1.5;
         text-align: justify;
@@ -268,11 +310,23 @@ margin-bottom: 1.8em;
             font-size: 21px;
         }
         @media $ex-large {
-            font-size: 27px;
+            font-size: 21px;
         }
     }
-
 }
+.front-quote1 {
+      background-color: $darkBlue;
+      p {
+      color: $white;
+    }
+}
+.front-quote2 {
+    background-color: $lightBackgroundGrey;
+    p {
+    color: $darkBlue;
+  }
+}
+
 .highlight-item {
   width: 100%;
   	@media $medium {

@@ -71,7 +71,7 @@ get_header(); ?>
 				<?php endif; ?>
 					<div class="partner-description">
 						<?php if( get_field('bronner_partner_name') ): ?>
-							<h4><?php the_field('bronner_partner_name') ?></h4>
+							<h2 class="blue-heading"><?php the_field('bronner_partner_name') ?></h2>
 						<?php endif; ?>
 						<?php if( get_field('bronner_partner_description') ): ?>
 							<p><?php the_field('bronner_partner_description') ?> </p>
@@ -159,7 +159,7 @@ get_header(); ?>
 			<section id="partner-<?php echo $count?>" class="partner-outer-container row-tb-pad">
 				<div class="partner-container additional-partners full-content-area">
 
-						<h4><?php the_sub_field('partner_name');?></h4>
+						<h2 class="blue-heading partner-heading text-content-area row-top-pad"><?php the_sub_field('partner_name');?></h2>
 				<div class="partner-title-group row-top-pad">
 
 
@@ -169,27 +169,27 @@ get_header(); ?>
 					while(has_sub_field('partner_content_group_flex')):
 					if(get_row_layout() == "partner_content_group"):
 					        ?>
-					        <div class="partner-title-image">
-					            <img src="<?php the_sub_field('partner_image');?>" alt="" />
-					        </div>
-									<div class="partner-description">
-												        <h6><?php the_sub_field('partner_heading');?></h6>
-																<?php the_sub_field('partner_description');
+						        <div class="partner-title-image row-bottom-pad">
+						            <img src="<?php the_sub_field('partner_image');?>" alt="" />
+						        </div>
+										<div class="partner-description row-bottom-pad">
+									        <h6><?php the_sub_field('partner_heading');?></h6>
+													<?php the_sub_field('partner_description');
+													?>
+										</div>
 
+										<?php
 												endif;//get_row_layout partner_content_group
 												endwhile;//have_rows(partner_content_group_flex)
 											?>
-									</div>
-
-
-
 				</div>
-				<div class="partner-content-group">
-				    <h6 class="blue-heading">
-				        <?php the_sub_field('do_partner')?>
-				    </h6>
-				    <?php the_sub_field('description_what');?>
+
+
+				<div class="partner-what-group row-bottom-pad">
+						<h5 class="partner-what-heading"><?php the_sub_field('do_partner')?></h5>
+						<?php the_sub_field('description_what') ?>
 				</div>
+
 				<div class="partner-services-container ">
 				    <?php
 				        $title = 'Media Placements';
@@ -239,7 +239,7 @@ get_header(); ?>
 				<?php endif;?>
 
 				</section>
-				
+
 				<p><a
 						data-scroll
 						data-options='{ "easing": "easeOutCubic" }'

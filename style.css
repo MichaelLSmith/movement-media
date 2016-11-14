@@ -406,7 +406,7 @@ body, button, input, select, textarea {
     color: #232323;
 
 
-    font-family: "Sentinel SSm A","Sentinel SSm B";
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     line-height: 1.5;
@@ -586,32 +586,6 @@ h6 {
 
 
     h6 {}
-}
-.blue-heading {
-
-
-    font-weight: 500;
-
-
-    color: #4A90E2;
-
-
-    letter-spacing: 0;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-    .blue-heading {}
-}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-
-
-    .blue-heading {}
-}
-@media screen and (min-width: 1321px) {
-
-
-    .blue-heading {}
 }
 p {
 
@@ -799,7 +773,7 @@ hr {
 ul, ol {
 
 
-    margin: 0 0 1.5em 3em;
+    margin: 0 0 1.5em 0em;
 }
 ul {
 
@@ -968,6 +942,14 @@ textarea {
 
 
     width: 100%;
+}
+/*--------------------------------------------------------------
+# Main Contact Form
+--------------------------------------------------------------*/
+.contact-group {
+
+
+    clear: both;
 }
 /*
 corresonds to the accessibility section of the origin style.css file
@@ -1195,7 +1177,7 @@ needs to be @imported into the style.css file and processed by gulp
     .site-content {
 
 
-        margin-top: 3.4em;
+        margin-top: 6%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -1204,7 +1186,7 @@ needs to be @imported into the style.css file and processed by gulp
     .site-content {
 
 
-        margin-top: 3.4em;
+        margin-top: 6%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -1213,7 +1195,7 @@ needs to be @imported into the style.css file and processed by gulp
     .site-content {
 
 
-        margin-top: 3.4em;
+        margin-top: 4%;
     }
 }
 .content-area {
@@ -1281,17 +1263,17 @@ needs to be @imported into the style.css file and processed by gulp
 .row-top-pad {
 
 
-    padding: 5% 0 0;
+    padding: 8% 0 0;
 }
 .row-bottom-pad {
 
 
-    padding: 0 0 5%;
+    padding: 0 0 8%;
 }
 .row-tb-pad {
 
 
-    padding: 5% 0;
+    padding: 8% 0;
 }
 .quote-content-area {
 
@@ -1328,7 +1310,7 @@ needs to be @imported into the style.css file and processed by gulp
     .quote-content-area {
 
 
-        width: 66.67%;
+        width: 100%;
     }
 }
 .text-content-area {
@@ -1514,6 +1496,9 @@ needs to be @imported into the style.css file and processed by gulp
 
 
     font-style: italic;
+
+
+    text-transform: uppercase;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -1539,16 +1524,19 @@ needs to be @imported into the style.css file and processed by gulp
     .entry-title {
 
 
-        font-size: 46px;
+        font-size: 44px;
 
 
-        line-height: 52px;
+        line-height: 48px;
 
 
         letter-spacing: 1.25px;
 
 
         padding: 12px 1.1em;
+
+
+        margin-bottom: 1em;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -1557,19 +1545,19 @@ needs to be @imported into the style.css file and processed by gulp
     .entry-title {
 
 
-        font-size: 50px;
+        font-size: 44px;
 
 
-        line-height: 56px;
+        line-height: 48px;
 
 
         letter-spacing: 1.25px;
 
 
-        padding: 12px 1.2em;
+        padding: 10px 1.2em;
 
 
-        margin-bottom: 0.6em;
+        margin-bottom: 1.2em;
     }
 }
 .sticky {
@@ -1622,7 +1610,7 @@ needs to be @imported into the style.css file and processed by gulp
     clear: both;
 
 
-    font-weight: 700;
+    font-weight: 300;
 
 
     line-height: 1.3;
@@ -1636,7 +1624,7 @@ needs to be @imported into the style.css file and processed by gulp
     .bold-lead-paragraph p {
 
 
-        font-size: 2.1rem;
+        font-size: 1.8rem;
 
 
         line-height: 1.3;
@@ -1651,7 +1639,7 @@ needs to be @imported into the style.css file and processed by gulp
     .bold-lead-paragraph p {
 
 
-        font-size: 2.5rem;
+        font-size: 2.2rem;
 
 
         line-height: 1.3;
@@ -1666,13 +1654,13 @@ needs to be @imported into the style.css file and processed by gulp
     .bold-lead-paragraph p {
 
 
-        font-size: 2.8rem;
+        font-size: 2.3rem;
 
 
-        line-height: 1.3;
+        line-height: 1.4;
 
 
-        padding: 0.1em 0 0.8em;
+        padding: 1em 0 0.8em;
     }
 }
 .bold-lead-paragraph-inner {
@@ -1686,7 +1674,7 @@ needs to be @imported into the style.css file and processed by gulp
     background-color: #f5f3f6;
 
 
-    font-family: "Sentinel SSm A","Sentinel SSm B";
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     padding: 10% 0%;
@@ -1841,10 +1829,13 @@ needs to be @imported into the style.css file and processed by gulp
                 flex-direction: row;
 
 
-        -ms-flex-pack: distribute;
+        -webkit-box-pack: justify;
 
 
-            justify-content: space-around;
+            -ms-flex-pack: justify;
+
+
+                justify-content: space-between;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -2408,16 +2399,13 @@ Header CSS - need to @include in style.css and run gulp process
             align-items: center;
 
 
-    padding: 1em .5em;
+    padding: 2% 4% 1%;
 
 
     margin: auto;
 
 
-    border-bottom: #005395 solid 1px;
-
-
-    padding-bottom: 2.1rem;
+    padding-bottom: 0.1rem;
 
 
     font-family: "Gotham SSm A","Gotham SSm B";
@@ -2442,22 +2430,25 @@ Header CSS - need to @include in style.css and run gulp process
     .header-content {
 
 
-        -webkit-box-pack: justify;
+        padding: 1.3% 5% 1%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
-            -ms-flex-pack: justify;
+    .header-content {
 
 
-                justify-content: space-between;
+        padding: 1.7% 5% 1%;
+    }
+}
+@media screen and (min-width: 1321px) {
 
 
-        -webkit-box-align: center;
+    .header-content {
 
 
-            -ms-flex-align: center;
-
-
-                align-items: center;
+        padding: 2% 2% 0.3%;
     }
 }
 .site-header {
@@ -2467,6 +2458,9 @@ Header CSS - need to @include in style.css and run gulp process
 
 
     margin: auto;
+
+
+    border-bottom: #005395 solid 0px;
 }
 .logo-tag-container {}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -2497,6 +2491,41 @@ Header CSS - need to @include in style.css and run gulp process
 
     margin-right: 10px;
 }
+img.custom-logo {
+
+
+    width: 60%;
+
+
+    margin-top: 0.3em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    img.custom-logo {
+
+
+        width: 60%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    img.custom-logo {
+
+
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    img.custom-logo {
+
+
+        width: 75%;
+    }
+}
 .home {
 
 
@@ -2516,6 +2545,7 @@ Header CSS - need to @include in style.css and run gulp process
 
     padding: 4% 0em 5em;
 }
+/*height: 100vh;*/
 .home-header a {
 
 
@@ -2530,7 +2560,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-header {
 
 
-        padding: 4% 0em 6em;
+        padding: 0% 0em 6em;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2539,7 +2569,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-header {
 
 
-        padding: 3% 0em 6%;
+        padding: 0% 0em 6%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2548,7 +2578,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-header {
 
 
-        padding: 6% 0em 6%;
+        padding: 0% 0em 12%;
     }
 }
 .home-header-content {}
@@ -2607,7 +2637,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-nav {
 
 
-        padding: 0em 1.5% 1em;
+        padding: 1.3% 5% 5%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2616,7 +2646,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-nav {
 
 
-        padding: 0em 1.5% 1em;
+        padding: 1.7% 5% 8%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2625,7 +2655,7 @@ Header CSS - need to @include in style.css and run gulp process
     .home-nav {
 
 
-        padding: 0em 1.5% 1em;
+        padding: 2% 2% 7%;
     }
 }
 .home-masthead-1, .home-masthead-2, .home-masthead-3 {
@@ -2665,12 +2695,22 @@ Header CSS - need to @include in style.css and run gulp process
 
 
         align-content: space-between;
+
+
+    -webkit-box-align: center;
+
+
+        -ms-flex-align: center;
+
+
+            align-items: center;
 }
 .home-masthead-1 p, .home-masthead-2 p, .home-masthead-3 p {
 
 
     color: #fff;
 }
+.home-masthead {}
 .home-masthead-1 p.large-text {
 
 
@@ -2766,7 +2806,7 @@ Header CSS - need to @include in style.css and run gulp process
 .home-masthead-2 p.text {
 
 
-    font-family: "Sentinel SSm A","Sentinel SSm B";
+    font-family: "Gotham SSm A","Gotham SSm B";
 
 
     font-weight: 300;
@@ -2781,7 +2821,7 @@ Header CSS - need to @include in style.css and run gulp process
     text-align: center;
 
 
-    margin: 0.4em 0 1.2em;
+    margin: 0.4em auto 1.2em;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -2795,7 +2835,7 @@ Header CSS - need to @include in style.css and run gulp process
         line-height: 24px;
 
 
-        margin: 1.2em 0 1.2em;
+        margin: 1.2em auto 1.2em;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2810,7 +2850,7 @@ Header CSS - need to @include in style.css and run gulp process
         line-height: 30px;
 
 
-        margin: 0.4em 0 1.2em;
+        margin: 0.4em auto 1.2em;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2819,13 +2859,13 @@ Header CSS - need to @include in style.css and run gulp process
     .home-masthead-2 p.text {
 
 
-        font-size: 24px;
+        font-size: 32px;
 
 
-        line-height: 30px;
+        line-height: 36px;
 
 
-        margin: 0.4em 0 1.2em;
+        margin: 0.4em auto 1.2em;
     }
 }
 .front-icon-container {
@@ -2969,7 +3009,10 @@ Header CSS - need to @include in style.css and run gulp process
 .featured-video {
 
 
-    border-bottom: 1px solid #222222;
+    border-bottom: 0px solid #222222;
+
+
+    background-color: #EBEBE8;
 }
 .featured-story {
 
@@ -3004,6 +3047,94 @@ Header CSS - need to @include in style.css and run gulp process
 
 
         width: 31.5%;
+    }
+}
+.front-subheader {
+
+
+    margin-top: 0;
+
+
+    margin-bottom: 1.8em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .front-subheader {
+
+
+        margin-bottom: 0.8em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .front-subheader {
+
+
+        margin-bottom: 0.8em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .front-subheader {
+
+
+        margin-bottom: 0.8em;
+    }
+}
+.blue-heading {
+
+
+    font-weight: 800;
+
+
+    color: #005395;
+
+
+    letter-spacing: 0;
+
+
+    text-transform: uppercase;
+
+
+    font-size: 5em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .blue-heading {
+
+
+        font-size: 3.6em;
+
+
+        line-height: 1.2;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .blue-heading {
+
+
+        font-size: 5em;
+
+
+        line-height: 1.2;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .blue-heading {
+
+
+        font-size: 5em;
+
+
+        line-height: 1.2;
     }
 }
 .thumb-container img, .thumb-container iframe {
@@ -3137,27 +3268,21 @@ Header CSS - need to @include in style.css and run gulp process
 .front-quote {
 
 
-    /*border-top: 1px solid $borderGrey;*/
+    border-top: 1px solid #222;
 
 
-    /*border-bottom: 1px solid $borderGrey;*/
+    border-bottom: 1px solid #222;
 
 
     padding: .8rem 0 .8rem 0;
 
 
     margin: auto;
-
-
-    background-color: #005395;
 }
 .front-quote p {
 
 
     font-size: 18px;
-
-
-    color: #fff;
 
 
     font-weight: 300;
@@ -3192,8 +3317,28 @@ Header CSS - need to @include in style.css and run gulp process
     .front-quote p {
 
 
-        font-size: 27px;
+        font-size: 21px;
     }
+}
+.front-quote1 {
+
+
+    background-color: #005395;
+}
+.front-quote1 p {
+
+
+    color: #fff;
+}
+.front-quote2 {
+
+
+    background-color: #f5f3f6;
+}
+.front-quote2 p {
+
+
+    color: #005395;
 }
 .highlight-item {
 
@@ -3879,188 +4024,6 @@ ul.about-services-left span, ul.about-services-right span {
 
     color: #fff;
 }
-.video-title {
-
-
-    font-family: GothamBlack;
-
-
-    font-size: 18px;
-
-
-    color: #005395;
-
-
-    letter-spacing: 0.62px;
-
-
-    line-height: 24px;
-
-
-    text-transform: uppercase;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-    .video-title {}
-}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-
-
-    .video-title {}
-}
-@media screen and (min-width: 1321px) {
-
-
-    .video-title {}
-}
-.video-wrap {
-
-
-    display: -webkit-box;
-
-
-    display: -ms-flexbox;
-
-
-    display: flex;
-
-
-    -webkit-box-orient: horizontal;
-
-
-    -webkit-box-direction: normal;
-
-
-        -ms-flex-direction: row;
-
-
-            flex-direction: row;
-
-
-    clear: both;
-
-
-    -ms-flex-flow: row wrap;
-
-
-        flex-flow: row wrap;
-
-
-    -webkit-box-pack: justify;
-
-
-        -ms-flex-pack: justify;
-
-
-            justify-content: space-between;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-    .video-wrap {}
-}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-
-
-    .video-wrap {}
-}
-@media screen and (min-width: 1321px) {
-
-
-    .video-wrap {}
-}
-.movementmedia_videos {
-
-
-    width: 100%;
-}
-.movementmedia_videos p {
-
-
-    font-family: "Gotham SSm A","Gotham SSm B";
-
-
-    font-size: 1.45rem;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-    .movementmedia_videos {
-
-
-        width: 48%;
-    }
-}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {
-
-
-    .movementmedia_videos {
-
-
-        width: 48%;
-    }
-}
-@media screen and (min-width: 1321px) {
-
-
-    .movementmedia_videos {
-
-
-        width: 48%;
-    }
-}
-.video-indiv {
-
-
-    width: 100%;
-
-
-    height: auto;
-}
-.video-indiv .post_tags a {
-
-
-    display: inline-block;
-
-
-    margin: 6px 8px 6px 0;
-
-
-    background: #85C51F;
-
-
-    font-family: "Gotham SSm A","Gotham SSm B";
-
-
-    border-radius: 8px;
-
-
-    font-size: 1.2rem;
-
-
-    padding: 7px 20px 7px 20px;
-
-
-    text-decoration: none;
-
-
-    color: #fff;
-
-
-    text-transform: uppercase;
-}
-.video-credits p {
-
-
-    font-weight: 700;
-
-
-    font-size: 1.1em;
-
-
-    font-style: italic;
-}
 .about-gallery-row {
 
 
@@ -4121,6 +4084,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     background-color: #fff;
+
+
+    border-top: #005395 solid 30px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -4128,7 +4094,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-container {
 
 
-        border: #232323 solid 1px;
+        border-top: #005395 solid 30px;
 
 
         background-color: #fff;
@@ -4140,7 +4106,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-container {
 
 
-        border: #232323 solid 1px;
+        border-top: #005395 solid 40px;
 
 
         background-color: #fff;
@@ -4152,7 +4118,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-container {
 
 
-        border: #232323 solid 1px;
+        border-top: #005395 solid 40px;
 
 
         background-color: #fff;
@@ -4466,6 +4432,11 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
                 justify-content: space-between;
     }
+}
+.partner-heading {
+
+
+    text-align: center;
 }
 .partner-title-image {
 
@@ -5514,34 +5485,403 @@ note: partners-upper content width area controlled in _content.css as part of .e
         padding: 0;
     }
 }
-.stories-title h6 {
+.stories-title, .video-title {
+
+
+    font-family: Gotham;
+
+
+    font-size: 18px;
+
+
+    color: #005395;
+
+
+    letter-spacing: 0.62px;
+
+
+    line-height: 24px;
+
+
+    text-transform: uppercase;
 
 
     color: #005395;
 
 
     margin: 0;
+
+
+    font-weight: 400;
 }
-.stories-title a:visited {
+.stories-title a:visited, .video-title a:visited {
 
 
     color: inherit;
 }
-.story-container a {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    color: #4A90E2;
+    .stories-title, .video-title {
+
+
+        font-size: 21px;
+
+
+        padding-top: 0.2em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .stories-title, .video-title {
+
+
+        font-size: 21px;
+
+
+        padding-top: 0.2em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .stories-title, .video-title {
+
+
+        font-size: 21px;
+
+
+        padding-top: 0.2em;
+    }
+}
+/*--------------------------------------------------------------
+## All stories page
+--------------------------------------------------------------*/
+.stories-container {
+
+
+    clear: both;
+}
+.stories-list {
+
+
+    width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .stories-list {
+
+
+        width: 100%;
+
+
+        margin-bottom: 5em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .stories-list {
+
+
+        width: 47.5%;
+
+
+        margin-bottom: 5em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .stories-list {
+
+
+        width: 46%;
+
+
+        margin-bottom: 6em;
+    }
+}
+.stories-title {}
+.stories-image {
+
+
+    margin-bottom: 1.5em;
+}
+.stories-date, .stories-category {
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+}
+.stories-date {
+
+
+    font-size: 1.5rem;
+}
+.stories-category a {
+
+
+    font-size: 1.5rem;
+}
+/*--------------------------------------------------------------
+## Individual Video
+--------------------------------------------------------------*/
+.video-wrap {
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+
+
+    -webkit-box-orient: horizontal;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: row;
+
+
+            flex-direction: row;
+
+
+    clear: both;
+
+
+    -ms-flex-flow: row wrap;
+
+
+        flex-flow: row wrap;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .video-wrap {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .video-wrap {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    .video-wrap {}
+}
+.movementmedia_videos {
+
+
+    width: 100%;
+}
+.movementmedia_videos p {
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    font-size: 1.45rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .movementmedia_videos {
+
+
+        width: 48%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .movementmedia_videos {
+
+
+        width: 48%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .movementmedia_videos {
+
+
+        width: 48%;
+    }
+}
+.video-indiv {
+
+
+    width: 100%;
+
+
+    height: auto;
+}
+.video-indiv .post_tags a {
+
+
+    display: inline-block;
+
+
+    margin: 6px 8px 6px 0;
+
+
+    background: #85C51F;
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    border-radius: 8px;
+
+
+    font-size: 1.2rem;
+
+
+    padding: 7px 20px 7px 20px;
+
+
+    text-decoration: none;
+
+
+    color: #fff;
+
+
+    text-transform: uppercase;
+}
+.video-credits p {
+
+
+    font-weight: 700;
+
+
+    font-size: 1.1em;
+
+
+    font-style: italic;
+}
+/*--------------------------------------------------------------
+## Individual Story
+--------------------------------------------------------------*/
+.story-heading {
+
+
+    position: relative;
+
+
+    width: 100%;
 }
 .story-title {
 
 
+    position: absolute;
+
+
+    top: 40%;
+
+
+    left: 0;
+
+
+    width: 85%;
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    font-style: italic;
+
+
+    font-size: 21px;
+
+
+    line-height: 24px;
+
+
+    color: #fff;
+
+
+    padding: 12px 1.2em;
+
+
+    background-color: #005395;
+
+
+    letter-spacing: 0.75px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .story-title {
+
+
+        width: 85%;
+
+
+        font-size: 42px;
+
+
+        line-height: 48px;
+
+
+        top: 45%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .story-title {
+
+
+        width: 65%;
+
+
+        font-size: 54px;
+
+
+        line-height: 60px;
+
+
+        top: 40%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .story-title {
+
+
+        width: 75%;
+
+
+        font-size: 54px;
+
+
+        line-height: 60px;
+
+
+        top: 310px;
+    }
+}
+.pr-story-title {
+
+
     color: #005395;
-
-
-    margin: 0;
-
-
-    /*text-align: center;*/
 }
 .posted-on {
 
@@ -5552,6 +5892,26 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     color: #232323;
+}
+.story-meta {
+
+
+    font-family: Gotham;
+
+
+    font-size: 20px;
+
+
+    color: #005395;
+
+
+    letter-spacing: 0.28px;
+
+
+    line-height: 57px;
+
+
+    padding-top: 1em;
 }
 .giving-partner-row {
 
