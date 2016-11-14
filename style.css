@@ -3233,6 +3233,9 @@ img.custom-logo {
 
 
     line-height: 1.3;
+
+
+    text-transform: uppercase;
 }
 .story-grey p {
 
@@ -3259,6 +3262,9 @@ img.custom-logo {
 
 
     line-height: 1.3;
+
+
+    text-transform: uppercase;
 }
 .story-blue p {
 
@@ -3593,6 +3599,9 @@ img.custom-logo {
 
 
     border-top: 3px solid #fff;
+
+
+    padding: 4% 0 3.3%;
 }
 .footer-inner {
 
@@ -3665,13 +3674,10 @@ img.custom-logo {
     display: flex;
 
 
-    -webkit-box-pack: justify;
+    -ms-flex-pack: distribute;
 
 
-        -ms-flex-pack: justify;
-
-
-            justify-content: space-between;
+        justify-content: space-around;
 
 
     /* Set flex-wrap and flex-direction all in one line with flex flow */
@@ -3683,10 +3689,10 @@ img.custom-logo {
         flex-flow: row wrap;
 
 
-    -ms-flex-line-pack: justify;
+    -ms-flex-line-pack: distribute;
 
 
-        align-content: space-between;
+        align-content: space-around;
 
 
     width: 50%;
@@ -3771,6 +3777,33 @@ img.custom-logo {
 
 
         font-size: 1.8rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .footer-menu li {
+
+
+        margin: 0 0 1rem 0;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .footer-menu li {
+
+
+        margin: 0 0 1rem 0;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .footer-menu li {
+
+
+        margin: 0 0 1rem 0;
     }
 }
 .footer-search-container {}
@@ -4067,10 +4100,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
     font-size: 1.8rem;
 
 
-    /*margin: 0 auto 3.9rem auto;*/
-
-
-    margin: 0;
+    margin-top: 0rem;
 }
 .partner-container h6 {
 
@@ -4211,6 +4241,11 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     width: 100%;
+}
+.bronner-title-group p {
+
+
+    margin-top: 1em;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 

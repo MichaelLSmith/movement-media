@@ -18,8 +18,8 @@ note: partners-upper content width area controlled in _content.css as part of .e
 .partner-container {
     p {
         font-size: $largeParaText;
-        /*margin: 0 auto 3.9rem auto;*/
-        margin: 0;
+        margin-top: 0rem;
+
     }
     h6 {
         margin: 0;
@@ -92,6 +92,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: 83.33%;
         flex-direction: row;
         justify-content: space-between;
+      }
+      p {
+        margin-top: 1em;
       }
 }
 .partner-title-group {

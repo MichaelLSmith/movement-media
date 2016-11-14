@@ -1,6 +1,7 @@
 .site-footer {
     background-color: $darkBlue;
     border-top: 3px solid $white;
+    padding: 4% 0 3.3%;
 }
 .footer-inner {
     max-width: $container-max-width;
@@ -28,13 +29,13 @@
 .footer-menu-container {
      display: -webkit-flex;
      display: flex;
-     -webkit-justify-content: space-between;
-     justify-content: space-between;
+     -webkit-justify-content: space-around;
+     justify-content: space-around;
      /* Set flex-wrap and flex-direction all in one line with flex flow */
      -webkit-flex-flow: row wrap;
      flex-flow: row wrap;
-     -webkit-align-content: space-between;
-     align-content: space-between;
+     -webkit-align-content: space-around;
+     align-content: space-around;
      width:50%;
      margin: 0 auto;
 
@@ -68,6 +69,15 @@
     }
     li {
         margin: 0 0 2.2rem 0;
+        @media $medium {
+margin: 0 0 1rem 0;
+        }
+        @media $large {
+margin: 0 0 1rem 0;
+        }
+        @media $ex-large {
+margin: 0 0 1rem 0;
+        }
     }
 }
 .footer-search-container {

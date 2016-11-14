@@ -10,7 +10,7 @@
  */
 
  ?>
-	<footer id="colophon" class="site-footer row-tb-pad" role="contentinfo">
+	<footer id="colophon" class="site-footer row-tb-pa" role="contentinfo">
         <div class="footer-inner full-content-area">
             <!-- change -->
             <section class="footer-logo-section">
@@ -31,7 +31,7 @@
                     wp_nav_menu( array( 'menu' => 'footer-menu-3', 'menu_class' => 'footer-menu' ) );
                 ?>
                 </section>
-                <section class="footer-search-container">
+                <section class="footer-search-container row-top-pad">
                     <?php get_search_form() ?>
                 </section>
         </div>
