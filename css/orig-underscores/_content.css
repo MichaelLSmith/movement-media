@@ -223,14 +223,14 @@ needs to be @imported into the style.css file and processed by gulp
 					padding: 0.1em 0 0.8em;
 				}
 				@media $large {
-					font-size: 2.2rem;
+					font-size: 2.5rem;
 					line-height: 1.3;
 					padding: 0.1em 0 0.8em;
 				}
 				@media $ex-large {
-					font-size: 2.3rem;
+					font-size: 2.5rem;
 					line-height: 1.4;
-					padding: 1em 0 0.8em;
+					padding: 0.1em 0 0.8em;
 				}
 		}
 }

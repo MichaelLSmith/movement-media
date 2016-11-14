@@ -142,6 +142,9 @@ get_header(); ?>
 					require(locate_template('template-parts/bronner-media-placement.php' ));
 					?>
 				</div><!-- .partner-services-container -->
+
+				<!-- Back to TOP - may or may not keep
+
 				<p><a
 						data-scroll
 						data-options='{ "easing": "easeOutCubic" }'
@@ -149,6 +152,8 @@ get_header(); ?>
 					</a>
 				</p>
 				</div>
+			-->
+			
 			</section><!-- #dr bronner -->
 			<?php
 			    $count = 0;
@@ -239,13 +244,14 @@ get_header(); ?>
 				<?php endif;?>
 
 				</section>
-
+<!-- Back to TOP - may or may not keep
 				<p><a
 						data-scroll
 						data-options='{ "easing": "easeOutCubic" }'
 						href="#">Back to the top
 					</a>
 				</p>
+			-->
 			</div>
 
 			</section><!-- #partner end -->

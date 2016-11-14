@@ -26,7 +26,7 @@ get_header(); ?>
 							<img src="<?php the_field('about_main_image');?>" alt="" />
 					</section>
 				<?php endif;?>
-				<section class="about_description description-area full-content-area row-tb-pad">
+				<section class="about_description description-area full-content-area">
 					<?php if( get_field('about_description') ): ?>
 					<div class="about-description text-content-area">
 							<?php the_field('about_description'); ?>

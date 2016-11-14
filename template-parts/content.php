@@ -64,13 +64,13 @@
 			$post = $post_object;
 			setup_postdata( $post );
 		?>
-	
+
 		<?php
 			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 		 endif;
 		 ?>
 
-		<section class="stories-content text-content-area">
+		<section class="stories-content text-content-area row-bottom-pad">
 		<?php
 		the_content( sprintf(
 			/* translators: %s: Name of current post. */

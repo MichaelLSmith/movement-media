@@ -7,6 +7,6 @@
             value="<?php echo get_search_query() ?>" name="s"
             title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
     </label>
-    <input type="submit" class="action-btn footer-search-submit"
+    <input type="submit" class="action-btn-large footer-search-submit"
         value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
 </form>

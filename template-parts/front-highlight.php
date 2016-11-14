@@ -12,7 +12,7 @@
                 $post = $post_object;
                 setup_postdata( $post );
             ?>
-              <div class="embed-container"> <?php the_field('video_url'); ?></div>
+              <div class="video-highlight"> <?php the_content(); ?></div>
         <?php
          wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
         <?php endif;?>

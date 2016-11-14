@@ -610,7 +610,10 @@ p {
     p {
 
 
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+
+
+        line-height: 1.5;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -619,10 +622,10 @@ p {
     p {
 
 
-        font-size: 1.9rem;
+        font-size: 1.95rem;
 
 
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -631,10 +634,10 @@ p {
     p {
 
 
-        font-size: 2.05rem;
+        font-size: 1.95rem;
 
 
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 dfn, cite, em, i {
@@ -868,6 +871,11 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .action
 
     color: #fff;
 }
+button a, input[type="button"] a, input[type="reset"] a, input[type="submit"] a, .action-btn a {
+
+
+    color: #fff;
+}
 .action-btn-large {
 
 
@@ -900,9 +908,38 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .action
         font-size: 2rem;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
-@media screen and (min-width: 1025px) and (max-width: 1320px) {}
-@media screen and (min-width: 1321px) {}
+button, input[type="button"], input[type="reset"], input[type="submit"], .action-btn-large {
+
+
+    font-size: 1.3rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    button, input[type="button"], input[type="reset"], input[type="submit"], .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    button, input[type="button"], input[type="reset"], input[type="submit"], .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    button, input[type="button"], input[type="reset"], input[type="submit"], .action-btn-large {
+
+
+        font-size: 2rem;
+    }
+}
 button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .action-btn:hover {
 
 
@@ -950,6 +987,27 @@ textarea {
 
 
     clear: both;
+
+
+    font-size: 1.8rem;
+}
+.gform_wrapper input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']) {
+
+
+    padding: 10px 4px!important;
+}
+.gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_above div.ginput_container[class*="gfield_time_"] label, .gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_time_"] label, .gform_wrapper .field_sublabel_above div.ginput_container[class*="gfield_date_"] label, .gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_date_"] label {
+
+
+    font-size: 1.5rem!important;
+
+
+    letter-spacing: 1.1!important;
+}
+.gform_wrapper label.gfield_label {
+
+
+    font-size: 1.3rem!important;
 }
 /*
 corresonds to the accessibility section of the origin style.css file
@@ -1639,7 +1697,7 @@ needs to be @imported into the style.css file and processed by gulp
     .bold-lead-paragraph p {
 
 
-        font-size: 2.2rem;
+        font-size: 2.5rem;
 
 
         line-height: 1.3;
@@ -1654,13 +1712,13 @@ needs to be @imported into the style.css file and processed by gulp
     .bold-lead-paragraph p {
 
 
-        font-size: 2.3rem;
+        font-size: 2.5rem;
 
 
         line-height: 1.4;
 
 
-        padding: 1em 0 0.8em;
+        padding: 0.1em 0 0.8em;
     }
 }
 .bold-lead-paragraph-inner {
@@ -2569,7 +2627,7 @@ img.custom-logo {
     .home-header {
 
 
-        padding: 0% 0em 6%;
+        padding: 0% 0em 15%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2646,7 +2704,7 @@ img.custom-logo {
     .home-nav {
 
 
-        padding: 1.7% 5% 8%;
+        padding: 1.7% 5% 8.2%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2844,10 +2902,10 @@ img.custom-logo {
     .home-masthead-2 p.text {
 
 
-        font-size: 24px;
+        font-size: 22px;
 
 
-        line-height: 30px;
+        line-height: 27px;
 
 
         margin: 0.4em auto 1.2em;
@@ -2859,7 +2917,7 @@ img.custom-logo {
     .home-masthead-2 p.text {
 
 
-        font-size: 32px;
+        font-size: 29px;
 
 
         line-height: 36px;
@@ -3055,7 +3113,7 @@ img.custom-logo {
     margin-top: 0;
 
 
-    margin-bottom: 1.8em;
+    margin-bottom: 0.5em!important;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3063,7 +3121,7 @@ img.custom-logo {
     .front-subheader {
 
 
-        margin-bottom: 0.8em;
+        margin-bottom: 0.5em!important;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3072,7 +3130,7 @@ img.custom-logo {
     .front-subheader {
 
 
-        margin-bottom: 0.8em;
+        margin-bottom: 0.8em!important;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3081,7 +3139,7 @@ img.custom-logo {
     .front-subheader {
 
 
-        margin-bottom: 0.8em;
+        margin-bottom: 0.8em!important;
     }
 }
 .blue-heading {
@@ -3123,6 +3181,9 @@ img.custom-logo {
 
 
         line-height: 1.2;
+
+
+        margin-bottom: 0em;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3135,6 +3196,56 @@ img.custom-logo {
 
 
         line-height: 1.2;
+
+
+        margin-top: 0em;
+
+
+        margin-bottom: 0em;
+    }
+}
+.blue-heading-front {
+
+
+    margin-top: 0em;
+
+
+    margin-bottom: 0em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .blue-heading-front {
+
+
+        margin-top: 0em;
+
+
+        margin-bottom: 0em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .blue-heading-front {
+
+
+        margin-top: 0em;
+
+
+        margin-bottom: 0em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .blue-heading-front {
+
+
+        margin-top: 0em;
+
+
+        margin-bottom: 0em;
     }
 }
 .thumb-container img, .thumb-container iframe {
@@ -3372,7 +3483,7 @@ img.custom-logo {
     .highlight-item {
 
 
-        width: 46%;
+        width: 23%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3485,6 +3596,9 @@ img.custom-logo {
 
 
             justify-content: flex-end;
+
+
+    margin-bottom: 1em;
 }
 .inner-box-upper-left, .inner-box-upper-right, .inner-box-lower-left, .inner-box-lower-right {
 
@@ -3510,7 +3624,7 @@ img.custom-logo {
 .inner-box-lower-left, .inner-box-lower-right {
 
 
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 .inner-box-upper-left, .inner-box-lower-right {
 
@@ -3529,7 +3643,11 @@ img.custom-logo {
 
 
     background-color: #EBEBE8;
+
+
+    margin-bottom: 3em;
 }
+/*THIS IS A HACK FIX THIS LATER!*/
 .inner-box-upper-right h6, .inner-box-upper-right a, .inner-box-lower-left h6, .inner-box-lower-left a {
 
 
@@ -3586,6 +3704,62 @@ img.custom-logo {
 
 
     width: 70%;
+
+
+    line-height: 1.2;
+
+
+    font-weight: 400;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .highlight-text {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .highlight-text {}
+}
+@media screen and (min-width: 1321px) {
+
+
+    .highlight-text {
+
+
+        margin: 1em 0 0em;
+
+
+        padding: 1rem .8rem 2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .highlight-text h6 {}
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .highlight-text h6 {
+
+
+        padding: 0rem .8rem 1rem;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .highlight-text h6 {
+
+
+        padding: 0rem .8rem 1rem;
+    }
+}
+.video-highlight {
+
+
+    height: 25%;
 }
 .highlight-text > .action-btn a {
 
@@ -4056,6 +4230,38 @@ ul.about-services-left span, ul.about-services-right span {
 
 
     color: #fff;
+}
+.about-description {
+
+
+    padding: 4% 0 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .about-description {
+
+
+        padding: 4% 0 2%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .about-description {
+
+
+        padding: 4% 0 2%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .about-description {
+
+
+        padding: 4% 0 2%;
+    }
 }
 .about-gallery-row {
 

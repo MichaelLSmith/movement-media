@@ -41,7 +41,7 @@ get_header(); ?>
 
 
 
-				<section class="contact-social-media">
+				<section class="contact-social-media row-bottom-pad">
 					<?php if( have_rows('contact_social_media') ): ?>
 						<?php while( have_rows('contact_social_media') ): the_row();
 

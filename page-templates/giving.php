@@ -37,7 +37,7 @@ get_header(); ?>
 				</section>
 				<section class="what full-content-area">
 					<div class="exist text-content-area">
-						<h2>We Exist To:</h2>
+						<h2 class="blue-heading">We Exist To:</h2>
 							<?php if( have_rows('we_exist_list') ): ?>
 								<ul>
 								<?php while ( have_rows('we_exist_list') ) : the_row(); ?>
@@ -53,7 +53,7 @@ get_header(); ?>
 				</section>
 				<section class="full-content-area">
 					<div class="text-content-area">
-						<h2>Social Balance</h2>
+						<h2 class="blue-heading">Social Balance</h2>
 						<?php if( get_field('social_balance_text') ): ?>
 							<?php the_field('social_balance_text'); ?>
 						<?php endif;?>
@@ -61,7 +61,7 @@ get_header(); ?>
 	    		</section>
 				<section class="full-content-area">
 					<div class="text-content-area">
-						<h2>Social Giving</h2>
+						<h3 class="blue-heading">Social Giving</h3>
 						<?php if( get_field('social_giving_introduction') ): ?>
 							<?php the_field('social_giving_introduction'); ?>
 						<?php endif;?>

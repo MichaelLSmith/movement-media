@@ -13,7 +13,7 @@
 
 		<section class="featured-video row-tb-pad">
 			<div class="inner-featured-video full-content-area">
-				<h2 class="blue-heading front-subheader">Movement Videos</h2>
+				<h2 class="blue-heading blue-heading-front front-subheader">Movement Videos</h2>
 				<?php
 					//from https://www.advancedcustomfields.com/resources/post-object/
 					$post_object = get_field('featured_video');
@@ -40,7 +40,7 @@
 
 		<section class="featured-stories row-tb-pad clear">
 			<div class="inner-featured-stories full-content-area">
-					<h2 class="blue-heading front-subheader">Movement Stories</h2>
+					<h2 class="blue-heading blue-heading-front front-subheader">Movement Stories</h2>
 				<div class="home-flex-container">
 						<?php
 							$story_location = 'story_left';
@@ -85,7 +85,7 @@
 
 		<section id="highlights" class="movement-highlights row-tb-pad">
 			<div class="inner-highlights full-content-area">
-				<h2 class="blue-heading front-subheader">Movement Highlights</h2>
+				<h2 class="blue-heading blue-heading-front front-subheader">Movement Highlights</h2>
 				<div class="home-flex-container">
 					<?php
 						//from: http://wordpress.stackexchange.com/questions/41610/variable-use-in-get-template-part?rq=1

@@ -17,7 +17,7 @@
       padding: 0% 0em 6em;
     }
     @media $large {
-      padding: 0% 0em 6%;
+      padding: 0% 0em 15%;
     }
     @media $ex-large {
       padding: 0% 0em 12%;
@@ -45,7 +45,7 @@
            padding: 1.3% 5% 5%;
     }
     @media $large {
-            padding: 1.7% 5% 8%;
+            padding: 1.7% 5% 8.2%;
     }
     @media $ex-large {
             padding: 2% 2% 7%;
@@ -121,12 +121,12 @@
           margin: 1.2em auto 1.2em;
         }
         @media $large {
-          font-size: 24px;
-          line-height: 30px;
+          font-size: 22px;
+          line-height: 27px;
           margin: 0.4em auto 1.2em;
         }
         @media $ex-large {
-          font-size: 32px;
+          font-size: 29px;
           line-height: 36px;
           margin: 0.4em auto 1.2em;
         }
@@ -200,16 +200,16 @@ margin-bottom: 1.8em;
 }
 .front-subheader {
   margin-top: 0;
-  margin-bottom: 1.8em;
+  margin-bottom: 0.5em!important;
 
     @media $medium {
-          margin-bottom: 0.8em;
+          margin-bottom: 0.5em!important;
     }
     @media $large {
-        margin-bottom: 0.8em;
+        margin-bottom: 0.8em!important;
     }
     @media $ex-large {
-          margin-bottom: 0.8em;
+          margin-bottom: 0.8em!important;
     }
 }
 .blue-heading {
@@ -225,10 +225,31 @@ margin-bottom: 1.8em;
 	@media $large {
   font-size: 5em;
     line-height: 1.2;
+    margin-bottom: 0em;
 	}
 	@media $ex-large {
   font-size: 5em;
       line-height: 1.2;
+      margin-top: 0em;
+      margin-bottom: 0em;
+	}
+}
+.blue-heading-front {
+  margin-top: 0em;
+  margin-bottom: 0em;
+	@media $medium {
+    margin-top: 0em;
+    margin-bottom: 0em;
+	}
+	@media $large {
+
+    margin-top: 0em;
+    margin-bottom: 0em;
+	}
+	@media $ex-large {
+
+      margin-top: 0em;
+      margin-bottom: 0em;
 	}
 }
 .thumb-container img, .thumb-container iframe {
@@ -337,7 +358,7 @@ margin-bottom: 1.8em;
         flex-flow: row wrap;
     }
     @media $large {
-        width: 46%;
+        width: 23%;
     }
     @media $ex-large {
         width: 23%;
@@ -376,6 +397,7 @@ margin-bottom: 1.8em;
 }
 .front-item-right {
     justify-content: flex-end;
+    margin-bottom: 1em;
 }
 .inner-box-upper-left, .inner-box-upper-right, .inner-box-lower-left, .inner-box-lower-right {
     /*background-color: brown;*/
@@ -389,7 +411,8 @@ margin-bottom: 1.8em;
     margin-bottom: 0rem;
 }
 .inner-box-lower-left, .inner-box-lower-right {
-    margin-top: 1rem;
+    margin-top: 0rem;
+
 }
 .inner-box-upper-left, .inner-box-lower-right {
     background-color: $lightBlue;
@@ -401,6 +424,7 @@ margin-bottom: 1.8em;
 }
 .inner-box-upper-right, .inner-box-lower-left {
   background-color: $backgroundGrey;
+    margin-bottom: 3em;     /*THIS IS A HACK FIX THIS LATER!*/
     h6,a {
         color: $darkBlue;
     }
@@ -411,13 +435,36 @@ margin-bottom: 1.8em;
     justify-content: center;
     margin: 1.5rem 0 0rem;
     padding: 2rem .8rem 4rem;
+    @media $medium {
+
+    }
+    @media $large {
+
+    }
+    @media $ex-large {
+      margin: 1em 0 0em;
+      padding: 1rem .8rem 2rem;
+    }
     h6 {
       margin: 0.4rem auto 1rem;
       text-align: center;
       text-transform:uppercase;
       width: 70%;
+      line-height: 1.2;
+      font-weight: 400;
+      @media $medium {
 
+      }
+      @media $large {
+          padding: 0rem .8rem 1rem;
+      }
+      @media $ex-large {
+        padding: 0rem .8rem 1rem;
+      }
     }
+}
+.video-highlight {
+  height: 25%;
 }
 
 .highlight-text > .action-btn a {

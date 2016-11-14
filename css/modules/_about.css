@@ -94,3 +94,15 @@ ul.about-services-left, ul.about-services-right {
     text-align: center;
     color: $white;
 }
+.about-description {
+      padding: 4% 0 0;
+  @media $medium {
+    padding: 4% 0 2%;
+  }
+  @media $large {
+        padding: 4% 0 2%;
+  }
+  @media $ex-large {
+        padding: 4% 0 2%;
+  }
+}
