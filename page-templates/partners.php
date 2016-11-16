@@ -86,34 +86,10 @@ get_header(); ?>
 						<?php the_field('bronner_description_what') ?>
 					<?php endif; ?>
 				</div>
-				<div class="partner-gallery">
-					<?php $images = get_field('bronner_image_gallery');	?>
-					<aside class="bronner-flex-container-upper">
-				        <div class="bronner-flex-item-left">
-				            <div class="bronner-inner-box-upper">
-				                <img src="
-									<?php echo $images['0']['url'] ?>" alt="<?php echo $images['0']['alt'];?>">
-				            </div>
-				        </div>
-				        <div class="bronner-flex-item-right">
-				            <div class="bronner-inner-box-upper">
-				                <img src="<?php echo $images['1']['url'] ?>" alt="<?php echo $images['0']['alt'];?>">
-				            </div>
-				        </div>
-				    </aside>
-				    <aside class="bronner-flex-container-lower">
-				        <div class="bronner-flex-item-left">
-				        <div class="bronner-inner-box-lower">
-				            <img src="<?php echo $images['2']['url'] ?>" alt="<?php echo $images['0']['alt'];?>">
-				        </div>
-				        </div>
-				        <div class="bronner-flex-item-right">
-				            <div class="bronner-inner-box-lower">
-				                <img src="<?php echo $images['3']['url'] ?>" alt="<?php echo $images['0']['alt'];?>">
-				            </div>
-				        </div>
-				    </aside>
-				</div><!-- .partner-gallery -->
+				<div class="bronner-image image-content-area">
+					<?php $image = get_field('bronner_image');	?>
+	                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'];?>">
+				</div><!-- .bronner-image -->
 				<div class="partner-services-container row-tb-pad">
 					<?php
 					$title = 'Media Placements';
@@ -234,13 +210,11 @@ get_header(); ?>
 					endif;//have_rows('other_partners')
 			    ?>
 
-				<section class="partners-gallery-container full-content-area">
+				<section class="partners-gallery full-content-area">
 					<h6 class="blue-heading">Additional Partners</h6>
-					<div class="partners-other-gallery">
+					<div class="partners-gallery-flex">
 						<?php
-						// check if the repeater field has rows of data
 						if( have_rows('partners_image_gallery') ):
-							// loop through the rows of data
 							while ( have_rows('partners_image_gallery') ) : the_row();
 								$image = get_sub_field('partner_gallery_image');
 								// echo '<pre>';
@@ -252,10 +226,9 @@ get_header(); ?>
 										<img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="" />
 									</a>
 								</div>
-								<?php
-							endwhile;
-						endif;
-						?></div>
+						<?php endwhile;
+						endif; ?>
+					</div>
 				</section>
 			</article><!-- .partners-outer-container -->
 		</main><!-- #main -->

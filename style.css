@@ -4263,7 +4263,7 @@ ul.about-services-left span, ul.about-services-right span {
         padding: 4% 0 2%;
     }
 }
-.about-gallery-row {
+.partners-gallery-flex {
 
 
     list-style: none;
@@ -5093,83 +5093,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
         padding: 0 24px 0 0;
     }
 }
-.partner-gallery {
-
-
-    max-width: 75%;
-
-
-    margin: 0 auto 3rem auto;
-}
-/*Flex Gallery*/
-.bronner-flex-container-upper, .bronner-flex-container-lower {
-
-
-    display: -webkit-box;
-
-
-    display: -ms-flexbox;
-
-
-    display: flex;
-
-
-    font-size: 10px;
-}
-.bronner-flex-container-upper {}
-.bronner-flex-container-lower {
-
-
-    border-top: solid black .5px;
-}
-.bronner-flex-item-left, .bronner-flex-item-right {}
-.bronner-flex-item-left {
-
-
-    border-right: solid black .5px;
-
-
-    padding-top: 3em;
-
-
-    border-bottom: solid black .5px;
-}
-.bronner-flex-item-right {
-
-
-    border-left: solid black .5px;
-
-
-    -webkit-box-pack: end;
-
-
-        -ms-flex-pack: end;
-
-
-            justify-content: flex-end;
-
-
-    padding-left: 12px;
-
-
-    border-bottom: solid black .5px;
-}
-.bronner-inner-box-upper, .bronner-inner-box-lower {}
-.bronner-inner-box-upper {
-
-
-    margin-bottom: 10px;
-}
-.bronner-inner-box-lower {
-
-
-    margin-top: 10px;
-}
-.bronner-flex-item-left img, .bronner-flex-item-right img {
-
-
-    width: 97%;
-}
 .partner-services-container {
 
 
@@ -5356,14 +5279,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     border: solid red 1px;
 }
-#top {
-
-
-    /*background-color: grey;*/
-}
-#dr-bronner {}
-#vote-hemp {}
-#fair-world {}
 .home .news-signup {
 
 

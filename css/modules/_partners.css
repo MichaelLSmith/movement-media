@@ -1,4 +1,4 @@
-.about-gallery-row {
+.partners-gallery-flex {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -63,8 +63,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
         margin: 60px auto 60px;
     }
 }
-
-
 .bronner-image {
     margin-bottom: 3.9rem;
 }
@@ -251,47 +249,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
       }
     }
 }
-
-.partner-gallery {
-    max-width: $textMargin;
-    margin: 0 auto 3rem auto;
-}
-/*Flex Gallery*/
-.bronner-flex-container-upper, .bronner-flex-container-lower {
-    display: flex;
-    font-size: 10px;
-}
-.bronner-flex-container-upper {
-
-}
-.bronner-flex-container-lower {
-    border-top: solid black .5px;
-}
-.bronner-flex-item-left, .bronner-flex-item-right {
-
-}
-.bronner-flex-item-left {
-    border-right: solid black .5px;
-        padding-top: 3em;
-          border-bottom: solid black .5px;
-}
-.bronner-flex-item-right {
-    border-left: solid black .5px;
-    justify-content: flex-end;
-    padding-left: 12px;
-      border-bottom: solid black .5px;
-}
-.bronner-inner-box-upper, .bronner-inner-box-lower {
-}
-.bronner-inner-box-upper {
-    margin-bottom: 10px;
-}
-.bronner-inner-box-lower {
-    margin-top: 10px;
-}
-.bronner-flex-item-left img, .bronner-flex-item-right img {
-    width: 97%;
-}
 .partner-services-container {
     display: flex;
     flex-direction: column;
@@ -305,7 +262,6 @@ note: partners-upper content width area controlled in _content.css as part of .e
         margin: 0;
         font-size: 1.6rem;
         min-height: 130px;
-
     }
 
     @media $large {
@@ -347,19 +303,4 @@ note: partners-upper content width area controlled in _content.css as part of .e
     display: flex;
     align-items: center;
     border: solid red 1px;
-}
-
-#top {
-    /*background-color: grey;*/
-}
-
-#dr-bronner {
-}
-
-#vote-hemp {
-
-}
-
-#fair-world {
-
 }
