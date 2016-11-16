@@ -138,12 +138,9 @@ get_header(); ?>
 			            $count = $count + 1;
 			?>
 			<section id="partner-<?php echo $count?>" class="partner-outer-container row-tb-pad">
-				<div class="partner-container additional-partners full-content-area">
-
-						<h2 class="blue-heading partner-heading text-content-area row-top-pad"><?php the_sub_field('partner_name');?></h2>
+				<div class="partner-container full-content-area">
+					<h2 class="blue-heading partner-heading text-content-area row-top-pad"><?php the_sub_field('partner_name');?></h2>
 				<div class="partner-title-group row-top-pad">
-
-
 				<?php
 					if(get_row_layout() == 'partner_name_group'): ?>
 					        <?php
@@ -153,16 +150,15 @@ get_header(); ?>
 						        <div class="partner-title-image row-bottom-pad">
 						            <img src="<?php the_sub_field('partner_image');?>" alt="" />
 						        </div>
-										<div class="partner-description row-bottom-pad">
-									        <h6><?php the_sub_field('partner_heading');?></h6>
-													<?php the_sub_field('partner_description');
-													?>
-										</div>
-
-										<?php
-												endif;//get_row_layout partner_content_group
-												endwhile;//have_rows(partner_content_group_flex)
-											?>
+									<div class="partner-description row-bottom-pad">
+								        <h6><?php the_sub_field('partner_heading');?></h6>
+												<?php the_sub_field('partner_description');
+												?>
+									</div>
+									<?php
+										endif;//get_row_layout partner_content_group
+										endwhile;//have_rows(partner_content_group_flex)
+									?>
 				</div>
 
 
@@ -203,23 +199,19 @@ get_header(); ?>
 				</p>
 			-->
 			</div>
-
 			</section><!-- #partner end -->
 			    <?php
 					endwhile;//have_rows('other_partners')
 					endif;//have_rows('other_partners')
 			    ?>
-
-				<section class="partners-gallery full-content-area">
-					<h6 class="blue-heading">Additional Partners</h6>
+			<section id="other-partners" class="partner-outer-container row-tb-pad">
+				<div class="partner-container full-content-area">
+					<h6 class="blue-heading partner-heading text-content-area row-top-pad">Additional Partners</h6>
 					<div class="partners-gallery-flex">
 						<?php
 						if( have_rows('partners_image_gallery') ):
 							while ( have_rows('partners_image_gallery') ) : the_row();
 								$image = get_sub_field('partner_gallery_image');
-								// echo '<pre>';
-								// 	var_dump( $image );
-								// echo '</pre>';
 								?>
 								<div class="gallery-image">
 									<a href="<?php the_sub_field('partner_gallery_url')?>">
@@ -229,9 +221,10 @@ get_header(); ?>
 						<?php endwhile;
 						endif; ?>
 					</div>
-				</section>
-			</article><!-- .partners-outer-container -->
-		</main><!-- #main -->
+				</div>
+			</section>
+		</article><!-- .partners-outer-container -->
+	</main><!-- #main -->
 	<!-- </div>#primary -->
 </div><!-- #content -->
 <?php
