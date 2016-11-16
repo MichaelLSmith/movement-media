@@ -72,14 +72,12 @@ get_header(); ?>
 					    // echo "<p>in if partner row</p>";
 					    while ( have_rows('partner_row') ) : the_row(); ?>
 							<h5><?php the_sub_field('giving_year'); ?> </h5>
-							<article class="giving-partner-row">
+							<article class="giving-partner-flex">
 					<?php
 				        	while ( has_sub_field('social_giving_partners') ) :
 				            	if(get_row_layout('social_giving_partner')):
-
-
 								?>
-								<div class="giving-partner-inner">
+								<div class="giving-partner-item">
 									<?php
 									$image = get_sub_field('giving_image');?>
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
