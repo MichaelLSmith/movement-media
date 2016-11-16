@@ -5888,7 +5888,8 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     height: auto;
 }
-.video-indiv .post_tags a {
+/*.video-indiv*/
+.post_tags a {
 
 
     display: inline-block;

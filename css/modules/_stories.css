@@ -112,7 +112,8 @@ a:visited {
   width: 100%;
   height: auto;
 }
-.video-indiv .post_tags a {
+/*.video-indiv*/
+ .post_tags a {
   display: inline-block;
 	margin: 6px 8px 6px 0;
 	background: $green;

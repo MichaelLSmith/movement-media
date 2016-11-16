@@ -61,6 +61,7 @@ get_header(); ?>
 							the_category(' ');
 							?>
 						</div>
+						<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
 						</section>
 				<?php
 				endwhile;

@@ -25,7 +25,7 @@
 			</div><!-- .entry-meta -->
 			<?php
 			endif; ?>
-				</header><!-- .entry-header -->
+		</header><!-- .entry-header -->
 
 			<div class="entry-content">
 			<?php
@@ -41,6 +41,8 @@
 				) );
 			?>
 			</div><!-- .entry-content -->
+			<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
+
 		</section>
 
 

@@ -28,18 +28,11 @@
 						the_field('credits');
 						?>
 					</div>
+					<?php
+					echo get_the_term_list( $post->ID, 'post_tag', $before = '<div class="post_tags">', $sep = '', $after = '</div>' );
+					?>
 						<?php
-												$tags = get_tags();
-							$html = '<div class="post_tags">';
-							foreach ( $tags as $tag ) {
-								$tag_link = get_tag_link( $tag->term_id );
-
-								$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
-								$html .= "{$tag->name}</a>";
-							}
-							$html .= '</div>';
-							echo $html;
-						?>
+						// echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
 
 					<section class="video-social-media social-share">
 						<?php if( have_rows('video_social_media') ): ?>
