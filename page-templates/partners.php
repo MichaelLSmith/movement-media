@@ -153,7 +153,7 @@ get_header(); ?>
 				</p>
 				</div>
 			-->
-			
+
 			</section><!-- #dr bronner -->
 			<?php
 			    $count = 0;
@@ -218,32 +218,6 @@ get_header(); ?>
 				endif;//get_row_layout(partner_name_group)?>
 				</div><!-- .partner-services-container -->
 
-				<section class="partners-gallery gallery full-content-area">
-					<?php
-						$images = get_field('partners_image_gallery');
-						if( $images ):
-					?>
-					<div class="partners-gallery-row gallery-row">
-						<img src="<?php echo $images[0]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[1]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[2]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[3]['sizes']['thumbnail'];?>" alt="">
-					</div>
-					<div class="partners-gallery-row gallery-row">
-						<img src="<?php echo $images[4]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[5]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[6]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[7]['sizes']['thumbnail'];?>" alt="">
-					</div>
-					<div class="partners-gallery-row gallery-row">
-						<img src="<?php echo $images[8]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[9]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[10]['sizes']['thumbnail'];?>" alt="">
-						<img src="<?php echo $images[11]['sizes']['thumbnail'];?>" alt="">
-					</div>
-				<?php endif;?>
-
-				</section>
 <!-- Back to TOP - may or may not keep
 				<p><a
 						data-scroll
@@ -260,6 +234,29 @@ get_header(); ?>
 					endif;//have_rows('other_partners')
 			    ?>
 
+				<section class="partners-gallery-container full-content-area">
+					<h6 class="blue-heading">Additional Partners</h6>
+					<div class="partners-other-gallery">
+						<?php
+						// check if the repeater field has rows of data
+						if( have_rows('partners_image_gallery') ):
+							// loop through the rows of data
+							while ( have_rows('partners_image_gallery') ) : the_row();
+								$image = get_sub_field('partner_gallery_image');
+								// echo '<pre>';
+								// 	var_dump( $image );
+								// echo '</pre>';
+								?>
+								<div class="gallery-image">
+									<a href="<?php the_sub_field('partner_gallery_url')?>">
+										<img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="" />
+									</a>
+								</div>
+								<?php
+							endwhile;
+						endif;
+						?></div>
+				</section>
 			</article><!-- .partners-outer-container -->
 		</main><!-- #main -->
 	<!-- </div>#primary -->
