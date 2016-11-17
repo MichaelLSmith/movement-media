@@ -13,14 +13,18 @@
 	<header class="entry-header full-content-area">
 		<?php
 
-		// $post_object = get_field('video_reg_post');
+
 		if ( is_single() ) : ?>
 			<div class="story-heading">
 				<?php
-			the_title( '<h5 class="story-title text-content-area">', '</h5>' );
-			// check if the post or page has a Featured Image assigned to it.
 			if ( has_post_thumbnail() ) :
+				the_title( '<h5 class="story-title text-content-area">', '</h5>' );
+				// check if the post or page has a Featured Image assigned to it.
 				the_post_thumbnail();
+
+			else:
+				the_title( '<h5 class="pr-story-title text-content-area">', '</h5>' );
+
 			endif;
 			?>
 			</div>
@@ -58,17 +62,6 @@
 	</header><!-- .entry-header -->
 
 	<div class="story-content full-content-area">
-		<?php
-			// if($post_object) :
-			// //override $post
-			// $post = $post_object;
-			// setup_postdata( $post );
-		?>
-
-		<?php
-		// 	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		//  endif;
-		 ?>
 
 		<section class="stories-content text-content-area row-bottom-pad">
 		<?php
@@ -77,7 +70,22 @@
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'movementmedia' ), array( 'span' => array( 'class' => array() ) ) ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
+
+			
+			// if($post_object) :
+			// //override $post
+			// $post = $post_object;
+			// setup_postdata( $post );
+
+			// 	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+			//  endif;
+
+		// $post_object = get_field('video_reg_post');
+
+
 		?>
+
+
 		<div class="post-social-media social-share">
 			<?php if( have_rows('post_social_media') ): ?>
 				<?php while( have_rows('post_social_media') ): the_row();
