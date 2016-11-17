@@ -42,15 +42,10 @@
 
 			<div class="story-meta">
 				<span class="story-author">
-			<?php
-				the_author();
-				?>,
-			</span>
-
+				<?php the_author(); ?>,
+				</span>
 				<span class="story-date">
-					<?php
-					echo get_the_date();
-					?>
+					<?php echo get_the_date(); ?>
 				</span>
 			</div>
 
@@ -71,16 +66,18 @@
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
-			
-			// if($post_object) :
-			// //override $post
-			// $post = $post_object;
-			// setup_postdata( $post );
+			$post_object = get_field('video_reg_post');
 
-			// 	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-			//  endif;
+			if($post_object) :
+			//override $post
+			$post = $post_object;
+			setup_postdata( $post );
 
-		// $post_object = get_field('video_reg_post');
+			the_content();
+
+			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+			 endif;
+
 
 
 		?>

@@ -33,13 +33,7 @@ get_header(); ?>
 
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
-
-				// Create template part here. Will be used here and in archive.php-->
-
 				get_template_part( 'template-parts/content', 'story_preview' );
-
-
-
 				endwhile;
 				?>
 			</div>
