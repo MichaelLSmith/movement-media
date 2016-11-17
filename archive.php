@@ -31,7 +31,27 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+
+				/*
+				I don't think we need to load a template part. Except if category uses this such as newsletter or press release.
+
+				Separate template(or part) for tags??
+
+				We just want to display the title(and bi-line) and custom excerpt of stories.
+
+				For videos, we want to display the title and the video.
+				*/
+
+				the_title( '<h5 class="video-title text-content-area"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' );
+
+				
+				if ( has_post_thumbnail() ) :
+					the_post_thumbnail( 'thumbnail' );
+				endif;
+
+
+
+				// get_template_part( 'template-parts/content', get_post_format() );
 
 			endwhile;
 

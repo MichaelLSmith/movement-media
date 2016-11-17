@@ -34,9 +34,7 @@ get_header(); ?>
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 				?>
-
-
-
+				<!-- Create template part here. Will be used here and in archive.php-->
 					<section class="stories-list row-bottom-pad">
 						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 					<div class="stories-image">

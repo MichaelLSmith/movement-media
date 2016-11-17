@@ -11,11 +11,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main class="content-inner" role="main">
-			This is the video
+			<p>This is the single video template</p>
 
-            <?php the_content(); ?>
-
-			<?php the_field('video_url'); ?>
+            <?php
+				setup_postdata( $post );
+			 	the_content();
+			 ?>
 
 
 

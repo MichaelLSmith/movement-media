@@ -13,7 +13,7 @@
 	<header class="entry-header full-content-area">
 		<?php
 
-		$post_object = get_field('video_reg_post');
+		// $post_object = get_field('video_reg_post');
 		if ( is_single() ) : ?>
 			<div class="story-heading">
 				<?php
@@ -25,10 +25,9 @@
 			?>
 			</div>
 			<?php
-		//if - is single cont...
 		else :
 
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h5 class="video-title text-content-area"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' );
 			if ( has_post_thumbnail() ) :
 				the_post_thumbnail( 'thumbnail' );
 			endif;
@@ -59,15 +58,16 @@
 	</header><!-- .entry-header -->
 
 	<div class="story-content full-content-area">
-		<?php if($post_object) :
-			//override $post
-			$post = $post_object;
-			setup_postdata( $post );
+		<?php
+			// if($post_object) :
+			// //override $post
+			// $post = $post_object;
+			// setup_postdata( $post );
 		?>
 
 		<?php
-			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		 endif;
+		// 	wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+		//  endif;
 		 ?>
 
 		<section class="stories-content text-content-area row-bottom-pad">
