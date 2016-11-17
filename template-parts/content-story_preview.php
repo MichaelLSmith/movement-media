@@ -1,5 +1,5 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
-    <section class="stories-list row-bottom-pad">
+<!-- <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> > -->
+    <section id="post-<?php the_ID(); ?>" class="stories-list row-bottom-pad">
         <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
     <div class="stories-image">
         <?php
@@ -20,4 +20,4 @@
         </div>
         <?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
     </section>
-</article>
+<!-- </article> -->

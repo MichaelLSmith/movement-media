@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area full-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -21,7 +21,7 @@ get_header(); ?>
 					the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			<div class="stories-container boxlist-2col-flex">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -42,17 +42,16 @@ get_header(); ?>
 				For videos, we want to display the title and the video.
 				*/
 
-				the_title( '<h5 class="video-title text-content-area"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' );
+				// the_title( '<h5 class="video-title text-content-area"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' );
 
-				
-				if ( has_post_thumbnail() ) :
-					the_post_thumbnail( 'thumbnail' );
+				if ( get_post_type() == 'movementmedia_videos' ):
+					get_template_part( 'template-parts/content', 'movementmedia_videos' );
+
+				else:
+
+					get_template_part( 'template-parts/content', 'story_preview' );
+
 				endif;
-
-
-
-				// get_template_part( 'template-parts/content', get_post_format() );
-
 			endwhile;
 
 			the_posts_navigation();
@@ -60,6 +59,10 @@ get_header(); ?>
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
+
+?>
+</div>
+<?php
 
 		endif; ?>
 
