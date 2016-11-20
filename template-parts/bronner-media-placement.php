@@ -3,12 +3,14 @@
     <!-- <p style="color:purple;"> change </p> -->
 
     <div class="partner-inner-flex">
-        <div class="media-placement-icon">
-            <?php echo $icon ?>
-        </div>
-        <h6 class="<?php echo $titleClass?>">
-            <?php echo $title ?>
-        </h6>
+      <div class="media-placement-icon">
+          <?php echo $icon ?>
+      </div>
+      <h4 class="<?php echo $titleClass?>">
+          <?php echo $title ?>
+      </h4>
+
+
     </div>
     <ul>
         <?php

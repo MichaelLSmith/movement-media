@@ -21,23 +21,7 @@ get_header(); ?>
 					 <?php the_field('contact_form'); ?>
 			 </div>
 
-				<section class="contact-group">
-						<div class="content-address">
-							<?php the_field('contact_phone_number');?>
-						</div>
-						<div class="content-address">
-							<?php the_field('contact_organization_name');?>
-						</div>
-						<div class="content-address">
-							<?php the_field('contact_street_address');?>
-						</div>
-						<div class="content-address">
-							<?php the_field('contact_city');?>
-						</div>
-						<div class="content-address">
-							<?php the_field('contact_zip_code');?>
-						</div>
-				</section>
+				
 
 
 

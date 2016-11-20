@@ -1,11 +1,13 @@
 <div class="partner-media-placement">
     <div class="partner-inner-flex">
+
         <div class="media-placement-icon">
             <?php echo $icon ?>
         </div>
-        <h6 class="<?php echo $titleClass?>">
+        <h4 class="<?php echo $titleClass?>">
             <?php echo $title ?>
-        </h6>
+        </h4>
+
     </div>
     <ul>
         <?php

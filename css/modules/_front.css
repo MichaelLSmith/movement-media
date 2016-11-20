@@ -286,7 +286,7 @@ margin-bottom: 1.8em;
     }
 }
 .story-grey {
-    background-color: $white;
+    background-color: #efefef;
     h6,a {
         color: $darkBlue;
         margin: 0.8em 0 0.6em;

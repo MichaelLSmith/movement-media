@@ -3332,7 +3332,7 @@ img.custom-logo {
 .story-grey {
 
 
-    background-color: #fff;
+    background-color: #efefef;
 }
 .story-grey h6, .story-grey a {
 
@@ -4308,10 +4308,61 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
     margin-top: 0rem;
 }
-.partner-container h6 {
+.partner-container h4 {
 
 
-    margin: 0;
+    margin: 1em 0 0.8em;
+
+
+    font-weight: 800;
+
+
+    text-transform: uppercase;
+
+
+    font-size: 1.6em;
+
+
+    border-bottom: 0px solid #fff;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-container h4 {
+
+
+        margin: 0.3em 0 0.1em;
+
+
+        font-size: 3.2em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partner-container h4 {
+
+
+        margin: 1em 0 0.8em;
+
+
+        font-size: 2.8em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-container h4 {
+
+
+        margin: 0.5em 0 0.3em;
+
+
+        letter-spacing: 1px;
+
+
+        font-size: 2.8em;
+    }
 }
 .partner-container {
 
@@ -4323,6 +4374,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     border-top: #005395 solid 30px;
+
+
+    border-bottom: #005395 solid 18px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -4331,6 +4385,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
         border-top: #005395 solid 30px;
+
+
+        border-bottom: #005395 solid 18px;
 
 
         background-color: #fff;
@@ -4342,10 +4399,13 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-container {
 
 
-        border-top: #005395 solid 40px;
+        border-top: #005395 solid 50px;
 
 
         background-color: #fff;
+
+
+        border-bottom: #005395 solid 30px;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -4354,7 +4414,10 @@ note: partners-upper content width area controlled in _content.css as part of .e
     .partner-container {
 
 
-        border-top: #005395 solid 40px;
+        border-top: #005395 solid 50px;
+
+
+        border-bottom: #005395 solid 30px;
 
 
         background-color: #fff;
@@ -4583,6 +4646,15 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     margin: 0 auto 3rem;
+
+
+    padding-left: 1em;
+
+
+    padding-right: 1em;
+
+
+    width: 83.33%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -4611,7 +4683,7 @@ note: partners-upper content width area controlled in _content.css as part of .e
                 justify-content: space-between;
 
 
-        width: 100%;
+        width: 83.33%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4720,7 +4792,14 @@ note: partners-upper content width area controlled in _content.css as part of .e
         max-width: 250px;
     }
 }
-.partner-description {}
+.partner-description h6 {
+
+
+    margin: 0;
+
+
+    font-size: 1.8rem;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
@@ -4738,6 +4817,16 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
         margin-bottom: 0.5em;
+    }
+
+
+    .partner-description h6 {
+
+
+        margin: 0;
+
+
+        font-size: 1.8rem;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4758,6 +4847,16 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
         margin-bottom: 0.5em;
     }
+
+
+    .partner-description h6 {
+
+
+        margin: 0;
+
+
+        font-size: 2rem;
+    }
 }
 @media screen and (min-width: 1321px) {
 
@@ -4776,6 +4875,16 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
         margin-bottom: 0.5em;
+    }
+
+
+    .partner-description h6 {
+
+
+        margin: 0;
+
+
+        font-size: 2rem;
     }
 }
 .partner-what-group {
@@ -4802,6 +4911,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
     margin: 0 auto 3em;
 
 
+    padding-bottom: 4.4%;
+
+
     -webkit-box-orient: horizontal;
 
 
@@ -4824,6 +4936,9 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
         align-content: space-between;
+
+
+    border-bottom: 4px solid #343434;
 }
 .partner-what-group h5 {
 
@@ -5117,36 +5232,47 @@ note: partners-upper content width area controlled in _content.css as part of .e
             flex-direction: column;
 
 
-    -webkit-box-pack: justify;
+    -ms-flex-pack: distribute;
 
 
-        -ms-flex-pack: justify;
-
-
-            justify-content: space-between;
+        justify-content: space-around;
 
 
     color: #fff;
 
 
-    min-height: 200px;
+    min-height: 330px;
 
 
-    max-width: 83.33%;
+    max-width: 100%;
 
 
-    margin: auto;
+    margin: 0 2em;
 }
 .partner-services-container ul {
 
 
-    margin: 0;
+    font-size: 1.3rem;
+}
+.partner-services-container ul li {
 
 
-    font-size: 1.6rem;
+    color: #4A90E2;
 
 
-    min-height: 130px;
+    margin: 1.1em 0;
+
+
+    padding: 0.1em 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-services-container {
+
+
+        margin: 0 6em;
+    }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
 
@@ -5166,10 +5292,10 @@ note: partners-upper content width area controlled in _content.css as part of .e
                 flex-direction: row;
 
 
-        margin: none;
+        margin: 0 5em;
 
 
-        max-width: 83.333%;
+        max-width: 100%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -5190,47 +5316,72 @@ note: partners-upper content width area controlled in _content.css as part of .e
                 flex-direction: row;
 
 
-        margin: none;
+        margin: 0 5em;
 
 
-        max-width: 83.333%;
+        max-width: 100%;
     }
 }
-.partner-media-placement {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    background-color: #4A90E2;
+    .partner-services-container ul {
 
 
-    -webkit-box-flex: 0;
-
-
-        -ms-flex: 0 0 32%;
-
-
-            flex: 0 0 32%;
-
-
-    margin-bottom: 25px;
+        font-size: 1.3rem;
+    }
 }
-.partner-media-placement ul {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
-    background-color: #fff;
+    .partner-services-container ul {
 
 
-    color: #232323;
-
-
-    width: 85%;
-
-
-    margin: 5px auto;
-
-
-    padding-top: 1.1rem;
+        font-size: 1.3rem;
+    }
 }
-.partner-inner-flex {
+@media screen and (min-width: 1321px) {
+
+
+    .partner-services-container ul {
+
+
+        font-size: 1.3rem;
+    }
+}
+.partner-bluebox-linkarea {
+
+
+    padding: 0 3% 3%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .partner-bluebox-linkarea {
+
+
+        margin: 8.4% 6% 0;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .partner-bluebox-linkarea {
+
+
+        padding: 0 3% 6%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .partner-bluebox-linkarea {
+
+
+        padding: 0 3% 6%;
+    }
+}
+.bluebox-2col-flex {
 
 
     display: -webkit-box;
@@ -5240,23 +5391,88 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     display: flex;
+
+
+    -webkit-box-orient: vertical;
+
+
+    -webkit-box-direction: normal;
+
+
+        -ms-flex-direction: column;
+
+
+            flex-direction: column;
+
+
+    -ms-flex-wrap: wrap;
+
+
+        flex-wrap: wrap;
+
+
+    -ms-flex-direction: row;
+
+
+        flex-direction: row;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
+
+
+    -ms-flex-line-pack: center;
+
+
+        align-content: center;
 }
-.media-placement-title {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
-    max-width: 100%;
+    .bluebox-2col-flex {
+
+
+        margin: 8.4% 6% 0;
+    }
 }
-.service-provided-title, .campaign-supported-title {
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
 
 
-    max-width: 83%;
+    .bluebox-2col-flex {
+
+
+        margin: 6% 5% 0;
+
+
+        padding: 2.5% 0% 0%;
+    }
 }
-.service-provided-title, .campaign-supported-title, .media-placement-title {
+@media screen and (min-width: 1321px) {
 
 
-    margin: 0;
+    .bluebox-2col-flex {
+
+
+        margin: 6% 2% 0;
+
+
+        padding: 2.5% 5% 0%;
+    }
 }
-.media-placement-icon {
+.bluebox-heading {
+
+
+    background-color: #005395;
+
+
+    padding: 1em 0;
+}
+.bluebox-innerflex {
 
 
     display: -webkit-box;
@@ -5277,7 +5493,214 @@ note: partners-upper content width area controlled in _content.css as part of .e
             align-items: center;
 
 
-    border: solid red 1px;
+    -webkit-box-pack: center;
+
+
+        -ms-flex-pack: center;
+
+
+            justify-content: center;
+}
+h2.bluebox-2col-title {
+
+
+    color: #ffffff;
+
+
+    text-transform: uppercase;
+
+
+    font-weight: 800;
+
+
+    letter-spacing: 2px;
+
+
+    font-size: 3em;
+
+
+    margin: 0;
+}
+.bluebox {
+
+
+    width: 100%;
+
+
+    margin-bottom: 5.6%;
+}
+.bluebox li {
+
+
+    color: #4A90E2;
+
+
+    font-weight: 300;
+
+
+    text-decoration: underline;
+
+
+    margin: 0 0 16px 0;
+
+
+    font-size: 1.6em;
+
+
+    line-height: 1.3;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .bluebox {
+
+
+        width: 100%;
+
+
+        margin-bottom: 4.2%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .bluebox {
+
+
+        width: 46%;
+
+
+        margin-bottom: 0%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .bluebox {
+
+
+        width: 46%;
+
+
+        margin-bottom: 0%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .bluebox li {
+
+
+        margin: 0 0 18px 0;
+
+
+        font-size: 1.7em;
+
+
+        line-height: 1.4;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .bluebox li {
+
+
+        margin: 0 0 12px 0;
+
+
+        font-size: 1.9em;
+
+
+        line-height: 1.3;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .bluebox li {
+
+
+        margin: 0 0 12px 0;
+
+
+        padding: 0 0 18px 0;
+
+
+        font-size: 2.1em;
+
+
+        line-height: 1.3;
+    }
+}
+.bluebox1-icon {
+
+
+    padding: 0px 12px 2px 0;
+}
+.bluebox2-icon {
+
+
+    padding: 0px 18px 0px 0;
+}
+.bluebox-indiv {
+
+
+    padding: 2.4% 8% 0%;
+
+
+    margin: 2% 6% 0;
+
+
+    width: 90%;
+
+
+    list-style-type: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .bluebox-indiv {
+
+
+        padding: 1.5% 8% 0%;
+
+
+        margin: 2% 6% 0;
+
+
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .bluebox-indiv {
+
+
+        padding: 5% 8% 0%;
+
+
+        margin: 2% 6% 0;
+
+
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .bluebox-indiv {
+
+
+        padding: 5% 8% 0%;
+
+
+        margin: 2% 6% 0;
+
+
+        width: 90%;
+    }
 }
 .home .news-signup {
 
@@ -6079,43 +6502,4 @@ note: partners-upper content width area controlled in _content.css as part of .e
 
 
     display: flex;
-}
-
-.embed-container {
-
-
-    position: relative;
-
-
-    padding-bottom: 56.25%;
-
-
-    height: 0;
-
-
-    overflow: hidden;
-
-
-    max-width: 100%;
-
-
-    height: auto;
-}
-
-.embed-container iframe, .embed-container object, .embed-container embed {
-
-
-    position: absolute;
-
-
-    top: 0;
-
-
-    left: 0;
-
-
-    width: 100%;
-
-
-    height: 100%;
 }

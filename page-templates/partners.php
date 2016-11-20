@@ -78,9 +78,9 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="partner-what-group row-tb-pad">
+				<div class="partner-what-group row-top-pad">
 					<?php if( get_field('bronner_do_title') ): ?>
-						<h5 class="partner-what-heading"><?php the_field('bronner_do_title') ?></h5>
+						<h5 class="partnesr-what-heading"><?php the_field('bronner_do_title') ?></h5>
 					<?php endif; ?>
 					<?php if( get_field('bronner_description_what') ): ?>
 						<?php the_field('bronner_description_what') ?>
@@ -90,45 +90,43 @@ get_header(); ?>
 					<?php $image = get_field('bronner_image');	?>
 	                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'];?>">
 				</div><!-- .bronner-image -->
-				<div class="partner-services-container row-tb-pad">
-					<?php
-					$title = 'Media Placements';
-					$titleClass = 'media-placement-title';
-					$icon = 'icon URL';
-					$repeater = 'bronner_media_placements';
-					$sub_field = 'bronner_media_placement';
-					require(locate_template('template-parts/bronner-media-placement.php' ));
-					?>
 
-					<?php
-					$title = "Services provided to Dr. Bronner's";
-					$titleClass = 'service-provided-title';
-					$icon = 'icon URL';
-					$repeater = 'bronner_services_provided';
-					$sub_field = 'bronner_service_provided';
-					require(locate_template('template-parts/bronner-media-placement.php' ));
-					?>
 
-					<?php
-					$title = "Support for Dr. Bronner's campaigns";
-					$titleClass = 'campaign-supported-title';
-					$icon = 'icon URL';
-					$repeater = 'bronner_supported_campaigns';
-					$sub_field = 'bronner_supported_campaign';
-					require(locate_template('template-parts/bronner-media-placement.php' ));
-					?>
-				</div><!-- .partner-services-container -->
 
-				<!-- Back to TOP - may or may not keep
 
-				<p><a
-						data-scroll
-						data-options='{ "easing": "easeOutCubic" }'
-						href="#">Back to the top
-					</a>
-				</p>
+
+		<div class="partner-bluebox-linkarea row-bottom-pad">
+				<div class="bluebox-2col-flex">
+
+            <div class="highlights-bluebox bluebox1 bluebox">
+                <div class="bluebox-heading bluebox-innerflex">
+                    <span class="bluebox1-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
+                    <h2 class="bluebox-2col-title">Highlights</h2>
+                </div>
+                <ul class="bluebox-indiv">
+                  <li>Dr. Bronner's All-In-One Report</li>
+                  <li>Dr. Bronner’s & Animal Advocacy </li>
+                </ul>
+            </div>
+
+            <div class="videos-bluebox bluebox2 bluebox">
+                <div class="bluebox-heading bluebox-innerflex">
+                  <span class="bluebox2-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
+                  <h2 class="bluebox-2col-title">Videos</h2>
+                </div>
+                <ul class="bluebox-indiv">
+                    <li>Journey to Serendipol</li>
+                    <li>Dr. Bronner’s: A Tribute to Ralph Bronner</li>
+                    <li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
+                </ul>
+            </div>
+
 				</div>
-			-->
+			</div>
+
+
+
+
 
 			</section><!-- #dr bronner -->
 			<?php
@@ -150,10 +148,10 @@ get_header(); ?>
 					while(has_sub_field('partner_content_group_flex')):
 					if(get_row_layout() == "partner_content_group"):
 					        ?>
-						        <div class="partner-title-image row-bottom-pad">
+						        <div class="partner-title-image">
 						            <img src="<?php the_sub_field('partner_image');?>" alt="" />
 						        </div>
-										<div class="partner-description row-bottom-pad">
+										<div class="partner-description">
 									        <h6><?php the_sub_field('partner_heading');?></h6>
 													<?php the_sub_field('partner_description');
 													?>
@@ -166,26 +164,26 @@ get_header(); ?>
 				</div>
 
 
-				<div class="partner-what-group row-bottom-pad">
+				<div class="partner-what-group">
 						<h5 class="partner-what-heading"><?php the_sub_field('do_partner')?></h5>
 						<?php the_sub_field('description_what') ?>
 				</div>
 
-				<div class="partner-services-container ">
+				<div class="partner-services-container row-tb-pad">
 				    <?php
-				        $title = 'Media Placements';
+				        $title = 'Stories';
 				        $titleClass = 'media-placement-title';
 				        $repeater = 'partner_media_placements';
 				        $sub_field = 'partner_media_placement';
 				        require(locate_template('template-parts/partner-media-placement.php'));
 
-				        $title = 'Services Provided to Partner';
+				        $title = 'Videos';
 				        $titleClass = 'media-placement-title';
 				        $repeater = 'partner_services_provided';
 				        $sub_field = 'partner_service_provided';
 				        require(locate_template('template-parts/partner-media-placement.php'));
 
-				        $title = "Support for Partner's campaigns";
+				        $title = "Highlights";
 				        $titleClass = 'media-placement-title';
 				        $repeater = 'partner_supported_campaigns';
 				        $sub_field = 'partner_campaign_supported';

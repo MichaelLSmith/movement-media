@@ -61,6 +61,28 @@ get_header(); ?>
 							the_category(' ');
 							?>
 						</div>
+
+						<div class="stories-social-media social-share">
+							<?php if( have_rows('stories_social_media') ): ?>
+								<?php while( have_rows('stories_social_media') ): the_row();
+
+								// vars
+								$image = get_sub_field('stories_social_image');
+								$link = get_sub_field('stories_social_media_share');
+
+								?>
+								<div class="stories-social-group social-share-group">
+									<?php if( $link ): ?>
+										<a href="<?php echo $link; ?>">
+									<?php endif; ?>
+										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+									<?php if( $link ): ?>
+										</a>
+									<?php endif; ?>
+								</div>
+								<?php endwhile; ?>
+							<?php endif; ?>
+						</div>
 						</section>
 				<?php
 				endwhile;
