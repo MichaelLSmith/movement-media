@@ -13,22 +13,25 @@
 	<header class="entry-header full-content-area">
 		<?php
 
-		$post_object = get_field('video_reg_post');
+
 		if ( is_single() ) : ?>
 			<div class="story-heading">
 				<?php
-			the_title( '<h5 class="story-title text-content-area">', '</h5>' );
-			// check if the post or page has a Featured Image assigned to it.
 			if ( has_post_thumbnail() ) :
+				the_title( '<h5 class="story-title text-content-area">', '</h5>' );
+				// check if the post or page has a Featured Image assigned to it.
 				the_post_thumbnail();
+
+			else:
+				the_title( '<h5 class="pr-story-title text-content-area">', '</h5>' );
+
 			endif;
 			?>
 			</div>
 			<?php
-		//if - is single cont...
 		else :
 
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h5 class="video-title text-content-area"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h5>' );
 			if ( has_post_thumbnail() ) :
 				the_post_thumbnail( 'thumbnail' );
 			endif;
@@ -39,15 +42,10 @@
 
 			<div class="story-meta">
 				<span class="story-author">
-			<?php
-				the_author();
-				?>,
-			</span>
-
+				<?php the_author(); ?>,
+				</span>
 				<span class="story-date">
-					<?php
-					echo get_the_date();
-					?>
+					<?php echo get_the_date(); ?>
 				</span>
 			</div>
 
@@ -59,16 +57,6 @@
 	</header><!-- .entry-header -->
 
 	<div class="story-content full-content-area">
-		<?php if($post_object) :
-			//override $post
-			$post = $post_object;
-			setup_postdata( $post );
-		?>
-
-		<?php
-			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		 endif;
-		 ?>
 
 		<section class="stories-content text-content-area row-bottom-pad">
 		<?php
@@ -77,7 +65,24 @@
 			wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'movementmedia' ), array( 'span' => array( 'class' => array() ) ) ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
+
+			$post_object = get_field('video_reg_post');
+
+			if($post_object) :
+			//override $post
+			$post = $post_object;
+			setup_postdata( $post );
+
+			the_content();
+
+			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
+			 endif;
+
+
+
 		?>
+
+
 		<div class="post-social-media social-share">
 			<?php if( have_rows('post_social_media') ): ?>
 				<?php while( have_rows('post_social_media') ): the_row();

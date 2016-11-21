@@ -15,17 +15,15 @@
 			<?php
 				the_title( '<h5 class="pr-story-title">', '</h5>' );
 			?>
+			<div class="story-meta">
+				<span class="story-date">
+					<?php echo get_the_date(); ?>
+				</span>
+			</div>
 			<div class="story-sub">
 				<?php the_field('story_sub'); ?>
 			</div>
-			<?php
-			if ( 'post' === get_post_type() ) : ?>
-			<div class="posted-on">
-				<?php movementmedia_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php
-			endif; ?>
-				</header><!-- .entry-header -->
+		</header><!-- .entry-header -->
 
 			<div class="entry-content">
 			<?php
@@ -41,6 +39,8 @@
 				) );
 			?>
 			</div><!-- .entry-content -->
+			<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
+
 		</section>
 
 

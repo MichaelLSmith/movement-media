@@ -9,36 +9,41 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area full-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'movementmedia' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h3 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'movementmedia' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 			</header><!-- .page-header -->
+			<div class="stories-container boxlist-2col-flex">
+				<?php
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+					if ( get_post_type() == 'movementmedia_videos' ):
+						get_template_part( 'template-parts/content', 'movementmedia_videos' );
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+					else:
 
-			endwhile;
+						get_template_part( 'template-parts/content', 'story_preview' );
 
-			the_posts_navigation();
+					endif;
+				endwhile;
 
-		else :
+				the_posts_navigation();
 
-			get_template_part( 'template-parts/content', 'none' );
+			else :
 
-		endif; ?>
+				get_template_part( 'template-parts/content', 'none' );
+
+	?>
+	</div>
+	<?php
+
+			endif; ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->

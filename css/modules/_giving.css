@@ -1,3 +1,9 @@
-.giving-partner-row {
+.giving-partner-flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.giving-partner-item {
+    flex: 0 1 30%;
+    margin: 0 8px;
 }

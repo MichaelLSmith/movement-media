@@ -29,7 +29,6 @@ get_header(); ?>
 				// override $post
 				$post = $post_object;
 				setup_postdata( $post );
-
 				the_content();
 
 				?>

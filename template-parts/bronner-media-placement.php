@@ -1,7 +1,4 @@
 <div class="partner-media-placement">
-
-    <!-- <p style="color:purple;"> change </p> -->
-
     <div class="partner-inner-flex">
       <div class="media-placement-icon">
           <?php echo $icon ?>
