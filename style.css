@@ -3495,7 +3495,16 @@ img.custom-logo {
         width: 23%;
     }
 }
-#highlights .embed-container {}
+.highlight-item .arve-embed-container {
+
+
+    padding: 31.5% 0 !important;
+}
+.highlight-item .arve-wrapper {
+
+
+    margin-bottom: 0!important;
+}
 .home-flex-container {
 
 
@@ -3756,11 +3765,7 @@ img.custom-logo {
         padding: 0rem .8rem 1rem;
     }
 }
-.video-highlight {
-
-
-    height: 25%;
-}
+.video-highlight {}
 .highlight-text > .action-btn a {
 
 
@@ -3803,16 +3808,25 @@ img.custom-logo {
     display: flex;
 
 
-    -webkit-box-pack: start;
+    -webkit-box-orient: horizontal;
 
 
-        -ms-flex-pack: start;
+    -webkit-box-direction: normal;
 
 
-            justify-content: flex-start;
+        -ms-flex-direction: row;
+
+
+            flex-direction: row;
 
 
     margin-bottom: 6.5em;
+}
+.footer-image-container img {}
+.tag-line {
+
+
+    margin-top: 0.6em;
 }
 .tag-line p {
 
@@ -3820,13 +3834,22 @@ img.custom-logo {
     color: #fff;
 
 
-    font-size: 2.8rem;
+    font-size: 1.3rem;
 
 
-    line-height: 3rem;
+    line-height: 1.5rem;
 
 
-    margin: 0 0 0 1rem;
+    margin: 0em 0 0 0.8em;
+
+
+    letter-spacing: 3px;
+
+
+    text-transform: uppercase;
+
+
+    font-weight: 300;
 }
 .tag-line p:nth-last-child(1) {
 
@@ -3848,10 +3871,13 @@ img.custom-logo {
     display: flex;
 
 
-    -ms-flex-pack: distribute;
+    -webkit-box-pack: justify;
 
 
-        justify-content: space-around;
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
 
 
     /* Set flex-wrap and flex-direction all in one line with flex flow */
@@ -3914,6 +3940,9 @@ img.custom-logo {
 
 
     font-weight: 300;
+
+
+    text-transform: uppercase;
 }
 /*line-height: 2.3rem;*/
 .footer-menu a {

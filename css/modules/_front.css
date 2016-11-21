@@ -364,8 +364,14 @@ margin-bottom: 1.8em;
         width: 23%;
     }
 }
-#highlights .embed-container {
-}
+
+.highlight-item .arve-embed-container {
+    padding: 31.5% 0 !important;
+  }
+  .highlight-item .arve-wrapper {
+      margin-bottom: 0!important;
+    }
+
 .home-flex-container {
   display: -webkit-flex;
    display: flex;
@@ -464,7 +470,7 @@ margin-bottom: 1.8em;
     }
 }
 .video-highlight {
-  height: 25%;
+
 }
 
 .highlight-text > .action-btn a {

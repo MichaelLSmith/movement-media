@@ -15,12 +15,12 @@
             <!-- change -->
             <section class="footer-logo-section">
                 <div class="footer-image-container">
-                    <img src="<?php the_field('footer_image', 'option'); ?>" class="footer-company-img" alt="">
+                    <img src="http://movementmedia.dev/wp-content/uploads/2016/11/MM-home-logo.png" height="55" width="66" alt="Movement Media logo">
                 </div>
                 <div class="tag-line">
-                    <p>MISSION</p>
-                    <p>DRIVEN</p>
-                    <p>COMMUNICATIONS</p>
+                    <p>Mission</p>
+                    <p>Driven</p>
+                    <p>Communications</p>
                 </div>
             </section>
             <!-- change -->
