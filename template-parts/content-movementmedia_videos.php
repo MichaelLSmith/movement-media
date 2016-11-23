@@ -26,25 +26,16 @@
 				?>
 
 			<section class="video-social-media social-share">
-				<?php if( have_rows('video_social_media') ): ?>
-				<?php while( have_rows('video_social_media') ): the_row();
-							// vars
-					$image = get_sub_field('video_social_image');
-					$link = get_sub_field('social_media_share');
 
-				?>
-			<div class="video-social-group social-share-group">
-				<?php if( $link ): ?>
-					<a href="<?php echo $link; ?>">
-						<?php endif; ?>
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-						<?php if( $link ): ?>
-					</a>
-						<?php endif; ?>
-			</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
+					<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Movement Media logo"></a>
+
+					<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class=""><img src="http://movementmedia.dev/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Movement Media logo"></a>
+				<div class="video-social-group social-share-group">
+
+				</div>
+
 		</section>
+
 		</div><!-- .video-indiv-->
 
 

@@ -30,15 +30,17 @@
 	<header id="home-masthead" class="home-header" role="banner">
 		<div id="header-inner" class="home-header-content clear">
 			<section class="home-nav">
-				<section class="logo-tag-container">
+				<div class="logo-tag-container">
 					<div class="site-logo">
 						<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
-							<div class="screen-reader-text">
-								<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
-							</div>
-							<?php the_custom_logo(); ?>
-					</div>
-				</section>
+						<div class="screen-reader-text">
+							<?php printf( esc_html__('Go to the home page of %1$s', 'movementmedia'), $site_title ); ?>
+						</div>
+							<?php $image = get_field('home_logo');?>
+						<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" />
+						</a>
+						</div>
+				</div>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 						<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>

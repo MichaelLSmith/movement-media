@@ -23,7 +23,7 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="testimonials-list full-content-area row-tb-pad">
+				<section class="testimonials-list full-content-area row-bottom-pad">
 					<?php if( have_rows('testimonials_list') ): ?>
 						<?php while( have_rows('testimonials_list') ): the_row();
 
@@ -31,8 +31,8 @@ get_header(); ?>
 						$image = get_sub_field('testimonial_image');
 
 						?>
-						<div class="testimonial">
-                            <div class="testimonial-flex">
+
+                <div class="testimonial testimonial-flex">
 							    <?php if( $image ): ?>
 							    <div class="testimonial-image bio-image-container">
 							        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
@@ -40,21 +40,19 @@ get_header(); ?>
 							    <?php endif; ?>
 							    <div class="testimonial-biline">
 							        <div class="testimonial-name">
-							            <h3><?php the_sub_field('testimonial_name');?></h3>
+							            <h4><?php the_sub_field('testimonial_name');?></h4>
 							        </div>
 							        <div class="testimonial-title">
-							            <h3><?php the_sub_field('testimonial_title');?></h3>
+							            <h4><?php the_sub_field('testimonial_title');?></h4>
 							        </div>
                                     <div class="testimonial-url">
-                                        <h3>
                                             <a href="<?php echo the_sub_field('testimonial_url');?>"><?php echo the_sub_field('testimonial_url');?></a>
-                                        </h3>
                                     </div>
 							    </div>
-                                <div class="testimonial-text">
-                                    <?php the_sub_field('testimonial_text');?>
-                                </div>
-                            </div>
+                  <div class="testimonial-text text-content-area">
+                      <?php the_sub_field('testimonial_text');?>
+                  </div>
+                </div>
                     <?php endwhile;//testimonials_list ?>
 					<?php endif;//testimonials_list ?>
 				</section>

@@ -180,11 +180,41 @@ a:visited {
         color: $baseTextColour;
     }
 }
+.stories-category {
+  text-transform: uppercase;
+  padding: 0.8em 0;
+  color: $lightBlue;
+  a:visited {
+    color: inherit;
+  }
+}
 .story-meta {
-  font-family: Gotham;
-  font-size: 20px;
-  color: $darkBlue;
+  font-family: $gotham;
+  font-size: 16px;
+  color: #222;
   letter-spacing: 0.28px;
-  line-height: 57px;
-  padding-top: 1em;
+  line-height: 20px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+.indiv-story-meta {
+  margin: 2em 0;
+  font-weight:600;
+  font-size: 2.1em;
+  color: $darkBlue;
+  @media $medium {
+    margin: 2em 0;
+    font-size: 2.1em;
+  }
+  @media $large {
+    margin: 2em 0;
+    font-size: 2.3em;
+  }
+    @media $ex-large {
+      margin: 2.6em 0 1.4em;
+      font-size: 2.3em;
+    }
+  a:visited {
+    color: inherit;
+  }
 }

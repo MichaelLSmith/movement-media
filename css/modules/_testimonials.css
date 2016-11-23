@@ -16,8 +16,26 @@
         flex-wrap: wrap;
     }
 }
+.testimonials-list {
+  border-top: 2px solid #222222;
+
+}
+.testimonial {
+    margin-top: 3.2em;
+  @media $medium {
+      margin-top: 4em;
+  }
+
+  @media $large {
+      margin-top: 8em;
+
+  }
+  @media $ex-large {
+      margin-top: 8em;
+  }
+}
 .testimonial-image {
-    background-color: grey;
+
     margin: auto;
 
     @media $medium {
@@ -35,32 +53,102 @@
     }
 }
 .testimonial-biline {
-    background-color: green;
-    padding: 1.5rem;
+    padding: 1em 0 0 1.5em;
     text-align: center;
 
     @media $medium {
         text-align: left;
+        padding: 0 0 0 3.5em;
+              width: 84%;
     }
 
     @media $large {
         text-align: left;
+        padding: 0em 0 0 1.5em;
+        width: 80%;
     }
     @media $ex-large {
         text-align: left;
+        padding: 0em 0 0 1.5em;
+        width: 80%;
+
+    }
+    h4 {
+      margin: 0.2em 0 0.2em;
+      font-weight: 700;
+      font-size: 2.4rem;
+        line-height: 1.2;
+      @media $medium {
+          font-size: 2.8rem;
+            line-height: 1.1;
+      }
+
+      @media $large {
+        margin: 0.1em 0 0.2em;
+          font-size: 3rem;
+            line-height: 1.1;
+      }
+      @media $ex-large {
+        margin: 0.1em 0 0.2em;
+        font-size: 3rem;
+        line-height: 1.1;
+      }
     }
 }
+
+.testimonial-url {
+    font-size: 2em;
+  @media $medium {
+    margin: 0.3em 0 0;
+  font-size: 2em;
+  }
+
+  @media $large {
+    margin: 0.2em 0 0;
+  font-size: 2.4em;
+  }
+  @media $ex-large {
+      margin: 0.2em 0 0;
+    font-size: 2.4em;
+  }
+
+  a:link {
+    color: $darkBlue;
+    text-decoration: underline;
+  }
+}
+
 .testimonial-text {
     margin: auto;
+    padding: 1em 0 0 1.5em;
+    font-style: italic;
+    border-bottom: 1px solid #bfbfbf;
 
     @media $medium {
-        margin: 0 0 0 15%;
+        margin: 0 0 0 19.7%;
+            padding: 0.3em 0 1em 0em;
     }
 
     @media $large {
-        margin: 0 0 0 15%;
+        margin: 0 0 0 16.3%;
+          padding: 0 0 0 0em;
+          padding: 2em 0 2em 0em;
     }
     @media $ex-large {
-        margin: 0 0 0 15%;
+        margin: 1.3em 0 0 16.2%;
+          padding: 2em 0 4em 0em;
+    }
+    p {
+
+      @media $medium {
+
+      }
+
+      @media $large {
+            line-height: 1.7;
+      }
+      @media $ex-large {
+        line-height: 1.7;
+      }
     }
 }

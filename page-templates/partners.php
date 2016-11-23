@@ -39,7 +39,7 @@ get_header(); ?>
 				<?php if( have_rows('partners_menu_items') ): ?>
 				<nav class="partners-nav">
 					<!-- <h6>Clients Menu</h6> -->
-					<ul class="partners-nav-list text-content-area">
+					<ul class="partners-nav-list image-content-area">
 						<li><a data-scroll data-options='{ "easing": "linear" }' href="#dr-bronner">Dr Bronner's</a></li>
 					<?php
 						$menuCount = 0;
@@ -53,6 +53,10 @@ get_header(); ?>
 							</a>
 						</li>
 						<?php endwhile; ?>
+						<li>
+              <a data-scroll data-options='{ "easing": "linear" }' href="#additional-partners">Additional Partners
+            	</a>
+            </li>
 					</ul>
 					<?php
 						else :
@@ -78,7 +82,7 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="partner-what-group row-top-pad">
+				<div class="partner-what-group">
 					<?php if( get_field('bronner_do_title') ): ?>
 						<h5 class="partnesr-what-heading"><?php the_field('bronner_do_title') ?></h5>
 					<?php endif; ?>
@@ -92,39 +96,37 @@ get_header(); ?>
 				</div><!-- .bronner-image -->
 
 
+				<div class="partner-bluebox-linkarea row-bottom-pad">
+							<div class="bluebox-2col-flex">
+					<div class="highlights-bluebox bluebox1 bluebox">
+							<div class="bluebox-heading bluebox-innerflex">
+									<span class="bluebox1-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
+									<h2 class="bluebox-2col-title">Highlights</h2>
+							</div>
+							<ul class="bluebox-indiv">
+								<li>Dr. Bronner's All-In-One Report</li>
+								<li>Dr. Bronner’s & Animal Advocacy </li>
+							</ul>
+					</div>
+					<div class="videos-bluebox bluebox2 bluebox">
+							<div class="bluebox-heading bluebox-innerflex">
+								<span class="bluebox2-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
+								<h2 class="bluebox-2col-title">Videos</h2>
+							</div>
+							<ul class="bluebox-indiv">
+									<li>Journey to Serendipol</li>
+									<li>Dr. Bronner’s: A Tribute to Ralph Bronner</li>
+									<li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
+							</ul>
+					</div>
+							</div>
+					</div>
 
 
-
-		<div class="partner-bluebox-linkarea row-bottom-pad">
-				<div class="bluebox-2col-flex">
-
-            <div class="highlights-bluebox bluebox1 bluebox">
-                <div class="bluebox-heading bluebox-innerflex">
-                    <span class="bluebox1-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
-                    <h2 class="bluebox-2col-title">Highlights</h2>
-                </div>
-                <ul class="bluebox-indiv">
-                  <li>Dr. Bronner's All-In-One Report</li>
-                  <li>Dr. Bronner’s & Animal Advocacy </li>
-                </ul>
-            </div>
-
-            <div class="videos-bluebox bluebox2 bluebox">
-                <div class="bluebox-heading bluebox-innerflex">
-                  <span class="bluebox2-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
-                  <h2 class="bluebox-2col-title">Videos</h2>
-                </div>
-                <ul class="bluebox-indiv">
-                    <li>Journey to Serendipol</li>
-                    <li>Dr. Bronner’s: A Tribute to Ralph Bronner</li>
-                    <li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
-                </ul>
-            </div>
-
-				</div>
-			</div>
-
-
+					<?php
+            //$partnerName = get_field('bronner_client_tax');
+						//require(locate_template('template-parts/bluebox.php' ));
+					?>
 
 
 
@@ -138,8 +140,8 @@ get_header(); ?>
 			<section id="partner-<?php echo $count?>" class="partner-outer-container row-tb-pad">
 				<div class="partner-container additional-partners full-content-area">
 
-						<h2 class="blue-heading partner-heading text-content-area row-top-pad"><?php the_sub_field('partner_name');?></h2>
-				<div class="partner-title-group row-top-pad">
+						<h2 class="blue-heading partner-heading text-content-area"><?php the_sub_field('partner_name');?></h2>
+				<div class="partner-title-group">
 
 
 				<?php
@@ -169,28 +171,10 @@ get_header(); ?>
 						<?php the_sub_field('description_what') ?>
 				</div>
 
-				<div class="partner-services-container row-tb-pad">
-				    <?php
-				        $title = 'Stories';
-				        $titleClass = 'media-placement-title';
-				        $repeater = 'partner_media_placements';
-				        $sub_field = 'partner_media_placement';
-				        require(locate_template('template-parts/partner-media-placement.php'));
-
-				        $title = 'Videos';
-				        $titleClass = 'media-placement-title';
-				        $repeater = 'partner_services_provided';
-				        $sub_field = 'partner_service_provided';
-				        require(locate_template('template-parts/partner-media-placement.php'));
-
-				        $title = "Highlights";
-				        $titleClass = 'media-placement-title';
-				        $repeater = 'partner_supported_campaigns';
-				        $sub_field = 'partner_campaign_supported';
-				        require(locate_template('template-parts/partner-media-placement.php'));
-
+				<?php
+					$partnerName = get_field('bronner_client_tax');
+					require(locate_template('template-parts/bluebox.php' ));
 				endif;//get_row_layout(partner_name_group)?>
-				</div><!-- .partner-services-container -->
 
 <!-- Back to TOP - may or may not keep
 				<p><a
@@ -208,8 +192,8 @@ get_header(); ?>
 					endif;//have_rows('other_partners')
 			    ?>
 
-				<section class="partners-gallery full-content-area">
-					<h6 class="blue-heading">Additional Partners</h6>
+				<section id="additional-partners" class="partners-gallery full-content-area row-bottom-pad">
+					<h2 class="blue-heading additional-partner-heading">Additional Partners</h2>
 					<div class="partners-gallery-flex">
 						<?php
 						if( have_rows('partners_image_gallery') ):
@@ -220,7 +204,7 @@ get_header(); ?>
 								// echo '</pre>';
 								?>
 								<div class="gallery-image">
-									<a href="<?php the_sub_field('partner_gallery_url')?>">
+									<a href="http://<?php the_sub_field('partner_gallery_url')?>">
 										<img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="" />
 									</a>
 								</div>

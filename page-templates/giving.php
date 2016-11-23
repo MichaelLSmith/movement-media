@@ -106,12 +106,9 @@ get_header(); ?>
 					?>
 
 					</section>
-<!-- There’s no more faith in thee than a stewed prune. Thou art a boil, a plague sore, an embossed carbunkle in my corrupted blood. Away you three inch fool! Thou art a natural coward without instinct. You, minion, are too saucy. Thou art the best of cutthroats. A weasel has not such a spleen as you are toss’d with. Your virginity breeds mites, much like a cheese. Thou leathern-jerkin, crystal button, knot-pated, agatering, puke-stocking, caddis-garter, smooth tongue, Spanish pouch. Thou art the son and heir of a mongrel bitch. -->
-
 			</article>
 		</main><!-- #main -->
 	<!-- </div><! #primary -->
 </div><!-- #content -->
 <?php
-get_sidebar();
 get_footer();

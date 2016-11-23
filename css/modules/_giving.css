@@ -1,7 +1,7 @@
 .giving-partner-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 .giving-partner-item {
     flex: 0 1 30%;

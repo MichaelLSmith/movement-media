@@ -1,9 +1,4 @@
-.partners-gallery-flex {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-}
+
 /*
 NOTE: brought from ABOUT.CSS - need to change for partners gallery....
 */
@@ -147,8 +142,14 @@ border-bottom: $darkBlue solid 30px;
       justify-content: space-between;
     }
 }
-.partner-heading {
+  h2.partner-heading {
   text-align: center;
+    margin: 1.2em auto 1.4em;
+
+}
+h2.additional-partner-heading {
+  text-align: center;
+    margin: 2.2em auto 1.6em;
 }
 .partner-title-image {
     max-width: 100%;
@@ -216,7 +217,15 @@ border-bottom: $darkBlue solid 30px;
     flex-flow: row wrap;
     -webkit-align-content: space-between;
     align-content: space-between;
-    border-bottom: 4px solid #343434;
+    @media $medium {
+          margin: 5.3em auto 2em;
+    }
+    @media $large {
+          margin: 5.3em auto 2em;
+    }
+    @media $ex-large {
+    margin: 6.3em auto 2em;
+    }
 
     h5 {
         line-height: 1.3;
@@ -429,7 +438,7 @@ h2.bluebox-2col-title {
     @media $ex-large {
       margin: 0 0 12px 0;
       padding: 0 0 18px 0;
-      font-size: 2.1em;
+      font-size: 1.9em;
       line-height: 1.3;
     }
   }
@@ -462,4 +471,22 @@ h2.bluebox-2col-title {
     margin: 2% 6% 0;
     width: 90%;
   }
+}
+
+.partners-gallery-flex {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    width: 100%
+
+}
+.gallery-image {
+
+}
+
+.partners-gallery h6 {
+  margin: 0em 0 1em;
 }

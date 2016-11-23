@@ -40,7 +40,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta text-content-area">
 
-			<div class="story-meta">
+			<div class="indiv-story-meta">
 				<span class="story-author">
 				<?php the_author(); ?>,
 				</span>
@@ -58,7 +58,7 @@
 
 	<div class="story-content full-content-area">
 
-		<section class="stories-content text-content-area row-bottom-pad">
+		<section class="stories-content text-content-area">
 		<?php
 		the_content( sprintf(
 			/* translators: %s: Name of current post. */
@@ -77,37 +77,31 @@
 
 			wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
 			 endif;
-
-
-
 		?>
-
-
-		<div class="post-social-media social-share">
-			<?php if( have_rows('post_social_media') ): ?>
-				<?php while( have_rows('post_social_media') ): the_row();
-
-				// vars
-				$image = get_sub_field('post_social_image');
-				$link = get_sub_field('post_media_share');
-
-				?>
-				<div class="post-social-group social-share-group">
-					<?php if( $link ): ?>
-						<a href="<?php echo $link; ?>">
-					<?php endif; ?>
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-					<?php if( $link ): ?>
-						</a>
-					<?php endif; ?>
-				</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
+	</section>
+	<section class="stories-social-share text-content-area row-bottom-pad">
+		<div class="post_tags">
+				<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
 		</div>
+				<div class ="social-share">
+							<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>">
+									<div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Movement Media logo">
+									</div>
+									<span class="share-icon-text">Share on Twitter</span>
+							</a>
+			  </div>
+				<div class ="social-share">
+							<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="">
+									<div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Movement Media logo"></div>
+									<span class="share-icon-text">Share on Facebook</span>
+							</a>
+				</div>
+
+
 
 		</section>
 
-
+	</div>
 
 
 		<?php

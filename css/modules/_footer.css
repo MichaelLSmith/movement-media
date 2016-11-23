@@ -1,20 +1,22 @@
 .site-footer {
     background-color: $darkBlue;
     border-top: 3px solid $white;
-    padding: 4% 0 3.3%;
 }
-.footer-inner {
-    max-width: $container-max-width;
-    width: $container-default-width;
-    margin: auto;
-    font-family: $gotham;
-}
+
 .footer-logo-section {
     display: flex;
     -webkit-flex-direction: row;
   flex-direction: row;
-    margin-bottom: 6.5em;
-
+  width: 100%;
+  @media $medium {
+    width: 20%;
+  }
+  @media $large {
+      width: 25%;
+  }
+  @media $ex-large {
+      width: 25%;
+  }
 }
 .footer-image-container img {
 }
@@ -35,7 +37,12 @@
         font-weight: 800;
     }
 }
-.footer-menu-container {
+.footer-inner {
+
+  max-width: $container-max-width;
+  width: $container-default-width;
+  font-family: $gotham;
+
      display: -webkit-flex;
      display: flex;
      -webkit-justify-content: space-between;
@@ -45,33 +52,37 @@
      flex-flow: row wrap;
      -webkit-align-content: space-around;
      align-content: space-around;
-     width:50%;
-     margin: 0 auto;
 
+     margin: 0 auto;
+     border-bottom: 1px solid $white;
+     padding: 8% 0 7%;
     @media $medium {
-      width:100%;
+        padding: 6% 0 5%;
     }
     @media $large {
-      width:100%;
+        padding: 8% 0 7%;
     }
     @media $ex-large {
-      width:100%;
+
+
+        padding: 6% 0 5%;
     }
 }
 .footer-menu {
     color: $white;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     font-weight: 300;
       text-transform: uppercase;
+
     @media $medium {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     @media $large {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     @media $ex-large {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
     /*line-height: 2.3rem;*/
     a {
@@ -81,16 +92,44 @@
     li {
         margin: 0 0 2.2rem 0;
         @media $medium {
-margin: 0 0 1rem 0;
+margin: 0 0 1.1rem 0;
         }
         @media $large {
-margin: 0 0 1rem 0;
+margin: 0 0 1.1rem 0;
         }
         @media $ex-large {
-margin: 0 0 1rem 0;
+margin: 0 0 1.3rem 0;
         }
     }
 }
+.footer-menu-container {
+  width: 100%;
+  @media $medium {
+    width: 20%;
+  }
+  @media $large {
+      width: 25%;
+  }
+  @media $ex-large {
+      width: 25%;
+  }
+}
 .footer-search-container {
 
+}
+.footer-middle {
+  width: 100%;
+  @media $medium {
+    width: 60%;
+  }
+  @media $large {
+    width: 50%;
+  }
+  @media $ex-large {
+    width: 50%;
+  }
+}
+.footer-share-text {
+  font-weight: 300;
+  color: $white;
 }
