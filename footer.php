@@ -20,18 +20,7 @@
                 <?php
                     wp_nav_menu( array( 'menu' => 'footer-menu-1', 'menu_class' => 'footer-menu' ) );
                 ?>
-                <div class ="social-share">
-                  <a href="https://www.facebook.com/MovementMediaDC">
-                      <div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Twitter logo">
-                      </div>
-                      <span class="share-icon-text footer-share-text"></span>
-                  </a>
-                      <a href="https://twitter.com/MovementMediaDC">
-                          <div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Twitter logo">
-                          </div>
-                          <span class="share-icon-text footer-share-text"></span>
-                      </a>
-                </div>
+
 
 
             </section>
@@ -40,10 +29,23 @@
                   <?php get_search_form() ?>
                 </div>
 
+                <div class ="social-share">
+                  <a href="https://www.facebook.com/MovementMediaDC">
+                      <div class="share-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Twitter logo">
+                      </div>
+                      <span class="share-icon-text footer-share-text"></span>
+                  </a>
+                      <a href="https://twitter.com/MovementMediaDC">
+                          <div class="share-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Twitter logo">
+                          </div>
+                          <span class="share-icon-text footer-share-text"></span>
+                      </a>
+                </div>
+
             </section>
             <section class="footer-logo-section">
                 <div class="footer-image-container">
-                    <img src="http://movementmedia.dev/wp-content/uploads/2016/11/MM-home-logo.png" height="55" width="66" alt="Movement Media logo">
+                    <img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/11/MM-home-logo.png" height="55" width="66" alt="Movement Media logo">
                 </div>
                 <div class="tag-line">
                     <p>Mission</p>
