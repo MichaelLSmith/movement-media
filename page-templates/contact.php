@@ -17,13 +17,13 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</section>
 
-				<div class="contact-form">
+				<div class="contact-intro clear bold-lead-paragraph">
+ 					<div class="bold-lead-paragraph-inner"><?php the_field('contact_intro'); ?></div>
+ 				</div>
+
+				<div class="contact-form text-content-area">
 					 <?php the_field('contact_form'); ?>
 			 </div>
-
-				
-
-
 
 				<section class="contact-social-media row-bottom-pad">
 					<?php if( have_rows('contact_social_media') ): ?>
@@ -34,7 +34,8 @@ get_header(); ?>
 						$link = get_sub_field('contact_social_url');
 
 						?>
-						<div class="contact-social-group">
+						<div class="contact-social-group text-content-area">
+							<span class="share-icon-text">Movement Media on Twitter:</span>
 							<?php if( $link ): ?>
 								<a href="<?php echo $link; ?>">
 							<?php endif; ?>
@@ -45,7 +46,9 @@ get_header(); ?>
 						</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
+
 				</section>
+
 
 
 			</article>

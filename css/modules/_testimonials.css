@@ -17,7 +17,19 @@
     }
 }
 .testimonials-list {
-  border-top: 2px solid #222222;
+  
+    @media $medium {
+        margin-top: 4em;
+    }
+
+    @media $large {
+        border-top: 2px solid #222222;
+
+    }
+    @media $ex-large {
+        border-top: 2px solid #222222;
+    }
+
 
 }
 .testimonial {
@@ -53,70 +65,90 @@
     }
 }
 .testimonial-biline {
-    padding: 1em 0 0 1.5em;
-    text-align: center;
+    padding: 1em 0 0 1em;
+    text-align: left;
 
     @media $medium {
         text-align: left;
-        padding: 0 0 0 3.5em;
+        padding: 0 0 0 4.5em;
               width: 84%;
+              height: 100px;
+              line-height: 100px;
     }
 
     @media $large {
         text-align: left;
-        padding: 0em 0 0 1.5em;
+        padding: 0em 0 0 3.5em;
         width: 80%;
+        height: 100px;
+        line-height: 100px;
     }
     @media $ex-large {
         text-align: left;
-        padding: 0em 0 0 1.5em;
+        padding: 0em 0 0 2.5em;
         width: 80%;
+        height: 110px;
+        line-height: 110px;
 
     }
     h4 {
       margin: 0.2em 0 0.2em;
-      font-weight: 700;
-      font-size: 2.4rem;
-        line-height: 1.2;
       @media $medium {
-          font-size: 2.8rem;
-            line-height: 1.1;
+
       }
 
       @media $large {
         margin: 0.1em 0 0.2em;
-          font-size: 3rem;
-            line-height: 1.1;
       }
       @media $ex-large {
         margin: 0.1em 0 0.2em;
-        font-size: 3rem;
-        line-height: 1.1;
       }
     }
 }
+.testimonial-biline-text {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  margin: auto;
+}
 
-.testimonial-url {
-    font-size: 2em;
+.testimonial-name h4 {
+  font-weight: 700;
+  font-size: 2.4rem;
+    line-height: 1.2;
   @media $medium {
-    margin: 0.3em 0 0;
-  font-size: 2em;
+      font-size: 2.8rem;
+        line-height: 1.1;
   }
 
   @media $large {
-    margin: 0.2em 0 0;
-  font-size: 2.4em;
+    margin: 0.1em 0 0.2em;
+      font-size: 3rem;
+        line-height: 1.1;
   }
   @media $ex-large {
-      margin: 0.2em 0 0;
-    font-size: 2.4em;
+    margin: 0.1em 0 0.2em;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+}
+.testimonial-title h4 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  @media $medium {
+    font-size: 2rem;
+    line-height: 1.1;
   }
-
-  a:link {
-    color: $darkBlue;
-    text-decoration: underline;
+  @media $large {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+  @media $ex-large {
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
 }
+
 
 .testimonial-text {
     margin: auto;
@@ -125,18 +157,18 @@
     border-bottom: 1px solid #bfbfbf;
 
     @media $medium {
-        margin: 0 0 0 19.7%;
+        margin: 0 0 0 22%;
             padding: 0.3em 0 1em 0em;
     }
 
     @media $large {
-        margin: 0 0 0 16.3%;
+        margin: 0 0 0 19%;
           padding: 0 0 0 0em;
-          padding: 2em 0 2em 0em;
+          padding: 0em 0 2em 0em;
     }
     @media $ex-large {
-        margin: 1.3em 0 0 16.2%;
-          padding: 2em 0 4em 0em;
+        margin: 1em 0 0 17.2%;
+          padding: 0em 0 4em 0em;
     }
     p {
 

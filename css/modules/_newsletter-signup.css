@@ -1,23 +1,39 @@
 .home .news-signup {
-  background-color: $white;
-  color: $darkBlue;
+  background-color: #559e83;
+  color: $lightBlue;
 }
 
 .news-signup {
     background-color: $darkBlue;
     color: $white;
     margin-bottom: 0;
-    h3 {
-        line-height: 3.6rem;
-        font-weight: normal;
+    h2   {
+      color: $white;
+        font-weight: 700;
+        margin-bottom: 0;
     }
     p {
-        color: inherit;
+        color: $white;
         font-family: $gotham;
         font-size: 1.8rem;
+        font-weight: 30;
         letter-spacing: 0px;
-        line-height: 2.4rem;
-        margin: 0;
+        line-height: 2.6rem;
+        margin: 1em auto 1em;
+        @media $medium {
+          font-size: 1.7em;
+          width: 80%;
+        }
+        @media $large {
+
+            font-size: 2.2em;
+              line-height: 1.5;
+        }
+        @media $ex-large {
+
+          font-size: 2.2em;
+          line-height: 1.5;
+        }
     }
 }
 .hr-news {

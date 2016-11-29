@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<!-- <div id="primary" class="content-area"> -->
 		<main class="content-inner" role="main">
-			<article class="testimonials-outer-container full-content-area">
+			<article class="testimonials-outer-container">
 				<section class="entry-title-container full-content-area">
 					<!-- might need to add a div here to help control width of title -->
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -39,17 +39,17 @@ get_header(); ?>
 							    </div>
 							    <?php endif; ?>
 							    <div class="testimonial-biline">
-							        <div class="testimonial-name">
-							            <h4><?php the_sub_field('testimonial_name');?></h4>
-							        </div>
-							        <div class="testimonial-title">
-							            <h4><?php the_sub_field('testimonial_title');?></h4>
-							        </div>
-                                    <div class="testimonial-url">
-                                            <a href="<?php echo the_sub_field('testimonial_url');?>"><?php echo the_sub_field('testimonial_url');?></a>
-                                    </div>
+											<div class="testimonial-biline-text">
+									        <div class="testimonial-name">
+									            <h4><?php the_sub_field('testimonial_name');?></h4>
+									        </div>
+									        <div class="testimonial-title">
+									            <h4><?php the_sub_field('testimonial_title');?></h4>
+									        </div>
+											</div>
+                                  <a href="<?php //echo the_sub_field('testimonial_url');?>"></a>
 							    </div>
-                  <div class="testimonial-text text-content-area">
+                  <div class="testimonial-text">
                       <?php the_sub_field('testimonial_text');?>
                   </div>
                 </div>

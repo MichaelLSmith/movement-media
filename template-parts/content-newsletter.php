@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Videos
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -10,41 +9,18 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main class="content-inner" role="main">
-			<p>
-				top of newsletter template
-			</p>
-			<?php
+		<main class="content-inner full-content-area" role="main">
 
-			$post_object = get_field('news_short_code');
+		<a href="http://<?php the_field('newsletter_url') ?>" target="_blank" rel="bookmark">
+			<h5 class="stories-title"><?php the_title(); ?> </h5>
+		</a>
 
-			echo '<pre>';
-		    print_r( $post_object );
-			echo '</pre>';
-			// die;
+			<p>Click on the Newsletter's title to view the Newsletter.</p>
 
-
-			if( $post_object ):
-
-				// override $post
-				$post = $post_object;
-				setup_postdata( $post );
-				the_content();
-
-				?>
-
-
-
-
-
-
-			    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-			<?php endif; ?>
 
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div><!-- #content -->
 <?php
-get_sidebar();
 get_footer();

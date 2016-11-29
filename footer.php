@@ -20,24 +20,25 @@
                 <?php
                     wp_nav_menu( array( 'menu' => 'footer-menu-1', 'menu_class' => 'footer-menu' ) );
                 ?>
+                <div class ="social-share">
+                  <a href="https://www.facebook.com/MovementMediaDC">
+                      <div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Twitter logo">
+                      </div>
+                      <span class="share-icon-text footer-share-text"></span>
+                  </a>
+                      <a href="https://twitter.com/MovementMediaDC">
+                          <div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Twitter logo">
+                          </div>
+                          <span class="share-icon-text footer-share-text"></span>
+                      </a>
+                </div>
+
+
             </section>
             <section class="footer-middle">
-                <div class="footer-search-container">
-                    <?php get_search_form() ?>
-                  </div>
-                    <div class ="social-share">
-            							<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>">
-            									<div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Movement Media logo">
-            									</div>
-            									<span class="share-icon-text footer-share-text">Share on Twitter</span>
-            							</a>
-            			  </div>
-            				<div class ="social-share">
-            							<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="">
-            									<div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/facebook-e1478996492964.png" height="36" width="36" alt="Movement Media logo"></div>
-            									<span class="share-icon-text footer-share-text">Share on Facebook</span>
-            							</a>
-            				</div>
+              <div class="footer-search-container">
+                  <?php get_search_form() ?>
+                </div>
 
             </section>
             <section class="footer-logo-section">
@@ -49,6 +50,7 @@
                     <p>Driven</p>
                     <p>Communications</p>
                 </div>
+
             </section>
 
 

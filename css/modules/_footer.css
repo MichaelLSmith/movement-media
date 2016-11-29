@@ -1,23 +1,7 @@
 .site-footer {
     background-color: $darkBlue;
-    border-top: 3px solid $white;
 }
 
-.footer-logo-section {
-    display: flex;
-    -webkit-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-  @media $medium {
-    width: 20%;
-  }
-  @media $large {
-      width: 25%;
-  }
-  @media $ex-large {
-      width: 25%;
-  }
-}
 .footer-image-container img {
 }
 .tag-line {
@@ -54,7 +38,7 @@
      align-content: space-around;
 
      margin: 0 auto;
-     border-bottom: 1px solid $white;
+
      padding: 8% 0 7%;
     @media $medium {
         padding: 6% 0 5%;
@@ -69,49 +53,65 @@
     }
 }
 .footer-menu {
-    color: $white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     font-weight: 300;
-      text-transform: uppercase;
-
+    text-transform: uppercase;
     @media $medium {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+        color: $white;
     }
     @media $large {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+        color: $white;
     }
     @media $ex-large {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+        color: $white;
     }
     /*line-height: 2.3rem;*/
     a {
-        color: $white;
+      color: $darkBlue;
+      padding: 1em 0;
+      @media $medium {
+          color: $white;
+      }
+      @media $large {
+          color: $white;
+      }
+      @media $ex-large {
+          color: $white;
+      }
 
     }
     li {
-        margin: 0 0 2.2rem 0;
+        margin: 0 0 1.0em 0;
+
         @media $medium {
-margin: 0 0 1.1rem 0;
+margin: 0 0 1.1em 0;
         }
         @media $large {
-margin: 0 0 1.1rem 0;
+margin: 0 0 1em 0;
         }
         @media $ex-large {
-margin: 0 0 1.3rem 0;
+margin: 0 0 1em 0;
         }
     }
 }
 .footer-menu-container {
   width: 100%;
+  text-align: center;
   @media $medium {
-    width: 20%;
+    width: 17%;
+      text-align: left;
   }
   @media $large {
-      width: 25%;
+      width: 15%;
+        text-align: left;
   }
   @media $ex-large {
-      width: 25%;
+      width: 20%;
+        text-align: left;
   }
 }
 .footer-search-container {
@@ -120,16 +120,53 @@ margin: 0 0 1.3rem 0;
 .footer-middle {
   width: 100%;
   @media $medium {
-    width: 60%;
+    width: 35%;
   }
   @media $large {
-    width: 50%;
+    width: 38%;
   }
   @media $ex-large {
-    width: 50%;
+    width: 40%;
+  }
+}
+.footer-logo-section {
+    display: flex;
+    -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 1em 0 0;
+
+  @media $medium {
+    width: 33%;
+      justify-content: flex-start;
+      padding: 0;
+  }
+  @media $large {
+      width: 27%;
+      justify-content: flex-start;
+      padding: 0;
+
+  }
+  @media $ex-large {
+      width: 25%;
+      justify-content: flex-start;
+      padding: 0;
   }
 }
 .footer-share-text {
   font-weight: 300;
   color: $white;
+}
+.site-footer .social-share {
+    justify-content: center;
+  @media $medium {
+      justify-content: flex-start;
+  }
+  @media $large {
+      justify-content: flex-start;
+  }
+  @media $ex-large {
+      justify-content: flex-start;
+  }
 }

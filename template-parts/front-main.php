@@ -38,7 +38,7 @@
 
 
 
-		<section class="featured-stories row-bottom-pad clear">
+		<section class="featured-stories row-tb-pad clear">
 			<div class="inner-featured-stories full-content-area">
 					<h2 class="blue-heading blue-heading-front front-subheader">Movement Stories</h2>
 				<div class="home-flex-container">
@@ -51,7 +51,7 @@
 						<!-- centre story here: -->
 						<?php
 							$story_location = 'story_centre';
-							$background_color = '-blue';
+							$background_color = '-grey';
 							require(locate_template('template-parts/front-story.php'));
 						?>
 						<?php
@@ -108,19 +108,15 @@
 						$y_axis = 'lower';
 						require(locate_template('template-parts/front-highlight.php'));
 					?>
-					<?php
-						$highlight = 'highlight_page_lower_right';
-						$x_axis = 'right';
-						$y_axis = 'lower';
-						require(locate_template('template-parts/front-highlight.php'));
-					?>
 				</div>
 			</div><!-- .inner-highlights -->
 		</section>
 		<?php
 		 wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly
-		 // print_r($post) ?>
+		 // print_r($post)
 
+		 get_template_part( 'template-parts/news', 'signup' );
+		 ?>
 
 
 		 <?php if( get_field('front_quote_2') ): ?>

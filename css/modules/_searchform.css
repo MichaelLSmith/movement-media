@@ -1,8 +1,27 @@
 .footer-search-form {
     margin-bottom: 1.5rem;
 
+
+
 }
 .footer-search-field {
     font-size: 1.6rem;
-    margin: 0 1.5rem 0 0;
+    margin: 0 0.2rem 0.2em 0;
+    @media $medium {
+    margin: 0 0.2rem 0.4em 0;
+    }
+    @media $large {
+    margin: 0 1.5rem 0.4em 0;
+    }
+    @media $ex-large {
+    margin: 0 1.5rem 0.2em 0;
+    }
+}
+
+.mc4wp-form-fields {
+
+}
+
+.mc4wp-form-fields input[type="email"] {
+    padding: 10px 72px 10px 24px;
 }

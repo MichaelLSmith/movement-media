@@ -118,10 +118,10 @@ h6 {
 
 p {
 	margin-bottom: 1.5em;
-	font-size: 1.7rem;
+	font-size: 1.6rem;
 	color: $baseTextColour;
 	font-weight: 300;
-	line-height: 1.7;
+	line-height: 1.5;
 	@media $medium {
 			font-size: 1.8rem;
 				line-height: 1.5;

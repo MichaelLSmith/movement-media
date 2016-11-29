@@ -104,5 +104,4 @@
 	</div><!-- #primary -->
 </div><!-- #content -->
 <?php
-get_template_part( 'template-parts/news', 'signup' );
 get_footer();

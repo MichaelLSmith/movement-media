@@ -15,6 +15,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .action-btn {
+	border: none;
 	display: inline-block;
 	margin: auto;
 	background: $green;
@@ -91,9 +92,19 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	border: 1px solid #ccc;
+	border: 1px solid #343434;
 	/*border-radius: 3px;*/
+	padding: 10px 8px;
+	@media $medium {
+		padding: 10px 8px;
+
+	}
+	@media $large {
 	padding: 10px 18px;
+	}
+	@media $ex-large {
+	padding: 12px 18px;
+	}
 }
 
 select {
@@ -137,14 +148,25 @@ textarea {
 
 
 .gform_wrapper input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']) {
-    padding: 10px 4px!important;
+    padding: 16px 4px!important;
 
 }
 .gform_wrapper .field_sublabel_above .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_above div.ginput_container[class*="gfield_time_"] label, .gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_time_"] label, .gform_wrapper .field_sublabel_above div.ginput_container[class*="gfield_date_"] label, .gform_wrapper .field_sublabel_below div.ginput_container[class*="gfield_date_"] label {
-    font-size: 1.5rem!important;
+    font-size: 1.4rem!important;
     letter-spacing: 1.1!important;
 }
 
 .gform_wrapper label.gfield_label {
-    font-size: 1.3rem!important;
+    font-size: 1.6rem!important;
+		padding: 10px 0px 0!important;
+}
+.gform_wrapper input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']) {
+    padding: 12px 4px 12px 12px!important;
+		font-size: 1.6rem!important;
+}
+.gform_wrapper textarea.medium {
+    height: 280px!important;
+}
+body .gform_wrapper ul li.gfield {
+    margin-top: 24px!important;
 }

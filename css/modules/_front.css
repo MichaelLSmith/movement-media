@@ -178,35 +178,55 @@
 }
 .front-more-link {
     text-align: right;
-    color: $green;
+    color: $white;
     font-size: 2.4rem;
     letter-spacing: 0px;
     font-family: $gotham;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 0;
     a {
         color: inherit;
         text-decoration: underline;
     }
 }
+.featured-stories .front-more-link {
+    color: $white;
+}
+.featured-video .front-more-link {
+    color: $green;
+}
 .featured-stories {
-
+  background-color: $white;
+  h2{
+    color: $darkBlue;
+      letter-spacing: 2px;
+  }
 }
 .featured-video {
   border-bottom: 0px solid #222222;
+  background-color: #efefef;
+  h2 {
+    letter-spacing: 2px;
+  }
 }
 .featured-story {
 width: 100%;
-margin-bottom: 1.8em;
+margin-bottom: 3.4em;
 
   @media $medium {
       width: 31.5%;
+      min-height: 480px;
+      margin-bottom: 1.8em;
   }
   @media $large {
       width: 31.5%;
+      min-height: 540px;
+      margin-bottom: 1.8em;
   }
   @media $ex-large {
       width: 31.5%;
+      min-height: 540px;
+      margin-bottom: 1.8em;
   }
 }
 .front-subheader {
@@ -217,14 +237,14 @@ margin-bottom: 1.8em;
           margin-bottom: 1.4em!important;
     }
     @media $large {
-        margin-bottom: 1.1em!important;
+        margin-bottom: 0.8em!important;
     }
     @media $ex-large {
-          margin-bottom: 1.2em!important;
+          margin-bottom: 0.8em!important;
     }
 }
 .blue-heading {
-	font-weight: 800;
+	font-weight: 700;
 	color: $darkBlue;
 	letter-spacing: 0;
   text-transform: uppercase;
@@ -269,7 +289,7 @@ margin-bottom: 1.8em;
 .story-text {
     padding: 1.4rem 4rem 1.4rem;
     p {
-      font-family: gotham;
+      font-family: $gotham;
       font-weight: 300;
       font-size: 1.2rem;
       line-height: 1.3;
@@ -278,21 +298,21 @@ margin-bottom: 1.8em;
       padding: 1.4rem 2rem 1.4rem;
       p {
         font-size: 1.3rem;
-        line-height: 1.3;
+        line-height: 1.5;
       }
     }
     @media $large {
-      padding: 2rem 3rem 1.4rem;
+      padding: 2rem 3.4rem 1.4rem 3.6rem;
       p {
         font-size: 1.4rem;
-        line-height: 1.3;
+        line-height: 1.5;
       }
     }
     @media $ex-large {
-    padding: 2rem 3rem 1.4rem;
+      padding: 2rem 3.4rem 1.4rem 3.6rem;
     p {
       font-size: 1.4rem;
-      line-height: 1.3;
+      line-height: 1.5;
       }
     }
 }
@@ -348,30 +368,38 @@ margin-bottom: 1.8em;
     }
 }
 .front-quote1 {
-      background-color: $darkBlue;
+      background-color: #efefef;
       p {
-      color: $white;
+      color: $darkBlue;
     }
 }
 .front-quote2 {
-    background-color: $lightBackgroundGrey;
+    background-color: #efefef;
     p {
     color: $darkBlue;
+  }
+}
+.movement-highlights {
+    background-color: $darkBlue;
+  h2 {
+    color: $white;
+    letter-spacing: 2px;
   }
 }
 
 .highlight-item {
   width: 100%;
   	@media $medium {
-        width: 48%;
+        width: 49%;
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
     }
     @media $large {
-        width: 23%;
+        width: 31.9%;
     }
     @media $ex-large {
-        width: 23%;
+        width: 31.9%;
+
     }
 }
 
@@ -407,7 +435,6 @@ margin-bottom: 1.8em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border: 2px solid $darkBorderGrey;
 }
 .front-item-left {
 }
@@ -424,23 +451,47 @@ margin-bottom: 1.8em;
     }
 }
 .inner-box-upper-left, .inner-box-upper-right {
+  margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  @media $medium {
     margin-bottom: 0rem;
+  }
+  @media $large {
+margin-bottom: 0rem;
+  }
+  @media $ex-large {
+margin-bottom: 0rem;
+
+  }
 }
 .inner-box-lower-left, .inner-box-lower-right {
-    margin-top: 0rem;
+  margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    @media $medium {
+      margin-bottom: 0rem;
+    }
+    @media $large {
+  margin-bottom: 0rem;
+    }
+    @media $ex-large {
+  margin-bottom: 0rem;
+
+    }
 
 }
 .inner-box-upper-left, .inner-box-lower-right {
-    background-color: $lightBlue;
+    background-color: $backgroundGrey;
+    border: 8px solid $white;
     h4,a {
-        color: $white;
+        color: $darkBlue;
         width: 70%;
 
     }
 }
 .inner-box-upper-right, .inner-box-lower-left {
+  border: 8px solid $white;
   background-color: $backgroundGrey;
-    margin-bottom: 3em;     /*THIS IS A HACK FIX THIS LATER!*/
+       /*THIS IS A HACK FIX THIS LATER!*/
     h6,a {
         color: $darkBlue;
     }
@@ -449,33 +500,43 @@ margin-bottom: 1.8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1.5rem 0 0rem;
     padding: 2rem .8rem 4rem;
     @media $medium {
+      margin: 1em 0 0.2em;
+      padding: 1rem .8rem 0rem;
+      min-height: 150px;
 
     }
     @media $large {
 
+      padding: 1rem .8rem 1rem;
+      min-height: 145px;
     }
     @media $ex-large {
-      margin: 1em 0 0em;
-      padding: 1rem .8rem 2rem;
+
+      padding: 1rem .8rem 1rem;
+        min-height: 145px;
     }
     h6 {
-      margin: 0.4rem auto 1rem;
+        margin: 1.5rem auto 0rem;
       text-align: center;
       text-transform:uppercase;
-      width: 70%;
-      line-height: 1.2;
-      font-weight: 400;
+      width: 90%;
+      line-height: 1.3;
+      font-weight: 700;
       @media $medium {
-
+        font-size: 1.7em;
+        width: 80%;
       }
       @media $large {
-          padding: 0rem .8rem 1rem;
+
+          font-size: 1.6em;
+            line-height: 1.2;
       }
       @media $ex-large {
-        padding: 0rem .8rem 1rem;
+
+        font-size: 1.6em;
+        line-height: 1.2;
       }
     }
 }

@@ -37,7 +37,7 @@ q {
 	quotes: "" "";
 }
 section {
-	margin-bottom: 1.6rem;
+
 }
 
 hr {
@@ -59,6 +59,9 @@ ul {
 
 ol {
 	list-style: decimal;
+}
+li {
+
 }
 
 li > ul,
