@@ -3629,7 +3629,7 @@ img.custom-logo {
     .front-quote p {
 
 
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3638,7 +3638,7 @@ img.custom-logo {
     .front-quote p {
 
 
-        font-size: 27px;
+        font-size: 28px;
     }
 }
 .front-quote1 {
@@ -7763,20 +7763,50 @@ h3.bluebox-2col-subtitle {
 
 
         flex-wrap: wrap;
+
+
+    -webkit-box-pack: justify;
+
+
+        -ms-flex-pack: justify;
+
+
+            justify-content: space-between;
 }
 .giving-partner-item {
 
 
-    -webkit-box-flex: 0;
-
-
-        -ms-flex: 0 1 33%;
-
-
-            flex: 0 1 33%;
+    width: 100%;
 
 
     padding: 0 0 2%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .giving-partner-item {
+
+
+        width: 31%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .giving-partner-item {
+
+
+        width: 31%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .giving-partner-item {
+
+
+        width: 33%;
+    }
 }
 .giving-name {
 
@@ -7804,9 +7834,6 @@ h3.bluebox-2col-subtitle {
 
 
     line-height: 1.5;
-
-
-    max-width: 307px;
 }
 .testimonial-flex {
 

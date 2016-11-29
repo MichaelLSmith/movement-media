@@ -1,11 +1,23 @@
 .giving-partner-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 .giving-partner-item {
-    flex: 0 1 33%;
+
+    width: 100%;
     padding: 0 0 2%;
+
+    @media $medium {
+      width: 31%;
+    }
+    @media $large {
+      width: 31%;
+    }
+    @media $ex-large {
+      width: 33%
+    }
 }
 .giving-name {
     color: $darkBlue;
@@ -19,5 +31,5 @@
 .giving-partner-description p {
     font-size: 1.3rem;
     line-height: 1.5;
-    max-width: 307px;
+
 }

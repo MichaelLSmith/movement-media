@@ -64,7 +64,7 @@ get_header(); ?>
 						<?php the_field('social_giving_introduction'); ?>
 					<?php endif;?>
 				</div>
-			<section class="full-content-area">
+			<section class="full-content-area row-bottom-pad">
 				<?php
 				if( have_rows('partner_row') ):// repeater
 				    while ( have_rows('partner_row') ) : the_row(); ?>

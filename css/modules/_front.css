@@ -360,10 +360,10 @@ margin-bottom: 3.4em;
           font-size: 21px;
         }
         @media $large {
-            font-size: 24px;
+            font-size: 28px;
         }
         @media $ex-large {
-            font-size: 27px;
+            font-size: 28px;
         }
     }
 }
