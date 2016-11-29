@@ -11,25 +11,39 @@ Header CSS - need to @include in style.css and run gulp process
     display: flex;
     justify-content: space-between;
     align-items: center;
-        padding: 2% 4% 1%;
+        padding: 2% 0% 1%;
 	   margin: auto;
     padding-bottom: 0.1rem;
     font-family: $gotham;
     font-size: 14px;
     color: $darkBlue;
     letter-spacing: 0.48px;
+    width: 85%;
     a {
         color: $darkBlue;
     }
     @media $medium {
-           padding: 1.3% 5% 1%;
+           padding: 1.3% 0% 1%;
+           width: 85%;
+           max-width: 1000px;
     }
     @media $large {
-            padding: 1.7% 5% 1%;
+            padding: 1.7% 0% 1%;
+            width: 85%;
+            max-width: 1080px;
     }
     @media $ex-large {
             padding: 2% 2% 0.3%;
+            width: 97%;
     }
+
+
+
+
+
+
+
+
 }
 .site-header {
 	max-width: $container-max-width;

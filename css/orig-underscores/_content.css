@@ -84,7 +84,7 @@ needs to be @imported into the style.css file and processed by gulp
 	}
    .text-content-area {
      margin: 0 auto;
-     width: 91.66%;
+     width: 100%;
 		 @media $medium {
 			 width: 83.33%;
 		 }

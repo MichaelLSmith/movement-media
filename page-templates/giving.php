@@ -96,7 +96,6 @@ get_header(); ?>
 						endif;//social giving partner
 						endwhile;//social_giving_partners
 									?>
-								<pre>Note for Darren/Mike: If the org doesn't have a website, I set it up so the button won't appear. But it will look strange not to have the button on some. Url in title?</pre>
 						</article>
 				<?php
 				    endwhile;//partner_row

@@ -57,6 +57,7 @@
     letter-spacing: 1px;
     font-weight: 300;
     text-transform: uppercase;
+      color: $white;
     @media $medium {
       font-size: 1.4rem;
         color: $white;
@@ -71,16 +72,21 @@
     }
     /*line-height: 2.3rem;*/
     a {
-      color: $darkBlue;
+      color: $white;
       padding: 1em 0;
       @media $medium {
+          background-color: $darkBlue;
           color: $white;
       }
       @media $large {
           color: $white;
+          background-color: $darkBlue;
+
       }
       @media $ex-large {
           color: $white;
+          background-color: $darkBlue;
+
       }
 
     }

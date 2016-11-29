@@ -1,39 +1,30 @@
-<div class="highlight-item">
-    <div class="inner-box-<?php echo $y_axis ?>-<?php echo $x_axis ?>">
-        <?php $post_object = NULL; ?>
-        <?php
-            $post = get_field($highlight);
-                setup_postdata($post);
-        ?>
-        <?php $post_object = get_field('add_video_to_page');?>
-        <?php
-            if( $post_object ):
-                // override $post
-                $post = $post_object;
-                setup_postdata( $post );
-            ?>
-              <div class="video-highlight"> <?php the_content(); ?></div>
-        <?php
-         wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-        <?php endif;?>
-        <?php
-            $post = get_field($highlight);
-            setup_postdata($post);
-        ?>
-        <?php
-        if($post_object):
-        elseif (has_post_thumbnail() ) : ?>
-            <?php
-             the_post_thumbnail();?>
-        <?php endif; ?>
-        <div class="highlight-text">
-            <h6 id="link">
-                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </h6>
-            <div class="action-btn">
-                 <a href="<?php the_permalink(); ?>">LEARN MORE</a>
-            </div>
+<?php $post_object = NULL; ?>
+<?php
+$post = get_field($highlight);
+setup_postdata($post);
+?>
+<div id="post-<?php the_ID(); ?>" class="highlight-item">
+<div class="inner-box-<?php echo $y_axis ?>-<?php echo $x_axis ?>">
+
+    <?php
+        if( get_field('story_alt_image') ):
+            $image = get_field('story_alt_image');?>
+            <img src="<?php echo $image['url']?>" alt="<?php $image['alt']?>"/>
+
+    <?php
+    elseif (has_post_thumbnail() ) :
+         the_post_thumbnail();?>
+    <?php endif; ?>
+    <div class="highlight-text">
+        <h6 id="link">
+            <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
+        </h6>
+        <div class="action-btn">
+             <a href="<?php the_permalink(); ?>">LEARN MORE</a>
         </div>
     </div>
+    <?php
+     wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 </div>
-     <?php $post_object = NULL;?>
+</div>
+ <?php $post_object = NULL;?>
