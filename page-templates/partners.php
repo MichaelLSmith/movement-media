@@ -100,7 +100,7 @@ get_header(); ?>
 							<div class="bluebox-2col-flex">
 					<div class="highlights-bluebox bluebox1 bluebox">
 							<div class="bluebox-heading bluebox-innerflex">
-									<span class="bluebox1-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
+									<span class="bluebox1-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
 									<h2 class="bluebox-2col-title">Stories</h2>
 							</div>
 							<ul class="bluebox-indiv bluebox-indiv-left">
