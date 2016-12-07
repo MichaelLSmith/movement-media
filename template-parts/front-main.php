@@ -110,7 +110,7 @@
 					?>
 				</div>
 				<p class="front-more-link">
-					<a href="http://localhost:8080/stories">All Highlights</a>
+					<a href="<?php echo home_url();?>/category/highlight/">All Highlights</a>
 				</p>
 			</div><!-- .inner-highlights -->
 		</section>
