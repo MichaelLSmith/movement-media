@@ -10,13 +10,13 @@
     padding: 0 0 2%;
 
     @media $medium {
-      width: 31%;
+      width: 29%;
     }
     @media $large {
       width: 31%;
     }
     @media $ex-large {
-      width: 33%
+      width: 31%
     }
 }
 .giving-name {
