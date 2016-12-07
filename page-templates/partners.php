@@ -96,7 +96,7 @@ get_header(); ?>
 				</div><!-- .bronner-image -->
 
 
-				<div class="partner-bluebox-linkarea">
+				<!-- <div class="partner-bluebox-linkarea">
 							<div class="bluebox-2col-flex">
 					<div class="highlights-bluebox bluebox1 bluebox">
 							<div class="bluebox-heading bluebox-innerflex">
@@ -133,16 +133,14 @@ get_header(); ?>
 									<li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
 							</ul>
 					</div>
-							</div>
-					</div>
+				</div> .two Col flex
+			</div><section.partner-bluebox-linkarea -->
 
 
 					<?php
-            //$partnerName = get_field('bronner_client_tax');
-						//require(locate_template('template-parts/bluebox.php' ));
+            $partnerName = get_field('bronner_client_tax');
+						require(locate_template('template-parts/bluebox.php' ));
 					?>
-
-
 
 			</section><!-- #dr bronner -->
 			<?php
@@ -186,7 +184,7 @@ get_header(); ?>
 				</div>
 
 				<?php
-					$partnerName = get_field('bronner_client_tax');
+					$partnerName = get_sub_field('partner_name_tax');
 					require(locate_template('template-parts/bluebox.php' ));
 				endif;//get_row_layout(partner_name_group)?>
 
