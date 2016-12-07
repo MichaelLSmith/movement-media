@@ -95,54 +95,10 @@ get_header(); ?>
 	                <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'];?>">
 				</div><!-- .bronner-image -->
 
-
-				<div class="partner-bluebox-linkarea">
-							<div class="bluebox-2col-flex">
-					<div class="highlights-bluebox bluebox1 bluebox">
-							<div class="bluebox-heading bluebox-innerflex">
-									<span class="bluebox1-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
-									<h2 class="bluebox-2col-title">Stories</h2>
-							</div>
-							<ul class="bluebox-indiv bluebox-indiv-left">
-								<div class="bluebox-subarea">
-										<h3 class="bluebox-2col-subtitle">Recent</h3>
-										<li>Dr. Bronner's All-One Report</li>
-										<li>Dr. Bronner’s & Animal Advocacy </li>
-										<li>Dr. Bronner's All-One Report</li>
-								</div>
-								<div class="bluebox-subarea">
-									<h3 class="bluebox-2col-subtitle">Highlights</h3>
-										<li>Dr. Bronner's All-One Report Dr. B's All-One Report</li>
-										<li>Dr. Bronner’s & Animal Advocacy </li>
-										<li>Dr. Bronner's All-One Report — One Report</li>
-
-								</div>
-							</ul>
-					</div>
-					<div class="videos-bluebox bluebox2 bluebox">
-							<div class="bluebox-heading bluebox-innerflex">
-								<span class="bluebox2-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
-								<h2 class="bluebox-2col-title">Videos</h2>
-							</div>
-							<ul class="bluebox-indiv bluebox-indiv-right">
-									<li>Journey to Serendipol</li>
-									<li>Dr. Bronner’s: A Tribute to Ralph Bronner</li>
-									<li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
-									<li>Journey to Serendipol</li>
-									<li>Dr. Bronner’s: A Tribute to Ralph Bronner</li>
-									<li>Sustainable Palm Oil: The Difference Fair Trade Makes</li>
-							</ul>
-					</div>
-							</div>
-					</div>
-
-
 					<?php
-            //$partnerName = get_field('bronner_client_tax');
-						//require(locate_template('template-parts/bluebox.php' ));
+            $partnerName = get_field('bronner_client_tax');
+						require(locate_template('template-parts/bluebox.php' ));
 					?>
-
-
 
 			</section><!-- #dr bronner -->
 			<?php
@@ -186,18 +142,10 @@ get_header(); ?>
 				</div>
 
 				<?php
-					$partnerName = get_field('bronner_client_tax');
+					$partnerName = get_sub_field('partner_name_tax');
 					require(locate_template('template-parts/bluebox.php' ));
 				endif;//get_row_layout(partner_name_group)?>
 
-<!-- Back to TOP - may or may not keep
-				<p><a
-						data-scroll
-						data-options='{ "easing": "easeOutCubic" }'
-						href="#">Back to the top
-					</a>
-				</p>
-			-->
 			</div>
 
 			</section><!-- #partner end -->
@@ -231,5 +179,4 @@ get_header(); ?>
 	<!-- </div>#primary -->
 </div><!-- #content -->
 <?php
-get_sidebar();
 get_footer();

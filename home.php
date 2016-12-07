@@ -38,7 +38,7 @@ get_header(); ?>
 				?>
 			</div>
 			<?php
-			the_posts_navigation();
+			the_posts_pagination( array( 'mid_size'  => 2 ) );
 
 		else :
 
@@ -50,5 +50,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 </div><!-- #content -->
 <?php
-get_sidebar();
 get_footer();
