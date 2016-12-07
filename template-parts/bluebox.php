@@ -3,7 +3,7 @@
 
         <div class="highlights-bluebox bluebox1 bluebox">
             <div class="bluebox-heading bluebox-innerflex">
-                <span class="bluebox1-icon"><img src="<?php get_template_directory() . '/wp-content/uploads/2016/11/highlights-star.png'?>" alt="Highlights Star" height="42" width="38"></span>
+                <span class="bluebox1-icon"><img src="<?php echo content_url() .  '/uploads/2016/11/highlights-star.png'?>" alt="Highlights Star" height="42" width="38"></span>
                 <h2 class="bluebox-2col-title">Stories</h2>
             </div>
 
@@ -95,7 +95,7 @@
 
         <div class="videos-bluebox bluebox2 bluebox">
             <div class="bluebox-heading bluebox-innerflex">
-              <span class="bluebox2-icon"><img src="<?php get_template_directory() . '/wp-content/uploads/2016/11/videos-camera.png'?>" alt="Videos-Camera" height="92" width="50"></span>
+              <span class="bluebox2-icon"><img src="<?php echo content_url() . '/uploads/2016/11/videos-camera.png'?>" alt="Videos-Camera" height="92" width="50"></span>
               <h2 class="bluebox-2col-title">Videos</h2>
             </div>
 
