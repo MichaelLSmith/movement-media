@@ -365,3 +365,20 @@ needs to be @imported into the style.css file and processed by gulp
 .bypostauthor {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+## Animations
+--------------------------------------------------------------*/
+
+.entry-title, .bold-lead-paragraph {
+  -webkit-animation: ns-fadeIn 2.0s 1s 1 both;
+  -moz-animation: ns-fadeIn 2.0s 1s 1 both;
+  -o-animation: ns-fadeIn 2.0s 1s 1 both;
+  animation: ns-fadeIn 2.2s 0.3s 1 both;
+}
+ .main-image, .partners-image, .stories-container, .video-wrap, .testimonials-list {
+  -webkit-animation: ns-fadeIn 2.0s 1s 1 both;
+  -moz-animation: ns-fadeIn 2.0s 1s 1 both;
+  -o-animation: ns-fadeIn 2.0s 1s 1 both;
+  animation: ns-fadeIn 2.2s 0.8s 1 both;
+}

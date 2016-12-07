@@ -21,7 +21,7 @@ get_header(); ?>
 				<!-- might need to add a div here to help control width of title -->
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</section>
-			<section class="partners-image full-content-area">
+			<section class="partners-image main-image full-content-area">
 				<div class="image-content-are">
 				<?php
 				 if( get_field('full_sized_image') ): ?>
@@ -100,7 +100,7 @@ get_header(); ?>
 							<div class="bluebox-2col-flex">
 					<div class="highlights-bluebox bluebox1 bluebox">
 							<div class="bluebox-heading bluebox-innerflex">
-									<span class="bluebox1-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
+									<span class="bluebox1-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/highlights-star.png" alt="Highlights Star" height="42" width="38"></span>
 									<h2 class="bluebox-2col-title">Stories</h2>
 							</div>
 							<ul class="bluebox-indiv bluebox-indiv-left">
@@ -121,7 +121,7 @@ get_header(); ?>
 					</div>
 					<div class="videos-bluebox bluebox2 bluebox">
 							<div class="bluebox-heading bluebox-innerflex">
-								<span class="bluebox2-icon"><img src="http://movementmedia.flywheelsites.com/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
+								<span class="bluebox2-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/11/videos-camera.png" alt="Videos-Camera" height="92" width="50"></span>
 								<h2 class="bluebox-2col-title">Videos</h2>
 							</div>
 							<ul class="bluebox-indiv bluebox-indiv-right">

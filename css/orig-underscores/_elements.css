@@ -88,3 +88,12 @@ table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
+@keyframes ns-fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

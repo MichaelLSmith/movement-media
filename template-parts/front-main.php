@@ -60,8 +60,8 @@
 							require(locate_template('template-parts/front-story.php'));
 						?>
 					</div><!-- .home-flex-container -->
-				<p class="front-more-link full-content-area">
-					<a href="http://localhost:8080/stories/">All Stories</a>
+				<p class="front-more-link">
+					<a href="http://movementmedia.dev/stories/">All Stories</a>
 				</p>
 			</div><!-- .inner-featured-stories -->
 		</section> <!-- Stories End -->
@@ -109,6 +109,9 @@
 						require(locate_template('template-parts/front-highlight.php'));
 					?>
 				</div>
+				<p class="front-more-link">
+					<a href="http://localhost:8080/stories">All Highlights</a>
+				</p>
 			</div><!-- .inner-highlights -->
 		</section>
 		<?php

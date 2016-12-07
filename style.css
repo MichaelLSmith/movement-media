@@ -858,6 +858,38 @@ table {
 
     width: 100%;
 }
+@-webkit-keyframes ns-fadeIn {
+
+
+    0% {
+
+
+        opacity: 0;
+    }
+
+
+    100% {
+
+
+        opacity: 1;
+    }
+}
+@keyframes ns-fadeIn {
+
+
+    0% {
+
+
+        opacity: 0;
+    }
+
+
+    100% {
+
+
+        opacity: 1;
+    }
+}
 /*
 corresonds to the forms section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -2196,6 +2228,25 @@ h2.boxlist-2col-title {
 
     display: block;
 }
+/*--------------------------------------------------------------
+## Animations
+--------------------------------------------------------------*/
+.entry-title, .bold-lead-paragraph {
+
+
+    -webkit-animation: ns-fadeIn 2.0s 1s 1 both;
+
+
+    animation: ns-fadeIn 2.2s 0.3s 1 both;
+}
+.main-image, .partners-image, .stories-container, .video-wrap, .testimonials-list {
+
+
+    -webkit-animation: ns-fadeIn 2.0s 1s 1 both;
+
+
+    animation: ns-fadeIn 2.2s 0.8s 1 both;
+}
 /*
 corresonds to the Infinite Scroll section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -2936,7 +2987,6 @@ img.custom-logo {
 
     color: #fff;
 }
-.home-masthead {}
 .home-masthead-1 p.large-text {
 
 
@@ -2946,7 +2996,7 @@ img.custom-logo {
     font-family: "Gotham SSm A","Gotham SSm B";
 
 
-    font-size: 28px;
+    font-size: 32px;
 
 
     font-weight: 700;
@@ -2961,10 +3011,16 @@ img.custom-logo {
     text-align: center;
 
 
-    width: 53%;
+    width: 75%;
 
 
     margin: 0 auto;
+
+
+    -webkit-animation: ns-fadeIn 1.2s 0.4s 1 both;
+
+
+    animation: ns-fadeIn 1.2s 0.4s 1 both;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -2984,7 +3040,7 @@ img.custom-logo {
         line-height: 44px;
 
 
-        width: 42%;
+        width: 36%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3005,7 +3061,7 @@ img.custom-logo {
         line-height: 62px;
 
 
-        width: 42%;
+        width: 39%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3048,6 +3104,15 @@ img.custom-logo {
 
 
     margin: 0.4em auto 1.2em;
+
+
+    width: 91.33%;
+
+
+    -webkit-animation: ns-fadeIn 2.4s 1s 1 both;
+
+
+    animation: ns-fadeIn 2.4s 1s 1 both;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3062,6 +3127,9 @@ img.custom-logo {
 
 
         margin: 1.2em auto 1.2em;
+
+
+        width: 66.66%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3077,6 +3145,9 @@ img.custom-logo {
 
 
         margin: 0.4em auto 1.2em;
+
+
+        width: 75%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3092,7 +3163,18 @@ img.custom-logo {
 
 
         margin: 0.4em auto 1.2em;
+
+
+        width: 66.66%;
     }
+}
+.home-masthead-3 {
+
+
+    -webkit-animation: ns-fadeIn 2.0s 1s 1 both;
+
+
+    animation: ns-fadeIn 2.2s 1s 1 both;
 }
 .front-icon-container {
 
@@ -3137,6 +3219,12 @@ img.custom-logo {
 
 
     width: 100%;
+
+
+    -webkit-animation: ns-fadeIn 1.8s 0.4s 1 both;
+
+
+    animation: ns-fadeIn 1.8s 0.4s 1 both;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3221,7 +3309,7 @@ img.custom-logo {
     font-weight: 300;
 
 
-    margin-bottom: 0;
+    margin-top: 0.6em;
 }
 .front-more-link a {
 
@@ -3231,10 +3319,37 @@ img.custom-logo {
 
     text-decoration: underline;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .front-more-link {
+
+
+        margin-top: 1.2em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .front-more-link {
+
+
+        margin-top: 1.2em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .front-more-link {
+
+
+        margin-top: 1.2em;
+    }
+}
 .featured-stories .front-more-link {
 
 
-    color: #fff;
+    color: #85C51F;
 }
 .featured-video .front-more-link {
 
@@ -3273,7 +3388,7 @@ img.custom-logo {
     width: 100%;
 
 
-    margin-bottom: 3.4em;
+    margin-bottom: 0em;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3287,7 +3402,7 @@ img.custom-logo {
         min-height: 480px;
 
 
-        margin-bottom: 1.8em;
+        margin-bottom: 0em;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3302,7 +3417,7 @@ img.custom-logo {
         min-height: 540px;
 
 
-        margin-bottom: 1.8em;
+        margin-bottom: 0em;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -3317,7 +3432,7 @@ img.custom-logo {
         min-height: 540px;
 
 
-        margin-bottom: 1.8em;
+        margin-bottom: 0em;
     }
 }
 .front-subheader {
@@ -3334,7 +3449,7 @@ img.custom-logo {
     .front-subheader {
 
 
-        margin-bottom: 1.4em!important;
+        margin-bottom: 0.5em!important;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3370,7 +3485,7 @@ img.custom-logo {
     text-transform: uppercase;
 
 
-    font-size: 3.3em;
+    font-size: 2.4em;
 
 
     line-height: 1.1;
@@ -3393,7 +3508,7 @@ img.custom-logo {
     .blue-heading {
 
 
-        font-size: 5em;
+        font-size: 4.5em;
 
 
         line-height: 1.2;
@@ -3469,7 +3584,7 @@ img.custom-logo {
 .story-text {
 
 
-    padding: 1.4rem 4rem 1.4rem;
+    padding: 1.4rem 4rem 2.4rem;
 }
 .story-text p {
 
@@ -3491,7 +3606,7 @@ img.custom-logo {
     .story-text {
 
 
-        padding: 1.4rem 2rem 1.4rem;
+        padding: 1.4rem 2rem 1.8rem;
     }
 
 
@@ -3664,7 +3779,7 @@ img.custom-logo {
 .movement-highlights {
 
 
-    background-color: #005395;
+    background-color: #4A90E2;
 }
 .movement-highlights h2 {
 
@@ -3685,7 +3800,7 @@ img.custom-logo {
     .highlight-item {
 
 
-        width: 49%;
+        width: 31.9%;
 
 
         -ms-flex-flow: row wrap;
@@ -6622,15 +6737,15 @@ h3.bluebox-2col-subtitle {
 .home .news-signup {
 
 
-    background-color: #559e83;
+    background-color: #ffffff;
 
 
-    color: #4A90E2;
+    color: #fff;
 }
 .news-signup {
 
 
-    background-color: #005395;
+    background-color: #4A90E2;
 
 
     color: #fff;
@@ -6652,25 +6767,22 @@ h3.bluebox-2col-subtitle {
 .news-signup p {
 
 
-    color: #fff;
+    color: #ffffff;
 
 
     font-family: "Gotham SSm A","Gotham SSm B";
 
 
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 
 
-    font-weight: 30;
+    font-weight: 300;
 
 
-    letter-spacing: 0px;
+    line-height: 1.7rem;
 
 
-    line-height: 2.6rem;
-
-
-    margin: 1em auto 1em;
+    margin: 1em auto 0.7em;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -6678,10 +6790,10 @@ h3.bluebox-2col-subtitle {
     .news-signup p {
 
 
-        font-size: 1.7em;
+        font-size: 1.5em;
 
 
-        width: 80%;
+        line-height: 1.5;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -6690,7 +6802,7 @@ h3.bluebox-2col-subtitle {
     .news-signup p {
 
 
-        font-size: 2.2em;
+        font-size: 1.8em;
 
 
         line-height: 1.5;
@@ -6702,7 +6814,7 @@ h3.bluebox-2col-subtitle {
     .news-signup p {
 
 
-        font-size: 2.2em;
+        font-size: 1.8em;
 
 
         line-height: 1.5;
@@ -6743,6 +6855,39 @@ h3.bluebox-2col-subtitle {
 
 
     margin: auto;
+
+
+    background-color: #005395;
+
+
+    padding: 9% 3% 2%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .news-text {
+
+
+        padding: 6% 1.3% 2%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .news-text {
+
+
+        padding: 5.5% 3% 4%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .news-text {
+
+
+        padding: 5.5% 3% 4%;
+    }
 }
 .footer-search-form {
 
