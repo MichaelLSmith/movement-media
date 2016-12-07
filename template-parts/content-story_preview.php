@@ -14,13 +14,20 @@
 <?php else: ?>
 
        <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
-   <div class="stories-image">
-       <?php
-       if ( has_post_thumbnail() ) :
-           the_post_thumbnail();
-       endif;
-       ?>
-   </div>
+       <div class="stories-image">
+           <?php
+           if ( has_post_thumbnail() ) :
+               the_post_thumbnail();
+           else :
+               $image = get_field('story_stand-in_image', 1709);
+
+           ?>
+               <img src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
+           <?php
+           endif;
+
+           ?>
+       </div>
        <h5 class="stories-title"><?php the_title(); ?> </h5>
        </a>
    <?php endif; // if newsletter?>
