@@ -1,20 +1,34 @@
 .footer-search-form {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
+      display: block;
 
+        @media $medium {
+        margin-bottom: 1.5rem;
+        }
+        @media $large {
+
+          margin-bottom: 1.5rem;
+        }
+        @media $ex-large {
+
+          margin-bottom: 1.5rem;
+        }
 
 
 }
 .footer-search-field {
     font-size: 1.6rem;
-    margin: 0 0.2rem 0.2em 0;
+    margin: 0 auto 0.2em;
     @media $medium {
-    margin: 0 0.2rem 0.4em 0;
+    margin: 0 0.3em 0.4em 0;
+    width: 50%;
     }
     @media $large {
-    margin: 0 1.5rem 0.4em 0;
+    margin: 0 1rem 0.4em 0;
+    width: 60%;
     }
     @media $ex-large {
-    margin: 0 1.5rem 0.2em 0;
+    margin: 0 1rem 0em 0;
     }
 }
 

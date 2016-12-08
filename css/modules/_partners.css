@@ -147,8 +147,16 @@ border-bottom: $darkBlue solid 30px;
 
 }
 h2.additional-partner-heading {
-  text-align: center;
-    margin: 2.2em auto 1.6em;
+    margin: 2.8em auto 0.6em;
+    @media $medium {
+      margin: 2.2em auto 0.6em;
+    }
+    @media $large {
+      margin: 2.2em auto 0.6em;
+    }
+    @media $ex-large {
+        margin: 2.2em auto 0.6em;
+    }
 }
 .partner-title-image {
   margin-bottom: 1em;
@@ -589,19 +597,34 @@ padding: 0px 0 0.6em;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     margin-bottom: 25px;
-    width: 100%
+    width: 100%;
+      margin-top: 2.2em;
     @media $medium {
   justify-content: space-around;
+    margin-top: 4.2em;
     }
     @media $large {
   justify-content: space-between;
+  margin-top: 5.2em;
     }
     @media $ex-large {
   justify-content: space-between;
+  margin-top: 5.2em;
     }
 }
 .gallery-image {
+  padding: 1.0em;
 
+  @media $medium {
+    padding: 1.2em;
+  }
+  @media $large {
+    padding: 1.6em;
+
+  }
+  @media $ex-large {
+    padding: 1.6em;
+  }
 }
 
 .partners-gallery h6 {

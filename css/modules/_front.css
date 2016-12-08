@@ -515,7 +515,7 @@ margin-bottom: 0rem;
 }
 .inner-box-upper-left, .inner-box-lower-right {
     background-color: $backgroundGrey;
-    border: 8px solid $white;
+    border: 12px solid $white;
     h4,a {
         color: $darkBlue;
         width: 70%;
@@ -523,9 +523,8 @@ margin-bottom: 0rem;
     }
 }
 .inner-box-upper-right, .inner-box-lower-left {
-  border: 8px solid $white;
+  border: 12px solid $white;
   background-color: $backgroundGrey;
-       /*THIS IS A HACK FIX THIS LATER!*/
     h6,a {
         color: $darkBlue;
     }

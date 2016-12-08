@@ -20,6 +20,11 @@ get_header(); ?>
 				<?php the_field('page_introduction');?>
 			</div>
 		</section>
+		<?php if( get_field('custom_main_image') ): ?>
+			<section class="custom-main-image main-image full-content-area">
+					<img src="<?php the_field('custom_main_image');?>" alt="" />
+			</section>
+		<?php endif;?>
         <section class="flex-page-content full-content-area">
             <?php
 
@@ -38,7 +43,7 @@ get_header(); ?>
 						<div class="flex-page-section-paragraph">
 							<?php the_sub_field('section_paragraph'); ?>
 						</div>
-        </div>    
+        </div>
 
 						<?php elseif( get_row_layout() == 'image' ):?>
 						<div class="flex-page-image row-bottom-pad">

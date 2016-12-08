@@ -17,7 +17,6 @@ input[type="submit"],
 .action-btn {
 	border: none;
 	display: inline-block;
-	margin: auto;
 	background: $green;
 	font-family: $gotham;
 	border-radius: 8px;
@@ -25,6 +24,7 @@ input[type="submit"],
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
 	color: $white;
+	margin: 0.5em auto;
 	a {
 		color: $white;
 	}
@@ -43,15 +43,22 @@ input[type="submit"],
 }
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
-	font-size: 1.1rem;
+	font-size: 1.6rem;
+	margin: 0 0 0 0.2em;
+
 	@media $medium {
 		font-size: 1.6rem;
+		margin: 0;
 	}
 	@media $large {
 		font-size: 1.6rem;
+		margin: 0;
+
 	}
 	@media $ex-large {
 		font-size: 1.6rem;
+		margin: 0 auto;
+
 	}
 }
 

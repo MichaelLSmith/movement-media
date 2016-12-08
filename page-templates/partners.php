@@ -22,7 +22,7 @@ get_header(); ?>
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</section>
 			<section class="partners-image main-image full-content-area">
-				<div class="image-content-are">
+				<div class="">
 				<?php
 				 if( get_field('full_sized_image') ): ?>
 					<img src="<?php the_field('full_sized_image'); ?>" />
@@ -155,7 +155,8 @@ get_header(); ?>
 			    ?>
 
 				<section id="additional-partners" class="partners-gallery full-content-area row-bottom-pad">
-					<h2 class="blue-heading additional-partner-heading">Additional Partners</h2>
+					<h2 class="blue-heading additional-partner-heading text-content-area">Additional Partners</h2>
+					<div class="text-content-area"><?php the_field('additional_partners_intro') ?> </div>
 					<div class="partners-gallery-flex">
 						<?php
 						if( have_rows('partners_image_gallery') ):
