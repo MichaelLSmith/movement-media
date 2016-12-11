@@ -73,7 +73,6 @@ a:visited {
 }
 }
 
-
 /*--------------------------------------------------------------
 ## Individual Video
 --------------------------------------------------------------*/
@@ -132,11 +131,11 @@ a:visited {
         }
     }
 }
-.video-indiv {
-  width: 100%;
-  height: auto;
-}
 /*.video-indiv*/
+.mm_videos_indiv {
+  width: 100%;
+}
+
  .post_tags a {
   display: inline-block;
 	 margin: 2px 8px 2px 0;
@@ -199,6 +198,7 @@ a:visited {
       padding-bottom: 0.4em;
     }
 }
+
 
 
 /*--------------------------------------------------------------

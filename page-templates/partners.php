@@ -107,7 +107,7 @@ get_header(); ?>
 			while ( have_rows ('other_partners') ): the_row();
 			            $count = $count + 1;
 			?>
-			<section id="partner-<?php echo $count?>" class="partner-outer-container row-tb-pad">
+			<section id="partner-<?php echo $count?>" class="partner-outer-container row-top-pad">
 				<div class="partner-container additional-partners full-content-area">
 
 						<h2 class="blue-heading partner-heading text-content-area"><?php the_sub_field('partner_name');?></h2>

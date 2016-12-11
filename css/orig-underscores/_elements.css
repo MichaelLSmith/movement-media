@@ -60,8 +60,12 @@ ul {
 ol {
 	list-style: decimal;
 }
-li {
 
+
+.stories-content li {
+font-size: 1.8em;
+font-weight: 300;
+line-height: 1.5;
 }
 
 li > ul,

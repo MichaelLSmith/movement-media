@@ -814,7 +814,17 @@ ol {
 
     list-style: decimal;
 }
-li {}
+.stories-content li {
+
+
+    font-size: 1.8em;
+
+
+    font-weight: 300;
+
+
+    line-height: 1.5;
+}
 li > ul, li > ol {
 
 
@@ -2259,6 +2269,63 @@ h2.boxlist-2col-title {
 
     animation: ns-fadeIn 2.2s 0.8s 1 both;
 }
+/*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+.page-numbers {
+
+
+    color: #fff;
+
+
+    background-color: #005395;
+
+
+    padding: 0.4em 0.7em;
+
+
+    margin: 1em 0.8em 0em 0;
+
+
+    font-size: 2em;
+}
+a.page-numbers {
+
+
+    color: #fff;
+}
+.pagination {
+
+
+    margin-bottom: 4em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .pagination {
+
+
+        margin-bottom: 5.2em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .pagination {
+
+
+        margin-bottom: 7em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .pagination {
+
+
+        margin-bottom: 7em;
+    }
+}
 /*
 corresonds to the Infinite Scroll section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -2884,7 +2951,7 @@ img.custom-logo {
     font-size: 14px;
 
 
-    padding: 0em 1.5% 1em;
+    padding: 0em 6.5% 1em;
 
 
     color: #F3F4F5;
@@ -2903,7 +2970,7 @@ img.custom-logo {
     .home-nav {
 
 
-        padding: 1.3% 5% 5%;
+        padding: 1.3% 7.5% 5%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -2912,7 +2979,7 @@ img.custom-logo {
     .home-nav {
 
 
-        padding: 1.7% 5% 8.2%;
+        padding: 2% 7.8% 8.2%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -2921,7 +2988,7 @@ img.custom-logo {
     .home-nav {
 
 
-        padding: 2% 2% 7%;
+        padding: 2.2% 3.4% 7%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -3539,9 +3606,6 @@ img.custom-logo {
 
 
         line-height: 1.2;
-
-
-        margin-top: 0em;
     }
 }
 .blue-heading-front {
@@ -4887,7 +4951,7 @@ img.custom-logo {
     .bio-bi-line h3 {
 
 
-        padding-top: 0.4em;
+        padding-top: 0.95em;
 
 
         padding-left: 1.5em;
@@ -4899,7 +4963,7 @@ img.custom-logo {
         line-height: 1.35;
 
 
-        font-size: 2.55rem;
+        font-size: 2.25rem;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4911,7 +4975,7 @@ img.custom-logo {
         text-align: left;
 
 
-        padding-top: 0.35em;
+        padding-top: 0.75em;
 
 
         padding-left: 1.2em;
@@ -4920,7 +4984,7 @@ img.custom-logo {
         line-height: 1.3;
 
 
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -4932,7 +4996,7 @@ img.custom-logo {
         text-align: left;
 
 
-        padding-top: 0.25em;
+        padding-top: 0.55em;
 
 
         padding-left: 1.2em;
@@ -4941,7 +5005,7 @@ img.custom-logo {
         line-height: 1.2;
 
 
-        font-size: 3.3rem;
+        font-size: 3rem;
     }
 }
 .bio-image-container img {
@@ -6882,6 +6946,11 @@ h3.bluebox-2col-subtitle {
 
     margin: 0em 0 1em;
 }
+#partner-2 {
+
+
+    padding-bottom: 8%;
+}
 .home .news-signup {
 
 
@@ -7696,15 +7765,12 @@ h3.bluebox-2col-subtitle {
         margin-bottom: 1em;
     }
 }
-.video-indiv {
+/*.video-indiv*/
+.mm_videos_indiv {
 
 
     width: 100%;
-
-
-    height: auto;
 }
-/*.video-indiv*/
 .post_tags a {
 
 

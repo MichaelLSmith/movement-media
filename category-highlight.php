@@ -33,12 +33,12 @@ get_header(); ?>
 				endif;
 			endwhile;
 
-			the_posts_pagination( array( 'mid_size'  => 2 ) );
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
+			?>
+	</div>
+<?php
+		the_posts_pagination( array( 'mid_size'  => 2 ) );
+else :
+	get_template_part( 'template-parts/content', 'none' );
 ?>
 </div>
 <?php

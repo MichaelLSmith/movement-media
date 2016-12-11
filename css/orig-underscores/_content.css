@@ -382,3 +382,32 @@ needs to be @imported into the style.css file and processed by gulp
   -o-animation: ns-fadeIn 2.0s 1s 1 both;
   animation: ns-fadeIn 2.2s 0.8s 1 both;
 }
+
+/*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+
+.page-numbers {
+color: #fff;
+background-color: #005395;
+padding: 0.4em 0.7em;
+margin: 1em 0.8em 0em 0;
+font-size: 2em;
+}
+a.page-numbers {
+color: #fff;
+}
+.pagination {
+margin-bottom: 4em;
+	@media $medium {
+		margin-bottom: 5.2em;
+
+	}
+	@media $large {
+		margin-bottom: 7em;
+
+	}
+	@media $ex-large {
+margin-bottom: 7em;
+	}
+}

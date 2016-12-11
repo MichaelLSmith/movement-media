@@ -35,6 +35,7 @@ get_header(); ?>
 			?>
 
 			</div>
+	<div class="video-nav">
 				<?php
 			the_posts_pagination( array( 'mid_size'  => 2 ) );
 
@@ -43,6 +44,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+	</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

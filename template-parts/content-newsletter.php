@@ -15,7 +15,7 @@ get_header(); ?>
 			<h5 class="stories-title"><?php the_title(); ?> </h5>
 		</a>
 
-			<p>Click on the Newsletter's title to view the Newsletter.</p>
+			<p>Click on the Newsletter's title to view.</p>
 
 
 

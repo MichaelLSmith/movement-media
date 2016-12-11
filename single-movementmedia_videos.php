@@ -12,7 +12,7 @@ get_header(); ?>
 	<div id="primary" class="content-area full-content-area">
 		<main class="content-inner" role="main">
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+			<article id="post-<?php the_ID(); ?>" <?php post_class('mm_videos_indiv'); ?>>
 				<div class="video-indiv">
 					<?php
 						setup_postdata( $post );
@@ -20,11 +20,14 @@ get_header(); ?>
 						the_title( '<h5 class="video-title">', '</h5>' );
 
 						the_field('video_description');
-						echo get_the_term_list( $post->ID, 'client-name', $before = 'Client: ', $sep = '', $after = '' );
 					?>
 					<div class="video-credits">
 						<?php the_field('credits');?>
 					</div>
+
+					<div class="video-client"><?php echo get_the_term_list( $post->ID, 'client-name', $before = 'Client: ', $sep = '', $after = '' ); ?></div>
+
+
 						<?php
 							echo get_the_term_list( $post->ID, 'post_tag', $before = '<div class="post_tags">', $sep = '', $after = '</div>' );
 						?>

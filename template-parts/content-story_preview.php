@@ -5,6 +5,15 @@
            <?php
                if ( has_post_thumbnail() ) :
                    the_post_thumbnail();
+
+                   else :
+                       $image = get_field('newsletter_stand-in_image', 1709);
+
+                   ?>
+                       <img src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
+                   <?php
+
+
                endif;
            ?>
        </div>
@@ -20,7 +29,6 @@
                the_post_thumbnail();
            else :
                $image = get_field('story_stand-in_image', 1709);
-
            ?>
                <img src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
            <?php

@@ -39,17 +39,17 @@
 .home-nav {
     font-family: $gotham;
     font-size: 14px;
-    padding: 0em 1.5% 1em;
+    padding: 0em 6.5% 1em;
     color: $offWhite;
     letter-spacing: 0.48px;
     @media $medium {
-           padding: 1.3% 5% 5%;
+           padding: 1.3% 7.5% 5%;
     }
     @media $large {
-            padding: 1.7% 5% 8.2%;
+            padding: 2% 7.8% 8.2%;
     }
     @media $ex-large {
-            padding: 2% 2% 7%;
+            padding: 2.2% 3.4% 7%;
     }
     .site-logo {
       width: 74%;
@@ -296,7 +296,6 @@ margin-bottom: 0em;
 	@media $ex-large {
   font-size: 5em;
       line-height: 1.2;
-      margin-top: 0em;
 	}
 }
 .blue-heading-front {
