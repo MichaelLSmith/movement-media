@@ -94,23 +94,29 @@ get_header(); ?>
 									$title = get_sub_field('bio_title');
 									$text = get_sub_field('bio_text');
 							?>
-								<article class="bio">
-									<aside class="bio-bi-line">
-										<?php
-											if ( $image ):
-												echo "
-													<div class='bio-image-container'>
-														<img src='$image'>
-													 </div>
-													 ";
-											endif;
-										?>
-										<?php
-											if ( $name ):
-												echo "<h3>" . $name . " " . "</h3>";
-											endif;
-										?>
-									</aside>
+								<article class="bio accordion">
+									<div class="accordion-inner">
+										<aside class="bio-bi-line">
+
+											<?php
+												if ( $image ):
+													echo "
+														<div class='bio-image-container'>
+															<img src='$image'>
+														 </div>
+														 ";
+												endif;
+											?>
+											<?php
+												if ( $name ):
+													echo "<h3>" . $name . " " . "</h3>";
+												endif;
+											?>
+											<i class="accordion-icon fa fa-angle-left" aria-hidden="true"></i>
+
+										</aside>
+
+									</div>
 
 
 								<?php
@@ -124,7 +130,7 @@ get_header(); ?>
 				</section><!-- .bios full-content-area -->
 				<section class="about-action-btn full-content-area row-bottom-pad">
 					<div class="action-btn action-btn-large text-content-area">
-						<a href="<?php the_field('front_header_action_button'); ?>">Contact Movement Media</a>
+						<a href="/contact">Contact Movement Media</a>
 					</div>
 				</section>
 			</article>

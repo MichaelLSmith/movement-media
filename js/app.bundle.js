@@ -172,25 +172,31 @@ define("3", ["2"], function(main) {
 });
 
 })();
-$__System.register("4", [], function (_export) {
-    "use strict";
+$__System.register('4', [], function (_export) {
+    'use strict';
 
     var accordionInit;
     return {
         setters: [],
         execute: function () {
-            console.log('accordion.js in the house');
+            console.log('accordion.js');
 
             accordionInit = function accordionInit() {
-                jQuery(".bio").accordion({
-                    active: false,
-                    collapsible: true,
-                    header: "aside",
-                    heightStyle: 'content'
+                jQuery('.accordion-inner-flex').click(function () {
+
+                    jQuery(this).find('i').toggleClass('fa-angle-right  fa-angle-down'); // add this line
+                    jQuery('.accordion-inner-flex').removeClass('active');
+                    jQuery('.accordion_content').slideUp('normal');
+
+                    if (jQuery(this).next().is(':hidden') == true) {
+                        jQuery(this).addClass('active');
+                        jQuery(this).next().slideDown('normal');
+                    }
                 });
+                jQuery('.accordion_content').hide();
             };
 
-            _export("default", accordionInit);
+            _export('default', accordionInit);
         }
     };
 });

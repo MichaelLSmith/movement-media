@@ -139,10 +139,14 @@ add_action( 'widgets_init', 'movementmedia_widgets_init' );
  * Enqueue scripts and styles.
  */
 function movementmedia_scripts() {
-	wp_enqueue_style( 'movementmedia-style', get_stylesheet_uri() );
 
 	wp_register_style( 'fonts', 'https://cloud.typography.com/7707954/6952972/css/fonts.css' );
 	wp_enqueue_style( 'fonts');
+
+	wp_register_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome-4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'font-awesome');
+
+    wp_enqueue_style( 'movementmedia-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'movementmedia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -825,6 +825,56 @@ ol {
 
     line-height: 1.5;
 }
+li {
+
+
+    color: #343434;
+
+
+    font-weight: 300;
+
+
+    font-size: 1.6rem;
+
+
+    margin: 0.4em 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    li {
+
+
+        font-size: 1.6rem;
+
+
+        margin: 0.4em 0;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    li {
+
+
+        font-size: 1.8rem;
+
+
+        margin: 0.6em 0;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    li {
+
+
+        font-size: 1.8rem;
+
+
+        margin: 0.6em 0;
+    }
+}
 li > ul, li > ol {
 
 
@@ -2294,6 +2344,16 @@ a.page-numbers {
 
     color: #fff;
 }
+a:hover.page-numbers {
+
+
+    background-color: (#005395, 10%);
+}
+a:visited.page-numbers {
+
+
+    color: #fff;
+}
 .pagination {
 
 
@@ -2326,6 +2386,73 @@ a.page-numbers {
         margin-bottom: 7em;
     }
 }
+/*--------------------------------------------------------------
+## Accordion
+--------------------------------------------------------------*/
+.accordion {}
+.accordion-inner {
+
+
+    cursor: pointer;
+}
+.accordion-icon {
+
+
+    font-size: 2.4rem;
+
+
+    line-height: 2.4;
+
+
+    padding-left: 95%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .accordion-icon {
+
+
+        font-size: 3rem;
+
+
+        line-height: 3;
+
+
+        padding-left: 3.8%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .accordion-icon {
+
+
+        font-size: 3.2rem;
+
+
+        line-height: 2.8;
+
+
+        padding-left: 4.8%;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .accordion-icon {
+
+
+        font-size: 3.6rem;
+
+
+        padding-left: 4.2%;
+
+
+        float: right;
+    }
+}
+.accordion div.active {}
+.accordion_content {}
 /*
 corresonds to the Infinite Scroll section of the origin style.css file
 needs to be @imported into the style.css file and processed by gulp
@@ -2414,6 +2541,9 @@ a {
 
 
     text-decoration: none;
+
+
+    color: #005395;
 }
 
 
@@ -2424,10 +2554,18 @@ a:link {
 }
 
 
-a:visited {}
+a:visited {
 
 
-a:hover, a:focus, a:active {}
+    color: #005395;
+}
+
+
+a:hover, a:focus, a:active {
+
+
+    color: darken(#005395, 100%);
+}
 
 
 a:focus {
@@ -2476,6 +2614,45 @@ a:hover, a:active {
 
 
     margin: 0 1rem 0 1rem;
+
+
+    color: #fff;
+
+
+    font-size: 16px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .main-navigation li {
+
+
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .main-navigation li {
+
+
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (min-width: 1321px) {
+
+
+    .main-navigation li {
+
+
+        font-size: 14px;
+    }
 }
 
 
@@ -4271,42 +4448,6 @@ img.custom-logo {
     background-color: #005395;
 }
 .footer-image-container img {}
-.tag-line {
-
-
-    margin-top: 0.6em;
-}
-.tag-line p {
-
-
-    color: #fff;
-
-
-    font-size: 1.3rem;
-
-
-    line-height: 1.5rem;
-
-
-    margin: 0em 0 0 0.8em;
-
-
-    letter-spacing: 3px;
-
-
-    text-transform: uppercase;
-
-
-    font-weight: 300;
-}
-.tag-line p:nth-last-child(1) {
-
-
-    font-family: "Gotham SSm A","Gotham SSm B";
-
-
-    font-weight: 800;
-}
 .footer-inner {
 
 
@@ -4414,14 +4555,14 @@ img.custom-logo {
 
 
     margin: 0 0 1.0em 0;
+
+
+    font-size: 1.1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .footer-menu {
-
-
-        font-size: 1.4rem;
 
 
         color: #fff;
@@ -4433,9 +4574,6 @@ img.custom-logo {
     .footer-menu {
 
 
-        font-size: 1.4rem;
-
-
         color: #fff;
     }
 }
@@ -4443,9 +4581,6 @@ img.custom-logo {
 
 
     .footer-menu {
-
-
-        font-size: 1.4rem;
 
 
         color: #fff;
@@ -4493,7 +4628,13 @@ img.custom-logo {
     .footer-menu li {
 
 
-        margin: 0 0 1.1em 0;
+        font-size: 1.5rem;
+
+
+        margin: 0 0 1.5em 0;
+
+
+        line-height: 1.3;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4502,7 +4643,13 @@ img.custom-logo {
     .footer-menu li {
 
 
-        margin: 0 0 1em 0;
+        font-size: 1.4rem;
+
+
+        margin: 0 0 1.4em 0;
+
+
+        line-height: 1.2;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -4511,7 +4658,13 @@ img.custom-logo {
     .footer-menu li {
 
 
-        margin: 0 0 1em 0;
+        font-size: 1.4rem;
+
+
+        margin: 0 0 1.4em 0;
+
+
+        line-height: 1.2;
     }
 }
 .footer-menu-container {
@@ -4634,7 +4787,7 @@ img.custom-logo {
     .footer-middle {
 
 
-        width: 35%;
+        width: 60%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4643,7 +4796,7 @@ img.custom-logo {
     .footer-middle {
 
 
-        width: 38%;
+        width: 45%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -4699,7 +4852,7 @@ img.custom-logo {
     .footer-logo-section {
 
 
-        width: 33%;
+        width: 45%;
 
 
         -webkit-box-pack: start;
@@ -4712,6 +4865,12 @@ img.custom-logo {
 
 
         padding: 0;
+
+
+        margin-top: 2.6em;
+
+
+        float: right;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4754,6 +4913,114 @@ img.custom-logo {
 
 
         padding: 0;
+    }
+}
+.tag-line {
+
+
+    margin-top: 0.8em;
+}
+.tag-line p {
+
+
+    font-family: "Gotham SSm A","Gotham SSm B";
+
+
+    color: #fff;
+
+
+    font-size: 1.3rem;
+
+
+    line-height: 1.5rem;
+
+
+    margin: 0em 0 0 0.8em;
+
+
+    letter-spacing: 1px;
+
+
+    text-transform: uppercase;
+
+
+    font-weight: 300;
+}
+.tag-line p:nth-last-child(1) {
+
+
+    font-weight: 500;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .tag-line {
+
+
+        margin-top: 0.8em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .tag-line {
+
+
+        margin-top: 0.7em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .tag-line {
+
+
+        margin-top: 0.8em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .tag-line p {
+
+
+        font-size: 1.5rem;
+
+
+        line-height: 1.7rem;
+
+
+        margin: 0.1em 0 0 0.8em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .tag-line p {
+
+
+        font-size: 1.5rem;
+
+
+        line-height: 1.7rem;
+
+
+        margin: 0.1em 0 0 0.8em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .tag-line p {
+
+
+        font-size: 1.5rem;
+
+
+        line-height: 1.7rem;
+
+
+        margin: 0.1em 0 0 0.8em;
     }
 }
 .footer-share-text {
@@ -4951,10 +5218,10 @@ img.custom-logo {
     .bio-bi-line h3 {
 
 
-        padding-top: 0.95em;
+        padding-top: 1.15em;
 
 
-        padding-left: 1.5em;
+        padding-left: 1.1em;
 
 
         text-align: left;
@@ -4963,7 +5230,7 @@ img.custom-logo {
         line-height: 1.35;
 
 
-        font-size: 2.25rem;
+        font-size: 2.15rem;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -4975,16 +5242,16 @@ img.custom-logo {
         text-align: left;
 
 
-        padding-top: 0.75em;
+        padding-top: 1.05em;
 
 
-        padding-left: 1.2em;
+        padding-left: 1.1em;
 
 
         line-height: 1.3;
 
 
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -4996,7 +5263,7 @@ img.custom-logo {
         text-align: left;
 
 
-        padding-top: 0.55em;
+        padding-top: 0.85em;
 
 
         padding-left: 1.2em;
@@ -5005,7 +5272,7 @@ img.custom-logo {
         line-height: 1.2;
 
 
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 }
 .bio-image-container img {
@@ -5066,6 +5333,8 @@ ul.about-services-left span, ul.about-services-right span {
 
 
     text-align: center;
+}
+.about-action-btn a {
 
 
     color: #fff;
@@ -7077,7 +7346,7 @@ h3.bluebox-2col-subtitle {
     background-color: #005395;
 
 
-    padding: 9% 3% 2%;
+    padding: 4.8% 3% 2%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -7158,7 +7427,7 @@ h3.bluebox-2col-subtitle {
         margin: 0 0.3em 0.4em 0;
 
 
-        width: 50%;
+        width: 73%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -7170,7 +7439,7 @@ h3.bluebox-2col-subtitle {
         margin: 0 1rem 0.4em 0;
 
 
-        width: 60%;
+        width: 70%;
     }
 }
 @media screen and (min-width: 1321px) {
@@ -7180,6 +7449,9 @@ h3.bluebox-2col-subtitle {
 
 
         margin: 0 1rem 0em 0;
+
+
+        width: 73%;
     }
 }
 .mc4wp-form-fields {}
@@ -7187,6 +7459,39 @@ h3.bluebox-2col-subtitle {
 
 
     padding: 10px 72px 10px 24px;
+
+
+    margin-right: 0.5em;
+
+
+    margin-bottom: 1em;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .mc4wp-form-fields input[type="email"] {
+
+
+        margin-bottom: 1.6em;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .mc4wp-form-fields input[type="email"] {
+
+
+        margin-bottom: 0.3em;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .mc4wp-form-fields input[type="email"] {
+
+
+        margin-bottom: 0.6em;
+    }
 }
 /* *********************************************************************************************************************
 	CSS Grid - 12 Columns Fluid CSS Grid System
@@ -8045,7 +8350,7 @@ h3.bluebox-2col-subtitle {
     text-transform: uppercase;
 
 
-    padding: 0.8em 0;
+    padding: 0.4em 0 0.8em;
 
 
     color: #4A90E2;

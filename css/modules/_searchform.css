@@ -21,14 +21,15 @@
     margin: 0 auto 0.2em;
     @media $medium {
     margin: 0 0.3em 0.4em 0;
-    width: 50%;
+    width: 73%;
     }
     @media $large {
     margin: 0 1rem 0.4em 0;
-    width: 60%;
+    width: 70%;
     }
     @media $ex-large {
     margin: 0 1rem 0em 0;
+      width: 73%;
     }
 }
 
@@ -38,4 +39,15 @@
 
 .mc4wp-form-fields input[type="email"] {
     padding: 10px 72px 10px 24px;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    @media $medium {
+    margin-bottom: 1.6em;
+    }
+    @media $large {
+    margin-bottom: 0.3em;
+    }
+    @media $ex-large {
+    margin-bottom: 0.6em;
+    }
 }

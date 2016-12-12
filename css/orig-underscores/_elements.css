@@ -68,6 +68,29 @@ font-weight: 300;
 line-height: 1.5;
 }
 
+li {
+	color: #343434;
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin: 0.4em 0;
+
+
+		@media $medium {
+			font-size: 1.6rem;
+			margin: 0.4em 0;
+		}
+		@media $large {
+			font-size: 1.8rem;
+					margin: 0.6em 0;
+
+		}
+		@media $ex-large {
+			font-size: 1.8rem;
+			margin: 0.6em 0;
+
+		}
+}
+
 li > ul,
 li > ol {
 	margin-bottom: 0;

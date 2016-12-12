@@ -397,6 +397,12 @@ font-size: 2em;
 a.page-numbers {
 color: #fff;
 }
+a:hover.page-numbers {
+background-color: ($darkBlue, 10%);
+}
+a:visited.page-numbers {
+color: #fff;
+}
 .pagination {
 margin-bottom: 4em;
 	@media $medium {
@@ -410,4 +416,44 @@ margin-bottom: 4em;
 	@media $ex-large {
 margin-bottom: 7em;
 	}
+}
+
+/*--------------------------------------------------------------
+## Accordion
+--------------------------------------------------------------*/
+
+.accordion {
+}
+
+.accordion-inner {
+    cursor: pointer;
+}
+
+.accordion-icon {
+	font-size: 2.4rem;
+	line-height: 2.4;
+	padding-left: 95%;
+	@media $medium {
+		font-size: 3rem;
+		line-height: 3;
+		padding-left: 3.8%;
+	}
+	@media $large {
+		font-size: 3.2rem;
+		line-height: 2.8;
+		padding-left: 4.8%;
+	}
+
+	@media $ex-large {
+
+    font-size: 3.6rem;
+		padding-left: 4.2%;
+		float: right;
+			}
+}
+
+.accordion div.active {
+}
+
+.accordion_content {
 }

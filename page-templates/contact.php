@@ -17,13 +17,15 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</section>
 
+				<div class="contact-intro clear bold-lead-paragraph">
+					<div class="bold-lead-paragraph-inner"><?php the_field('contact_intro'); ?></div>
+				</div>
+
 				<section class="contact-main-image main-image">
 						<img src="<?php the_field('contact_main_image');?>" alt="" />
 				</section>
 
-				<div class="contact-intro clear bold-lead-paragraph">
-					<div class="bold-lead-paragraph-inner"><?php the_field('contact_intro'); ?></div>
-				</div>
+
 
 				<div class="contact-form text-content-area">
 					 <?php the_field('contact_form'); ?>

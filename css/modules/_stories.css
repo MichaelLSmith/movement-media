@@ -251,7 +251,7 @@ a:visited {
 }
 .stories-category {
   text-transform: uppercase;
-  padding: 0.8em 0;
+  padding: 0.4em 0 0.8em;
   color: $lightBlue;
   a:visited {
     color: inherit;

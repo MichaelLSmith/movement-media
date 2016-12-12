@@ -27,7 +27,7 @@ get_header(); ?>
 			<section id="post-<?php the_ID(); ?>" class="stories-list">
 
 					 <a href="http://<?php the_field('newsletter_url') ?>" target="_blank" rel="bookmark">
-						 <div class="stories-image">
+						<!--<div class="stories-image">
 								 <?php
 										 if ( has_post_thumbnail() ) :
 												 the_post_thumbnail();
@@ -36,16 +36,18 @@ get_header(); ?>
 						?>
 									 <img src="<?php echo $image['url']?>" alt="<?php echo $image['alt']?>">
 									<?php endif; //Thumbnail ?>
-						 </div>
+						 </div> -->
 					 <h5 class="stories-title"><?php the_title(); ?> </h5>
 				 </a>
 
-						 <div class="story-meta">
+						<!--	 <div class="story-meta">
 								 <span class="story-date">
 										 <?php echo get_the_date(); ?>
 								 </span>
-						 </div>
-
+						 </div>-->
+						 <div class="post_tags">
+				 				<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
+				 		</div>
 						 <div class ="social-share story-share">
 									 <a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>">
 											 <div class="share-icon"><img src="<?php echo content_url() . '/uploads/2016/10/twitter-e1478996500727.png'?>" height="36" width="36" alt="Movement Media logo">
