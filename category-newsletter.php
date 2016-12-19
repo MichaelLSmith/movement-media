@@ -23,8 +23,7 @@ get_header(); ?>
 			/* Start the Loop */
 			while ( have_posts() ) : the_post(); ?>
 
-
-			<section id="post-<?php the_ID(); ?>" class="stories-list">
+			<section id="post-<?php the_ID(); ?>" class="stories-list messenger-list">
 
 					 <a href="http://<?php the_field('newsletter_url') ?>" target="_blank" rel="bookmark">
 						<!--<div class="stories-image">
@@ -38,13 +37,9 @@ get_header(); ?>
 									<?php endif; //Thumbnail ?>
 						 </div> -->
 					 <h5 class="stories-title"><?php the_title(); ?> </h5>
+					 <div class="messenger-text"><?php the_field('messenger_text') ?></div>
 				 </a>
 
-						<!--	 <div class="story-meta">
-								 <span class="story-date">
-										 <?php echo get_the_date(); ?>
-								 </span>
-						 </div>-->
 						 <div class="post_tags">
 				 				<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
 				 		</div>
@@ -65,7 +60,7 @@ get_header(); ?>
 				 <?php
 			endwhile;
 					?>
-			</div>
+			</>
 		<?php
 				the_posts_pagination( array( 'mid_size'  => 2 ) );
 	else :

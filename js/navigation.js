@@ -5,15 +5,20 @@
  * navigation support for dropdown menus.
  */
 ( function() {
-	console.log('navigation.js');
+	console.log('navigation.js.');
+	console.log(button);
 	var container, button, menu, links, subMenus, i, len;
+	console.log('under defines');
 
 	container = document.getElementById( 'site-navigation' );
+	console.log(container);
 	if ( ! container ) {
 		return;
 	}
+	console.log('underbutton');
+	button = document.getElementById( 'menu-button' );
 
-	button = container.getElementsByTagName( 'button' )[0];
+	console.log(button);
 	if ( 'undefined' === typeof button ) {
 		return;
 	}
@@ -32,6 +37,7 @@
 	}
 
 	button.onclick = function() {
+		console.log('button click');
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );

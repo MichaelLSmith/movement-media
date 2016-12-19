@@ -61,7 +61,7 @@
 						?>
 					</div><!-- .home-flex-container -->
 				<p class="front-more-link">
-					<a href="http://movementmedia.dev/stories/">All Stories</a>
+					<a href="<?php echo home_url();?>/stories/">All Stories</a>
 				</p>
 			</div><!-- .inner-featured-stories -->
 		</section> <!-- Stories End -->

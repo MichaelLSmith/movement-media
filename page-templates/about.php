@@ -34,7 +34,7 @@ get_header(); ?>
 					</div>
 				</section>
 				<?php if( get_field('about_secondary_image') ): ?>
-					<section class="about-secondary-image secondary-image full-content-area row-bottom-pad">
+					<section class="about-secondary-image secondary-image full-content-area">
 						<div class="image-content-area-small">
 							<img src="<?php the_field('about_secondary_image');?>" alt="" />
 						</div>

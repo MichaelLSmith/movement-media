@@ -2,28 +2,23 @@
     background-color: $darkBlue;
 }
 
-.footer-image-container img {
-}
+.footer-image-container img {}
 
 .footer-inner {
-
-  max-width: $container-max-width;
-  width: $container-default-width;
-  font-family: $gotham;
-
-     display: -webkit-flex;
-     display: flex;
-     -webkit-justify-content: space-between;
-     justify-content: space-between;
-     /* Set flex-wrap and flex-direction all in one line with flex flow */
-     -webkit-flex-flow: row wrap;
-     flex-flow: row wrap;
-     -webkit-align-content: space-around;
-     align-content: space-around;
-
-     margin: 0 auto;
-
-     padding: 8% 0 7%;
+    max-width: $container-max-width;
+    width: $container-default-width;
+    font-family: $gotham;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    /* Set flex-wrap and flex-direction all in one line with flex flow */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: space-around;
+    align-content: space-around;
+    margin: 0 auto;
+    padding: 8% 0 7%;
     @media $medium {
         padding: 6% 0 5%;
     }
@@ -31,17 +26,16 @@
         padding: 8% 0 7%;
     }
     @media $ex-large {
-
-
         padding: 6% 0 5%;
     }
 }
+
 .footer-menu {
     font-size: 1.1rem;
     letter-spacing: 1px;
     font-weight: 300;
     text-transform: uppercase;
-      color: $white;
+    color: $white;
     @media $medium {
         color: $white;
     }
@@ -53,36 +47,33 @@
     }
     /*line-height: 2.3rem;*/
     a {
-      color: $white;
-      padding: 0;
-      @media $medium {
-          background-color: $darkBlue;
-          color: $white;
-      }
-      @media $large {
-          color: $white;
-          background-color: $darkBlue;
-
-      }
-      @media $ex-large {
-          color: $white;
-          background-color: $darkBlue;
-
-      }
-
+        color: $white;
+        padding: 0;
+        @media $medium {
+            background-color: $darkBlue;
+            color: $white;
+        }
+        @media $large {
+            color: $white;
+            background-color: $darkBlue;
+        }
+        @media $ex-large {
+            color: $white;
+            background-color: $darkBlue;
+        }
     }
     li {
         margin: 0 0 1.0em 0;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         @media $medium {
-          font-size: 1.5rem;
-          margin: 0 0 1.5em 0;
-              line-height: 1.3;
+            font-size: 1.5rem;
+            margin: 0 0 1.5em 0;
+            line-height: 1.3;
         }
         @media $large {
             font-size: 1.4rem;
             margin: 0 0 1.4em 0;
-              line-height: 1.2;
+            line-height: 1.2;
         }
         @media $ex-large {
             font-size: 1.4rem;
@@ -91,93 +82,99 @@
         }
     }
 }
+
 .footer-menu-container {
-  width: 100%;
-  text-align: center;
-  @media $medium {
-    width: 17%;
-      text-align: left;
-  }
-  @media $large {
-      width: 15%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    @media $medium {
+        width: 17%;
         text-align: left;
-  }
-  @media $ex-large {
-      width: 20%;
+        margin-bottom: 0em;
+    }
+    @media $large {
+        width: 15%;
         text-align: left;
-  }
+        margin-bottom: 0em;
+    }
+    @media $ex-large {
+        width: 20%;
+        text-align: left;
+        margin-bottom: 0em;
+    }
 }
+
 .footer-search-container {
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-  @media $medium {
-    display: block;
-
-  }
-  @media $large {
-    display: block;
-
-  }
-  @media $ex-large {
-    display: block;
-  }
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 0.7em;
+    @media $medium {
+        display: block;
+    }
+    @media $large {
+        display: block;
+    }
+    @media $ex-large {
+        display: block;
+    }
 }
+
 .footer-middle {
-  width: 100%;
-  @media $medium {
-    width: 60%;
-  }
-  @media $large {
-    width: 45%;
-  }
-  @media $ex-large {
-    width: 40%;
-  }
+    width: 100%;
+    @media $medium {
+        width: 60%;
+    }
+    @media $large {
+        width: 45%;
+    }
+    @media $ex-large {
+        width: 40%;
+    }
 }
+
 .footer-logo-section {
     display: flex;
     -webkit-flex-direction: row;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  padding: 1em 0 0;
-
-  @media $medium {
-    width: 45%;
-      justify-content: flex-start;
-      padding: 0;
-          margin-top: 2.6em;
-          float: right;
-  }
-  @media $large {
-      width: 27%;
-      justify-content: flex-start;
-      padding: 0;
-
-  }
-  @media $ex-large {
-      width: 25%;
-      justify-content: flex-start;
-      padding: 0;
-  }
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 2.8em 0 0;
+    @media $medium {
+        width: 45%;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 2.6em;
+        float: right;
+    }
+    @media $large {
+        width: 27%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    @media $ex-large {
+        width: 25%;
+        justify-content: flex-start;
+        padding: 0;
+    }
 }
+
 .tag-line {
-  margin-top: 0.8em;
-  @media $medium {
-margin-top: 0.8em;
-  }
-  @media $large {
-margin-top: 0.7em;
-  }
-  @media $ex-large {
-    margin-top: 0.8em;
-  }
+    margin-top: 1.3em;
+    @media $medium {
+        margin-top: 0.8em;
+    }
+    @media $large {
+        margin-top: 0.7em;
+    }
+    @media $ex-large {
+        margin-top: 0.8em;
+    }
     p {
         font-family: $gotham;
         color: $white;
@@ -188,40 +185,40 @@ margin-top: 0.7em;
         text-transform: uppercase;
         font-weight: 300;
         @media $medium {
-          font-size: 1.5rem;
-          line-height: 1.7rem;
-          margin: 0.1em 0 0 0.8em;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            margin: 0.1em 0 0 0.8em;
         }
         @media $large {
-          font-size: 1.5rem;
-          line-height: 1.7rem;
-          margin: 0.1em 0 0 0.8em;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            margin: 0.1em 0 0 0.8em;
         }
         @media $ex-large {
-          font-size: 1.5rem;
-          line-height: 1.7rem;
-          margin: 0.1em 0 0 0.8em;
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            margin: 0.1em 0 0 0.8em;
         }
-
     }
     p:nth-last-child(1) {
         font-weight: 500;
-
     }
 }
+
 .footer-share-text {
-  font-weight: 300;
-  color: $white;
+    font-weight: 300;
+    color: $white;
 }
+
 .site-footer .social-share {
     justify-content: center;
-  @media $medium {
-      justify-content: flex-start;
-  }
-  @media $large {
-      justify-content: flex-start;
-  }
-  @media $ex-large {
-      justify-content: flex-start;
-  }
+    @media $medium {
+        justify-content: flex-start;
+    }
+    @media $large {
+        justify-content: flex-start;
+    }
+    @media $ex-large {
+        justify-content: flex-start;
+    }
 }

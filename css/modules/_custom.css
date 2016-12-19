@@ -1,3 +1,16 @@
 .flex-page-content {
-  clear: both;
+    clear: both;
+}
+
+.custom-main-image {
+    padding-bottom: 1.5em;
+    @media $medium {
+        padding-bottom: 2.2em;
+    }
+    @media $large {
+        padding-bottom: 2.0em;
+    }
+    @media $ex-large {
+        padding-bottom: 2.6em;
+    }
 }

@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</section>
 
-				<div class="contact-intro clear bold-lead-paragraph">
+				<div class="contact-intro bold-lead-paragraph">
 					<div class="bold-lead-paragraph-inner"><?php the_field('contact_intro'); ?></div>
 				</div>
 

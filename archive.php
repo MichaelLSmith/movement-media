@@ -17,8 +17,8 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h3 class="entry-title">', '</h3>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
+				get_the_archive_title();
+				the_archive_title( '<h3 class="entry-title">', ' Stories and Videos</h3>' );
 				?>
 			</header><!-- .page-header -->
 			<div class="stories-container boxlist-2col-flex">

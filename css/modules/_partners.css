@@ -1,55 +1,56 @@
-
 /*
 NOTE: brought from ABOUT.CSS - need to change for partners gallery....
 */
+
 
 /*
 note: partners-upper content width area controlled in _content.css as part of .entry-title-container declaration.
 */
 
 .partner-outer-container {
-  background-color: $backgroundGrey;
+    background-color: $backgroundGrey;
 }
+
+.partner-outer-container:focus {
+    outline: none;
+}
+
 .partner-container {
     p {
-      margin-top: 0;
+        margin-top: 0;
     }
     h4 {
         margin: 1em 0 0.8em;
         font-weight: 800;
         text-transform: uppercase;
-            font-size: 1.6em;
-            border-bottom: 0px solid #fff;
+        font-size: 1.6em;
+        border-bottom: 0px solid #fff;
         @media $medium {
-          margin: 0.3em 0 0.1em;
-          font-size: 3.2em;
+            margin: 0.3em 0 0.1em;
+            font-size: 3.2em;
         }
-
         @media $large {
-          margin: 1em 0 0.8em;
-              font-size: 2.8em;
-
+            margin: 1em 0 0.8em;
+            font-size: 2.8em;
         }
         @media $ex-large {
-          margin: 0.5em 0 0.3em;
-          letter-spacing: 1px;
-          font-size: 2.8em;
-
+            margin: 0.5em 0 0.3em;
+            letter-spacing: 1px;
+            font-size: 2.8em;
         }
     }
 }
+
 .partner-container {
     padding-top: 20px;
-      background-color: $white;
-      border-top: $darkBlue solid 30px;
-      border-bottom: $darkBlue solid 18px;
-
+    background-color: $white;
+    border-top: $darkBlue solid 30px;
+    border-bottom: $darkBlue solid 18px;
     @media $medium {
-      border-top: $darkBlue solid 30px;
-      border-bottom: $darkBlue solid 18px;
+        border-top: $darkBlue solid 30px;
+        border-bottom: $darkBlue solid 18px;
         background-color: $white;
     }
-
     @media $large {
         border-top: $darkBlue solid 50px;
         background-color: $white;
@@ -57,12 +58,13 @@ note: partners-upper content width area controlled in _content.css as part of .e
     }
     @media $ex-large {
         border-top: $darkBlue solid 50px;
-border-bottom: $darkBlue solid 30px;
+        border-bottom: $darkBlue solid 30px;
         background-color: $white
     }
 }
+
 .additional-partners h4 {
-  text-align: center;
+    text-align: center;
 }
 
 .bronner-title-group, .partner-content-group, .partner-what-group {
@@ -71,7 +73,7 @@ border-bottom: $darkBlue solid 30px;
 }
 
 .partners-mission {
-  margin: 45px auto;
+    margin: 45px auto;
     @media $medium {
         margin: 70px auto 45px;
     }
@@ -82,38 +84,37 @@ border-bottom: $darkBlue solid 30px;
         margin: 60px auto 60px;
     }
 }
-.bronner-image {
 
-}
+.bronner-image {}
+
 .bronner-title-group {
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-align-content: space-between;
-  align-content: space-between;
-  width: 100%;
-
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+    width: 100%;
     @media $medium {
         max-width: 83.33%;
         flex-direction: row;
         justify-content: space-between;
     }
-
     @media $large {
         max-width: 83.33%;
         flex-direction: row;
         justify-content: space-between;
     }
-      @media $ex-large {
+    @media $ex-large {
         max-width: 83.33%;
         flex-direction: row;
         justify-content: space-between;
-      }
-      p {
+    }
+    p {
         margin-top: 1em;
-      }
+    }
 }
+
 .partner-title-group {
     display: flex;
     flex-direction: row;
@@ -125,49 +126,49 @@ border-bottom: $darkBlue solid 30px;
     margin: 0 auto 3rem;
     padding-left: 1em;
     padding-right: 1em;
-      width:83.33%;
+    width: 83.33%;
     @media $medium {
-      flex-direction: row;
-      justify-content: space-between;
-      width:83.33%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 83.33%;
     }
     @media $large {
-      max-width: 83.33%;
-      flex-direction: row;
-      justify-content: space-between;
+        max-width: 83.33%;
+        flex-direction: row;
+        justify-content: space-between;
     }
     @media $ex-large {
-      max-width: 83.33%;
-      flex-direction: row;
-      justify-content: space-between;
+        max-width: 83.33%;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
 }
-  h2.partner-heading {
-  text-align: center;
+
+h2.partner-heading {
+    text-align: center;
     margin: 1.2em auto 1.4em;
-
 }
+
 h2.additional-partner-heading {
     margin: 2.8em auto 0.6em;
     @media $medium {
-      margin: 2.2em auto 0.6em;
+        margin: 2.2em auto 0.6em;
     }
     @media $large {
-      margin: 2.2em auto 0.6em;
+        margin: 2.2em auto 0.6em;
     }
     @media $ex-large {
         margin: 2.2em auto 0.6em;
     }
 }
+
 .partner-title-image {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
     max-width: 100%;
     height: auto;
-
     @media $medium {
-      margin: 4em 0 0;
-      max-width: 30%;
+        margin: 4em 0 0;
+        max-width: 30%;
     }
     @media $large {
         margin: 2em 0 0;
@@ -178,51 +179,52 @@ h2.additional-partner-heading {
         max-width: 250px;
     }
 }
-.partner-description {
-  h6 {
-    margin: 0;
-    font-size: 1.8rem;
-  }
 
-    @media $medium {
-      max-width: 60%;
-      h4 {
-          margin-top: 0.5em;
-        margin-bottom: 0.5em;
-      }
-      h6 {
+.partner-description {
+    h6 {
         margin: 0;
-                font-size: 1.8rem;
-      }
+        font-size: 1.8rem;
+    }
+    @media $medium {
+        max-width: 60%;
+        h4 {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        h6 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
     }
     @media $large {
         max-width: 60%;
         h4 {
             margin-top: 1em;
-          margin-bottom: 0.5em;
+            margin-bottom: 0.5em;
         }
         h6 {
-          margin: 0;
-          font-size: 2rem;
+            margin: 0;
+            font-size: 2rem;
         }
     }
     @media $ex-large {
         max-width: 540px;
         h4 {
-          margin-top: 1em;
-          margin-bottom: 0.5em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
         }
         h6 {
-          margin: 0;
-          font-size: 2rem;
+            margin: 0;
+            font-size: 2rem;
         }
     }
     li {
-      font-size: 1.7em;
-      font-weight: 300;
-      padding: 0.1em 0 0.7em;
+        font-size: 1.7em;
+        font-weight: 300;
+        padding: 0.1em 0 0.7em;
     }
 }
+
 .partner-what-group {
     display: flex;
     justify-content: space-between;
@@ -234,18 +236,17 @@ h2.additional-partner-heading {
     -webkit-align-content: space-between;
     align-content: space-between;
     @media $medium {
-          margin: 2.3em auto 2em;
-          padding-bottom: 1.2%;
+        margin: 2.3em auto 2em;
+        padding-bottom: 1.2%;
     }
     @media $large {
-          margin: 3.5em auto 2em;
-          padding-bottom: 0%;
+        margin: 3.5em auto 2em;
+        padding-bottom: 0%;
     }
     @media $ex-large {
-    margin: 6.3em auto 2em;
-    padding-bottom: 0%;
+        margin: 6.3em auto 2em;
+        padding-bottom: 0%;
     }
-
     h5 {
         line-height: 1.2;
         color: $darkBlue;
@@ -253,35 +254,31 @@ h2.additional-partner-heading {
         width: 100%;
         margin-bottom: 0.3em;
         @media $medium {
-          width: 100%;
+            width: 100%;
         }
         @media $large {
-          max-width: 30%;
-          text-align: right;
-          margin-bottom: 0em;
+            max-width: 30%;
+            text-align: right;
+            margin-bottom: 0em;
         }
         @media $ex-large {
-          max-width: 250px;
-          text-align: right;
+            max-width: 250px;
+            text-align: right;
             margin-top: 0em;
         }
     }
     p {
-            width: 100%;
-            margin-top: 0em;
-
+        width: 100%;
+        margin-top: 0em;
         @media $medium {
             flex: 1 1 auto;
-              width: 100%;
-
+            width: 100%;
         }
         @media $large {
             flex: 1 1 auto;
             max-width: 60%;
             align-content: space-around;
             flex-direction: row;
-
-
         }
         @media $ex-large {
             flex: 1 1 auto;
@@ -289,10 +286,10 @@ h2.additional-partner-heading {
             flex-direction: row;
         }
     }
+}
 
-}
-.partners-nav {
-}
+.partners-nav {}
+
 .partners-nav-list {
     list-style: none;
     display: flex;
@@ -307,33 +304,32 @@ h2.additional-partner-heading {
     @media $medium {
         flex-direction: row;
         li {
-          font-size: 13px;
-          letter-spacing: 0.62px;
+            font-size: 13px;
+            letter-spacing: 0.62px;
             padding: 0 3.2% 0 0;
         }
     }
     @media $large {
         flex-direction: row;
         li {
-          font-size: 16px;
-          letter-spacing: 0.62px;
-          padding: 0 3% 0 0;
-
+            font-size: 16px;
+            letter-spacing: 0.62px;
+            padding: 0 3% 0 0;
         }
     }
     @media $ex-large {
         flex-direction: row;
-        ul{
-          padding: 0;
+        ul {
+            padding: 0;
         }
-      li {
-        font-size: 18px;
-        letter-spacing: 0.62px;
-        padding: 0 24px 0 0;
-
-      }
+        li {
+            font-size: 18px;
+            letter-spacing: 0.62px;
+            padding: 0 24px 0 0;
+        }
     }
 }
+
 .partner-services-container {
     display: flex;
     flex-direction: column;
@@ -357,7 +353,6 @@ h2.additional-partner-heading {
     }
     ul {
         font-size: 1.3rem;
-
         @media $medium {
             font-size: 1.3rem;
         }
@@ -369,66 +364,58 @@ h2.additional-partner-heading {
         }
         li {
             color: $lightBlue;
-          margin: 1.1em 0;
-          padding: 0.1em 0;
+            margin: 1.1em 0;
+            padding: 0.1em 0;
         }
     }
-
-
 }
-
-
 
 .partner-bluebox-linkarea {
-  padding: 0 3% 3%;
-  @media $medium {
-      margin: 8.4% 6% 0;
-  }
-  @media $large {
-    padding: 0 3% 6%;
-  }
-  @media $ex-large {
-    padding: 0 3% 6%;
-  }
+    padding: 0 3% 3%;
+    @media $medium {
+        margin: 0.4% 6% 0;
+    }
+    @media $large {
+        padding: 0 3% 6%;
+    }
+    @media $ex-large {
+        padding: 0 3% 6%;
+    }
 }
 
-	.bluebox-2col-flex {
-		    display: flex;
-		    flex-direction: column;
-		    flex-wrap: wrap;
-      	flex-direction: row;
-				justify-content: space-between;
-        align-content: center;
+.bluebox-2col-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    @media $medium {
+        margin: 0.4% 6% 0;
+    }
+    @media $large {
+        margin: 0% 5% 0;
+        padding: 0% 0% 0%;
+    }
+    @media $ex-large {
+        margin: 0% 2% 0;
+        padding: 0% 5% 0%;
+    }
+}
 
-		    @media $medium {
-            margin: 8.4% 6% 0;
-		    }
-				@media $large {
-            margin: 0% 5% 0;
-            padding: 0% 0% 0%;
-				}
-				@media $ex-large {
-            margin: 0% 2% 0;
-            padding: 0% 5% 0%;
-
-				}
-			}
 .bluebox-heading {
-background-color: $darkBlue;
-padding: 1em 0;
-@media $medium {
+    background-color: $darkBlue;
+    padding: 1em 0;
+    @media $medium {}
+    @media $large {
+        padding: 1em 0 1em;
+        margin-bottom: 2.2em;
+    }
+    @media $ex-large {
+        padding: 1em 0 1em;
+    }
+}
 
-}
-@media $large {
-  padding: 1em 0 1em;
-  margin-bottom: 2.2em;
-
-}
-@media $ex-large {
-  padding: 1em 0 1em;
-
-}
-}
 .bluebox-innerflex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -436,160 +423,148 @@ padding: 1em 0;
     align-items: center;
     justify-content: center;
 }
-h2.bluebox-2col-title {
- color: #ffffff;
- text-transform: uppercase;
- font-weight: 800;
- letter-spacing: 2px;
- font-size: 2.2em;
- margin: 0;
- padding: 0.2em 0;
 
+h2.bluebox-2col-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    margin: 0;
+    padding: 0.2em 0;
     @media $medium {
-font-size: 2.8em;
-padding: 0.2em 0;
+        font-size: 2.8em;
+        padding: 0.2em 0;
     }
     @media $large {
-  font-size: 3.2em;
+        font-size: 3.2em;
     }
     @media $ex-large {
-font-size: 3.2em;
+        font-size: 3.2em;
     }
 }
+
 .bluebox-subarea {
-
     padding: 0em 0 0.6em;
-  @media $medium {
-      padding: 0em 0 0.6em;
-  }
-  @media $large {
-    padding: 0em 0 1.8em;
-  }
-  @media $ex-large {
-    padding: 0em 0 2.8em;
-
-  }
-
+    @media $medium {
+        padding: 0em 0 0.6em;
+    }
+    @media $large {
+        padding: 0em 0 1.8em;
+    }
+    @media $ex-large {
+        padding: 0em 0 2.8em;
+    }
 }
 
 h3.bluebox-2col-subtitle {
- color: #222;
-text-transform: uppercase;
-  text-align: center;
- font-weight: 600;
- letter-spacing: 1px;
- font-size: 1.9em;
- margin: 0;
- padding: 0.2em 0;
- display: inline-block;
- @media $medium {
-    margin: 0.2em 0 0em;
-    font-size: 2.2em;
-    padding: 0.2em 0 1em;
- }
- @media $large {
-   margin: 0.2em 0 0em;
- font-size: 2.1em;
- padding: 0.2em 0;
- }
- @media $ex-large {
-   margin: 0.5em 0 0em;
-   font-size: 2.1em;
-   padding: 0.1em 0em 0em;
- }
-}
-.bluebox {
-  width: 100%;
-  margin-bottom: 0%;
-  @media $medium {
-    width: 100%;
-    margin-bottom: 4.2%;
-  }
-  @media $large {
-        width: 48%;
-        margin-bottom: 0%;
-  }
-  @media $ex-large {
-      width: 47%;
-
-  }
-  li {
-    color: $darkBlue;
-    font-weight: 400;
-    margin: 8px 0 8px 0;
-    font-size: 1.7em;
-    line-height: 1.5;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #cfcfcf;
-
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.9em;
+    margin: 0;
+    padding: 0.2em 0;
+    display: inline-block;
     @media $medium {
-      margin: 9px 0 21px 0;
-      font-size: 1.7em;
-      line-height: 1.4;
+        margin: 0.2em 0 0em;
+        font-size: 2.2em;
+        padding: 0.2em 0 0em;
     }
     @media $large {
-      margin: 9px 0 18px 0;
-padding: 0px 0 0.6em;
-      font-size: 1.9em;
-      line-height: 1.5;
+        margin: 0.2em 0 0em;
+        font-size: 2.1em;
+        padding: 0.2em 0;
     }
     @media $ex-large {
-      margin: 6px 0 0em 0;
-      padding: 0.5em 0;
-      font-size: 1.9em;
-      line-height: 1.5;
-
+        margin: 0.5em 0 0em;
+        font-size: 2.1em;
+        padding: 0.1em 0em 0em;
     }
-  }
 }
+
+.bluebox {
+    width: 100%;
+    margin-bottom: 0%;
+    @media $medium {
+        width: 100%;
+        margin-bottom: 4.2%;
+    }
+    @media $large {
+        width: 48%;
+        margin-bottom: 0%;
+    }
+    @media $ex-large {
+        width: 47%;
+    }
+    li {
+        color: $darkBlue;
+        font-weight: 400;
+        margin: 8px 0 8px 0;
+        font-size: 1.7em;
+        line-height: 1.5;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #cfcfcf;
+        @media $medium {
+            margin: 9px 0 21px 0;
+            font-size: 1.7em;
+            line-height: 1.4;
+        }
+        @media $large {
+            margin: 9px 0 18px 0;
+            padding: 0px 0 0.6em;
+            font-size: 1.9em;
+            line-height: 1.5;
+        }
+        @media $ex-large {
+            margin: 6px 0 0em 0;
+            padding: 0em 0 0.8em;
+            font-size: 1.9em;
+            line-height: 1.5;
+        }
+    }
+}
+
 .bluebox1-icon {
-  padding: 0px 12px 2px 0;
+    padding: 0px 12px 2px 0;
 }
+
 .bluebox2-icon {
-  padding: 0px 18px 0px 0;
+    padding: 0px 18px 0px 0;
 }
 
 .bluebox-indiv {
-  background-color: #ffffff;
-  padding: 9px 12px 0%;
-  margin: 2% 6% 5%;
-
-  list-style-type: none;
-  @media $medium {
-    padding: 18px 18px 0%;
-    margin: 2% 6% 0;
-
-  }
-  @media $large {
-    padding: 12px 42px 0;
-    margin: 2% 0.3% 21px;
-  }
-  @media $ex-large {
-    padding: 6.2% 36px 0 40px;
-    margin: 2% 0% 0em;
-  }
+    background-color: #ffffff;
+    padding: 9px 12px 0%;
+    margin: 2% 6% 5%;
+    list-style-type: none;
+    @media $medium {
+        padding: 18px 18px 0%;
+        margin: 2% 6% 0;
+    }
+    @media $large {
+        padding: 12px 42px 0;
+        margin: 2% 0.3% 21px;
+    }
+    @media $ex-large {
+        padding: 4.2% 36px 0 40px;
+        margin: 2% 0% 0em;
+    }
 }
+
 .bluebox-indiv-left {
-  @media $medium {
-
-  }
-  @media $large {
-
-  }
-  @media $ex-large {
-
-  }
+    @media $medium {}
+    @media $large {}
+    @media $ex-large {}
 }
+
 .bluebox-indiv-right {
-  @media $medium {
-
-  }
-  @media $large {
-
-  }
-  @media $ex-large {
-
-  }
+    @media $medium {}
+    @media $large {}
+    @media $ex-large {
+        margin-top: 4.6%;
+    }
 }
 
 .partners-gallery-flex {
@@ -600,39 +575,38 @@ padding: 0px 0 0.6em;
     justify-content: space-around;
     margin-bottom: 25px;
     width: 100%;
-      margin-top: 2.2em;
+    margin-top: 2.2em;
     @media $medium {
-  justify-content: space-around;
-    margin-top: 4.2em;
+        justify-content: space-around;
+        margin-top: 4.2em;
     }
     @media $large {
-  justify-content: space-between;
-  margin-top: 5.2em;
+        justify-content: space-between;
+        margin-top: 5.2em;
     }
     @media $ex-large {
-  justify-content: space-between;
-  margin-top: 5.2em;
+        justify-content: space-between;
+        margin-top: 5.2em;
     }
 }
+
 .gallery-image {
-  padding: 1.0em;
-
-  @media $medium {
-    padding: 1.2em;
-  }
-  @media $large {
-    padding: 1.6em;
-
-  }
-  @media $ex-large {
-    padding: 1.6em;
-  }
+    padding: 1.0em;
+    @media $medium {
+        padding: 1.2em;
+    }
+    @media $large {
+        padding: 1.6em;
+    }
+    @media $ex-large {
+        padding: 1.6em;
+    }
 }
 
 .partners-gallery h6 {
-  margin: 0em 0 1em;
+    margin: 0em 0 1em;
 }
 
-#partner-2  {
- padding-bottom: 8%;
+#partner-2 {
+    padding-bottom: 8%;
 }

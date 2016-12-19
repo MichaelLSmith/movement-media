@@ -9,6 +9,7 @@
 
 get_header(); ?>
 
+
 		<main class="content-inner" role="main">
 			<section class="entry-title-container full-content-area">
 				<?php the_title('<h1 class="entry-title">', '</h1>' ); ?>

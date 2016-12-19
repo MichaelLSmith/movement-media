@@ -4,15 +4,17 @@ Header CSS - need to @include in style.css and run gulp process
     Author     : michael
 */
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 .header-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-        padding: 2% 0% 1%;
-	   margin: auto;
+    padding: 2% 0% 1%;
+    margin: auto;
     padding-bottom: 0.1rem;
     font-family: $gotham;
     font-size: 14px;
@@ -23,59 +25,69 @@ Header CSS - need to @include in style.css and run gulp process
         color: $darkBlue;
     }
     @media $medium {
-           padding: 1.3% 0% 1%;
-           width: 85%;
-           max-width: 1000px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.3% 0% 1%;
+        width: 85%;
+        max-width: 1000px;
     }
     @media $large {
-            padding: 1.7% 0% 1%;
-            width: 85%;
-            max-width: 1080px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.7% 0% 1%;
+        width: 85%;
+        max-width: 1080px;
     }
     @media $ex-large {
-            padding: 2% 2% 0.3%;
-            width: 97%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2% 2% 0.3%;
+        width: 97%;
     }
-
-
-
-
-
-
-
-
 }
+
 .site-header {
-	max-width: $container-max-width;
+    max-width: $container-max-width;
     margin: auto;
+    margin-top: 2.3em;
     border-bottom: $darkBlue solid 0px;
-
+    @media $medium {
+        margin-top: 0.8em
+    }
+    @media $large {
+        margin-top: 0.8em
+    }
+    @media $ex-large {
+        margin-top: 0.8em
+    }
 }
+
 .logo-tag-container {
     @media $medium {
         margin: 0;
     }
 }
+
 .site-branding {
     display: none;
-
     @media $medium {
         display: block;
     }
 }
+
 .site-logo {
-    margin-right: 10px;
+    margin-right: 0px;
 }
+
 img.custom-logo {
-  width: 60%;
-  margin-top: 0.3em;
-  @media $medium {
-      width: 60%;
-  }
-  @media $large {
+    width: 100%;
+    @media $medium {
         width: 75%;
-  }
-  @media $ex-large {
-      width: 75%;
-  }
+    }
+    @media $large {
+        width: 75%;
+    }
+    @media $ex-large {
+        width: 75%;
+    }
 }

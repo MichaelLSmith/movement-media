@@ -2,34 +2,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
+
 .giving-partner-item {
-
     width: 100%;
-    padding: 0 0 2%;
-
+    padding: 0 0 1.4em;
     @media $medium {
-      width: 29%;
+        width: 29%;
+        padding: 0em;
     }
     @media $large {
-      width: 31%;
+        width: 31%;
+        padding: 0em;
     }
     @media $ex-large {
-      width: 31%
+        width: 31%;
+        padding: 0em;
     }
 }
+
 .giving-name {
     color: $darkBlue;
     margin: 0.8em 0 0.6em;
     line-height: 1.3;
     text-transform: uppercase;
 }
+
 .giving-year {
     color: $lightBlue;
 }
+
 .giving-partner-description p {
     font-size: 1.3rem;
     line-height: 1.5;
-
 }

@@ -40,12 +40,14 @@
 						<?php the_custom_logo(); ?>
 					</div>
 			</section>
+			<div class="menu-with-button"><i id="menu-button" class="menu-toggle fa fa-bars" aria-hidden="true" aria-controls="primary-menu" aria-expanded="false">
+		<?php esc_html_e( 'Menu', 'movementmedia' ); ?>
+			</i>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
-				</button>
 				<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+		</div>
+		
 		</div><!-- #header-inner -->
 	</header><!-- #masthead -->
 

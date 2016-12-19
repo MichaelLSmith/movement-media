@@ -30,7 +30,7 @@
 	<header id="home-masthead" class="home-header" role="banner">
 		<div id="header-inner" class="home-header-content clear">
 			<section class="home-nav">
-				<div class="logo-tag-container">
+				<!-- <div class="logo-tag-container"> -->
 					<div class="site-logo">
 						<a href="<?php echo esc_url(home_url( '/' )); ?>" rel="home">
 						<div class="screen-reader-text">
@@ -40,13 +40,14 @@
 						<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>" />
 						</a>
 						</div>
-				</div>
+				<!-- </div> -->
+				<div class="menu-with-button"><i id="menu-button" class="menu-toggle fa fa-bars" aria-hidden="true" aria-controls="primary-menu" aria-expanded="false">
+			<?php esc_html_e( 'Menu', 'movementmedia' ); ?>
+				</i>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-						<?php esc_html_e( 'Primary Menu', 'movementmedia' ); ?>
-					</button>
 					<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+			</div>
 			</section>
 <div class="home-masthead">
 			<section class="home-masthead-1 full-content-area">

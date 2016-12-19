@@ -45,7 +45,7 @@
             </section>
             <section class="footer-logo-section">
                 <div class="footer-image-container">
-                    <img src="<?php echo content_url() . '/uploads/2016/08/Movement_Media_logo-1-e1481168763859.png'?>" height="70" width="63" alt="Movement Media logo">
+                    <img src="<?php echo content_url() . '/uploads/2016/08/home-logo-th-bubble.png'?>" height="70" width="63" alt="Movement Media logo">
                 </div>
                 <div class="tag-line">
                     <p>Mission Driven</p>

@@ -108,6 +108,26 @@ function movementmedia_content_width() {
 }
 add_action( 'after_setup_theme', 'movementmedia_content_width', 0 );
 
+//alter get archive title to not have tag:
+
+function my_theme_archive_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+
+    return $title;
+}
+
+add_filter( 'get_the_archive_title', 'my_theme_archive_title' );
+
 /**
  * Register widget area.
  *
@@ -148,7 +168,7 @@ function movementmedia_scripts() {
 
     wp_enqueue_style( 'movementmedia-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'movementmedia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'movementmedia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), null, true );
 
 	wp_enqueue_script( 'movementmedia-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
