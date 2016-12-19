@@ -81,6 +81,15 @@ margin-top: 2.3em;
     }
     li {
         border-bottom: 1px solid $white;
+        @media $medium {
+            border: none;
+        }
+        @media $large {
+            border: none;
+        }
+        @media $ex-large {
+            border: none;
+        }
     }
 }
 

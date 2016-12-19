@@ -2272,6 +2272,27 @@ margin-top: 2.3em;
         margin: 0;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    .home-nav li {
+        border: none;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1320px) {
+
+
+    .home-nav li {
+        border: none;
+    }
+}
+@media screen and (min-width: 1321px) {
+
+
+    .home-nav li {
+        border: none;
+    }
+}
 .home-masthead {
     margin: 0 auto;
 }
