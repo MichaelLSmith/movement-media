@@ -77,18 +77,18 @@ a:hover, a:active {
         text-align: left;
         display: inline-block;
         font-size: 14px;
-        margin: 0.2rem 0rem 1.2rem 2rem;
+        margin: 0.6rem 0rem 1.2rem 2rem;
     }
     @media $large {
         border: none;
-        line-height: 3;
+        line-height: 2.2;
         display: inline-block;
         font-size: 14px;
         margin: 0.2rem 0rem 1.2rem 2rem;
     }
     @media $ex-large {
         border: none;
-        line-height: 3;
+        line-height: 2.2;
         display: inline-block;
         font-size: 14px;
         margin: 0.2rem 0rem 1.2rem 2rem;

@@ -41,7 +41,7 @@ Header CSS - need to @include in style.css and run gulp process
     @media $ex-large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 1% 2% 0.3%;
+        padding: 1.5% 2% 0.3%;
         width: 97%;
     }
 }

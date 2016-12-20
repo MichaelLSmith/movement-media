@@ -2966,7 +2966,7 @@ a:hover, a:active {
         font-size: 14px;
 
 
-        margin: 0.2rem 0rem 1.2rem 2rem;
+        margin: 0.6rem 0rem 1.2rem 2rem;
     }
 }
 
@@ -2980,7 +2980,7 @@ a:hover, a:active {
         border: none;
 
 
-        line-height: 3;
+        line-height: 2.2;
 
 
         display: inline-block;
@@ -3003,7 +3003,7 @@ a:hover, a:active {
         border: none;
 
 
-        line-height: 3;
+        line-height: 2.2;
 
 
         display: inline-block;
@@ -3440,7 +3440,7 @@ Header CSS - need to @include in style.css and run gulp process
                 justify-content: space-between;
 
 
-        padding: 1% 2% 0.3%;
+        padding: 1.5% 2% 0.3%;
 
 
         width: 97%;
@@ -3840,7 +3840,7 @@ img.custom-logo {
                 justify-content: space-between;
 
 
-        padding: 1.5% 1.7% 7%;
+        padding: 1.9% 2.2% 7%;
 
 
         margin: 0.8em auto 0;
