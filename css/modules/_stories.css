@@ -139,7 +139,7 @@
 
 .post_tags a {
     display: inline-block;
-    margin: 2px 8px 2px 0;
+    margin: 4px 8px 4px 0;
     background: $green;
     font-family: $gotham;
     border-radius: 8px;
@@ -149,13 +149,13 @@
     color: $white;
     text-transform: uppercase;
     @media $medium {
-        margin: 2px 8px 2px 0;
+        margin: 4px 8px 4px 0;
     }
     @media $large {
-        margin: 0px 8px 0px 0;
+        margin: 4px 8px 4px 0;
     }
     @media $ex-large {
-        margin: 0px 8px 0px 0;
+        margin: 4px 8px 4px 0;
     }
 }
 

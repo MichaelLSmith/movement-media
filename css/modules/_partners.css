@@ -228,7 +228,6 @@ h2.additional-partner-heading {
 .partner-what-group {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 3em;
     padding-bottom: 0%;
     flex-direction: row;
     -webkit-flex-flow: row wrap;
@@ -236,15 +235,12 @@ h2.additional-partner-heading {
     -webkit-align-content: space-between;
     align-content: space-between;
     @media $medium {
-        margin: 2.3em auto 2em;
         padding-bottom: 1.2%;
     }
     @media $large {
-        margin: 3.5em auto 2em;
         padding-bottom: 0%;
     }
     @media $ex-large {
-        margin: 6.3em auto 2em;
         padding-bottom: 0%;
     }
     h5 {
@@ -279,12 +275,40 @@ h2.additional-partner-heading {
             max-width: 60%;
             align-content: space-around;
             flex-direction: row;
+            margin-bottom: 2.6em;
         }
         @media $ex-large {
             flex: 1 1 auto;
-            max-width: 540px;
+            max-width: 61.2%;
             flex-direction: row;
+            margin-bottom: 2.6em;
         }
+    }
+}
+
+.bronner-what-group {
+    margin: 0em auto 3em;
+    @media $medium {
+        margin: 2.3em auto 2em;
+    }
+    @media $large {
+        margin: 6.5em auto 2em;
+    }
+    @media $ex-large {
+        margin: 6.3em auto 2em;
+    }
+}
+
+.other-what-group {
+    margin: 0em auto 3em;
+    @media $medium {
+        margin: 2.3em auto 2em;
+    }
+    @media $large {
+        margin: 3.3em auto 3em;
+    }
+    @media $ex-large {
+        margin: 3.3em auto 3em;
     }
 }
 

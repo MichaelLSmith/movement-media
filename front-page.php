@@ -42,7 +42,6 @@
 						</div>
 				<!-- </div> -->
 				<div class="menu-with-button"><i id="menu-button" class="menu-toggle fa fa-bars" aria-hidden="true" aria-controls="primary-menu" aria-expanded="false">
-			<?php esc_html_e( 'Menu', 'movementmedia' ); ?>
 				</i>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'menu_class' => 'main-nav-ul', 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

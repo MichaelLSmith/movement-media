@@ -82,7 +82,7 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 				</div>
-				<div class="partner-what-group">
+				<div class="partner-what-group bronner-what-group">
 					<?php if( get_field('bronner_do_title') ): ?>
 						<h5 class="partnesr-what-heading"><?php the_field('bronner_do_title') ?></h5>
 					<?php endif; ?>
@@ -136,7 +136,7 @@ get_header(); ?>
 				</div>
 
 
-				<div class="partner-what-group">
+				<div class="partner-what-group other-what-group">
 						<h5 class="partner-what-heading"><?php the_sub_field('do_partner')?></h5>
 						<?php the_sub_field('description_what') ?>
 				</div>

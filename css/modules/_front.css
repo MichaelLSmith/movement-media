@@ -6,46 +6,67 @@
     background: $darkBlue;
     color: $white;
     margin: 0 auto;
-    padding: 4% 0em 5em;
+    padding: 5.2% 0em 5em;
     /*height: 100vh;*/
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
     @media $medium {
         padding: 0% 0em 6em;
+        text-decoration: none;
     }
     @media $large {
         padding: 0% 0em 12%;
+        text-decoration: none;
     }
     @media $ex-large {
         padding: 0% 0em 12%;
+        text-decoration: none;
+    }
+    a {
+        padding: 0% 0em 1em;
+        color: $white;
+        max-width: 6.5em;
+        margin: 0 auto;
+        border-bottom: 1px solid #fff;
+        @media $medium {
+            border-bottom: none;
+            max-width: none;
+        }
+        @media $large {
+            border-bottom: none;
+            max-width: none;
+        }
+        @media $ex-large {
+            border-bottom: none;
+            max-width: none;
+        }
+    }
+    a:hover {
+        color: #fff;
+        font-weight: 400;
     }
 }
 
-margin-top: 2.3em;
-@media $medium {
-    margin-top: 0.8em
-}
-
-@media $large {
-    margin-top: 0.8em
-}
-
-@media $ex-large {
-    margin-top: 0.8em
+.home-header .site-logo img {
+    width: 8.5em;
+    @media $medium {
+        width: 6.4em;
+    }
+    @media $large {
+        width: 6.4em;
+    }
+    @media $ex-large {
+        width: 6.4em;
+    }
 }
 
 .home-nav {
     display: flex;
     flex-direction: column;
     font-family: $gotham;
-    font-size: 14px;
-    padding: 0em 1.5% 1em;
+    padding: 0em 1.5% 2.2em;
     color: $offWhite;
     letter-spacing: 0.48px;
     justify-content: space-around;
-    margin-top: 2.3em;
+    margin-top: 2.1em;
     @media $medium {
         flex-direction: row;
         justify-content: space-between;
@@ -55,7 +76,7 @@ margin-top: 2.3em;
     @media $large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2% 6.8% 6.2%;
+        padding: 2% 7.9% 6.2%;
         margin-top: 0.8em
     }
     @media $ex-large {
@@ -67,7 +88,7 @@ margin-top: 2.3em;
     .site-logo {
         margin: 0 auto;
         @media $medium {
-            width: 40%;
+            width: 30%;
             margin: 0;
         }
         @media $large {
@@ -80,7 +101,7 @@ margin-top: 2.3em;
         }
     }
     li {
-        border-bottom: 1px solid $white;
+        padding-bottom: 0em;
         @media $medium {
             border: none;
         }
@@ -118,30 +139,31 @@ margin-top: 2.3em;
     p.large-text {
         padding: 0.4em 0;
         font-family: $gotham;
-        font-size: 36px;
+        font-size: 38px;
         font-weight: 700;
         letter-spacing: 0.5px;
         line-height: 40px;
         text-align: center;
+        width: 100%;
         margin: 0 auto;
         -webkit-animation: ns-fadeIn 1.2s 0.4s 1 both;
         -moz-animation: ns-fadeIn 1.2s 0.4s 1 both;
         -o-animation: ns-fadeIn 1.2s 0.4s 1 both;
         animation: ns-fadeIn 1.2s 0.4s 1 both;
         @media $medium {
-            font-size: 40px;
+            font-size: 38px;
             font-weight: 800;
             letter-spacing: 1.5px;
-            line-height: 44px;
-            width: 36%;
+            line-height: 42px;
+            width: 37%;
             margin-left: -0.6em;
         }
         @media $large {
-            font-size: 58px;
+            font-size: 57px;
             font-weight: 800;
             letter-spacing: 1.5px;
             line-height: 64px;
-            width: 39%;
+            width: 40%;
             margin-left: -0.4em;
         }
         @media $ex-large {
@@ -194,6 +216,9 @@ margin-top: 2.3em;
     -moz-animation: ns-fadeIn 2.0s 1s 1 both;
     -o-animation: ns-fadeIn 2.0s 1s 1 both;
     animation: ns-fadeIn 2.2s 1s 1 both;
+    .action-btn-large a {
+        border-bottom: none!important;
+    }
 }
 
 .front-icon-container {
