@@ -3519,7 +3519,7 @@ Header CSS - need to @include in style.css and run gulp process
 img.custom-logo {
 
 
-    width: 100%;
+    width: 90%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
@@ -3527,7 +3527,7 @@ img.custom-logo {
     img.custom-logo {
 
 
-        width: 100%;
+        width: 90%;
     }
 }
 @media screen and (min-width: 1025px) and (max-width: 1320px) {
@@ -3536,7 +3536,7 @@ img.custom-logo {
     img.custom-logo {
 
 
-        width: 100%;
+        width: 90%;
     }
 }
 @media screen and (min-width: 1321px) {

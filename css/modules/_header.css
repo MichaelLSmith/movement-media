@@ -80,12 +80,12 @@ Header CSS - need to @include in style.css and run gulp process
 }
 
 img.custom-logo {
-    width: 100%;
+    width: 90%;
     @media $medium {
-        width: 100%;
+        width: 90%;
     }
     @media $large {
-        width: 100%;
+        width: 90%;
     }
     @media $ex-large {
         width: 100%;
