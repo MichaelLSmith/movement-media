@@ -88,6 +88,6 @@ img.custom-logo {
         width: 90%;
     }
     @media $ex-large {
-        width: 100%;
+        width: 90%;
     }
 }
