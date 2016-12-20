@@ -80,9 +80,9 @@
 		?>
 	</section>
 	<section class="stories-social-share text-content-area row-bottom-pad">
-		<div class="post_tags">
+
 				<?php echo get_the_tag_list('<div class="post_tags">', '', '</div>'); ?>
-		</div>
+		
 				<div class ="social-share">
 							<a href="http://twitter.com/home?status=<?php the_title(); ?>+<?php the_permalink(); ?>">
 									<div class="share-icon"><img src="http://movementmedia.dev/wp-content/uploads/2016/10/twitter-e1478996500727.png" height="36" width="36" alt="Movement Media logo">

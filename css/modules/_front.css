@@ -46,58 +46,52 @@
 }
 
 .home-header .site-logo img {
-    width: 8.5em;
-    @media $medium {
-        width: 6.4em;
-    }
-    @media $large {
-        width: 6.4em;
-    }
-    @media $ex-large {
-        width: 6.4em;
-    }
+    width: 6.4em;
+    @media $medium {}
+    @media $large {}
+    @media $ex-large {}
 }
 
 .home-nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-family: $gotham;
-    padding: 0em 1.5% 2.2em;
+    padding: 0em 0% 2.2em;
     color: $offWhite;
     letter-spacing: 0.48px;
-    justify-content: space-around;
-    margin-top: 2.1em;
+    justify-content: space-between;
+    width: 85%;
+    margin: 1.1em auto 0;
     @media $medium {
         flex-direction: row;
         justify-content: space-between;
-        padding: 1.3% 7.5% 5%;
-        margin-top: 0.8em
+        padding: 1.3% 0% 5%;
+        margin: 0.8em auto 0;
+        width: 85%;
     }
     @media $large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2% 7.9% 6.2%;
-        margin-top: 0.8em
+        padding: 2% 0% 6.2%;
+        margin: 0.8em auto 0;
+        width: 85%;
     }
     @media $ex-large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.2% 3.4% 7%;
-        margin-top: 0.8em
+        padding: 1.5% 1.7% 7%;
+        margin: 0.8em auto 0;
+        width: 97%;
     }
     .site-logo {
-        margin: 0 auto;
         @media $medium {
             width: 30%;
-            margin: 0;
         }
         @media $large {
             width: 30%;
-            margin: 0;
         }
         @media $ex-large {
             width: 30%;
-            margin: 0;
         }
     }
     li {
@@ -179,10 +173,10 @@
 
 .home-masthead-2 {
     p.text {
-        font-family: $sentinel;
+        font-family: $gotham;
         font-weight: 300;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 26px;
         text-align: center;
         margin: 0.4em auto 1.2em;
         width: 91.33%;
@@ -309,7 +303,7 @@
 
 .featured-story {
     width: 100%;
-    margin-bottom: 0em;
+    margin-bottom: 2em;
     @media $medium {
         width: 31.5%;
         min-height: 480px;
@@ -448,17 +442,20 @@
     padding: .8rem 0 .8rem 0;
     margin: auto;
     p {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 300;
-        line-height: 1.5;
+        line-height: 1.3;
         @media $medium {
             font-size: 21px;
+            line-height: 1.5;
         }
         @media $large {
             font-size: 28px;
+            line-height: 1.5;
         }
         @media $ex-large {
             font-size: 28px;
+            line-height: 1.5;
         }
     }
 }

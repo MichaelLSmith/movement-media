@@ -11,8 +11,7 @@ Header CSS - need to @include in style.css and run gulp process
 
 .header-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     padding: 2% 0% 1%;
     margin: auto;
     padding-bottom: 0.1rem;
@@ -21,6 +20,7 @@ Header CSS - need to @include in style.css and run gulp process
     color: $darkBlue;
     letter-spacing: 0.48px;
     width: 85%;
+    justify-content: space-between;
     a {
         color: $darkBlue;
     }
@@ -34,14 +34,14 @@ Header CSS - need to @include in style.css and run gulp process
     @media $large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 1.7% 0% 1%;
+        padding: 1.3% 0% 1%;
         width: 85%;
         max-width: 1080px;
     }
     @media $ex-large {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2% 2% 0.3%;
+        padding: 1% 2% 0.3%;
         width: 97%;
     }
 }
@@ -49,7 +49,7 @@ Header CSS - need to @include in style.css and run gulp process
 .site-header {
     max-width: $container-max-width;
     margin: auto;
-    margin-top: 3.6em;
+    margin-top: 1.6em;
     border-bottom: $darkBlue solid 0px;
     @media $medium {
         margin-top: 0.8em
@@ -82,12 +82,12 @@ Header CSS - need to @include in style.css and run gulp process
 img.custom-logo {
     width: 100%;
     @media $medium {
-        width: 75%;
+        width: 100%;
     }
     @media $large {
-        width: 75%;
+        width: 100%;
     }
     @media $ex-large {
-        width: 75%;
+        width: 100%;
     }
 }

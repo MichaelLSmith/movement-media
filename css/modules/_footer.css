@@ -18,7 +18,7 @@
     -webkit-align-content: space-around;
     align-content: space-around;
     margin: 0 auto;
-    padding: 8% 0 7%;
+    padding: 12% 0 12%;
     @media $medium {
         padding: 6% 0 5%;
     }
@@ -33,7 +33,7 @@
 .footer-menu {
     font-size: 1.1rem;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     color: $white;
     @media $medium {
@@ -63,8 +63,8 @@
         }
     }
     li {
-        margin: 0 0 1.0em 0;
-        font-size: 1.4rem;
+        margin: 0 0 1.4em 0;
+        font-size: 1.5rem;
         @media $medium {
             font-size: 1.5rem;
             margin: 0 0 1.5em 0;
